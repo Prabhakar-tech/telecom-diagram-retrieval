@@ -1,0 +1,159 @@
+==============================
+BASIC SERVER INFO
+==============================
+Sun Jun  7 08:10:06 PM IST 2026
+exploration-lab-server-A40
+prabhakarp24
+/DATA5/prabhakar
+
+==============================
+DISK SPACE
+==============================
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sdc        1.8T  1.7T   56G  97% /DATA1
+/dev/sdg1       3.6T  2.7T  812G  77% /DATA5
+
+==============================
+RAM
+==============================
+               total        used        free      shared  buff/cache   available
+Mem:           376Gi       257Gi       4.0Gi       135Mi       115Gi       114Gi
+Swap:          238Gi       7.5Gi       230Gi
+
+==============================
+CPU
+==============================
+Architecture:                            x86_64
+CPU(s):                                  64
+On-line CPU(s) list:                     0-63
+Model name:                              Intel(R) Xeon(R) Gold 6226R CPU @ 2.90GHz
+Thread(s) per core:                      2
+Core(s) per socket:                      16
+Socket(s):                               2
+NUMA node0 CPU(s):                       0-15,32-47
+NUMA node1 CPU(s):                       16-31,48-63
+
+==============================
+GPU
+==============================
+Sun Jun  7 20:10:06 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.126.20             Driver Version: 580.126.20     CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A40                     On  |   00000000:1B:00.0 Off |                  Off |
+|  0%   60C    P0             95W /  300W |    3849MiB /  49140MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA A40                     On  |   00000000:1D:00.0 Off |                  Off |
+|  0%   60C    P0            202W /  300W |    9590MiB /  49140MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   2  NVIDIA A40                     On  |   00000000:3D:00.0 Off |                  Off |
+|  0%   57C    P0            154W /  300W |    6526MiB /  49140MiB |    100%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   3  NVIDIA A40                     On  |   00000000:3F:00.0 Off |                  Off |
+|  0%   63C    P0            210W /  300W |    7074MiB /  49140MiB |     71%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A            2284      G   /usr/lib/xorg/Xorg                        4MiB |
+|    0   N/A  N/A          799582    C+G   ...shu23/SURGE/.conda/bin/python        536MiB |
+|    0   N/A  N/A          843313      G   ...shu23/SURGE/.conda/bin/python          7MiB |
+|    0   N/A  N/A          867267      C   ...shu23/SURGE/.conda/bin/python       1160MiB |
+|    0   N/A  N/A         1460713      C   ...nda3/envs/cleaning/bin/python       2076MiB |
+|    1   N/A  N/A            2284      G   /usr/lib/xorg/Xorg                        4MiB |
+|    1   N/A  N/A          867267      C   ...shu23/SURGE/.conda/bin/python       1222MiB |
+|    1   N/A  N/A         1461166      C   ...nda3/envs/cleaning/bin/python       8340MiB |
+|    2   N/A  N/A            2284      G   /usr/lib/xorg/Xorg                        4MiB |
+|    2   N/A  N/A          867267      C   ...shu23/SURGE/.conda/bin/python       1166MiB |
+|    2   N/A  N/A         1461622      C   ...nda3/envs/cleaning/bin/python       5332MiB |
+|    3   N/A  N/A            2284      G   /usr/lib/xorg/Xorg                        4MiB |
+|    3   N/A  N/A          867267      C   ...shu23/SURGE/.conda/bin/python       1214MiB |
+|    3   N/A  N/A         1462042      C   ...nda3/envs/cleaning/bin/python       5832MiB |
++-----------------------------------------------------------------------------------------+
+
+==============================
+PYTHON ENVIRONMENT
+==============================
+/home/prabhakarp24/miniconda3/bin/python3
+Python 3.13.12
+pip 26.0.1 from /home/prabhakarp24/miniconda3/lib/python3.13/site-packages/pip (python 3.13)
+
+Installed important packages:
+
+==============================
+CSV FILE INFO
+==============================
+-rw-rw-r-- 1 prabhakarp24 tafazzul23 12M Apr 29 20:14 /DATA1/prabhakar/telecom/All Images Path.csv
+62434 /DATA1/prabhakar/telecom/All Images Path.csv
+
+First 10 lines of CSV:
+Context,Source,Subclause,Image Path,Image Caption
+"Figure 8.9.3-1: TNL Update: Unsuccessful operation.
+If the HNB-GW fails to establish TNL resources for the RABs indicated within the TNL UPDATE REQUEST message the HNB-GW shall send the TNL UPDATE FAILURE message to the HNB with an appropriate cause value.",TS 25.469,8.9.3,/data/all_images/image_0.png,TNL Update: Unsuccessful operation.
+"Home Node B should detect Macro Node B’s DwPCH, and define its timing benchmark according to Macro Node B’s DwPCH. Considering the complex deployment scenario of Home Node B networks, we advise Macro Node BS and Home Node B be deployed on different frequency band.
+If Home Node B can detect multi Macro Node Bs’ signal, it should select the best suitable macro cell from all candidate Macro Node Bs.
+Figure 7.5.1-1: 1.28Mcps TDD Home NodeB Timing according to Macro Node B’s DwPCH
+Figure 7.5.1-1 gives three candidate 1.28Mcps TDD Home Node B air interface timing adjust methods:
+-	Reference 1: The frame boundary of Home Node B precedes anchored macro one with oneτadv , which is given by macro Node B via a uplink synchronisation procedure;
+-	Reference 2: The frame boundary of Home Node B is exactly aligned with anchored macro one via uplink synchronisation procedure;
+-	Reference 3: Home Node B sets its frame boundary at the time point when it detects a downlink synchronisation peak, which in principle lagτadv behind anchored macro one.
+
+==============================
+IMAGE FOLDER INFO
+==============================
+drwxrwxr-x 2 prabhakarp24 tafazzul23 135168 Apr 20 22:00 /DATA1/prabhakar/telecom/extracted_images/images
+159M	/DATA1/prabhakar/telecom/extracted_images/images
+
+Total files recursively:
+3767
+
+Image extension counts:
+2539 jpeg
+1227 png
+1 ds_store
+
+First 20 image/file paths:
+/DATA1/prabhakar/telecom/extracted_images/images/image_2650.png
+/DATA1/prabhakar/telecom/extracted_images/images/image_2518.jpeg
+/DATA1/prabhakar/telecom/extracted_images/images/image_337.jpeg
+/DATA1/prabhakar/telecom/extracted_images/images/image_3011.jpeg
+/DATA1/prabhakar/telecom/extracted_images/images/image_2825.png
+/DATA1/prabhakar/telecom/extracted_images/images/image_2142.png
+/DATA1/prabhakar/telecom/extracted_images/images/image_1258.jpeg
+/DATA1/prabhakar/telecom/extracted_images/images/image_466.jpeg
+/DATA1/prabhakar/telecom/extracted_images/images/image_757.png
+/DATA1/prabhakar/telecom/extracted_images/images/image_379.png
+/DATA1/prabhakar/telecom/extracted_images/images/image_3428.png
+/DATA1/prabhakar/telecom/extracted_images/images/image_437.jpeg
+/DATA1/prabhakar/telecom/extracted_images/images/image_3003.jpeg
+/DATA1/prabhakar/telecom/extracted_images/images/image_1739.png
+/DATA1/prabhakar/telecom/extracted_images/images/image_3301.jpeg
+/DATA1/prabhakar/telecom/extracted_images/images/image_2193.png
+/DATA1/prabhakar/telecom/extracted_images/images/image_2207.png
+/DATA1/prabhakar/telecom/extracted_images/images/image_2114.jpeg
+/DATA1/prabhakar/telecom/extracted_images/images/image_1450.jpeg
+/DATA1/prabhakar/telecom/extracted_images/images/image_1304.jpeg
+
+==============================
+WORKSPACE INFO
+==============================
+total 32K
+drwxrwxr-x 2 prabhakarp24 tafazzul23 4.0K Jun  7 20:07 cache
+drwxrwxr-x 2 prabhakarp24 tafazzul23 4.0K Jun  7 20:07 eval
+drwxrwxr-x 2 prabhakarp24 tafazzul23 4.0K Jun  7 20:07 indexes
+drwxrwxr-x 2 prabhakarp24 tafazzul23 4.0K Jun  7 20:10 logs
+drwxrwxr-x 2 prabhakarp24 tafazzul23 4.0K Jun  7 20:07 metadata
+drwxrwxr-x 2 prabhakarp24 tafazzul23 4.0K Jun  7 20:07 models
+drwxrwxr-x 2 prabhakarp24 tafazzul23 4.0K Jun  7 20:07 reports
+drwxrwxr-x 2 prabhakarp24 tafazzul23 4.0K Jun  7 20:08 scripts

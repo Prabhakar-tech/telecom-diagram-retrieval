@@ -1,0 +1,413 @@
+Context,Source,Subclause,Image Path,Image Caption
+"Figure 8.9.3-1: TNL Update: Unsuccessful operation.
+If the HNB-GW fails to establish TNL resources for the RABs indicated within the TNL UPDATE REQUEST message the HNB-GW shall send the TNL UPDATE FAILURE message to the HNB with an appropriate cause value.",TS 25.469,8.9.3,/data/all_images/image_0.png,TNL Update: Unsuccessful operation.
+"Home Node B should detect Macro Node B’s DwPCH, and define its timing benchmark according to Macro Node B’s DwPCH. Considering the complex deployment scenario of Home Node B networks, we advise Macro Node BS and Home Node B be deployed on different frequency band.
+If Home Node B can detect multi Macro Node Bs’ signal, it should select the best suitable macro cell from all candidate Macro Node Bs.
+Figure 7.5.1-1: 1.28Mcps TDD Home NodeB Timing according to Macro Node B’s DwPCH
+Figure 7.5.1-1 gives three candidate 1.28Mcps TDD Home Node B air interface timing adjust methods:
+-	Reference 1: The frame boundary of Home Node B precedes anchored macro one with oneτadv , which is given by macro Node B via a uplink synchronisation procedure;
+-	Reference 2: The frame boundary of Home Node B is exactly aligned with anchored macro one via uplink synchronisation procedure;
+-	Reference 3: Home Node B sets its frame boundary at the time point when it detects a downlink synchronisation peak, which in principle lagτadv behind anchored macro one.
+If reference 1 or 2 is selected, Home Node B shall behave as a regular 1.28Mcps TDD UE and perform a ‘fake’ random access in its synchronization.
+If Home Node B can not detect Macro Node Bs’ DwPCH, according to its SON characters, Home Node B should select one empty frequency that not occupied by its neighbour Home Node Bs.
+-	When Home Node B is power on, it should search the best suitable Home Node B from Home Node B available frequency list, and get its timing advance.
+-	Apply any type of Home Node B timing reference as shown in figure 1.",TR 25.968,7.5.1,/data/all_images/image_1.jpeg,1.28Mcps TDD Home NodeB Timing according to Macro Node B’s DwPCH
+"Figure 5.1.2-1: UE Registration for non CSG UEs or non CSG HNBs.
+1.	Upon camping on the HNB, the UE initiates an initial NAS procedure (e.g. LU Procedure) by establishing an RRC connection with the HNB. UE identity, UE capabilities and Establishment Cause, are reported to the HNB as part of the RRC Connection establishment procedure.
+2.	The UE then transmits a RRC Initial Direct Transfer message carrying the initial NAS message (e.g. Location Updating Request message) with some form of UE identity.
+3.	The HNB checks the UE capabilities provided in step 1, and if these indicate that CSG is not supported, or the HNB itself does not support CSG, and if the identity of the UE (provided during RRC Connection Establishment) is unknown at the HNB being accessed, i.e. no Context id exists for the UE, the HNB initiates UE registration towards the HNB-GW (step 5-7). Before starting the UE Registration procedure, the HNB triggers the Identity request procedure (step 3) asking the UE for its IMSI, unless that identity has been provided during the RRC Connection Establishment or optionally if it is an emergency call. If the HNB has a context id for the UE, the UE registration procedure is not performed nor is the Identification procedure.
+4.	The HNB may optionally perform access control or membership verification based on the provided IMSI and the provided Allowed IMSI list. If the UE requests emergency services it shall always be admitted to the cell.
+5.	The HNB attempts to register the UE on the HNB-GW by transmitting the UE REGISTER REQUEST. The message contains at a minimum:
+-	UE Identity: a unique identity for the UE provided in step 1 or 3.
+-	UE Capabilities: derived from that provided in step 1.
+-	Registration Cause: the indication about a UE registration for an emergency call.
+NOTE:	The UE Identity provided in the HNBAP UE REGISTER REQUEST message is unauthenticated.
+6.	The HNB-GW checks the UE capabilities and the Registration Cause. If the UE capabilities indicate that CSG is not supported or if the HNB does not support CSG, the HNB-GW shall perform access control or membership verification for the particular UE attempting to utilize the specific HNB. If the UE requests emergency services it shall always be admitted to the cell.
+7.	If the HNB-GW accepts the UE registration attempt it shall allocate a context-id for the UE and respond with an HNBAP UE REGISTER ACCEPT message, including the context-id, to the HNB. For non-CSG UEs, the HNB-GW may also include the CSG  Status in the HNBAP UE REGISTER ACCEPT message. If the HNB-GW chooses not to accept the incoming UE registration request then the HNB-GW shall respond with an HNBAP UE REGISTER REJECT message.
+8.	The HNB then sends an RUA CONNECT message containing the RANAP Initial UE message. If a L-GW function is deployed within the HNB the RANAP Initial UE message includes the corresponding IP address for Gn/S5 signalling and user data transport on the Gi interface.
+9.	The reception of the RUA CONNECT message at the HNB-GW triggers the setup of an SCCP connection by the HNB-GW towards the CN. The HNB-GW then forwards the RANAP Initial UE Message to the CN.
+10.	The CN responds with an SCCP Connection Confirm message.
+10a. The HNB-GW shall additionally utilize a CN assisted method if available (e.g. using IMSI provided in the COMMON ID message), to alleviate the security risks associated with spoofing of IMSI and can subsequently trigger a UE deregistration upon detection of such an event.
+11.	The UE continues with the NAS procedure (e.g. Location Updating procedure) towards the CN, via the HNB and the HNB-GW.",TS 25.467,5.1.2,/data/all_images/image_2.png,UE Registration for non CSG UEs or non CSG HNBs.
+"This call flow assumes that the Core Network is able to perform access control on the basis of Closed Subscriber Groups.
+Figure 5.1.3-1: UE Registration for CSG UEs and CSG or Hybrid HNBs.
+1.	Upon camping on the HNB, the UE initiates an initial NAS procedure (e.g. LU Procedure) by establishing an RRC connection with the HNB. UE identity and UE capabilities are reported to the HNB as part of the RRC Connection establishment procedure.
+2.	The UE then transmits a RRC Initial Direct Transfer message carrying the initial NAS message (e.g. Location Updating Request message) with some form of identity (e.g. IMSI or TMSI...).
+3.	The HNB checks the UE capabilities provided in step 1, and if these indicate that CSG is supported and if the identity of the UE (provided during RRC Connection Establishment) is unknown at the HNB being accessed, i.e. no Context id exist for the UE, the HNB initiates UE registration towards the HNB-GW (steps 4-6). If the HNB has a context id for the UE, UE registration procedure is not performed. No Identification procedure is triggered, independent of the identity reported by the UE during the RRC Connection Establishment.
+4.	The HNB attempts to register the UE on the HNB-GW by transmitting the UE REGISTER REQUEST. The message contains:
+-	UE Identity: a unique identifier for the UE and provided in step 1.
+-	UE capabilities: derived from that provided in step 1.
+-	Registration Cause: the indication about a UE registration for an emergency call.
+NOTE:	The UE Identity provided in the UE REGISTER message is unauthenticated.
+5.	The HNB-GW checks UE capabilities and if these indicate that CSG is supported and if the HNB supports CSG, the HNB-GW may accept the UE registration and allocate a context-id for the UE.
+6.	The HNB-GW responds with a UE REGISTER ACCEPT message back to the HNB including a context-id allocated to the UE
+7.	The HNB then sends a RUA CONNECT message containing the RANAP Initial UE message. The RANAP Initial UE message may contain the Cell Access Mode. If a L-GW function is deployed within the HNB, the RANAP Initial UE message includes the corresponding IP address for Gn/S5 interface signalling and user data transport on the Gi interface.
+8.	The HNB-GW shall verify, for CSG HNBs, that the validity of the indicated cell access mode and the CSG ID in the Initial UE message as specified in TS 33.320 [16]. The reception of the RUA CONNECT message at the HNB-GW triggers the setup of an SCCP connection by the HNB-GW towards the CN. The HNB-GW then forwards the Initial UE Message including the CSG id of the HNB.
+9.	The CN responds with an SCCP Connection Confirm message.
+10.	The CN may optionally perform Mobility Management procedures, e.g. Authentication procedure.
+11.	The CN performs access control (in case of CSG cells) or membership verification (in case of Hybrid cells) of the UE.
+12.	After being granted access the UE then continues with the NAS procedure (e.g. Location Updating procedure) towards the CN, via the HNB and the HNB-GW. During such procedures the CN may send to the HNB the UE membership status for the accessed cell in the COMMON ID message.",TS 25.467,5.1.3,/data/all_images/image_3.jpeg,UE Registration for CSG UEs and CSG or Hybrid HNBs.
+"Figure 5.1.5-1: UE Registration to open access HNBs.
+1.	Upon camping on the HNB, the UE initiates an initial NAS procedure (e.g. LU Procedure) by establishing an RRC connection with the HNB. UE identity and UE capabilities are reported to the HNB as part of the RRC Connection establishment procedure.
+2.	The UE then transmits a RRC Initial Direct Transfer message carrying the initial NAS message (e.g. Location Updating Request message) with some form of identity (e.g. IMSI or TMSI).
+3.	If the identity of the UE (provided during RRC Connection Establishment) is unknown at the HNB being accessed, i.e. no Context id exist for the UE, the HNB initiates UE registration towards the HNB-GW (steps 4-6). If the HNB has a context id for the UE, UE registration procedure is not performed. No Identification procedure is triggered, independent of the identity reported by the UE during the RRC Connection Establishment.
+4.	The HNB attempts to register the UE on the HNB-GW by transmitting the UE REGISTER REQUEST. The message contains:
+-	UE Identity: a unique identifier for the UE and provided in step 1.
+-	UE capabilities: derived from that provided in step 1.
+-	Registration Cause: the indication about a UE registration for an emergency call.
+NOTE:	The UE Identity provided in the UE REGISTER message is unauthenticated.
+5.	The HNB-GW may accept the UE registration and allocate a context-id for the UE.
+6.	The HNB-GW responds with a UE REGISTER ACCEPT message back to the HNB including a context-id allocated to the UE.
+7.	The HNB then sends a RUA CONNECT message containing the RANAP Initial UE message.
+8.	The reception of the RUA CONNECT message at the HNB-GW triggers the setup of an SCCP connection by the HNB-GW towards the CN. The HNB-GW then forwards the Initial UE Message to the Core Network.
+9.	The CN responds with an SCCP Connection Confirm message.
+10.	The CN may optionally perform Mobility Management procedures, e.g. Authentication procedure.
+11.	After being granted access the UE then continues with the NAS procedure (e.g. Location Updating procedure) towards the CN, via the HNB and the HNB-GW.",TS 25.467,5.1.5,/data/all_images/image_4.jpeg,UE Registration to open access HNBs.
+"Figure 5.5.2-1: Iuh Disconnect procedure.
+1.	Establish connection between UE and network. The related procedure is described in subclause 5.1.
+2.	CN sends a RANAP Release Iu connection command message to the HNB-GW.
+3.	HNB-GW forwards this message to the relevant HNB.
+4.	HNB triggers the release of the RRC connection to the UE. In this case a single Iu connection had been established for the UE.
+5.	HNB sends a Disconnect message to the HNB-GW to indicate that this is the end of this particular UE-associated signalling connection and includes the RANAP Release Iu Connection Complete message.
+6.	HNB-GW forwards the RANAP message onto the CN.
+7.	CN triggers the release of the associated SCCP connection.
+8.	HNB-GW confirms that the SCCP connection is released.
+9.	Optionally the HNB can de-register the UE context from the HNB-GW.",TS 25.467,5.5.2,/data/all_images/image_5.jpeg,Iuh Disconnect procedure.
+"RNSAP Relocation utilises existing protocol functions specified for Enhanced Relocation between non-CSG cells within TS 25.413 [9] and TS 25.423 [18].
+Additional information from the Source HNB to the Target HNB is provided within the RANAP Enhanced Relocation Information and the RANAP Relocation Information procedures as specified in subclause 5.10.
+Figure 5.7.2.1-1 below depicts the case where the UE is involved in the RNSAP Relocation and the HNBs are directly Iurh-connected. In case of UE not being involved, an Iurh signalling connection (i.e. RNA signalling resources) already exists between the involved HNBs which can be utilised for RNSAP signalling. In case of Iurh-connectivity via the HNB-GW, RNA signalling terminates at the HNB-GW, whereas RNSAP signalling is still performed peer-to-peer.
+Figure 5.7.2.1-1: HNB to HNB Handover via Iurh interface – UE involved.
+1.	The Source HNB evaluates the UE’s access rights against the available neighbour information. If the UE has access rights for the Target HNB the Source HNB may decide to send an RNA:CONNECT message (or an RNA:DIRECT TRANSFER message if already in SHO) containing an RNSAP:ENHANCED RELOCATION REQUEST message to the Target HNB to prepare the Target HNB for relocation.
+2.	The Target HNB updates the transport network layer information for any RABs that are to be relocated to it by sending an HNBAP:TNL UPDATE REQUEST message to the HNB-GW, the HNB-GW responds with an HNBAP:TNL UPDATE RESPONSE.
+3.	The Target HNB sends an RNA:DIRECT TRANSFER message containing an RNSAP:ENHANCED RELOCATION RESPONSE message back to the Source HNB to indicate that it has successfully prepared the relocation.
+4.	The Source HNB sends an RNA:DIRECT TRANSFER message containing an RNSAP:RELOCATION COMMIT message, to commit the relocation preparation on the Target HNB. This message includes information to aid the relocation procedure, these are described in subclause 5.10.
+5.	The Source HNB reconfigures the UE to commence the relocation procedure.
+6.	At some point later Layer 1 synchronisation is achieved between the UE and the Target HNB. The UE then completes the RRC Reconfiguration procedure by sending an RRC:RADIO BEARER RECONFIGURATION COMPLETE message to the Target HNB.
+7.	The Target HNB indicates to the HNB-GW that the UE has successfully relocated via the HNBAP:UE RELOCATION COMPLETE message. The HNB-GW also switches the U-plane to the Target HNB.
+8.	The Target HNB initiates the RAB Release Request Procedure to the CN to release unaccepted RABs, if any, with an appropriate cause value.
+9.	The HNB-GW sends the HNBAP:UE-DEREGISTER to the Source HNB indicating Successful RNSAP Relocation with an appropriate cause value.
+10.	The Source HNB sends an RNA:DISCONNECT message  containing an RNSAP:ENHANCED RELOCATION SIGNALLING TRANSFER message to the Target HNB to transfer any L3 information that the Source HNB may have received during the relocation procedure and locally releases any resources it has for the UE.
+NOTE:	If the involved HNBs are Iurh connected via the HNB-GW, the RNA messages are routed via the HNB-GW.",TS 25.467,5.7.2.1,/data/all_images/image_6.jpeg,HNB to HNB Handover via Iurh interface – UE involved.
+"Figure 5.7.3-1 below depicts Soft Handover Initiation in case HNBs are directly Iurh-connected. In case of Iurh-connectivity via the HNB-GW, RNA signalling terminates at the HNB-GW, whereas RNSAP signalling is still performed on a HNB-to-HNB basis.
+Figure 5.7.3-1: Soft Handover Initiation HNB to HNB.
+1.	The Serving HNB (SHNB) receives an RRC measurement report indicating that Soft handover is possible and the SHNB decides to setup a RL to the Drift HNB (DHNB).
+2.	The SHNB evaluates the UE’s access rights against neighbour information available from the HNB Configuration Transfer function. If the UE has access rights for the DHNB, the SHNB may decide to setup a new RL and send an RNA:CONNECT message containing an RNSAP:RADIO LINK SETUP REQUEST message to the DHNB to set up a radio link at the DHNB.
+3.	The DHNB starts receiving from the UE and sends an RNSAP: RADIO LINK SETUP RESPONSE message.
+4.	When the radio link is established on the DHNB, the DHNB sends an RNSAP: RADIO LINK RESTORE INDICATION message.
+5.	The SHNB sends an RRC Active Set Update to the UE
+6.	The SHNB receives an RRC Active Set Update Complete from the UE.",TS 25.467,5.7.3,/data/all_images/image_7.jpeg,Soft Handover Initiation HNB to HNB.
+"Figure 5.7.5-1 below reports the message flow in case of CELL_FACH/CELL_PCH/URA_PCH mobility across HNBs.
+Figure 5.7.5-1: HNB to HNB CELL_FACH/CELL_PCH/URA_PCH mobility
+1.	At initial RRC Connection Setup, the Source HNB assigns to the UE a U-RNTI value based on the S-RNTI-prefix previously assigned to the HNB by the HNB-GW.
+2.	Subsequently, when the UE performs Cell or URA Reselection to the target HNB, it sends an RRC: Cell Update message (in case of CELL_FACH or CELL_PCH) or an RRC: URA Update message (in case of URA_PCH) containing the U-RNTI value previously assigned by the Source HNB.
+3.	Based on the received U-RNTI, the Target HNB detects the UE is reselecting from one of its neighbour HNBs.
+If, based on the received U-RNTI, the Target HNB cannot detect from which HNB the UE is reselecting from,
+3a.	it may trigger a query towards the HNB-GW for the U-RNTI and subsequently, if both HNBs support CELL_FACH mobility, establish an Iurh interface with the source HNB;
+3b.	alternatively, it may terminate the mobility procedure, re-establish the RRC connection for the UE and skip the subsequent steps.
+4.	The target HNB forwards the received RRC Cell/URA update message via a RNSAP Uplink Signalling Transfer Indication message encapsulated in a RNA CONNECT message to the source HNB.
+5.	The source HNB may now execute the SRNS Relocation/Enhanced SRNS Relocation procedure towards the target HNB to transfer the UE context or initialise the UE context in the target HNB via RNSAP Common Transport Channel Resources Initialisation procedure.
+6.	The Target HNB sends to the UE an RRC: Cell Update Confirm message (in case of CELL_FACH or CELL_PCH) or an RRC: URA Update Confirm message (in case of URA_PCH) to terminate the mobility procedure. Such message includes a new U-RNTI value, this time assigned by the Target HNB. If the SRNS relocation procedure is not used, the RRC: Cell Update Confirm message (in case of CELL_FACH or CELL_PCH) or the RRC: URA Update Confirm message (in case of URA_PCH) is sent by the serving HNB.",TS 25.467,5.7.5,/data/all_images/image_8.jpeg,HNB to HNB CELL_FACH/CELL_PCH/URA_PCH mobility
+"The HNB Configuration Transfer function provides the means to inform the HNB-GW to provide HNBs with address information of neighbour HNBs in order to enable the establishment of Iurh connection. The neighbour list is maintained in the HNB via interaction with the HMS. The HNB uses the IP addresses received from the HNB-GW to connect to neighbour HNBs over Iurh. If the requested HNB supports S-RNTI prefix assignment, the HNB-GW shall, if supported, also inform the HNB of the S-RNTI prefix values of the neighbour HNBs supporting CELL_FACH mobility along with their IP address information. If URAs are indicated at registration by the HNB, the HNB-GW may respond with the list of HNBs belonging to those URAs along with their S-RNTI prefixes and IP address information.
+The procedure for HNB Configuration Transfer is shown in Figure 5.8-1.
+Figure 5.8-1: HNB Configuration Transfer.
+0.	HNB1 has already switched to operational mode, has registered at the HNB-GW and is connected to HNBs within its reach.
+1.	HNB2 switches to operational mode.
+2.	HNB2 registers at the HNB-GW successfully and provides its IP address for direct Iurh connectivity.
+3.	HNB1 identifies a change in its neighbour list, from e.g. detecting HNB2 or via HMS.
+4.	HNB1 requests the IP addresses of the Target HNB(s) by sending HNBAP HNB Configuration Transfer Request to the HNB-GW.
+5.	The HNB-GW responds with a HNB Configuration Transfer Response message to the source HNB providing for each neighbour HNB requested
+-	either Iurh signalling TNL IP address information indicating the IP address to which the HNB shall setup an Iurh signalling connection and other information
+-	or a reason why respective information cannot be provided.
+6.	The HNB1 sets up an Iurh connection towards HNB2. If direct Iurh connectivity is applied, HNB1 has to establish a reliable transport session before issuing the RNA:Iurh Setup procedure.
+If the HNB-GW includes a list of Iurh signalling TNL addresses in the HNBAP HNB: CONFIGURATION TRANSFER RESPONSE message, the HNB establishes Iurh connection using the addresses provided in an ordered manner starting with the first entry of the list.",TS 25.467,5.8,/data/all_images/image_9.png,HNB Configuration Transfer.
+"The mobility procedure described in Figure 5.11.2.1-1 requires the HNB-GW to route the incoming Enhanced Relocation signalling from the Source HNB to the appropriate Target RNC indicated by an RNC-ID provided within the RNA:CONNECT message.
+Figure 5.11.2.1-1: Enhanced Relocation from Open Access and Hybrid HNBs to RNC.
+0-9.	The RNSAP signalling for preparing and executing the relocation between the HNB and the RNC follows the standardised Enhanced SRNS Relocation procedure as defined between two RNCs (see TS 23.060 [10]).
+10-13. After the UE has completed RRC signalling for the relocation, the RANAP: ENHANCED RELOCATION COMPLETE REQUEST message is sent from the Target RNC to the MSC/SGSN. The MSC/SGSN replies with a RANAP: ENHANCED RELCOATION COMPLETE RESPONSE message. In case of CS domain, the target RNC sends RANAP Enhanced Relocation Complete Confirm message to the MSC after completion of UP initialization.
+14-17. Subsequently the CN initiates Iu Release procedure to release the source-side Iu(h) resources.",TS 25.467,5.11.2.1,/data/all_images/image_10.jpeg,Enhanced Relocation from Open Access and Hybrid HNBs to RNC.
+"The mobility procedure described in Figure 5.11.2.2-1 requires the following:
+-	The Source RNC is able to determine the target HNB and its Cell Access Mode based on UE measurements.
+NOTE:	It is assumed that the source RNC has a priori knowledge whether the target cell is an open mode cell or not, e.g., via the PSC range configured for open cells in this part of the network
+-	The HNB-GW is able to route the incoming Enhanced Relocation signalling from the Source RNC to the appropriate target HNB using the target cell identity provided in RNSAP: ENHANCED RELOCATION REQUEST.
+Figure 5.11.2.2-1: Enhanced Relocation from RNC to Open Access HNB for CSG UEs.
+0-9. The RNSAP signalling for preparing and executing the relocation between the RNC and the HNB follows the standardised Enhanced SRNS Relocation procedure as defined between two RNCs (see TS 23.060 [10]).
+10-12.	After the UE has completed RRC signalling for the relocation, the RANAP: ENHANCED RELOCATION COMPLETE REQUEST message is sent from target HNB to HNB GW (via Iuh) and forwarded from HNB GW to MSC/SGSN (via Iu).
+13-14.	After the reception of RANAP: ENHANCED RELOCATION COMPLETE REQUEST the MSC/SGSN replies with RANAP: ENHANCED RELOCATION COMPLETE RESPONSE. The HNB-GW forwards this message to the target HNB (via Iuh).
+15-16. In case of CS domain, the target HNB sends RANAP Enhanced Relocation Complete Confirm message to the MSC after completion of UP initialization.
+17-18.	The MSC/SGSN mandates the RNC to release the former Iu resources.",TS 25.467,5.11.2.2,/data/all_images/image_11.jpeg,Enhanced Relocation from RNC to Open Access HNB for CSG UEs.
+"The mobility procedure described in Figure 5.11.2.3-1 requires the following:
+-	The UE is CSG capable from Rel-9 onwards and SIB-reading capable.
+-	The Source RNC is able to determine the Cell Access Mode of the target HNB.
+NOTE:	It is assumed that the source RNC is able to initiate and interpret respective UE measurements and may in addition have an a priori knowledge whether the target cell is a hybrid cell, e.g., via the PSC range configured for hybrid cells in this part of the network.
+-	The HNB-GW is able to route the incoming Enhanced Relocation signalling from the Source RNC to the appropriate target HNB using the target cell identity provided in RNSAP: ENHANCED RELOCATION REQUEST.
+Figure 5.11.2.3-1: Enhanced Relocation from RNC to Hybrid HNB for CSG UEs.
+0-9. RNSAP Signalling for preparing and executing the relocation between the RNC and the HNB follows the currently standardised Enhanced SRNS Relocation procedure as defined between two RNCs (See TS 23.060 [10]).
+10-11.	Upon successful relocation preparation and RRC signalling completion, the UE is temporarily admitted in the target hybrid cell according to the access status declared by the UE and provided by the Source RNC to the Target HNB within the CSG Membership Status IE included in the RNSAP: ENHANCED RELOCATION REQUEST message. The UE may be admitted as its reported CSG membership status until the outcomes of membership verification are received from CN.
+12-13.	The RANAP: ENHANCED RELOCATION COMPLETE REQUEST message is sent from target HNB to HNB GW (via Iuh) and forwarded from HNB GW to MSC/SGSN (via Iu). The RANAP: ENHANCED RELOCATION COMPLETE REQUEST includes CSG ID IE and Cell Access Mode IE of the target cell.
+14-16.	After reception of RANAP: ENHANCED RELOCATION COMPLETE REQUEST the MSC/SGSN performs membership verification of the relocated UE according to CSG ID IE and Cell Access Mode IE received. The MSC/SGSN replies to the HNB GW with RANAP: ENHANCED RELOCATION COMPLETE RESPONSE containing the CSG Membership Status IE. The RANAP: ENHANCED RELOCATION COMPLETE RESPONSE message is forwarded from HNB GW to target HNB (via Iuh). The target HNB may apply the appropriate level of prioritisation to the UE according to the CSG Membership Status IE received.
+17-18.	In case of CS domain, the target HNB sends RANAP Enhanced Relocation Complete Confirm message to the MSC after completion of UP initialization.
+19-20. The MSC/SGSN requests the RNC to release the source-side Iu resources.",TS 25.467,5.11.2.3,/data/all_images/image_12.png,Enhanced Relocation from RNC to Hybrid HNB for CSG UEs.
+"Mobility from HNB cells (hybrid or open access) to macro RNC using Soft Handover (SHO) follows the same principles as mobility between macro cells and uses an Iur interface established between HNB and macro RNC via the HNB-GW to support RNSAP signalling.
+The HNB-GW acts as a single RNC towards the macro RNC (as it does towards the CN) and therefore acts as a concentrator for HNB-RNC connectivity via the HNB-GW.
+For this case there is no involvement of the CN in the SHO operations, as there is no access control/membership verification needed for SHO to a macro RNC.
+The HNB acts as a SRNC and requests resources from the macro RNC, however this may happen only in case of HNBs deployed in a secure and operator controlled way (coordinated deployment) and, in this case, it is managed by the CAC of the DRNC.
+Figure 5.11.3.1-1 shows the sequence of messages involved.
+Figure 5.11.3.1-1: Soft Handover HNB to RNC via HNB-GW.
+1.	HNB determines that a RL can be established to a macro RNC cell.
+2-7. Normal RL setup procedure between HNB and RNC via the HNB-GW.",TS 25.467,5.11.3.1,/data/all_images/image_13.jpeg,Soft Handover HNB to RNC via HNB-GW.
+"Mobility from macro cells to Open or Hybrid Access HNB cells using Soft Handover follows the same principles as mobility between macro cells and uses an Iur interface established between the HNB and the macro RNC via the HNB-GW to support RNSAP signalling.
+The HNB-GW acts as a single RNC towards the macro RNC (as it does towards the CN) and therefore acts as a concentrator for HNB-RNC connectivity via the HNB-GW.
+For this case of open or hybrid access HNB, there is no involvement of the CN in the SHO operations. For the case of SHO to hybrid access HNB, if supported, the Radio Link is established assuming the UE is non-member.
+The macro RNC acting as SRNC requests resources from the HNB, it is managed by the CAC of the HNB.
+Figure 5.11.3.2-1 shows the sequence of messages involved.
+Figure 5.11.3.2-1: Soft Handover from RNC to Open or Hybrid Access HNB via HNB-GW.
+1.	RNC determines that a RL can be established to a HNB cell.
+2-7. Normal RL setup procedure between RNC and HNB via the HNB-GW. For Hybrid cells, if supported, the Radio Link is established assuming the UE is a non-member.",TS 25.467,5.11.3.2,/data/all_images/image_14.jpeg,Soft Handover from RNC to Open or Hybrid Access HNB via HNB-GW.
+"Mobility from macro cells to Open or Hybrid Access HNB cells using Soft Handover follows the same principles as mobility between macro cells and uses an Iur interface established between the HNB and the macro RNC via the HNB-GW to support RNSAP signalling.
+The HNB-GW acts as a single RNC towards the macro RNC (as it does towards the CN) and therefore acts as a concentrator for HNB-RNC connectivity via the HNB-GW.
+For this case of open or hybrid access HNB, there is no involvement of the CN in the SHO operations. For the case of SHO to hybrid access HNB, if supported, the Radio Link is established assuming the UE is non-member.
+The macro RNC acting as SRNC requests resources from the HNB, it is managed by the CAC of the HNB.
+Figure 5.11.3.2-1 shows the sequence of messages involved.
+Figure 5.11.3.2-1: Soft Handover from RNC to Open or Hybrid Access HNB via HNB-GW.
+1.	RNC determines that a RL can be established to a HNB cell.
+2-7. Normal RL setup procedure between RNC and HNB via the HNB-GW. For Hybrid cells, if supported, the Radio Link is established assuming the UE is a non-member.",TS 25.467,5.11.3.2,/data/all_images/image_15.jpeg,Soft Handover from RNC to Open or Hybrid Access HNB via HNB-GW.
+"The CELL_FACH, CELL_PCH and URA_PCH mobility message flow is described in Figure 5.11.5-1 below.
+Figure 5.11.5-1: RNC to HNB CELL_FACH/CELL_PCH and URA_PCH mobility
+1.	At initial RRC Connection Setup, the source HNB assigns to the UE a U-RNTI based on its RNC-ID and a set of locally defined bits.
+2.	Subsequently, the UE performs Cell or URA Reselection to a HNB supporting CELL_FACH/CELL_PCH/URA_PCH.
+3.	Based on the received U-RNTI, the target HNB detects the UE is reselecting from a neighbour RNC.
+If, based on the received U-RNTI, the Target HNB cannot detect from which node the UE is coming from,
+3a.	it may establish an Iurh interface with the source RNC;
+3b.alternatively, it may terminate the mobility procedure, re-establish the RRC connection for the UE and skip the subsequent steps.
+4.	The HNB forwards the received message Cell/URA update via Uplink Signalling Transfer Indication RNSAP message to the selected HNB-GW.
+5.	The HNB-GW finds the proper source RNC based on the RNC-ID.
+6.	The HNB-GW forwards the RNSAP Uplink Signalling Transfer Indication message to the source RNC.
+7.	The source RNC may now execute the SRNS Relocation/Enhanced SRNS Relocation towards the target HNB to  transfer the UE context or initialise the UE context in the target HNB via RNSAP Common Transport Channel Resources Initialisation procedure.
+8.	The HNB sends to the UE an RRC: Cell Update Confirm message (in case of CELL_FACH or CELL_PCH) or an RRC: URA Update Confirm message (in case of URA_PCH) to terminate the mobility procedure. If the SRNS relocation procedure is not used, the RRC: Cell Update Confirm (in case of CELL_FACH or CELL_PCH) or the RRC: URA Update Confirm message (in case of URA_PCH) is sent by the serving HNB.",TS 25.467,5.11.5,/data/all_images/image_16.jpeg,RNC to HNB CELL_FACH/CELL_PCH and URA_PCH mobility
+"Figure 7.2-1 shows the protocol structure for Iuh, following the structure described in TS 25.401 [4].
+Figure 7.2-1: Iuh–Interface Protocol Stack.",TS 25.467,7.2,/data/all_images/image_17.png,Iuh–Interface Protocol Stack.
+"Figure 7.2.2.2-1: Establishment of signalling connection over Iupc and Iuh connections between HNB and SAS via HNB-GW – HNB Initiated.
+1.	If the Source HNB is configured for Iupc-connectivity via the HNB-GW, and wants to send a PCAP message to the SAS for which a signalling connection over the Iuh and Iupc connections has to be established, it issues a PUA:CONNECT message containing the PUA Context Id and the PCAP PDU1.
+2.	The HNB-GW identifies the signalling interface to which the PCAP message shall be routed to and maintains a mapping between the PUA-based signalling connection and the SCCP-based signalling connection for the HNB-SAS end-to-end. If the SAS indicator is included in the PUA: Connect message the HNB-GW may use this to route the PCAP message to the selected SAS.
+3.	The HNB-GW sends PCAP PDU1 to the SAS and the SAS sends back PCAP PDU2 (see TS 25.450 [37]).
+4.	The HNB-GW routes the PCAP PDU2 towards the Source HNB.
+5.	The HNB-GW sends a PUA:Direct Transfer message, including PCAP PDU2 if any, received from the SAS to the source HNB.",TS 25.467,7.2.2.2,/data/all_images/image_18.png,Establishment of signalling connection over Iupc and Iuh connections between HNB
+"Figure 7.2.2.3-1: Establishment of signalling connection over Iuh and Iupc connections between HNB and SAS via HNB-GW – HNB Initiated with refusal from SAS.
+1.	If the Source HNB is configured for Iupc-connectivity via the HNB-GW, and wants to send a PCAP message to the SAS for which a signalling connection over the Iuh and Iupc connections has to be established, it issues a PUA:CONNECT message containing the PUA Context Id and the PCAP PDU1.
+2.	The HNB-GW identifies the signalling interface to which the PCAP message shall be routed to and maintains a mapping between the PUA-based signalling connection and the SCCP-based signalling connection for the HNB-SAS end-to-end. If the SAS indicator is included in the PUA: Connect message the HNB-GW may use this to route the PCAP message to the selected SAS.
+3.	The HNB-GW sends PCAP PDU1 to the SAS as received from the HNB via SCCP Connection Request  and the SAS refuses the connection request (see TS 25.450 [37]).
+4.	The HNB-GW maps the SCCP:CREF message into a PUA:DISCONNECT.
+5.	The HNB-GW sends a PUA:DISCONNECT message to the source HNB, including the optional PCAP PDU2 if received from the SAS.",TS 25.467,7.2.2.3,/data/all_images/image_19.png,Establishment of signalling connection over Iuh and Iupc connections between HNB
+"Figure 7.2.2.4.1-1: Transport of PCAP messages via signalling connection over Iuh and Iupc connections – HNB initiated.
+If the Source HNB wants to send a PCAP message to the SAS for which a connection oriented data transfer service is already established for a location session, it issues a PUA:DIRECT TRANSFER message towards the HNB-GW which contains the PUA Context Id and the PCAP PDU.
+The HNB-GW will forward the PCAP PDU to the SAS within an SCCP message.",TS 25.467,7.2.2.4.1,/data/all_images/image_20.jpeg,Transport of PCAP messages via signalling connection over Iuh and Iupc
+"Figure 7.2.2.4.1-1: Transport of PCAP messages via signalling connection over Iuh and Iupc connections – HNB initiated.
+If the Source HNB wants to send a PCAP message to the SAS for which a connection oriented data transfer service is already established for a location session, it issues a PUA:DIRECT TRANSFER message towards the HNB-GW which contains the PUA Context Id and the PCAP PDU.
+The HNB-GW will forward the PCAP PDU to the SAS within an SCCP message.",TS 25.467,7.2.2.4.1,/data/all_images/image_21.jpeg,Transport of PCAP messages via signalling connection over Iuh and Iupc
+"Figure 7.2.2.5-1: Release of established signalling connection over Iupc and Iuh connections – HNB initiated.
+If an HNB wants to release a signalling connection previously established over Iupc and Iuh connections towards a SAS, it sends a PUA:DISCONNECT message, which includes the PUA Context Id and may include a PCAP PDU. The HNB-GW maps the PUA:DISCONNECT message to an SCCP:Release message and triggers the SCCP connection release procedure defined in TS 25.450 [37] for the coresponding SCPP connection.",TS 25.467,7.2.2.5,/data/all_images/image_22.png,Release of established signalling connection over Iupc and Iuh connections – HNB
+"Figure 7.2.2.5-1: Release of established signalling connection over Iupc and Iuh connections – HNB initiated.
+If an HNB wants to release a signalling connection previously established over Iupc and Iuh connections towards a SAS, it sends a PUA:DISCONNECT message, which includes the PUA Context Id and may include a PCAP PDU. The HNB-GW maps the PUA:DISCONNECT message to an SCCP:Release message and triggers the SCCP connection release procedure defined in TS 25.450 [37] for the coresponding SCPP connection.",TS 25.467,7.2.2.5,/data/all_images/image_23.jpeg,Release of established signalling connection over Iupc and Iuh connections – HNB
+"Figure 7.2.2.6.2-1: Connectionless data transfer over Iupc and Iuh connections – SAS initiated.
+If the SAS sends a PCAP PDU to the HNB-GW for the Receiving HNB, the HNB-GW has to be able to route the message to the correct HNB. The HNB-GW uses the PCAP transaction ID to determine the correct destination HNB.  Then the HNB-GW issues a PUA:CONNECTIONLESS TRANSFER message containing the PCAP PDU.",TS 25.467,7.2.2.6.2,/data/all_images/image_24.jpeg,Connectionless data transfer over Iupc and Iuh connections – SAS initiated.
+"Figure 7.3-1 shows the protocol structure for Iurh, following the structure described in TS 25.401 [4].
+Figure 7.3-1: Iurh–Interface Protocol Stack.
+NOTE 1:	RTCP is optional
+NOTE 2:	as specified in TS 25.425 [21] and TS 25.427 [22]
+NOTE 3:	as specified in TS 25.415 [17]",TS 25.467,7.3,/data/all_images/image_25.png,Iurh–Interface Protocol Stack.
+"Figure 7.3.2.2.1-1: Signalling Connection Establishment – Direct Iurh-connectivity.
+If the Sending HNB wants to send an RNSAP message to the Receiving HNB for which a dedicated Iurh signalling connection has to be established, it issues an RNA:CONNECT message containing the Iurh Context Id, the RNSAP PDU, the Senders HNB RNL Identity and the Receivers HNB RNL Identity. The Reception of the RNA:CONNECT message at the Receiving HNB completes the signalling connection establishment.",TS 25.467,7.3.2.2.1,/data/all_images/image_26.jpeg,Signalling Connection Establishment – Direct Iurh-connectivity.
+"Figure 7.3.3.2.1-1: Establishment of signalling connection over Iurh and Iur connections between HNB and RNC via HNB-GW – HNB Initiated.
+1.	If the Source HNB is configured for Iurh-connectivity via the HNB-GW, and wants to send an RNSAP message to the Target RNC for which signalling connection over Iurh and Iur connections has to be established, it issues an RNA:CONNECT message containing the Iurh Context Id, the RNSAP PDU1, the Source HNB RNL Identity and the Target RNC RNL Identity.
+2.	The HNB-GW identifies the signalling interface to which the RNA message shall be routed by the Target RNC’s RNL Identity as received from the Source HNB and maintains a mapping between the RNA-based signalling connection and the SCCP-based signalling connection for the HNB-RNC end-to-end.
+3.	The HNB-GW sends RNSAP PDU1 to the Target RNC and the Target RNC sends back RNSAP PDU2 (see TS 25.420 [31] subclause 4.5.1.3).
+4.	The HNB-GW routes the RNSAP PDU2 towards the Source HNB.
+5.	The HNB-GW sends an RNA:Direct Transfer message, including RNSAP PDU2 received from the Target RNC.",TS 25.467,7.3.3.2.1,/data/all_images/image_27.png,Establishment of signalling connection over Iurh and Iur connections between
+"Figure 7.3.3.2.2-1: Establishment of signalling connection over Iurh and Iur connections between HNB and RNC via HNB-GW – HNB Initiated with refusal from RNC.
+1.	If the Source HNB is configured for Iurh-connectivity via the HNB-GW, and wants to send an RNSAP message to the Target RNC, it issues an RNA:CONNECT message containing the Iurh Context Id, the RNSAP PDU1, the Source HNB RNL Identity and the Target RNC RNL Identity.
+2.	The HNB-GW identifies the signalling interface to which the RNA message shall be routed by the Target RNC’s RNL Identity as received from the Source HNB and maintains a mapping between the RNA-based signalling connection and the SCCP-based signalling connection for the HNB-RNC end-to-end communication.
+3.	The HNB-GW sends RNSAP PDU1 to the Target RNC as received from the HNB via SCCP:Connection Request and the Target RNC refuses the connection request (see TS 25.420 [31] subclause 4.5.1.3).
+4.	The HNB-GW maps the SCCP:CREF message into an RNA:DISCONNECT.
+5.	The HNB-GW sends an RNA:DISCONNECT message, including the optional RNSAP PDU2 if received from the Target RNC.",TS 25.467,7.3.3.2.2,/data/all_images/image_28.png,Establishment of signalling connection over Iurh and Iur connections between
+"Figure 7.3.3.2.3-1: Establishment of signalling connection over Iurh and Iur connections between HNB and RNC via HNB-GW – RNC Initiated.
+1.	The HNB-GW is seen by Source RNC as a (configured) neighbour RNC. Any signalling towards a target cell with a respective RNC-Id-prefix is sent to the HNB-GW. In this case the RNC triggers the SCCP connection establishment as described in TS 25.420 [31] subclause 4.5.1.3.
+2.	The HNB-GW has to be able (i) to extract the Target HNB RNL Id from the (Global) Cell-Id indicated in the initiating RNSAP PDU and (ii) to maintain a mapping between the SCCP-based signalling connection and the RNA-based signalling connection for the HNB-RNC end-to-end communication.
+3.	The HNB-GW sends an RNA:CONNECT message towards the appropriate HNB including the Iurh Context Id generated at Step 2, RNSAP PDU1 received from the RNC and the Global Ids of RNC and HNB.
+4-7. At the reception of the RNA:CONNECT message, the Target HNB processes RNSAP PDU1, generates the response RNSAP PDU2. The HNB replies then with an RNA:Direct Transfer message including the new RNSAP PDU2 and the RNC and HNB Ids. The HNB-GW will forward such pieces of information to the RNC (TS 25.420 [31] subclause 4.5.1.3).",TS 25.467,7.3.3.2.3,/data/all_images/image_29.jpeg,Establishment of signalling connection over Iurh and Iur connections between
+"Figure 7.3.3.3.1-1: Transport of RNSAP messages via signalling connection over Iurh and Iur connections – HNB initiated.
+If the Sending HNB wants to send an RNSAP message to the Receiving RNC for which a connection oriented data transfer service is already established, it issues an RNA:DIRECT TRANSFER message towards the HNB-GW which contains the Iurh Context Id, the RNSAP PDU and the Receivers HNB RNL Identity.
+The HNB-GW will forward the RNSAP PDU to the Receiving RNC within an SCCP message.",TS 25.467,7.3.3.3.1,/data/all_images/image_30.jpeg,Transport of RNSAP messages via signalling connection over Iurh and Iur
+"Figure 7.3.3.3.1-1: Transport of RNSAP messages via signalling connection over Iurh and Iur connections – HNB initiated.
+If the Sending HNB wants to send an RNSAP message to the Receiving RNC for which a connection oriented data transfer service is already established, it issues an RNA:DIRECT TRANSFER message towards the HNB-GW which contains the Iurh Context Id, the RNSAP PDU and the Receivers HNB RNL Identity.
+The HNB-GW will forward the RNSAP PDU to the Receiving RNC within an SCCP message.",TS 25.467,7.3.3.3.1,/data/all_images/image_31.jpeg,Transport of RNSAP messages via signalling connection over Iurh and Iur
+"Figure 7.3.3.4.1-1: Release of established signalling connection over Iurh and Iur connections – HNB initiated.
+If an HNB wants to release a signalling connection previously established over Iurh and Iur connections previously established towards an RNC, it sends an RNA:DISCONNECT message, which includes the Iurh Context Id and the Receivers HNB RNL Identity (i.e., the Global RNC Id) and may include an RNSAP PDU. The HNB-GW maps the RNA:DISCONNECT message to an SCCP:Released message and triggers the SCCP connection release procedure defined in TS 25.420 [31] subclause 4.5.1.4.",TS 25.467,7.3.3.4.1,/data/all_images/image_32.jpeg,Release of established signalling connection over Iurh and Iur connections – HNB
+"Figure 7.3.3.4.1-1: Release of established signalling connection over Iurh and Iur connections – HNB initiated.
+If an HNB wants to release a signalling connection previously established over Iurh and Iur connections previously established towards an RNC, it sends an RNA:DISCONNECT message, which includes the Iurh Context Id and the Receivers HNB RNL Identity (i.e., the Global RNC Id) and may include an RNSAP PDU. The HNB-GW maps the RNA:DISCONNECT message to an SCCP:Released message and triggers the SCCP connection release procedure defined in TS 25.420 [31] subclause 4.5.1.4.",TS 25.467,7.3.3.4.1,/data/all_images/image_33.jpeg,Release of established signalling connection over Iurh and Iur connections – HNB
+"Figure 7.3.3.5.1-1: Connectionless data transfer over Iurh and Iur connections – HNB initiated.
+If the Sending HNB wants to send in a connectionless manner an RNSAP PDU to the HNB-GW for the Receiving RNC, it issues an RNA:CONNECTIONLESS TRANSFER message containing the RNSAP PDU, the Senders and the Receivers HNB RNL Identities.
+The HNB-GW then generates and routes the RNSAP PDU within an SCCP message towards the Receiving RNC.",TS 25.467,7.3.3.5.1,/data/all_images/image_34.jpeg,Connectionless data transfer over Iurh and Iur connections – HNB initiated.
+"Figure 7.3.3.5.1-1: Connectionless data transfer over Iurh and Iur connections – HNB initiated.
+If the Sending HNB wants to send in a connectionless manner an RNSAP PDU to the HNB-GW for the Receiving RNC, it issues an RNA:CONNECTIONLESS TRANSFER message containing the RNSAP PDU, the Senders and the Receivers HNB RNL Identities.
+The HNB-GW then generates and routes the RNSAP PDU within an SCCP message towards the Receiving RNC.",TS 25.467,7.3.3.5.1,/data/all_images/image_35.jpeg,Connectionless data transfer over Iurh and Iur connections – HNB initiated.
+"The performance of using dynamic control of the receiver gain or UL attenuation can be obtained using the following analysis setup. The general set up for the uplink analysis is given in Figure 7.3.3.1-1. The cell edge case is considered first, where a HNB is deployed at the edge of a macro cell and it has an active HUE associated with it. There is also a MUE which is located close to the HNB. The HNB, HUE and the MUE are assumed to have 140dB PL with the MNB (X=140dB). The HUE and the MUE are assumed to be separated from the HNB by Y and Z dB PL, respectively.
+Figure 7.3.3.1-1: UL Interference Analysis Setup
+The PL values of interest (i.e., Y and Z) depend on the HNB coverage determined by the tx power chosen. Three deployment scenarios are considered: a) HNB with 70dB coverage radius, b) HNB with 80dB coverage radius, and c) HNB with 90dB coverage radius. Both cell edge and cell site scenarios are analyzed. The performance analysis for the cell edge and cell site scenarios demonstrate the need for an adaptive algorithm that adjusts the UL attenuation / padding based on the out-of-cell interference experienced at the HNB.",TR 25.967,7.3.3.1,/data/all_images/image_36.jpeg,UL cell edge scenario: noise rise contribution of non-associated UEs
+"The performance of using dynamic control of the receiver gain or UL attenuation can be obtained using the following analysis setup. The general set up for the uplink analysis is given in Figure 7.3.3.1-1. The cell edge case is considered first, where a HNB is deployed at the edge of a macro cell and it has an active HUE associated with it. There is also a MUE which is located close to the HNB. The HNB, HUE and the MUE are assumed to have 140dB PL with the MNB (X=140dB). The HUE and the MUE are assumed to be separated from the HNB by Y and Z dB PL, respectively.
+Figure 7.3.3.1-1: UL Interference Analysis Setup
+The PL values of interest (i.e., Y and Z) depend on the HNB coverage determined by the tx power chosen. Three deployment scenarios are considered: a) HNB with 70dB coverage radius, b) HNB with 80dB coverage radius, and c) HNB with 90dB coverage radius. Both cell edge and cell site scenarios are analyzed. The performance analysis for the cell edge and cell site scenarios demonstrate the need for an adaptive algorithm that adjusts the UL attenuation / padding based on the out-of-cell interference experienced at the HNB.",TR 25.967,7.3.3.1,/data/all_images/image_37.jpeg,UL cell edge scenario: Ec/No at serving NB
+"The performance of using dynamic control of the receiver gain or UL attenuation can be obtained using the following analysis setup. The general set up for the uplink analysis is given in Figure 7.3.3.1-1. The cell edge case is considered first, where a HNB is deployed at the edge of a macro cell and it has an active HUE associated with it. There is also a MUE which is located close to the HNB. The HNB, HUE and the MUE are assumed to have 140dB PL with the MNB (X=140dB). The HUE and the MUE are assumed to be separated from the HNB by Y and Z dB PL, respectively.
+Figure 7.3.3.1-1: UL Interference Analysis Setup
+The PL values of interest (i.e., Y and Z) depend on the HNB coverage determined by the tx power chosen. Three deployment scenarios are considered: a) HNB with 70dB coverage radius, b) HNB with 80dB coverage radius, and c) HNB with 90dB coverage radius. Both cell edge and cell site scenarios are analyzed. The performance analysis for the cell edge and cell site scenarios demonstrate the need for an adaptive algorithm that adjusts the UL attenuation / padding based on the out-of-cell interference experienced at the HNB.",TR 25.967,7.3.3.1,/data/all_images/image_38.jpeg,UL cell site scenario: noise rise contribution of non-associated UEs
+"The performance of using dynamic control of the receiver gain or UL attenuation can be obtained using the following analysis setup. The general set up for the uplink analysis is given in Figure 7.3.3.1-1. The cell edge case is considered first, where a HNB is deployed at the edge of a macro cell and it has an active HUE associated with it. There is also a MUE which is located close to the HNB. The HNB, HUE and the MUE are assumed to have 140dB PL with the MNB (X=140dB). The HUE and the MUE are assumed to be separated from the HNB by Y and Z dB PL, respectively.
+Figure 7.3.3.1-1: UL Interference Analysis Setup
+The PL values of interest (i.e., Y and Z) depend on the HNB coverage determined by the tx power chosen. Three deployment scenarios are considered: a) HNB with 70dB coverage radius, b) HNB with 80dB coverage radius, and c) HNB with 90dB coverage radius. Both cell edge and cell site scenarios are analyzed. The performance analysis for the cell edge and cell site scenarios demonstrate the need for an adaptive algorithm that adjusts the UL attenuation / padding based on the out-of-cell interference experienced at the HNB.",TR 25.967,7.3.3.1,/data/all_images/image_39.jpeg,UL cell site scenario: Ec/No at serving NB
+"Figure 4.1-1: Interaction between RNC and O&M due to ANR
+The ANR function resides in the RNC and is composed of the Neighbour Relation Table (NRT) Management Function, Neighbour Detection Function and Neighbour Removal Function.
+The Neighbour Detection Function detects new neighbours and adds them to the NRT. The Neighbour Removal Function removes outdated NRs.
+A Neighbour cell Relation (NR) between a Base UTRAN Cell and a Neighbour Cell exists if the RNC controlling the Base UTRAN Cell:
+a)	Knows the following Neighbour Cell information:
+-	Neighbour cell is in UTRAN: PLMN-Id, Cell Identifier(C-ID), RNC-ID/Extended RNC-ID,
+-	Neighbour cell is in LTE: ECGI (PLMN Id + Cell Identity)
+-	Neighbour cell is in GSM/GERAN: PLMN Id, LAC, CI, BSIC
+b)	Has an entry in the Neighbour Relation Table for the Base UTRAN Cell identifying the neighbour cell.
+c)	Has all required attributes defined in the Neighbour Relation Table entry or set to default values. Among these attributes are the frequency information (UARFCN, BCCH ARFCN, EARFCN) and handover routing parameters not already considered in (a):
+-	Neighbour cell is in UTRAN: LAC and RAC
+-	Neighbour cell is in LTE: TAI
+For each NR, the NRT contains the Neighbour Cell Identifier (NCI), which identifies the neighbour cells. A neighbour cell may be a UTRAN, LTE or GSM cell. Furthermore, each NR has two attributes, the No Remove and the No HO attributes. These attributes have the following definitions:
+-	No Remove: If checked, the RNC shall not remove the Neighbour cell Relation from the NRT.
+-	No HO: If checked, the Neighbour cell Relation shall not be used as a neighbour cell by Intra RNS, Inter RNS or Inter RAT mobility functions in UTRAN.
+The ANR function also allows O&M to manage the NRT. O&M can add and delete NRs. It can also change the attributes of the NR. The O&M system is informed about changes in the NRT.",TS 25.484,4.1,/data/all_images/image_40.png,Interaction between RNC and O&M due to ANR
+"ANR logging is configured with Logged Measurements Configuration procedure, as shown in Figure 5.3-1.
+Figure 5.3-1: ANR Logging configuration with Logging measurement configuration message
+UTRAN initiates the ANR logging procedure to UE by sending ANR logging configuration in the Logging measurement configuration message as defined in TS 25.331.",TS 25.484,5.3,/data/all_images/image_41.jpeg,ANR Logging configuration with Logging measurement configuration message
+"Figure 3.3.7-1 illustrates an example setup of a TE-TA-ME system for SMS. Location of volatile and non-volatile parameter memories, and the operations to change the parameter values are shown. +CSMP is used to set the text mode header values of SMS-SUBMIT (or SMS-DELIVER when received message is written from TE to a storage). The volatile memory may as well be in the ME, or when no volatile memory is used, +CSMP, +CSCA and +CSCB settings are stored directly to non-volatile memory of ME.
+Figure 3.3.7-1: Message service parameter procedures
+In this example, the volatile parameter settings of TA are used to construct messages in text mode. SMSC address setting is used also in PDU mode. The next example illustrates a session to restore the message parameters from the ME to the TA, and to set up the CBM identifiers (and languages) which are wanted to be received:
+AT+CRES			(restore settings from non-volatile memory to volatile memory)
+OK
+AT+CSMP?;+CSCA?		(query SM parameters)
++CSMP: 17,167,0,0		(default values for SMS-SUBMIT)
++CSCA: ""+358501234567"",145	(SMSC address)
+OK
+AT+CSDH=1			(show all headers in text mode)
+OK
+AT+CSCB=1			(all CBMs are accepted)
+OK",TS 27.005,3.3.7,/data/all_images/image_42.jpeg,Message service parameter procedures
+"Message forwarding is done as illustrated in figure 3.4.5-1. Optional +CNMA acknowledgement procedure is not presented. In this example, there is no TA memory for messages and result code buffer is situated in TA. The routing of message waiting indication group (discard message) SMS-DELIVERs equal to class 0 messages, and the routing of message waiting indication group (store message) SMS-DELIVERs equal to class 2 messages.
+Figure 3.4.5-1: Message receiving procedures
+Setting new message indications:
+AT+CNMI=?		(query new message unsolicited result code modes)
++CNMI: (0-2),(0-3),(0-3),(0,1),(0,1)
+OK
+AT+CNMI=2,1,0,1,0	(send SM and status report indications to TE when TA in command mode, otherwise buffer)
+OK
+In this example, the TA is set so that it should send an unsolicited result code +CMTI: <mem>,<index> to the TE when a new SMS-DELIVER is received from the network and stored successfully to storage <mem>, and an unsolicited result code +CDS:... when a SMS-STATUS-REPORT is received. These result codes are routed to the TE when TA is in command mode, but buffered when in on-line data mode. Now, if new SM is received, it can be read as follows (text mode with no detailed header information; GSM 7 bit default alphabet used in message body):
++CMTI: ""ME"",2	(new message received in index 2)
+AT+CMGR=2		(read the message)
++CMGR: ""REC UNREAD"",""+358507654321"",""Mr. Jones"",""95/07/03,17:38:15+04""
+This is the Mr. Jones testing
+OK
+In the next example all messages of storage <mem1> are listed (text mode with no detailed header information; GSM 7 bit default alphabet used in message bodies):
+AT+CMGL=""ALL""	(read all SMs)
++CMGL: 1,""REC READ"",""+358501234567"",""Mr. Smith"",""95/07/03,17:45:03+04""
+This is the body of the message.
++CMGL: 2,""STO UNSENT"",""+358501234567"",""Mr. Smith"",
+This is the body of the reply.
+OK
+The next example shows a method to read new CBMs received from the network (text mode; GSM 7 bit default alphabet used in message bodies):
+AT+CNMI=2,,2,,0			(CBMs will be sent to the TE)
+OK
+AT+CPMS=""BM"";+CMGL			(select CBM memory for reading; list all unread CBMs)
++CMGL: 1,""REC UNREAD"",100,40,1,3	(first page of three page weather information)
+Weather in  3rd of July 1995
++CMGL: 2,""REC UNREAD"",100,40,2,3	(second page of three page weather information)
+: cloudy, snow storms, -20 degrees Celsius, wind -14 m/s NE
++CMGL: 3,""REC UNREAD"",100,40,3,3	(third page of three page weather information)
+: sunny, 40 degrees Celsius, wind 1 m/s SW
+OK",TS 27.005,3.4.5,/data/all_images/image_43.jpeg,Message receiving procedures
+"Figure 3.5.7-1 is an example of a TE-TA-ME setup when messages are sent to network or stored to ME. The volatile memory may as well be in the ME, or a non-volatile memory may be used instead when constructing messages.
+Figure 3.5.7-1: Message service send and write procedures
+An example of sending a GSM 7 bit default alphabet message in text mode and a SMS-STATUS-REPORT is wanted:
+AT+CNMI?			(check that status reports are routed to TE)
++CNMI: 2,1,0,1,0
+OK
+AT+CSMP=49,167,0,0		(status report wanted; otherwise default settings)
+OK
+AT+CMGS=""+358501234567""	(start editing a message)
+> This the first line.	(edit first line and press carriage return)
+> This is the last line.^Z	(edit second line and send message by pressing control-Z)
++CMGS: 10			(success: message reference 10 returned from SMSC)
+OK
++CDS: 2,10,""+358501234567"",145,""95/07/04/13:12:14+04"",
+""95/07/04/13:12:20+04"",0	(status report of successful message delivery received)
+Storing an unsent message in memory, sending it from there, and deleting it:
+AT+CPMS?			(check memory settings)
++CPMS: ""ME"",4,10,""ME"",4,10,""ME"",4,10
+OK
+AT+CMGW=""9501231234""	(write message)
+> This is the message body^Z
++CMGW: 7			(index number in storage returned)
+OK
+AT+CMSS=7			(send from storage)
++CMSS: 12			(success: reference value 12 sent from SC)
+OK
+AT+CMGD=7			(delete message)
+OK",TS 27.005,3.5.7,/data/all_images/image_44.jpeg,Message service send and write procedures
+"If a UICC connected to an MT uses USIM Application Toolkit (USAT), some USAT features can be provided by the MT itself, whereas other features can be implemented in the TE. This applies especially to MTs with limited capabilities, where the user interface could be provided by the TE.
+If there are multiple entities inside the TE providing USAT services, for the purpose of this specification, the TE is visible as one entity handling AT commands and responses on the interface to the TA/MT, see figure 12.1-1.
+Figure 12.1-1: Overview of the interfaces between TE, TA/MT and UICC for USAT
+The AT commands for definition of the USAT profiles and transmission of USAT proactive commands, USAT terminal responses and USAT envelope commands between the TE and UICC are specified in the subsequent clauses.
+Compared to APDUs, where the MT is the initiator, USAT defines logic where the UICC is the initiator of the USAT proactive commands and the MT sends responses to these commands. Due to that, USAT proactive commands are sent in unsolicited result codes, whereas the associated responses are transported in subsequent AT commands.",TS 27.007,12.1,/data/all_images/image_45.png,"Overview of the interfaces between TE, TA/MT and UICC for USAT"
+"13.000 Containers are on a ship and later on on the dock of the container terminal. In each container, the UE collects the data from both embedded sensors and remote sensors and aggregates it in packets to be forwarded.
+On a cargo vessel, one of the main challenges is that the containers are stocked together in large populations concentrated in limited spaces in very high density and arranged in stacks and about half of the containers are stowed under-deck where the space available for the propagation of the signals is significantly reduced. In addition, during the navigation the ship hold is isolated by a steel hatch cover which strongly limits the propagation of signals inwards and outwards. Moreover, harsh weather conditions can also degrade the performances of radio communications. Therefore, the communication is reduced and not all containers are able to communicate with the cellular network. Overall, the position of a container will vary from travel to travel. In one travel it will be in bad condition to be able to communicate while the next travel it could be in a better situation.
+Furthermore, when the ship arrives to port, these containers plus the one already in the port will compete for the same radio frequencies creating a non-desirable temporary overload. Therefore, it is more appropriate to adopt efficient strategies to manage and distribute the traffic load in this context.
+To avoid this situation and to be able to communicate their data, the UE of the containers which cannot connect directly to the network are identifying and using others containers’ UE which are better situated as relays thought with single hop or multi-hops to communicate their data depending on their battery usage.
+An UE can be identified by several UEs as being able to communicate with the WAN (terrestrial or satellite) and to ultimately route their data. This chain of relays and group of UEs is forming a dynamic and temporary “virtual cluster” where the UE in charge of relaying the data of the other UEs becomes the head of this cluster. In an area with many containers, several virtual clusters can be formed and only the head of the cluster is communicating with the WAN as illustrated by Figure 5.2.3-1 and Figure 5.2.3-3. All UEs are able to be used as relay. UEs can “join” this virtual cluster as long as they are given permission. They can also “leave” the cluster when selecting another UE to route their data.
+Figure 5.2.3-1: Communication clusters between containers
+In a typical case and as average, a chain of relays is likely to be formed of 2 to 3 hops but in case of very dense area of containers stacked combined with very harsh environment, a chain of 9 hops is foreseen as to be the upper maximum to be supported.
+To be able to identify the UE relaying the data and to create these virtual clusters, all UE needs to be able to listen the other UEs in a very low power mode. To be viable, the listening mode should not exceed more than 1% per year of the initial battery capacity of the UE. Typically for a 3,6 V battery with a nominal capacity of 12 Ah, it will represent less than 50 µJ / second.  This should be considered as the maximum usage to be able to have business model viable for the industry.
+The UE in charge of the virtual cluster aggregates all data from its members and sends it.
+By doing such a scheme, the battery of each UE is optimized at maximum.
+In the case of a gateway is present (either on a ship or in shore in the port/terminal), the gateway is in charge of the cluster and is the ultimate relay to the 5G WAN access network as illustrated by Figure 5.2.3-2.
+A cluster formed only by UEs shall be limited in term of capacity to remain efficient. It is foreseen that such cluster should be formed of maximum 4.000 UEs while a cluster managed by a gateway shall be able to support as much as 50.000 UEs.
+Figure 5.2.3-2: Communications between containers in a ship
+All the communications need to be secured and only UE of containers that are allowed to communicate between them and gateways recognised can be used in a cluster and as relay.
+Figure 5.2.3-3: Different communication clusters of containers in a container terminal",TR 22.866,5.2.3,/data/all_images/image_46.jpeg,Communication clusters between containers
+"13.000 Containers are on a ship and later on on the dock of the container terminal. In each container, the UE collects the data from both embedded sensors and remote sensors and aggregates it in packets to be forwarded.
+On a cargo vessel, one of the main challenges is that the containers are stocked together in large populations concentrated in limited spaces in very high density and arranged in stacks and about half of the containers are stowed under-deck where the space available for the propagation of the signals is significantly reduced. In addition, during the navigation the ship hold is isolated by a steel hatch cover which strongly limits the propagation of signals inwards and outwards. Moreover, harsh weather conditions can also degrade the performances of radio communications. Therefore, the communication is reduced and not all containers are able to communicate with the cellular network. Overall, the position of a container will vary from travel to travel. In one travel it will be in bad condition to be able to communicate while the next travel it could be in a better situation.
+Furthermore, when the ship arrives to port, these containers plus the one already in the port will compete for the same radio frequencies creating a non-desirable temporary overload. Therefore, it is more appropriate to adopt efficient strategies to manage and distribute the traffic load in this context.
+To avoid this situation and to be able to communicate their data, the UE of the containers which cannot connect directly to the network are identifying and using others containers’ UE which are better situated as relays thought with single hop or multi-hops to communicate their data depending on their battery usage.
+An UE can be identified by several UEs as being able to communicate with the WAN (terrestrial or satellite) and to ultimately route their data. This chain of relays and group of UEs is forming a dynamic and temporary “virtual cluster” where the UE in charge of relaying the data of the other UEs becomes the head of this cluster. In an area with many containers, several virtual clusters can be formed and only the head of the cluster is communicating with the WAN as illustrated by Figure 5.2.3-1 and Figure 5.2.3-3. All UEs are able to be used as relay. UEs can “join” this virtual cluster as long as they are given permission. They can also “leave” the cluster when selecting another UE to route their data.
+Figure 5.2.3-1: Communication clusters between containers
+In a typical case and as average, a chain of relays is likely to be formed of 2 to 3 hops but in case of very dense area of containers stacked combined with very harsh environment, a chain of 9 hops is foreseen as to be the upper maximum to be supported.
+To be able to identify the UE relaying the data and to create these virtual clusters, all UE needs to be able to listen the other UEs in a very low power mode. To be viable, the listening mode should not exceed more than 1% per year of the initial battery capacity of the UE. Typically for a 3,6 V battery with a nominal capacity of 12 Ah, it will represent less than 50 µJ / second.  This should be considered as the maximum usage to be able to have business model viable for the industry.
+The UE in charge of the virtual cluster aggregates all data from its members and sends it.
+By doing such a scheme, the battery of each UE is optimized at maximum.
+In the case of a gateway is present (either on a ship or in shore in the port/terminal), the gateway is in charge of the cluster and is the ultimate relay to the 5G WAN access network as illustrated by Figure 5.2.3-2.
+A cluster formed only by UEs shall be limited in term of capacity to remain efficient. It is foreseen that such cluster should be formed of maximum 4.000 UEs while a cluster managed by a gateway shall be able to support as much as 50.000 UEs.
+Figure 5.2.3-2: Communications between containers in a ship
+All the communications need to be secured and only UE of containers that are allowed to communicate between them and gateways recognised can be used in a cluster and as relay.
+Figure 5.2.3-3: Different communication clusters of containers in a container terminal",TR 22.866,5.2.3,/data/all_images/image_47.png,Communications between containers in a ship
+"13.000 Containers are on a ship and later on on the dock of the container terminal. In each container, the UE collects the data from both embedded sensors and remote sensors and aggregates it in packets to be forwarded.
+On a cargo vessel, one of the main challenges is that the containers are stocked together in large populations concentrated in limited spaces in very high density and arranged in stacks and about half of the containers are stowed under-deck where the space available for the propagation of the signals is significantly reduced. In addition, during the navigation the ship hold is isolated by a steel hatch cover which strongly limits the propagation of signals inwards and outwards. Moreover, harsh weather conditions can also degrade the performances of radio communications. Therefore, the communication is reduced and not all containers are able to communicate with the cellular network. Overall, the position of a container will vary from travel to travel. In one travel it will be in bad condition to be able to communicate while the next travel it could be in a better situation.
+Furthermore, when the ship arrives to port, these containers plus the one already in the port will compete for the same radio frequencies creating a non-desirable temporary overload. Therefore, it is more appropriate to adopt efficient strategies to manage and distribute the traffic load in this context.
+To avoid this situation and to be able to communicate their data, the UE of the containers which cannot connect directly to the network are identifying and using others containers’ UE which are better situated as relays thought with single hop or multi-hops to communicate their data depending on their battery usage.
+An UE can be identified by several UEs as being able to communicate with the WAN (terrestrial or satellite) and to ultimately route their data. This chain of relays and group of UEs is forming a dynamic and temporary “virtual cluster” where the UE in charge of relaying the data of the other UEs becomes the head of this cluster. In an area with many containers, several virtual clusters can be formed and only the head of the cluster is communicating with the WAN as illustrated by Figure 5.2.3-1 and Figure 5.2.3-3. All UEs are able to be used as relay. UEs can “join” this virtual cluster as long as they are given permission. They can also “leave” the cluster when selecting another UE to route their data.
+Figure 5.2.3-1: Communication clusters between containers
+In a typical case and as average, a chain of relays is likely to be formed of 2 to 3 hops but in case of very dense area of containers stacked combined with very harsh environment, a chain of 9 hops is foreseen as to be the upper maximum to be supported.
+To be able to identify the UE relaying the data and to create these virtual clusters, all UE needs to be able to listen the other UEs in a very low power mode. To be viable, the listening mode should not exceed more than 1% per year of the initial battery capacity of the UE. Typically for a 3,6 V battery with a nominal capacity of 12 Ah, it will represent less than 50 µJ / second.  This should be considered as the maximum usage to be able to have business model viable for the industry.
+The UE in charge of the virtual cluster aggregates all data from its members and sends it.
+By doing such a scheme, the battery of each UE is optimized at maximum.
+In the case of a gateway is present (either on a ship or in shore in the port/terminal), the gateway is in charge of the cluster and is the ultimate relay to the 5G WAN access network as illustrated by Figure 5.2.3-2.
+A cluster formed only by UEs shall be limited in term of capacity to remain efficient. It is foreseen that such cluster should be formed of maximum 4.000 UEs while a cluster managed by a gateway shall be able to support as much as 50.000 UEs.
+Figure 5.2.3-2: Communications between containers in a ship
+All the communications need to be secured and only UE of containers that are allowed to communicate between them and gateways recognised can be used in a cluster and as relay.
+Figure 5.2.3-3: Different communication clusters of containers in a container terminal",TR 22.866,5.2.3,/data/all_images/image_48.jpeg,Communications between containers in a ship
+"Each wagon to be tracked is equipped with a battery-powered IoT type UE including a 5G communication module. Depending on its content and its purpose (nature of the goods transported), the wagon is including different sensors and is able to detect critical events (physical shocks, vibrations, temperature, dislocation…) as illustrated in figure 4.
+Figure 5.3.2-1: Different sensors managed in a wagon
+The battery-powered UE should be able to operate for a period of 20 years without large capacity battery packs and without being replaced during this period of time.
+Depending on the service level required by the owner of the goods and the supply chain associated, the wagon sends regular status update (could vary between one every hour to twice a day – periodicity could even be set up to 10 min). The status update can be based on event (arrival on station for example). Additionally, based on non desired events such as shocks, the wagon can send an alarm to inform of the event. The conductor of the locomotive may need to be informed of such event to trigger right answer.
+A locomotive can be equipped with a gateway including a 5G communications module that can communicate to satellite access networks.
+The size of the data payload containing the status information related to a wagon can be up to 2500 Bytes. This size depends as well as the service level required by the carried goods (refrigerated vans with perishable goods for example are providing more data based on various additional sensors than a wagon for mineral transportation).
+The 5G system is interfaced to an application server (e.g. Wagons Tracking Management System). The payload size and the periodicity by the application are defined according to the context expected.",TR 22.866,5.3.2,/data/all_images/image_49.jpeg,Different sensors managed in a wagon
