@@ -1,0 +1,337 @@
+00:28:38  INFO      ======================================================================
+00:28:38  INFO        Milestone 4 — Dense Semantic Baselines  (BGE-large-en-v1.5)
+00:28:38  INFO      ======================================================================
+00:28:38  INFO      Device: cuda  (GPUs available: 4)
+00:28:38  INFO      Loading corpus from /DATA1/prabhakar/telecom/All Images Path.csv
+00:28:38  INFO      Corpus: 3766 rows, cols: ['Context', 'Source', 'Subclause', 'Image Path', 'Image Caption']
+00:28:38  INFO      L1 corpus (Caption only)   : 3766 documents
+00:28:38  INFO      L2 corpus (Caption+Context): 3766 documents
+00:28:38  INFO      Loading query set: /DATA5/prabhakar/telecom_retrieval/queries/q1_captions.json
+00:28:38  INFO        3766 queries  (set=Q1)
+00:28:38  INFO      Loading query set: /DATA5/prabhakar/telecom_retrieval/queries/q2_paraphrased.json
+00:28:38  INFO        3766 queries  (set=Q2)
+00:28:38  INFO      Loading query set: /DATA5/prabhakar/telecom_retrieval/queries/q3_context.json
+00:28:38  INFO        3542 queries  (set=Q3)
+00:28:38  INFO      Loading duplicate mapping …
+00:28:38  INFO      Duplicate mapping loaded: 3458 hashes, 3766 total rows
+00:28:38  INFO      Loading model: BAAI/bge-large-en-v1.5  (device=cuda)
+00:28:38  INFO      HTTP Request: HEAD https://huggingface.co/BAAI/bge-large-en-v1.5/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+00:28:38  INFO      HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-large-en-v1.5/d4aa6901d3a41ba39fb536a557fa166f842b0e09/modules.json "HTTP/1.1 200 OK"
+00:28:39  INFO      HTTP Request: GET https://huggingface.co/api/resolve-cache/models/BAAI/bge-large-en-v1.5/d4aa6901d3a41ba39fb536a557fa166f842b0e09/modules.json "HTTP/1.1 200 OK"
+00:28:39  INFO      HTTP Request: HEAD https://huggingface.co/BAAI/bge-large-en-v1.5/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+00:28:39  INFO      HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-large-en-v1.5/d4aa6901d3a41ba39fb536a557fa166f842b0e09/config_sentence_transformers.json "HTTP/1.1 200 OK"
+00:28:40  INFO      HTTP Request: GET https://huggingface.co/api/resolve-cache/models/BAAI/bge-large-en-v1.5/d4aa6901d3a41ba39fb536a557fa166f842b0e09/config_sentence_transformers.json "HTTP/1.1 200 OK"
+00:28:40  INFO      Loading SentenceTransformer model from BAAI/bge-large-en-v1.5.
+00:28:40  INFO      HTTP Request: HEAD https://huggingface.co/BAAI/bge-large-en-v1.5/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+00:28:40  INFO      HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-large-en-v1.5/d4aa6901d3a41ba39fb536a557fa166f842b0e09/config_sentence_transformers.json "HTTP/1.1 200 OK"
+00:28:40  INFO      HTTP Request: HEAD https://huggingface.co/BAAI/bge-large-en-v1.5/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+00:28:40  INFO      HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-large-en-v1.5/d4aa6901d3a41ba39fb536a557fa166f842b0e09/README.md "HTTP/1.1 200 OK"
+00:28:41  INFO      HTTP Request: GET https://huggingface.co/api/resolve-cache/models/BAAI/bge-large-en-v1.5/d4aa6901d3a41ba39fb536a557fa166f842b0e09/README.md "HTTP/1.1 200 OK"
+00:28:41  INFO      HTTP Request: HEAD https://huggingface.co/BAAI/bge-large-en-v1.5/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+00:28:41  INFO      HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-large-en-v1.5/d4aa6901d3a41ba39fb536a557fa166f842b0e09/modules.json "HTTP/1.1 200 OK"
+00:28:41  INFO      HTTP Request: HEAD https://huggingface.co/BAAI/bge-large-en-v1.5/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+00:28:41  INFO      HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-large-en-v1.5/d4aa6901d3a41ba39fb536a557fa166f842b0e09/sentence_bert_config.json "HTTP/1.1 200 OK"
+00:28:42  INFO      HTTP Request: GET https://huggingface.co/api/resolve-cache/models/BAAI/bge-large-en-v1.5/d4aa6901d3a41ba39fb536a557fa166f842b0e09/sentence_bert_config.json "HTTP/1.1 200 OK"
+00:28:42  INFO      HTTP Request: HEAD https://huggingface.co/BAAI/bge-large-en-v1.5/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+00:28:42  INFO      HTTP Request: HEAD https://huggingface.co/BAAI/bge-large-en-v1.5/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+00:28:42  INFO      HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-large-en-v1.5/d4aa6901d3a41ba39fb536a557fa166f842b0e09/config.json "HTTP/1.1 200 OK"
+00:28:43  INFO      HTTP Request: GET https://huggingface.co/api/resolve-cache/models/BAAI/bge-large-en-v1.5/d4aa6901d3a41ba39fb536a557fa166f842b0e09/config.json "HTTP/1.1 200 OK"
+00:28:43  INFO      HTTP Request: HEAD https://huggingface.co/BAAI/bge-large-en-v1.5/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+00:28:43  INFO      HTTP Request: HEAD https://huggingface.co/BAAI/bge-large-en-v1.5/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+00:28:43  INFO      HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-large-en-v1.5/d4aa6901d3a41ba39fb536a557fa166f842b0e09/config.json "HTTP/1.1 200 OK"
+00:28:44  INFO      HTTP Request: HEAD https://huggingface.co/BAAI/bge-large-en-v1.5/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+00:28:44  INFO      HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-large-en-v1.5/xet-read-token/d4aa6901d3a41ba39fb536a557fa166f842b0e09 "HTTP/1.1 200 OK"
+
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 391/391 [00:00<00:00, 8496.30it/s]
+[1mBertModel LOAD REPORT[0m from: BAAI/bge-large-en-v1.5
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+00:28:58  INFO      HTTP Request: HEAD https://huggingface.co/BAAI/bge-large-en-v1.5/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+00:28:58  INFO      HTTP Request: HEAD https://huggingface.co/BAAI/bge-large-en-v1.5/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+00:28:58  INFO      HTTP Request: HEAD https://huggingface.co/BAAI/bge-large-en-v1.5/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+00:28:59  INFO      HTTP Request: HEAD https://huggingface.co/BAAI/bge-large-en-v1.5/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+00:28:59  INFO      HTTP Request: HEAD https://huggingface.co/BAAI/bge-large-en-v1.5/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+00:28:59  INFO      HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-large-en-v1.5/d4aa6901d3a41ba39fb536a557fa166f842b0e09/tokenizer_config.json "HTTP/1.1 200 OK"
+00:28:59  INFO      HTTP Request: GET https://huggingface.co/api/resolve-cache/models/BAAI/bge-large-en-v1.5/d4aa6901d3a41ba39fb536a557fa166f842b0e09/tokenizer_config.json "HTTP/1.1 200 OK"
+00:29:00  INFO      HTTP Request: HEAD https://huggingface.co/BAAI/bge-large-en-v1.5/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+00:29:00  INFO      HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-large-en-v1.5/d4aa6901d3a41ba39fb536a557fa166f842b0e09/config.json "HTTP/1.1 200 OK"
+00:29:00  INFO      HTTP Request: HEAD https://huggingface.co/BAAI/bge-large-en-v1.5/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+00:29:00  INFO      HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-large-en-v1.5/d4aa6901d3a41ba39fb536a557fa166f842b0e09/config.json "HTTP/1.1 200 OK"
+00:29:00  INFO      HTTP Request: HEAD https://huggingface.co/BAAI/bge-large-en-v1.5/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+00:29:00  INFO      HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-large-en-v1.5/d4aa6901d3a41ba39fb536a557fa166f842b0e09/tokenizer_config.json "HTTP/1.1 200 OK"
+00:29:00  INFO      HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-large-en-v1.5/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+00:29:01  INFO      HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-large-en-v1.5/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+00:29:01  INFO      HTTP Request: HEAD https://huggingface.co/BAAI/bge-large-en-v1.5/resolve/main/vocab.txt "HTTP/1.1 307 Temporary Redirect"
+00:29:01  INFO      HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-large-en-v1.5/d4aa6901d3a41ba39fb536a557fa166f842b0e09/vocab.txt "HTTP/1.1 200 OK"
+00:29:01  INFO      HTTP Request: GET https://huggingface.co/api/resolve-cache/models/BAAI/bge-large-en-v1.5/d4aa6901d3a41ba39fb536a557fa166f842b0e09/vocab.txt "HTTP/1.1 200 OK"
+00:29:02  INFO      HTTP Request: HEAD https://huggingface.co/BAAI/bge-large-en-v1.5/resolve/main/tokenizer.json "HTTP/1.1 307 Temporary Redirect"
+00:29:02  INFO      HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-large-en-v1.5/d4aa6901d3a41ba39fb536a557fa166f842b0e09/tokenizer.json "HTTP/1.1 200 OK"
+00:29:02  INFO      HTTP Request: GET https://huggingface.co/api/resolve-cache/models/BAAI/bge-large-en-v1.5/d4aa6901d3a41ba39fb536a557fa166f842b0e09/tokenizer.json "HTTP/1.1 200 OK"
+00:29:03  INFO      HTTP Request: HEAD https://huggingface.co/BAAI/bge-large-en-v1.5/resolve/main/added_tokens.json "HTTP/1.1 404 Not Found"
+00:29:03  INFO      HTTP Request: HEAD https://huggingface.co/BAAI/bge-large-en-v1.5/resolve/main/special_tokens_map.json "HTTP/1.1 307 Temporary Redirect"
+00:29:03  INFO      HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-large-en-v1.5/d4aa6901d3a41ba39fb536a557fa166f842b0e09/special_tokens_map.json "HTTP/1.1 200 OK"
+00:29:03  INFO      HTTP Request: GET https://huggingface.co/api/resolve-cache/models/BAAI/bge-large-en-v1.5/d4aa6901d3a41ba39fb536a557fa166f842b0e09/special_tokens_map.json "HTTP/1.1 200 OK"
+00:29:04  INFO      HTTP Request: HEAD https://huggingface.co/BAAI/bge-large-en-v1.5/resolve/main/chat_template.jinja "HTTP/1.1 404 Not Found"
+00:29:04  INFO      HTTP Request: HEAD https://huggingface.co/BAAI/bge-large-en-v1.5/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+00:29:04  INFO      HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-large-en-v1.5/d4aa6901d3a41ba39fb536a557fa166f842b0e09/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+00:29:05  INFO      HTTP Request: GET https://huggingface.co/api/resolve-cache/models/BAAI/bge-large-en-v1.5/d4aa6901d3a41ba39fb536a557fa166f842b0e09/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+00:29:05  INFO      HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-large-en-v1.5 "HTTP/1.1 200 OK"
+00:29:06  INFO        Model loaded in 28.16 s
+00:29:06  INFO      
+────────────────────────────  Experiment: L1: Caption only  ────────────────────────────
+00:29:06  INFO        Encoding 3766 texts  [corpus] …
+
+Batches:   0%|          | 0/30 [00:00<?, ?it/s]
+Batches:   3%|▎         | 1/30 [00:00<00:25,  1.12it/s]
+Batches:  10%|█         | 3/30 [00:01<00:07,  3.61it/s]
+Batches:  17%|█▋        | 5/30 [00:01<00:04,  6.06it/s]
+Batches:  23%|██▎       | 7/30 [00:01<00:02,  8.34it/s]
+Batches:  30%|███       | 9/30 [00:01<00:02, 10.32it/s]
+Batches:  37%|███▋      | 11/30 [00:01<00:01, 12.26it/s]
+Batches:  43%|████▎     | 13/30 [00:01<00:01, 13.85it/s]
+Batches:  50%|█████     | 15/30 [00:01<00:00, 15.02it/s]
+Batches:  57%|█████▋    | 17/30 [00:01<00:00, 16.11it/s]
+Batches:  63%|██████▎   | 19/30 [00:01<00:00, 17.06it/s]
+Batches:  73%|███████▎  | 22/30 [00:02<00:00, 19.41it/s]
+Batches:  83%|████████▎ | 25/30 [00:02<00:00, 20.29it/s]
+Batches:  93%|█████████▎| 28/30 [00:02<00:00, 18.31it/s]
+Batches: 100%|██████████| 30/30 [00:02<00:00, 12.27it/s]
+00:29:08  INFO        Encoded in 2.54 s  shape=(3766, 1024)
+00:29:08  INFO        Building FAISS IndexFlatIP  (dim=1024, docs=3766) …
+00:29:08  INFO        FAISS index built in 0.011 s  (ntotal=3766)
+00:29:08  INFO        → Query set: Q1  (3766 queries)
+00:29:08  INFO        Encoding 3766 texts  [Q1 queries] …
+
+Batches:   0%|          | 0/30 [00:00<?, ?it/s]
+Batches:   7%|▋         | 2/30 [00:00<00:02, 11.05it/s]
+Batches:  13%|█▎        | 4/30 [00:00<00:02, 11.64it/s]
+Batches:  20%|██        | 6/30 [00:00<00:01, 12.06it/s]
+Batches:  27%|██▋       | 8/30 [00:00<00:01, 12.73it/s]
+Batches:  33%|███▎      | 10/30 [00:00<00:01, 13.67it/s]
+Batches:  40%|████      | 12/30 [00:00<00:01, 13.43it/s]
+Batches:  47%|████▋     | 14/30 [00:01<00:01, 14.10it/s]
+Batches:  53%|█████▎    | 16/30 [00:01<00:00, 14.64it/s]
+Batches:  60%|██████    | 18/30 [00:01<00:00, 15.27it/s]
+Batches:  67%|██████▋   | 20/30 [00:01<00:00, 15.87it/s]
+Batches:  73%|███████▎  | 22/30 [00:01<00:00, 15.95it/s]
+Batches:  80%|████████  | 24/30 [00:01<00:00, 16.51it/s]
+Batches:  87%|████████▋ | 26/30 [00:01<00:00, 16.96it/s]
+Batches:  97%|█████████▋| 29/30 [00:01<00:00, 18.03it/s]
+Batches: 100%|██████████| 30/30 [00:01<00:00, 15.51it/s]
+00:29:11  INFO        Encoded in 2.06 s  shape=(3766, 1024)
+00:29:11  INFO        Searching top-100 for 3766 queries …
+00:29:11  INFO        Search done in 0.435 s  (0.12 ms/query)
+00:29:11  INFO          R@1=0.7910  R@2=0.9565  R@3=0.9811  R@5=0.9976  R@10=1.0000  MRR@10=0.8863  | dupR@10=1.0000  dupMRR@10=0.9196
+00:29:11  INFO        → Query set: Q2  (3766 queries)
+00:29:11  INFO        Encoding 3766 texts  [Q2 queries] …
+
+Batches:   0%|          | 0/30 [00:00<?, ?it/s]
+Batches:   3%|▎         | 1/30 [00:00<00:02,  9.84it/s]
+Batches:  10%|█         | 3/30 [00:00<00:02, 10.97it/s]
+Batches:  17%|█▋        | 5/30 [00:00<00:02, 10.80it/s]
+Batches:  23%|██▎       | 7/30 [00:00<00:02, 11.12it/s]
+Batches:  30%|███       | 9/30 [00:00<00:01, 11.47it/s]
+Batches:  37%|███▋      | 11/30 [00:00<00:01, 11.58it/s]
+Batches:  43%|████▎     | 13/30 [00:01<00:01, 12.30it/s]
+Batches:  50%|█████     | 15/30 [00:01<00:01, 13.84it/s]
+Batches:  57%|█████▋    | 17/30 [00:01<00:00, 15.25it/s]
+Batches:  63%|██████▎   | 19/30 [00:01<00:00, 16.07it/s]
+Batches:  70%|███████   | 21/30 [00:01<00:00, 15.77it/s]
+Batches:  77%|███████▋  | 23/30 [00:01<00:00, 14.70it/s]
+Batches:  83%|████████▎ | 25/30 [00:01<00:00, 15.01it/s]
+Batches:  90%|█████████ | 27/30 [00:01<00:00, 15.14it/s]
+Batches:  97%|█████████▋| 29/30 [00:02<00:00, 15.51it/s]
+Batches: 100%|██████████| 30/30 [00:02<00:00, 14.07it/s]
+00:29:13  INFO        Encoded in 2.16 s  shape=(3766, 1024)
+00:29:13  INFO        Searching top-100 for 3766 queries …
+00:29:14  INFO        Search done in 0.476 s  (0.13 ms/query)
+00:29:14  INFO          R@1=0.7446  R@2=0.9222  R@3=0.9557  R@5=0.9806  R@10=0.9875  MRR@10=0.8514  | dupR@10=0.9878  dupMRR@10=0.8818
+00:29:14  INFO        → Query set: Q3  (3542 queries)
+00:29:14  INFO        Encoding 3542 texts  [Q3 queries] …
+
+Batches:   0%|          | 0/28 [00:00<?, ?it/s]
+Batches:   4%|▎         | 1/28 [00:00<00:07,  3.56it/s]
+Batches:   7%|▋         | 2/28 [00:00<00:06,  4.05it/s]
+Batches:  11%|█         | 3/28 [00:00<00:06,  4.02it/s]
+Batches:  14%|█▍        | 4/28 [00:00<00:05,  4.46it/s]
+Batches:  18%|█▊        | 5/28 [00:01<00:04,  4.87it/s]
+Batches:  21%|██▏       | 6/28 [00:01<00:04,  5.38it/s]
+Batches:  25%|██▌       | 7/28 [00:01<00:03,  5.72it/s]
+Batches:  29%|██▊       | 8/28 [00:01<00:03,  6.21it/s]
+Batches:  32%|███▏      | 9/28 [00:01<00:02,  7.01it/s]
+Batches:  36%|███▌      | 10/28 [00:01<00:02,  7.32it/s]
+Batches:  39%|███▉      | 11/28 [00:01<00:02,  7.53it/s]
+Batches:  43%|████▎     | 12/28 [00:02<00:02,  7.77it/s]
+Batches:  46%|████▋     | 13/28 [00:02<00:01,  8.03it/s]
+Batches:  50%|█████     | 14/28 [00:02<00:01,  8.25it/s]
+Batches:  54%|█████▎    | 15/28 [00:02<00:01,  8.42it/s]
+Batches:  57%|█████▋    | 16/28 [00:02<00:01,  8.77it/s]
+Batches:  61%|██████    | 17/28 [00:02<00:01,  8.97it/s]
+Batches:  68%|██████▊   | 19/28 [00:02<00:00,  9.73it/s]
+Batches:  75%|███████▌  | 21/28 [00:02<00:00, 10.43it/s]
+Batches:  82%|████████▏ | 23/28 [00:03<00:00, 10.51it/s]
+Batches:  89%|████████▉ | 25/28 [00:03<00:00, 11.24it/s]
+Batches:  96%|█████████▋| 27/28 [00:03<00:00, 11.86it/s]
+Batches: 100%|██████████| 28/28 [00:03<00:00,  8.09it/s]
+00:29:17  INFO        Encoded in 3.49 s  shape=(3542, 1024)
+00:29:17  INFO        Searching top-100 for 3542 queries …
+00:29:18  INFO        Search done in 0.413 s  (0.12 ms/query)
+00:29:18  INFO          R@1=0.3490  R@2=0.4740  R@3=0.5274  R@5=0.5870  R@10=0.6539  MRR@10=0.4520  | dupR@10=0.6564  dupMRR@10=0.4695
+00:29:18  INFO      
+────────────────────────────  Experiment: L2: Caption + Context  ────────────────────────────
+00:29:18  INFO        Encoding 3766 texts  [corpus] …
+
+Batches:   0%|          | 0/30 [00:00<?, ?it/s]
+Batches:   3%|▎         | 1/30 [00:00<00:22,  1.28it/s]
+Batches:   7%|▋         | 2/30 [00:01<00:20,  1.39it/s]
+Batches:  10%|█         | 3/30 [00:02<00:18,  1.45it/s]
+Batches:  13%|█▎        | 4/30 [00:02<00:17,  1.51it/s]
+Batches:  17%|█▋        | 5/30 [00:03<00:16,  1.53it/s]
+Batches:  20%|██        | 6/30 [00:03<00:15,  1.56it/s]
+Batches:  23%|██▎       | 7/30 [00:04<00:14,  1.59it/s]
+Batches:  27%|██▋       | 8/30 [00:05<00:15,  1.38it/s]
+Batches:  30%|███       | 9/30 [00:06<00:16,  1.27it/s]
+Batches:  33%|███▎      | 10/30 [00:07<00:14,  1.35it/s]
+Batches:  37%|███▋      | 11/30 [00:07<00:13,  1.39it/s]
+Batches:  40%|████      | 12/30 [00:08<00:13,  1.36it/s]
+Batches:  43%|████▎     | 13/30 [00:09<00:15,  1.13it/s]
+Batches:  47%|████▋     | 14/30 [00:10<00:15,  1.04it/s]
+Batches:  50%|█████     | 15/30 [00:12<00:15,  1.05s/it]
+Batches:  53%|█████▎    | 16/30 [00:13<00:15,  1.08s/it]
+Batches:  57%|█████▋    | 17/30 [00:14<00:14,  1.11s/it]
+Batches:  60%|██████    | 18/30 [00:15<00:13,  1.14s/it]
+Batches:  63%|██████▎   | 19/30 [00:16<00:12,  1.14s/it]
+Batches:  67%|██████▋   | 20/30 [00:18<00:11,  1.17s/it]
+Batches:  70%|███████   | 21/30 [00:19<00:09,  1.10s/it]
+Batches:  73%|███████▎  | 22/30 [00:19<00:08,  1.05s/it]
+Batches:  77%|███████▋  | 23/30 [00:20<00:07,  1.01s/it]
+Batches:  80%|████████  | 24/30 [00:21<00:05,  1.11it/s]
+Batches:  83%|████████▎ | 25/30 [00:22<00:04,  1.24it/s]
+Batches:  87%|████████▋ | 26/30 [00:22<00:02,  1.40it/s]
+Batches:  90%|█████████ | 27/30 [00:22<00:01,  1.66it/s]
+Batches:  93%|█████████▎| 28/30 [00:23<00:00,  2.02it/s]
+Batches: 100%|██████████| 30/30 [00:23<00:00,  3.40it/s]
+Batches: 100%|██████████| 30/30 [00:23<00:00,  1.29it/s]
+00:29:41  INFO        Encoded in 23.34 s  shape=(3766, 1024)
+00:29:41  INFO        Building FAISS IndexFlatIP  (dim=1024, docs=3766) …
+00:29:41  INFO        FAISS index built in 0.011 s  (ntotal=3766)
+00:29:41  INFO        → Query set: Q1  (3766 queries)
+00:29:41  INFO        Encoding 3766 texts  [Q1 queries] …
+
+Batches:   0%|          | 0/30 [00:00<?, ?it/s]
+Batches:   3%|▎         | 1/30 [00:00<00:03,  7.79it/s]
+Batches:   7%|▋         | 2/30 [00:00<00:03,  8.86it/s]
+Batches:  10%|█         | 3/30 [00:00<00:02,  9.13it/s]
+Batches:  13%|█▎        | 4/30 [00:00<00:02,  9.41it/s]
+Batches:  20%|██        | 6/30 [00:00<00:02, 10.73it/s]
+Batches:  27%|██▋       | 8/30 [00:00<00:01, 12.16it/s]
+Batches:  33%|███▎      | 10/30 [00:00<00:01, 12.97it/s]
+Batches:  40%|████      | 12/30 [00:01<00:01, 13.68it/s]
+Batches:  47%|████▋     | 14/30 [00:01<00:01, 14.38it/s]
+Batches:  53%|█████▎    | 16/30 [00:01<00:00, 15.12it/s]
+Batches:  60%|██████    | 18/30 [00:01<00:00, 15.79it/s]
+Batches:  67%|██████▋   | 20/30 [00:01<00:00, 16.44it/s]
+Batches:  73%|███████▎  | 22/30 [00:01<00:00, 16.90it/s]
+Batches:  80%|████████  | 24/30 [00:01<00:00, 17.39it/s]
+Batches:  87%|████████▋ | 26/30 [00:01<00:00, 17.86it/s]
+Batches:  97%|█████████▋| 29/30 [00:01<00:00, 18.84it/s]
+Batches: 100%|██████████| 30/30 [00:01<00:00, 15.23it/s]
+00:29:43  INFO        Encoded in 2.01 s  shape=(3766, 1024)
+00:29:43  INFO        Searching top-100 for 3766 queries …
+00:29:44  INFO        Search done in 0.442 s  (0.12 ms/query)
+00:29:44  INFO          R@1=0.6896  R@2=0.8837  R@3=0.9315  R@5=0.9689  R@10=0.9883  MRR@10=0.8141  | dupR@10=0.9923  dupMRR@10=0.8474
+00:29:44  INFO        → Query set: Q2  (3766 queries)
+00:29:44  INFO        Encoding 3766 texts  [Q2 queries] …
+
+Batches:   0%|          | 0/30 [00:00<?, ?it/s]
+Batches:   7%|▋         | 2/30 [00:00<00:02, 10.08it/s]
+Batches:  13%|█▎        | 4/30 [00:00<00:02, 11.37it/s]
+Batches:  20%|██        | 6/30 [00:00<00:02, 10.16it/s]
+Batches:  27%|██▋       | 8/30 [00:00<00:02, 10.64it/s]
+Batches:  33%|███▎      | 10/30 [00:00<00:01, 10.74it/s]
+Batches:  40%|████      | 12/30 [00:01<00:01, 11.77it/s]
+Batches:  47%|████▋     | 14/30 [00:01<00:01, 12.11it/s]
+Batches:  53%|█████▎    | 16/30 [00:01<00:01, 12.89it/s]
+Batches:  60%|██████    | 18/30 [00:01<00:00, 13.59it/s]
+Batches:  67%|██████▋   | 20/30 [00:01<00:00, 14.31it/s]
+Batches:  73%|███████▎  | 22/30 [00:01<00:00, 14.22it/s]
+Batches:  80%|████████  | 24/30 [00:01<00:00, 14.99it/s]
+Batches:  87%|████████▋ | 26/30 [00:02<00:00, 15.35it/s]
+Batches:  93%|█████████▎| 28/30 [00:02<00:00, 15.71it/s]
+Batches: 100%|██████████| 30/30 [00:02<00:00, 13.55it/s]
+00:29:46  INFO        Encoded in 2.24 s  shape=(3766, 1024)
+00:29:46  INFO        Searching top-100 for 3766 queries …
+00:29:46  INFO        Search done in 0.407 s  (0.11 ms/query)
+00:29:47  INFO          R@1=0.6314  R@2=0.8165  R@3=0.8664  R@5=0.9198  R@10=0.9570  MRR@10=0.7581  | dupR@10=0.9623  dupMRR@10=0.7885
+00:29:47  INFO        → Query set: Q3  (3542 queries)
+00:29:47  INFO        Encoding 3542 texts  [Q3 queries] …
+
+Batches:   0%|          | 0/28 [00:00<?, ?it/s]
+Batches:   4%|▎         | 1/28 [00:00<00:07,  3.70it/s]
+Batches:   7%|▋         | 2/28 [00:00<00:05,  4.70it/s]
+Batches:  11%|█         | 3/28 [00:00<00:04,  5.16it/s]
+Batches:  14%|█▍        | 4/28 [00:00<00:04,  5.49it/s]
+Batches:  18%|█▊        | 5/28 [00:00<00:04,  5.69it/s]
+Batches:  21%|██▏       | 6/28 [00:01<00:03,  6.48it/s]
+Batches:  25%|██▌       | 7/28 [00:01<00:02,  7.20it/s]
+Batches:  32%|███▏      | 9/28 [00:01<00:02,  8.29it/s]
+Batches:  39%|███▉      | 11/28 [00:01<00:01,  9.08it/s]
+Batches:  46%|████▋     | 13/28 [00:01<00:01,  9.37it/s]
+Batches:  50%|█████     | 14/28 [00:01<00:01,  8.78it/s]
+Batches:  54%|█████▎    | 15/28 [00:02<00:01,  8.30it/s]
+Batches:  57%|█████▋    | 16/28 [00:02<00:01,  8.43it/s]
+Batches:  61%|██████    | 17/28 [00:02<00:01,  8.52it/s]
+Batches:  64%|██████▍   | 18/28 [00:02<00:01,  8.26it/s]
+Batches:  71%|███████▏  | 20/28 [00:02<00:00,  9.20it/s]
+Batches:  79%|███████▊  | 22/28 [00:02<00:00, 10.33it/s]
+Batches:  86%|████████▌ | 24/28 [00:02<00:00, 10.86it/s]
+Batches:  93%|█████████▎| 26/28 [00:03<00:00, 11.38it/s]
+Batches: 100%|██████████| 28/28 [00:03<00:00, 13.21it/s]
+Batches: 100%|██████████| 28/28 [00:03<00:00,  8.84it/s]
+00:29:50  INFO        Encoded in 3.19 s  shape=(3542, 1024)
+00:29:50  INFO        Searching top-100 for 3542 queries …
+00:29:50  INFO        Search done in 0.450 s  (0.13 ms/query)
+00:29:50  INFO          R@1=0.5782  R@2=0.7626  R@3=0.8283  R@5=0.8826  R@10=0.9300  MRR@10=0.7115  | dupR@10=0.9308  dupMRR@10=0.7369
+00:29:50  INFO      Report saved → /DATA5/prabhakar/telecom_retrieval/reports/m4_dense_large_results.json
+00:29:50  INFO      ✅  Milestone 4 complete.
+
+====================================================================================================================
+  MILESTONE 4 — BGE-large vs BGE-base vs BM25 COMPARISON
+  Model: BAAI/bge-large-en-v1.5
+====================================================================================================================
+  Query            Experiment                R@1      R@2      R@3      R@5     R@10    MRR@10    dupR@10    dupMRR@10
+  --------------------------------------------------------------------------------------------------------------
+   Q1          B1 BM25  (Caption)         0.7966   0.9620   0.9833   0.9981   1.0000    0.8903     1.0000       0.9241
+   Q1        D1 BGE-base (Caption)        0.7934   0.9583   0.9825   0.9981   1.0000    0.8880     1.0000       0.9207
+   Q1        L1 BGE-large (Caption)       0.7910   0.9565   0.9811   0.9976   1.0000    0.8863     1.0000       0.9196
+   Q1          B2 BM25  (Cap+Ctx)         0.6660   0.8489   0.9031   0.9503   0.9796    0.7907     0.9841       0.8239
+   Q1        D2 BGE-base (Cap+Ctx)        0.7204   0.9052   0.9466   0.9748   0.9899    0.8354     0.9936       0.8700
+   Q1        L2 BGE-large (Cap+Ctx)       0.6896   0.8837   0.9315   0.9689   0.9883    0.8141     0.9923       0.8474
+  --------------------------------------------------------------------------------------------------------------
+   Q2          B1 BM25  (Caption)         0.7568   0.9291   0.9610   0.9870   0.9952    0.8609     0.9952       0.8929
+   Q2        D1 BGE-base (Caption)        0.7616   0.9251   0.9565   0.9819   0.9918    0.8613     0.9918       0.8926
+   Q2        L1 BGE-large (Caption)       0.7446   0.9222   0.9557   0.9806   0.9875    0.8514     0.9878       0.8818
+   Q2          B2 BM25  (Cap+Ctx)         0.5526   0.7294   0.7947   0.8619   0.9055    0.6843     0.9177       0.7140
+   Q2        D2 BGE-base (Cap+Ctx)        0.6614   0.8465   0.8922   0.9331   0.9586    0.7822     0.9634       0.8137
+   Q2        L2 BGE-large (Cap+Ctx)       0.6314   0.8165   0.8664   0.9198   0.9570    0.7581     0.9623       0.7885
+  --------------------------------------------------------------------------------------------------------------
+   Q3          B1 BM25  (Caption)         0.3001   0.4150   0.4627   0.5217   0.5929    0.3965     0.5954       0.4108
+   Q3        D1 BGE-base (Caption)        0.3628   0.4816   0.5378   0.5997   0.6581    0.4631     0.6601       0.4805
+   Q3        L1 BGE-large (Caption)       0.3490   0.4740   0.5274   0.5870   0.6539    0.4520     0.6564       0.4695
+   Q3          B2 BM25  (Cap+Ctx)         0.6304   0.8199   0.8834   0.9328   0.9706    0.7631     0.9715       0.7870
+   Q3        D2 BGE-base (Cap+Ctx)        0.6143   0.7936   0.8554   0.9108   0.9466    0.7423     0.9472       0.7666
+   Q3        L2 BGE-large (Cap+Ctx)       0.5782   0.7626   0.8283   0.8826   0.9300    0.7115     0.9308       0.7369
+====================================================================================================================
+
+  ── Q2 Scaling Gain [Caption-only] ───────────────────────────────────────
+     BGE-base  R@1=0.7616  MRR@10=0.8613
+     BGE-large R@1=0.7446  MRR@10=0.8514  (ΔR@1=-0.0170  ΔMRR=-0.0099)
+  ── Q2 Scaling Gain [Cap+Ctx] ───────────────────────────────────────
+     BGE-base  R@1=0.6614  MRR@10=0.7822
+     BGE-large R@1=0.6314  MRR@10=0.7581  (ΔR@1=-0.0300  ΔMRR=-0.0241)
+

@@ -1,7 +1,7 @@
 # Thesis Master State
 ## Multimodal Image Retrieval for Telecom Technical Diagrams
 
-> Last updated: 2026-06-12T23:31+05:30
+> Last updated: 2026-06-13T00:29+05:30
 
 ---
 
@@ -15,8 +15,8 @@
 | M1.3 | Knowledge base creation + Q2 paraphrase generation (local LLM) | ✅ Complete | 2026-06-12 |
 | M2 | BM25 lexical baseline (B1 Caption, B2 Cap+Ctx) | ✅ Complete | 2026-06-12 |
 | M3 | BGE-base dense embedding index (D1 Caption, D2 Cap+Ctx) | ✅ Complete | 2026-06-12 |
-| M4 | BGE-large dense embedding index | ⬜ **Next** | — |
-| M5 | CLIP global visual baseline | ⬜ Pending | — |
+| M4 | BGE-large dense embedding index (L1 Caption, L2 Cap+Ctx) | ✅ Complete | 2026-06-13 |
+| M5 | CLIP global visual baseline | ⬜ **Next** | — |
 | M6 | ColPali OCR-free visual document retrieval | ⬜ Pending | — |
 | M7 | Qwen2-VL visual document retrieval | ⬜ Pending | — |
 | M8 | Cross-baseline evaluation & ablation tables | ⬜ Pending | — |
@@ -40,6 +40,9 @@
 | Dense script | `scripts/05_dense_baselines.py` | ✅ Ready |
 | Dense results | `reports/m3_dense_results.json` | ✅ Ready |
 | M3 walkthrough | `reports/M3_walkthrough.md` | ✅ Ready |
+| Dense large script | `scripts/06_dense_large_baselines.py` | ✅ Ready |
+| Dense large results | `reports/m4_dense_large_results.json` | ✅ Ready |
+| M4 walkthrough | `reports/M4_walkthrough.md` | ✅ Ready |
 
 ---
 
