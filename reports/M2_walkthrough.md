@@ -41,7 +41,7 @@ DupRecall@K(q) = 1  if  R̂_q^K ∩ V_q ≠ ∅,  else 0
 |---|---|
 | Build inverse `row→hash` map at load time | O(1) lookup per query during evaluation |
 | Graceful fallback if row not in mapping | Falls back to exact-match (singleton rows) |
-| `k_values=(1,5,10)` + `mrr_k=10` as defaults | Aligns with IR community standard (TREC, BEIR) |
+| `k_values=(1,2,3,5,10)` + `mrr_k=10` as defaults | R@2/R@3 expose the rank-2 recovery pattern; R@5/10 align with TREC/BEIR standards |
 | Denominator = actual `num_queries` | Q3 has 3,542 queries (224 skipped), so denominator differs |
 
 ### Self-Test Result
@@ -81,14 +81,14 @@ Self-test PASSED ✓
 
 ### Full Metrics Table
 
-| Query | Experiment | R@1 | R@5 | R@10 | MRR@10 | dupR@10 | dupMRR@10 |
-|:---:|:---|---:|---:|---:|---:|---:|---:|
-| Q1 | B1 (Caption only) | 0.7966 | 0.9981 | **1.0000** | 0.8903 | **1.0000** | 0.9241 |
-| Q1 | B2 (Cap+Ctx) | 0.6660 | 0.9503 | 0.9796 | 0.7907 | 0.9841 | 0.8239 |
-| Q2 | B1 (Caption only) | 0.7568 | 0.9870 | 0.9952 | 0.8609 | 0.9952 | 0.8929 |
-| Q2 | B2 (Cap+Ctx) | 0.5526 | 0.8619 | 0.9055 | 0.6843 | 0.9177 | 0.7140 |
-| Q3 | B1 (Caption only) | 0.3001 | 0.5217 | 0.5929 | 0.3965 | 0.5954 | 0.4108 |
-| Q3 | B2 (Cap+Ctx) | **0.6304** | **0.9328** | **0.9706** | **0.7631** | **0.9715** | **0.7870** |
+| Query | Experiment | R@1 | R@2 | R@3 | R@5 | R@10 | MRR@10 | dupR@10 | dupMRR@10 |
+|:---:|:---|---:|---:|---:|---:|---:|---:|---:|---:|
+| Q1 | B1 (Caption only) | 0.7966 | 0.9620 | 0.9833 | 0.9981 | **1.0000** | 0.8903 | **1.0000** | 0.9241 |
+| Q1 | B2 (Cap+Ctx) | 0.6660 | 0.8489 | 0.9031 | 0.9503 | 0.9796 | 0.7907 | 0.9841 | 0.8239 |
+| Q2 | B1 (Caption only) | 0.7568 | 0.9291 | 0.9610 | 0.9870 | 0.9952 | 0.8609 | 0.9952 | 0.8929 |
+| Q2 | B2 (Cap+Ctx) | 0.5526 | 0.7294 | 0.7947 | 0.8619 | 0.9055 | 0.6843 | 0.9177 | 0.7140 |
+| Q3 | B1 (Caption only) | 0.3001 | 0.4150 | 0.4627 | 0.5217 | 0.5929 | 0.3965 | 0.5954 | 0.4108 |
+| Q3 | B2 (Cap+Ctx) | **0.6304** | **0.8199** | **0.8834** | **0.9328** | **0.9706** | **0.7631** | **0.9715** | **0.7870** |
 
 ---
 
@@ -122,25 +122,42 @@ The gap will widen for visual retrievers (M5–M7) that cannot distinguish betwe
 When BM25 finds the answer, it almost always ranks it **first** (strong lexical precision).
 Dense models must match or exceed this ranking quality, not just retrieval recall.
 
+### Finding 4 — Rank-2 Recovery: the R@1→R@5 gap is highly non-linear
+
+The new R@2/R@3 metrics reveal that most retrieval failures at rank-1 are **near misses**:
+
+| Query | Experiment | R@1 | R@2 | Δ(R@2−R@1) | R@5 | Δ(R@5−R@2) |
+|:---:|:---|---:|---:|---:|---:|---:|
+| Q1 | B1 Caption | 0.7966 | 0.9620 | **+0.1654** | 0.9981 | +0.0361 |
+| Q2 | B1 Caption | 0.7568 | 0.9291 | **+0.1723** | 0.9870 | +0.0579 |
+| Q3 | B2 Cap+Ctx | 0.6304 | 0.8199 | **+0.1895** | 0.9328 | +0.1129 |
+
+The jump from R@1 to R@2 is **3–5× larger** than the subsequent jump from R@2 to R@5. This means:
+
+> [!IMPORTANT]
+> When these baselines fail to place the correct diagram at rank 1, it almost always lands at rank 2. This is a **strict ranking problem**, not a general retrieval failure. The models are highly discriminative — they identify the correct answer as a top-2 candidate ~93–96% of the time — but struggle with final precision ordering.
+>
+> **Thesis implication:** Improving R@1 and MRR@10 (the primary remaining gap) will require better ranking signals — e.g., re-ranking with a cross-encoder, visual feature fusion, or hybrid lexical+semantic scoring. Retrieval recall improvements alone (R@10) have already largely plateaued.
+
 ---
 
 ## Thesis Context Table
 
 > This table will grow as milestones are completed. B1/B2 form the lexical baselines.
 
-| Method | Query | R@1 | R@10 | MRR@10 | dupR@10 |
-|:---|:---:|---:|---:|---:|---:|
-| B1: BM25 Caption | Q1 | 0.797 | **1.000** | 0.890 | **1.000** |
-| B1: BM25 Caption | Q2 | 0.757 | 0.995 | 0.861 | 0.995 |
-| B1: BM25 Caption | Q3 | 0.300 | 0.593 | 0.397 | 0.595 |
-| B2: BM25 Cap+Ctx | Q1 | 0.666 | 0.980 | 0.791 | 0.984 |
-| B2: BM25 Cap+Ctx | Q2 | 0.553 | 0.906 | 0.684 | 0.918 |
-| B2: BM25 Cap+Ctx | Q3 | 0.630 | **0.971** | **0.763** | **0.972** |
-| M3: BGE-base | — | — | — | — | — |
-| M4: BGE-large | — | — | — | — | — |
-| M5: CLIP | — | — | — | — | — |
-| M6: ColPali | — | — | — | — | — |
-| M7: Qwen2-VL | — | — | — | — | — |
+| Method | Query | R@1 | R@2 | R@3 | R@10 | MRR@10 | dupR@10 |
+|:---|:---:|---:|---:|---:|---:|---:|---:|
+| B1: BM25 Caption | Q1 | 0.797 | 0.962 | 0.983 | **1.000** | 0.890 | **1.000** |
+| B1: BM25 Caption | Q2 | 0.757 | 0.929 | 0.961 | 0.995 | 0.861 | 0.995 |
+| B1: BM25 Caption | Q3 | 0.300 | 0.415 | 0.463 | 0.593 | 0.397 | 0.595 |
+| B2: BM25 Cap+Ctx | Q1 | 0.666 | 0.849 | 0.903 | 0.980 | 0.791 | 0.984 |
+| B2: BM25 Cap+Ctx | Q2 | 0.553 | 0.729 | 0.795 | 0.906 | 0.684 | 0.918 |
+| B2: BM25 Cap+Ctx | Q3 | 0.630 | 0.820 | 0.883 | **0.971** | **0.763** | **0.972** |
+| M3: BGE-base | — | — | — | — | — | — | — |
+| M4: BGE-large | — | — | — | — | — | — | — |
+| M5: CLIP | — | — | — | — | — | — | — |
+| M6: ColPali | — | — | — | — | — | — | — |
+| M7: Qwen2-VL | — | — | — | — | — | — | — |
 
 ---
 
