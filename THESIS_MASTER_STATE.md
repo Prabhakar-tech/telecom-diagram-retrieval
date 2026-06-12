@@ -1,7 +1,7 @@
 # Thesis Master State
 ## Multimodal Image Retrieval for Telecom Technical Diagrams
 
-> Last updated: 2026-06-12T02:55+05:30
+> Last updated: 2026-06-12T23:31+05:30
 
 ---
 
@@ -13,9 +13,9 @@
 | M1.1 | Data loader + MD5 duplicate mapping (281 groups, 589 dupes) | ✅ Complete | 2026-06-12 |
 | M1.2 | Q1 (3,766 captions) + Q3 (3,542 context queries) generation | ✅ Complete | 2026-06-12 |
 | M1.3 | Knowledge base creation + Q2 paraphrase generation (local LLM) | ✅ Complete | 2026-06-12 |
-| M2 | BM25 lexical baseline | ⬜ **Next** | — |
-| M3 | BGE-base dense embedding index | ⬜ Pending | — |
-| M4 | BGE-large dense embedding index | ⬜ Pending | — |
+| M2 | BM25 lexical baseline (B1 Caption, B2 Cap+Ctx) | ✅ Complete | 2026-06-12 |
+| M3 | BGE-base dense embedding index (D1 Caption, D2 Cap+Ctx) | ✅ Complete | 2026-06-12 |
+| M4 | BGE-large dense embedding index | ⬜ **Next** | — |
 | M5 | CLIP global visual baseline | ⬜ Pending | — |
 | M6 | ColPali OCR-free visual document retrieval | ⬜ Pending | — |
 | M7 | Qwen2-VL visual document retrieval | ⬜ Pending | — |
@@ -35,6 +35,11 @@
 | Q3 queries | `queries/q3_context.json` (3,542) | ✅ Ready |
 | Q2 queries | `queries/q2_paraphrased.json` (3,766) | ✅ Ready |
 | Knowledge base | `THESIS_KNOWLEDGE_BASE.md` | ✅ Ready |
+| Eval module | `eval/metrics.py` | ✅ Ready |
+| BM25 results | `reports/m2_bm25_results.json` | ✅ Ready |
+| Dense script | `scripts/05_dense_baselines.py` | ✅ Ready |
+| Dense results | `reports/m3_dense_results.json` | ✅ Ready |
+| M3 walkthrough | `reports/M3_walkthrough.md` | ✅ Ready |
 
 ---
 

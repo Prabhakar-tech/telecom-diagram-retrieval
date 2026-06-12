@@ -1,0 +1,92 @@
+{
+  "milestone": "M3",
+  "description": "Dense semantic baselines \u2014 BAAI/bge-base-en-v1.5",
+  "generated_at": "2026-06-12T23:31:58",
+  "model": "BAAI/bge-base-en-v1.5",
+  "embed_dim": 768,
+  "index_type": "IndexFlatIP (exact inner product, L2-normalised = cosine)",
+  "retrieval_depth": 100,
+  "bge_query_prefix": "Represent this sentence for searching relevant passages: ",
+  "corpus": {
+    "csv_path": "/DATA1/prabhakar/telecom/All Images Path.csv",
+    "total_rows": 3766
+  },
+  "experiments": {
+    "D1_caption_only": {
+      "description": "BGE-base on Image Caption column",
+      "results": {
+        "Q1": {
+          "recall@1": 0.793415,
+          "recall@5": 0.998141,
+          "recall@10": 1.0,
+          "dup_recall@1": 0.854488,
+          "dup_recall@5": 0.998938,
+          "dup_recall@10": 1.0,
+          "mrr@10": 0.887998,
+          "dup_mrr@10": 0.920654,
+          "num_queries": 3766
+        },
+        "Q2": {
+          "recall@1": 0.761551,
+          "recall@5": 0.981944,
+          "recall@10": 0.991768,
+          "dup_recall@1": 0.819172,
+          "dup_recall@5": 0.983537,
+          "dup_recall@10": 0.991768,
+          "mrr@10": 0.861269,
+          "dup_mrr@10": 0.89259,
+          "num_queries": 3766
+        },
+        "Q3": {
+          "recall@1": 0.362789,
+          "recall@5": 0.599661,
+          "recall@10": 0.658103,
+          "dup_recall@1": 0.392151,
+          "dup_recall@5": 0.604461,
+          "dup_recall@10": 0.660079,
+          "mrr@10": 0.463127,
+          "dup_mrr@10": 0.480547,
+          "num_queries": 3542
+        }
+      }
+    },
+    "D2_caption_context": {
+      "description": "BGE-base on Image Caption + Context (concatenated, BGE 512-tok truncation)",
+      "results": {
+        "Q1": {
+          "recall@1": 0.720393,
+          "recall@5": 0.974774,
+          "recall@10": 0.98991,
+          "dup_recall@1": 0.779341,
+          "dup_recall@5": 0.981678,
+          "dup_recall@10": 0.993627,
+          "mrr@10": 0.835367,
+          "dup_mrr@10": 0.869985,
+          "num_queries": 3766
+        },
+        "Q2": {
+          "recall@1": 0.661445,
+          "recall@5": 0.933086,
+          "recall@10": 0.958577,
+          "dup_recall@1": 0.712958,
+          "dup_recall@5": 0.941848,
+          "dup_recall@10": 0.963356,
+          "mrr@10": 0.782247,
+          "dup_mrr@10": 0.813694,
+          "num_queries": 3766
+        },
+        "Q3": {
+          "recall@1": 0.614342,
+          "recall@5": 0.910785,
+          "recall@10": 0.94664,
+          "dup_recall@1": 0.659232,
+          "dup_recall@5": 0.914173,
+          "dup_recall@10": 0.947205,
+          "mrr@10": 0.742345,
+          "dup_mrr@10": 0.766608,
+          "num_queries": 3542
+        }
+      }
+    }
+  }
+}
