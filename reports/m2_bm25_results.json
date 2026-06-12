@@ -1,7 +1,7 @@
 {
   "milestone": "M2",
   "description": "BM25 lexical baselines",
-  "generated_at": "2026-06-12T21:58:28",
+  "generated_at": "2026-06-13T00:03:01",
   "corpus": {
     "csv_path": "/DATA1/prabhakar/telecom/All Images Path.csv",
     "total_rows": 3766
@@ -14,9 +14,13 @@
       "results": {
         "Q1": {
           "recall@1": 0.796601,
+          "recall@2": 0.962029,
+          "recall@3": 0.983271,
           "recall@5": 0.998141,
           "recall@10": 1.0,
           "dup_recall@1": 0.859798,
+          "dup_recall@2": 0.971853,
+          "dup_recall@3": 0.989113,
           "dup_recall@5": 0.999203,
           "dup_recall@10": 1.0,
           "mrr@10": 0.890277,
@@ -25,9 +29,13 @@
         },
         "Q2": {
           "recall@1": 0.756771,
+          "recall@2": 0.929102,
+          "recall@3": 0.960967,
           "recall@5": 0.986989,
           "recall@10": 0.99522,
           "dup_recall@1": 0.814126,
+          "dup_recall@2": 0.942379,
+          "dup_recall@3": 0.970526,
           "dup_recall@5": 0.990706,
           "dup_recall@10": 0.99522,
           "mrr@10": 0.860859,
@@ -36,9 +44,13 @@
         },
         "Q3": {
           "recall@1": 0.300113,
+          "recall@2": 0.41502,
+          "recall@3": 0.462733,
           "recall@5": 0.521739,
           "recall@10": 0.592885,
           "dup_recall@1": 0.323264,
+          "dup_recall@2": 0.421513,
+          "dup_recall@3": 0.470638,
           "dup_recall@5": 0.527668,
           "dup_recall@10": 0.595426,
           "mrr@10": 0.39651,
@@ -52,9 +64,13 @@
       "results": {
         "Q1": {
           "recall@1": 0.665959,
+          "recall@2": 0.848911,
+          "recall@3": 0.90308,
           "recall@5": 0.950345,
           "recall@10": 0.979554,
           "dup_recall@1": 0.720393,
+          "dup_recall@2": 0.865374,
+          "dup_recall@3": 0.920871,
           "dup_recall@5": 0.960701,
           "dup_recall@10": 0.984068,
           "mrr@10": 0.79066,
@@ -63,9 +79,13 @@
         },
         "Q2": {
           "recall@1": 0.552576,
+          "recall@2": 0.729421,
+          "recall@3": 0.794742,
           "recall@5": 0.861922,
           "recall@10": 0.90547,
           "dup_recall@1": 0.594796,
+          "dup_recall@2": 0.749336,
+          "dup_recall@3": 0.817313,
           "dup_recall@5": 0.87573,
           "dup_recall@10": 0.917685,
           "mrr@10": 0.684314,
@@ -74,9 +94,13 @@
         },
         "Q3": {
           "recall@1": 0.630435,
+          "recall@2": 0.819876,
+          "recall@3": 0.883399,
           "recall@5": 0.932806,
           "recall@10": 0.970638,
           "dup_recall@1": 0.67476,
+          "dup_recall@2": 0.824958,
+          "dup_recall@3": 0.889893,
           "dup_recall@5": 0.935347,
           "dup_recall@10": 0.971485,
           "mrr@10": 0.763086,

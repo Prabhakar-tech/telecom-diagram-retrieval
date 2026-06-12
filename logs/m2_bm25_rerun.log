@@ -1,0 +1,68 @@
+23:58:59  INFO      ======================================================================
+23:58:59  INFO        Milestone 2 — BM25 Baselines
+23:58:59  INFO      ======================================================================
+23:58:59  INFO      Loading corpus from /DATA1/prabhakar/telecom/All Images Path.csv
+23:58:59  INFO      Corpus loaded: 3766 rows, columns: ['Context', 'Source', 'Subclause', 'Image Path', 'Image Caption']
+23:58:59  INFO      
+Tokenising corpora …
+23:58:59  INFO        B1 corpus (Caption only)    : 3766 documents
+23:59:00  INFO        B2 corpus (Caption+Context) : 3766 documents
+23:59:00  INFO      Loading query set from /DATA5/prabhakar/telecom_retrieval/queries/q1_captions.json
+23:59:00  INFO        Loaded 3766 queries  (set=Q1)
+23:59:00  INFO      Loading query set from /DATA5/prabhakar/telecom_retrieval/queries/q2_paraphrased.json
+23:59:00  INFO        Loaded 3766 queries  (set=Q2)
+23:59:00  INFO      Loading query set from /DATA5/prabhakar/telecom_retrieval/queries/q3_context.json
+23:59:00  INFO        Loaded 3542 queries  (set=Q3)
+23:59:00  INFO      
+Loading duplicate mapping …
+23:59:00  INFO      Duplicate mapping loaded: 3458 hashes, 3766 total rows
+23:59:00  INFO      
+──────────────────────────────  Experiment: B1: Caption only  ──────────────────────────────
+23:59:00  INFO        BM25 index built in 0.01 s
+23:59:00  INFO        → Evaluating on Q1 (3766 queries) …
+23:59:00  INFO        Retrieving top-100 results for 3766 queries …
+23:59:18  INFO        Retrieval done in 18.36 s  (4.9 ms/query)
+23:59:18  INFO          R@1=0.7966  R@2=0.9620  R@3=0.9833  R@5=0.9981  R@10=1.0000  MRR@10=0.8903  | dupR@10=1.0000  dupMRR@10=0.9241
+23:59:18  INFO        → Evaluating on Q2 (3766 queries) …
+23:59:18  INFO        Retrieving top-100 results for 3766 queries …
+23:59:47  INFO        Retrieval done in 28.61 s  (7.6 ms/query)
+23:59:47  INFO          R@1=0.7568  R@2=0.9291  R@3=0.9610  R@5=0.9870  R@10=0.9952  MRR@10=0.8609  | dupR@10=0.9952  dupMRR@10=0.8929
+23:59:47  INFO        → Evaluating on Q3 (3542 queries) …
+23:59:47  INFO        Retrieving top-100 results for 3542 queries …
+00:00:29  INFO        Retrieval done in 42.62 s  (12.0 ms/query)
+00:00:29  INFO          R@1=0.3001  R@2=0.4150  R@3=0.4627  R@5=0.5217  R@10=0.5929  MRR@10=0.3965  | dupR@10=0.5954  dupMRR@10=0.4108
+00:00:29  INFO      
+──────────────────────────────  Experiment: B2: Caption + Context  ──────────────────────────────
+00:00:30  INFO        BM25 index built in 0.39 s
+00:00:30  INFO        → Evaluating on Q1 (3766 queries) …
+00:00:30  INFO        Retrieving top-100 results for 3766 queries …
+00:01:01  INFO        Retrieval done in 30.78 s  (8.2 ms/query)
+00:01:01  INFO          R@1=0.6660  R@2=0.8489  R@3=0.9031  R@5=0.9503  R@10=0.9796  MRR@10=0.7907  | dupR@10=0.9841  dupMRR@10=0.8239
+00:01:01  INFO        → Evaluating on Q2 (3766 queries) …
+00:01:01  INFO        Retrieving top-100 results for 3766 queries …
+00:01:46  INFO        Retrieval done in 45.66 s  (12.1 ms/query)
+00:01:46  INFO          R@1=0.5526  R@2=0.7294  R@3=0.7947  R@5=0.8619  R@10=0.9055  MRR@10=0.6843  | dupR@10=0.9177  dupMRR@10=0.7140
+00:01:46  INFO        → Evaluating on Q3 (3542 queries) …
+00:01:46  INFO        Retrieving top-100 results for 3542 queries …
+00:03:01  INFO        Retrieval done in 74.15 s  (20.9 ms/query)
+00:03:01  INFO          R@1=0.6304  R@2=0.8199  R@3=0.8834  R@5=0.9328  R@10=0.9706  MRR@10=0.7631  | dupR@10=0.9715  dupMRR@10=0.7870
+00:03:01  INFO      
+Report saved → /DATA5/prabhakar/telecom_retrieval/reports/m2_bm25_results.json
+00:03:01  INFO      
+✅  Milestone 2 complete.
+
+================================================================================================
+  MILESTONE 2 — BM25 BASELINE SUMMARY
+================================================================================================
+  Query           Experiment              R@1      R@2      R@3      R@5     R@10   MRR@10    dupR@10   dupMRR@10
+  ------------------------------------------------------------------------------------------
+    Q1           B1 (Caption)          0.7966   0.9620   0.9833   0.9981   1.0000   0.8903     1.0000      0.9241
+    Q1           B2 (Cap+Ctx)          0.6660   0.8489   0.9031   0.9503   0.9796   0.7907     0.9841      0.8239
+  ------------------------------------------------------------------------------------------
+    Q2           B1 (Caption)          0.7568   0.9291   0.9610   0.9870   0.9952   0.8609     0.9952      0.8929
+    Q2           B2 (Cap+Ctx)          0.5526   0.7294   0.7947   0.8619   0.9055   0.6843     0.9177      0.7140
+  ------------------------------------------------------------------------------------------
+    Q3           B1 (Caption)          0.3001   0.4150   0.4627   0.5217   0.5929   0.3965     0.5954      0.4108
+    Q3           B2 (Cap+Ctx)          0.6304   0.8199   0.8834   0.9328   0.9706   0.7631     0.9715      0.7870
+================================================================================================
+

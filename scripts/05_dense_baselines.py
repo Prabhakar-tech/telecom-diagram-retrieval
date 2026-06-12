@@ -261,14 +261,16 @@ def run_experiment(
             preds,
             hash_to_rows,
             row_to_hash,
-            k_values=(1, 5, 10),
+            k_values=(1, 2, 3, 5, 10),
             mrr_k=10,
         )
         exp_results[qset_name] = metrics
         log.info(
-            "    R@1=%.4f  R@5=%.4f  R@10=%.4f  MRR@10=%.4f"
+            "    R@1=%.4f  R@2=%.4f  R@3=%.4f  R@5=%.4f  R@10=%.4f  MRR@10=%.4f"
             "  | dupR@10=%.4f  dupMRR@10=%.4f",
             metrics["recall@1"],
+            metrics["recall@2"],
+            metrics["recall@3"],
             metrics["recall@5"],
             metrics["recall@10"],
             metrics["mrr@10"],
@@ -298,29 +300,29 @@ def _print_summary_table(
     d2: Dict[str, Dict],
     bm25: Dict,
 ) -> None:
-    """Print a comparison table of D1/D2 vs B1/B2 at R@10."""
+    """Print a comparison table of D1/D2 vs B1/B2 at R@1/2/3/5/10."""
 
     b1 = bm25.get("experiments", {}).get("B1_caption_only",    {}).get("results", {})
     b2 = bm25.get("experiments", {}).get("B2_caption_context", {}).get("results", {})
 
     header = (
-        f"\n{'=' * 90}\n"
+        f"\n{'=' * 106}\n"
         f"  MILESTONE 3 — DENSE (BGE-base) vs BM25 BASELINE COMPARISON\n"
         f"  Model: {MODEL_NAME}\n"
-        f"{'=' * 90}\n"
+        f"{'=' * 106}\n"
         f"  {'Query':^5}  {'Experiment':^28}"
-        f"  {'R@1':>7}  {'R@5':>7}  {'R@10':>7}  {'MRR@10':>8}"
+        f"  {'R@1':>7}  {'R@2':>7}  {'R@3':>7}  {'R@5':>7}  {'R@10':>7}  {'MRR@10':>8}"
         f"  {'dupR@10':>9}  {'dupMRR@10':>11}\n"
-        f"  {'-' * 84}"
+        f"  {'-' * 100}"
     )
     print(header)
 
     q_order = ["Q1", "Q2", "Q3"]
     experiments = [
-        ("B1 BM25 (Caption)",    b1),
-        ("B2 BM25 (Cap+Ctx)",   b2),
-        ("D1 BGE  (Caption)",   d1),
-        ("D2 BGE  (Cap+Ctx)",   d2),
+        ("B1 BM25 (Caption)",  b1),
+        ("B2 BM25 (Cap+Ctx)", b2),
+        ("D1 BGE  (Caption)", d1),
+        ("D2 BGE  (Cap+Ctx)", d2),
     ]
 
     for qset in q_order:
@@ -329,6 +331,8 @@ def _print_summary_table(
             print(
                 f"  {qset:^5}  {tag:^28}"
                 f"  {m.get('recall@1',    0):>7.4f}"
+                f"  {m.get('recall@2',    0):>7.4f}"
+                f"  {m.get('recall@3',    0):>7.4f}"
                 f"  {m.get('recall@5',    0):>7.4f}"
                 f"  {m.get('recall@10',   0):>7.4f}"
                 f"  {m.get('mrr@10',      0):>8.4f}"
@@ -336,9 +340,9 @@ def _print_summary_table(
                 f"  {m.get('dup_mrr@10',   0):>11.4f}"
             )
         if qset != q_order[-1]:
-            print(f"  {'-' * 84}")
+            print(f"  {'-' * 100}")
 
-    print(f"{'=' * 90}\n")
+    print(f"{'=' * 106}\n")
 
     # Q2 focus: paraphrase mismatch analysis
     b1_q2 = b1.get("Q2", {}).get("recall@10", 0)
