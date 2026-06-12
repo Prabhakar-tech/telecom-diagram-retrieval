@@ -33,9 +33,9 @@
 
 | Baseline | Type | Model / Method | Notes |
 |----------|------|----------------|-------|
-| BM25 | Lexical | `rank_bm25` over tokenised captions/context | Sparse retrieval baseline |
-| BGE-base | Dense Semantic | `BAAI/bge-base-en-v1.5` | 768-d embeddings, encode text → FAISS |
-| BGE-large | Dense Semantic | `BAAI/bge-large-en-v1.5` | 1024-d embeddings, stronger baseline |
+| BM25 (B1/B2) | Lexical | `rank_bm25` over tokenised captions/context | Sparse baseline; B1=Caption only, B2=Caption+Context |
+| BGE-base (D1/D2) | Dense Semantic | `BAAI/bge-base-en-v1.5` | 768-d, FAISS `IndexFlatIP`; **designated dense baseline for M9 hybrid** — outperforms BGE-large on this corpus |
+| BGE-large (L1/L2) | Dense Semantic | `BAAI/bge-large-en-v1.5` | 1024-d; **underperforms BGE-base across all configs** (M4 result) — short-text saturation / domain drift; not recommended for further experiments |
 | CLIP | Global Visual | `openai/clip-vit-base-patch32` or `openai/clip-vit-large-patch14` | Encode (query_text, image) pairs |
 | ColPali | OCR-free Visual Document | `vidore/colpali-v1.3` | Late-interaction over page patches |
 | Qwen2-VL | OCR-free Visual Document | `Qwen/Qwen2-VL-7B-Instruct` | Vision-language encoder |
@@ -46,13 +46,19 @@
 
 | Metric | Formula | Purpose |
 |--------|---------|---------|
-| **Recall@10** | `|relevant ∩ top-10| / |relevant|` | Measures if the correct image appears in top-10 results |
-| **MRR@10** | `1/rank` of first relevant hit (0 if not in top-10) | Measures ranking quality — how high the correct result appears |
-| **Duplicate-Aware Recall@10** | Same as Recall@10, but any image in the same MD5 hash group counts as a hit | Accounts for identical visual duplicates in the dataset |
+| **Recall@1** | `1 if gt ∈ top-1 else 0` | Strict precision — is the correct image ranked first? Primary gap metric |
+| **Recall@2** | `1 if gt ∈ top-2 else 0` | **Introduced M2–M4** to quantify the non-linear rank-2 near-miss recovery pattern; the R@1→R@2 jump (+16–19%) is 3–5× larger than R@2→R@5, revealing failures at rank-1 are near-misses |
+| **Recall@3** | `1 if gt ∈ top-3 else 0` | Intermediate cut-off; bridges R@2 and R@5 to confirm recovery curve shape |
+| **Recall@5** | `1 if gt ∈ top-5 else 0` | Standard shallow cut-off |
+| **Recall@10** | `1 if gt ∈ top-10 else 0` | Primary retrieval cut-off; most baselines near-saturate here |
+| **MRR@10** | `1/rank` of first relevant hit, 0 if rank > 10 | Ranking quality — how high the correct result appears; closely tracks R@1 |
+| **Duplicate-Aware Recall@K** | Same as Recall@K, but any image in the same MD5 hash group counts as a hit | Accounts for 281 duplicate groups (589 images) with identical visual content |
+| **Duplicate-Aware MRR@10** | `1/rank` of first hit from the MD5-equivalent set | Prevents penalising retrieval of pixel-identical images |
 
-- All metrics are computed per-query, then averaged across the query set.
+- All metrics computed per-query, then macro-averaged across the query set.
 - Ground truth: each query maps to exactly one `ground_truth_row` index.
 - Duplicate awareness: uses `eval/duplicate_mapping.json` (MD5 content hashes).
+- Implemented in `eval/metrics.py`; `k_values=(1, 2, 3, 5, 10)` is the canonical call signature.
 
 ---
 
@@ -76,21 +82,31 @@
 ```
 /DATA5/prabhakar/telecom_retrieval/
 ├── eval/
-│   └── duplicate_mapping.json      # MD5 hash → row indices
+│   ├── duplicate_mapping.json      # MD5 hash → row indices
+│   └── metrics.py                  # Evaluation module (Recall@K, MRR, dup-aware)
 ├── queries/
-│   ├── q1_captions.json            # Q1 direct caption queries
-│   ├── q2_paraphrased.json         # Q2 LLM-paraphrased queries (pending)
-│   └── q3_context.json             # Q3 context-extracted queries
+│   ├── q1_captions.json            # Q1 direct caption queries (3,766)
+│   ├── q2_paraphrased.json         # Q2 LLM-paraphrased queries (3,766)
+│   └── q3_context.json             # Q3 context-extracted queries (3,542)
 ├── scripts/
-│   ├── 01_data_loader.py           # Data loading + duplicate detection
+│   ├── 01_data_loader.py           # Data loading + MD5 duplicate detection
 │   ├── 02_query_generator.py       # Q1 & Q3 generation
-│   └── 03_q2_paraphraser.py        # Q2 LLM paraphrasing (pending)
-├── indexes/                        # FAISS / BM25 indexes (future)
+│   ├── 03_q2_paraphraser.py        # Q2 LLM paraphrasing
+│   ├── 04_bm25_baselines.py        # M2: BM25 B1/B2 experiments
+│   ├── 05_dense_baselines.py       # M3: BGE-base D1/D2 experiments
+│   └── 06_dense_large_baselines.py # M4: BGE-large L1/L2 experiments
+├── indexes/                        # FAISS indexes (future)
 ├── models/                         # Model checkpoints (future)
 ├── notebooks/                      # Exploration notebooks
 ├── cache/                          # Intermediate caches
-├── logs/                           # Run logs
-└── reports/                        # Evaluation reports
+├── logs/                           # Run logs (m2–m4 runs)
+└── reports/
+    ├── m2_bm25_results.json        # M2 BM25 full metrics
+    ├── m3_dense_results.json       # M3 BGE-base full metrics
+    ├── m4_dense_large_results.json # M4 BGE-large full metrics
+    ├── M2_walkthrough.md           # M2 analysis report
+    ├── M3_walkthrough.md           # M3 analysis report
+    └── M4_walkthrough.md           # M4 analysis report
 ```
 
 ---
