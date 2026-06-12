@@ -196,7 +196,7 @@ def evaluate_run(
     all_predictions: List[List[int]],
     hash_to_rows: Dict[str, List[int]],
     row_to_hash: Dict[int, str],
-    k_values: Tuple[int, ...] = (1, 5, 10),
+    k_values: Tuple[int, ...] = (1, 2, 3, 5, 10),
     mrr_k: int = 10,
 ) -> Dict[str, float]:
     """
@@ -214,8 +214,8 @@ def evaluate_run(
     Returns
     -------
     dict with keys:
-      recall@1, recall@5, recall@10
-      dup_recall@1, dup_recall@5, dup_recall@10
+      recall@1, recall@2, recall@3, recall@5, recall@10
+      dup_recall@1, dup_recall@2, dup_recall@3, dup_recall@5, dup_recall@10
       mrr@10, dup_mrr@10
       num_queries
     """

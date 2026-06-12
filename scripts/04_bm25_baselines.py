@@ -175,14 +175,16 @@ def run_experiment(
             preds,
             hash_to_rows,
             row_to_hash,
-            k_values=(1, 5, 10),
+            k_values=(1, 2, 3, 5, 10),
             mrr_k=10,
         )
         exp_results[qset_name] = metrics
         log.info(
-            "    R@1=%.4f  R@5=%.4f  R@10=%.4f  MRR@10=%.4f  "
+            "    R@1=%.4f  R@2=%.4f  R@3=%.4f  R@5=%.4f  R@10=%.4f  MRR@10=%.4f  "
             "| dupR@10=%.4f  dupMRR@10=%.4f",
             metrics["recall@1"],
+            metrics["recall@2"],
+            metrics["recall@3"],
             metrics["recall@5"],
             metrics["recall@10"],
             metrics["mrr@10"],
@@ -286,13 +288,13 @@ def _print_summary_table(
     """Print a formatted comparison table to stdout."""
 
     HEADER = (
-        f"\n{'=' * 80}\n"
+        f"\n{'=' * 96}\n"
         f"  MILESTONE 2 — BM25 BASELINE SUMMARY\n"
-        f"{'=' * 80}\n"
+        f"{'=' * 96}\n"
         f"  {'Query':^6}  {'Experiment':^26}"
-        f"  {'R@1':>7}  {'R@5':>7}  {'R@10':>7}  {'MRR@10':>7}"
+        f"  {'R@1':>7}  {'R@2':>7}  {'R@3':>7}  {'R@5':>7}  {'R@10':>7}  {'MRR@10':>7}"
         f"  {'dupR@10':>9}  {'dupMRR@10':>10}\n"
-        f"  {'-' * 76}"
+        f"  {'-' * 90}"
     )
     print(HEADER)
 
@@ -302,17 +304,19 @@ def _print_summary_table(
             m = results_dict.get(qset, {})
             print(
                 f"  {qset:^6}  {tag:^26}"
-                f"  {m.get('recall@1', 0):>7.4f}"
-                f"  {m.get('recall@5', 0):>7.4f}"
+                f"  {m.get('recall@1',  0):>7.4f}"
+                f"  {m.get('recall@2',  0):>7.4f}"
+                f"  {m.get('recall@3',  0):>7.4f}"
+                f"  {m.get('recall@5',  0):>7.4f}"
                 f"  {m.get('recall@10', 0):>7.4f}"
-                f"  {m.get('mrr@10', 0):>7.4f}"
+                f"  {m.get('mrr@10',    0):>7.4f}"
                 f"  {m.get('dup_recall@10', 0):>9.4f}"
-                f"  {m.get('dup_mrr@10', 0):>10.4f}"
+                f"  {m.get('dup_mrr@10',    0):>10.4f}"
             )
         if qset != q_order[-1]:
-            print(f"  {'-' * 76}")
+            print(f"  {'-' * 90}")
 
-    print(f"{'=' * 80}\n")
+    print(f"{'=' * 96}\n")
 
 
 if __name__ == "__main__":
