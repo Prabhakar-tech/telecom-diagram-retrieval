@@ -1,0 +1,151 @@
+{
+    "summary": {
+        "easyocr_imported": true,
+        "gpu_used": false,
+        "average_time_per_image": 0.4615987420082092,
+        "empty_ocr_rate": 0.0,
+        "total_sample_size": 20
+    },
+    "samples": [
+        {
+            "index": 0,
+            "image_name": "image_0.png",
+            "caption": "TNL Update: Unsuccessful operation.",
+            "ocr_text": "HNB HNB-GW HHNB Configuration Transfer Request HHNB Configuration Transfer Responsel",
+            "time_seconds": 1.3585636615753174
+        },
+        {
+            "index": 1,
+            "image_name": "image_1.jpeg",
+            "caption": "1.28Mcps TDD Home NodeB Timing according to Macro Node B\u2019s DwPCH",
+            "ocr_text": "Mxto Node DwPTS UpPTS DwPTS UpPTS Timing dtetion Timing Ref L DwPTS UpPTS Timing with ~djustment DwPTS UpPTS Timing Ref 2 Timing with ~djustment Timing Ref 3 DwPTS UpPTS GP",
+            "time_seconds": 0.3496673107147217
+        },
+        {
+            "index": 2,
+            "image_name": "image_2.png",
+            "caption": "UE Registration for non CSG UEs or non CSG HNBs.",
+            "ocr_text": "UE HNB HNB GW CN RRC Connection Est UE identity; UE Rel; UE 2 RRC Initiab Direct Transferl(eg LU Request_.) Check Release_ UF Canabima Optional dentity request #Optona Accese Contro Wamherhin Venfcaton (IMSI, HNB) UE Registration Req (UE identity; UE Rel, UE Cap -) ACCBSS Contor Wamdeminip Venkaton FKB UE Registration Accept (Corltext-id_) Connect (Initial UE Messag?: 9 IsccP CR (Initial UE Message, 10. SCCPCC Continue with NAS procedure cap; (wsi",
+            "time_seconds": 0.45609068870544434
+        },
+        {
+            "index": 3,
+            "image_name": "image_3.jpeg",
+            "caption": "UE Registration for CSG UEs and CSG or Hybrid HNBs.",
+            "ocr_text": "UE HNB HNB GW CN RRC Connection Est. (TMSI or IMSI; UE Rel; UE Cap RRC Initial Direct Transfer Keg. LU Request __ Check Rele3ae UE Capabilities UE Registration (TMSI or IMSI; Rel; UE Cap - ) UE Registation UE Registration Accept (Context-id,-) Connect (Initial UE Message; SCCP CR (Initial UE Message _ SCCP CC 10. Optional MM Access Controlor Mamdernip Werkaon Continue with NAS procedure",
+            "time_seconds": 0.40028810501098633
+        },
+        {
+            "index": 4,
+            "image_name": "image_4.jpeg",
+            "caption": "UE Registration to open access HNBs.",
+            "ocr_text": "UE HNB HNB GW CN RRC Connection Est. (TMSI or IMSI; UE Rel; UE Cap RRC Initial Direct Transfer Keg. LU Request __ CheckUF Idanir UE Registration (TMSI or IMSI; Rel, UE Cap - ) UE Registation UE Registration Accept (Context-id,-) Connect (Initial UE Message; SCCP CR (Initial UE Messege _ SCCP CC 10. Optional MM Continue with NAS procedure",
+            "time_seconds": 0.25497937202453613
+        },
+        {
+            "index": 5,
+            "image_name": "image_5.jpeg",
+            "caption": "Iuh Disconnect procedure.",
+            "ocr_text": "UE HNB HNB-GW CN Establish Connection betueen UE and Network SCCP DT1 (RANAP RUA Direct Transfer Context - Iu Release Command) Id, CN Domain Id RANAP Release Command Release RRC Connection RUA Disconnect  (Context-ID_ CN Domain RANAP lu Release Complete) SCCP DTI (RANAP Iu Release Complete) SCCP RLSD SCCP : (opt ) HNBAP De-register (Context-ID) RLC",
+            "time_seconds": 0.34203219413757324
+        },
+        {
+            "index": 6,
+            "image_name": "image_6.jpeg",
+            "caption": "HNB to HNB Handover via Iurh interface \u2013 UE involved.",
+            "ocr_text": "Target UE Source HNB HNB-GW CN RNA Connec:RNSAHHW Banced Relocation Request (UE d, RANAP location Infomation Re est  . . ?AccepeeaRRABZKpdate = Requdst 2b. HNBAP TNL Update Respanse RNA Direct Transfer: RNSAP Enhanced Relocation Response RRC RB RNA Direct Transfer: RNSAR Relocation Commit Reconfiguration 6 RRC RB Recdnfiguration Complete_ Detect UE sync HNBAP Relocation Complete 8a.RAB Release Request |Unaccepted RABs) 8b. RAB Assignment Procedure to release unaccepted RABs HNBAP UE De-Registration 10. RNA Disconnect: RNSAR Enhanced Relocation Signalliv Transfer (L3 information",
+            "time_seconds": 0.42619967460632324
+        },
+        {
+            "index": 7,
+            "image_name": "image_7.jpeg",
+            "caption": "Soft Handover Initiation HNB to HNB.",
+            "ocr_text": "SHNB DHNB RRC Measurment Report Decision Remn RNA CONNECT (UE context id. RNSAP Radio Link Request ) Stint Rx RNA Direct Transfer (UE context id RNSAP Radio Link Setup Response RNA Direct Transfer (UE contextid, RNSAP Radio Link Restore Indication Strt T X RRC Active Sct Update RRC Active Set Updite Completc Sc\"p",
+            "time_seconds": 0.37077760696411133
+        },
+        {
+            "index": 8,
+            "image_name": "image_8.jpeg",
+            "caption": "HNB to HNB CELL_FACH/CELL_PCH/URA_PCH mobility",
+            "ocr_text": "UE Source HNB HNB-GW Target HNB RRC: Connection Setup. HNB assigns U-RNTI GW-RNC-ID HNB S-RNTI- prefix Tocally generated bits to UE RRC: CelURA Update (U-RNTI) 3. Based on the S-RNTI preix part of the received U-RNTI; determines the source HNB 3a. If target cannot detemine the source, may optionally query HNB-GW and,; if both HNBs support mobility, establish lurh interface 3a. HNBAP: U-RNTI Query 3a RNA: lurh Setup 3b. If target cannot detemine the source  may optionally teminate mobility and re- establish RRC connection RNA CONNECT (RNSAP: Uplink Signalling Transfer Indication) Context transfer RRC: CellURA Update Confim (New U-RNTE GW-RNC-ID + S-RNTI-prefix (Target HNB) + Locally generate bits)",
+            "time_seconds": 0.47957587242126465
+        },
+        {
+            "index": 9,
+            "image_name": "image_9.png",
+            "caption": "HNB Configuration Transfer.",
+            "ocr_text": "HNB, HNB-GW HNBz 0. HNB; already operating and registered at the HNB-GW HNBz switches to operational mode scans its environment 2. HNB Registration Procedure HNB; Identifies HNBZ neighbor HNB Configuration Transfer Request (request HNBz' lurh signalling TNL Address  HNB Configuration Transfer Response (reply HNBz' lurh signalling TNL Address) 6. The HNB, sets up an lurh connection dependent on the lurh connectivity option configured.",
+            "time_seconds": 0.31501126289367676
+        },
+        {
+            "index": 10,
+            "image_name": "image_10.jpeg",
+            "caption": "Enhanced Relocation from Open Access and Hybrid HNBs to RNC.",
+            "ocr_text": "UE Source HNB-GW CN Target HNB Ongoing CSPS session RRC Measurement Report message 2. Source HNB decides to initiate relocation to target cell RNA Connect [RNSAP Enhanced Relocation Request] RNSAP Enhanced Relocation Request RNA Direct Transfer RNSAP Enhanced Relocation Response [RNSAP Enhanced Relocation Response] RNA Direct Transfer [RNSAP Enhanced Relocation Commit] RRC Connection RNSAP Enhanced Relocation Commit Reconfiguration Request RRC Connection Reconfiguration Complete 11. RANAP Enhanced Relocation Complete Requestf RANAP Enhanced Relocation Complete Resp: 13. RANAP Enhanced 15. RUA Direct Transfer Relocation Complete 14.RANAP Release Confirm(CS only) [RANAP Iu Release Command Command] RUA Disconnect [RANAP Release Complete] 17. RANAP lu Release Complete RNC",
+            "time_seconds": 0.5976974964141846
+        },
+        {
+            "index": 11,
+            "image_name": "image_11.jpeg",
+            "caption": "Enhanced Relocation from RNC to Open Access HNB for CSG UEs.",
+            "ocr_text": "UE Target HNB-GW CN Source HNB RNC Ongoing]csPs session RRC Measurement Report message (PSC) 2. Source RNC decides initiate elocation to targe RNSAP Enhanced Relocation Request RNA Connect [RNSAP Enhanced Rekcation Request] RNA Direct Trnsfer [RNSAP Enhanced Rebcation Response] RNSAP Enhanced Relocation Response RNA Direct Trnsfer [RNSAP Enhanced RNSAP Enhanced Relocation Commit Rebcation Commit] RRC Connection Reconfiguration Request 10. RRC Connection Reconfiguntion Complete 11 . RUA Direct Transfer [RANAP Enhanced Rekcation Complete 12. RANAP Enhanced Request] Rekcation Complete Requestl 14. RUA Direct Transfer RANAP Enhanced [RANAP Enhanced Rekcation Complete Resp. Rekcation Complete Resp.] 15 . RUA Direct Trnsfer [RANAP Enhanced Rekcation Complete Confirm] 16. RANAP Enhanced (for CS only) Relocation Complete Confirm 17 . RANAP lu Release (for CS only) Commang RANAP lu Release Complete",
+            "time_seconds": 0.7156693935394287
+        },
+        {
+            "index": 12,
+            "image_name": "image_12.png",
+            "caption": "Enhanced Relocation from RNC to Hybrid HNB for CSG UEs.",
+            "ocr_text": "Target Source HNB-GWI CN HNB RNC OngoingcsPS session RRC Measurement Report message FSG ID_ CSG Membership Stdtus_ PSC ) Source RNC decides initiate reccation targetl RNA Connect [RNSAP RNSAP Enhanced Relocation Request Enhanced Rekcation Reques (CSGID, CSG Membership Status (CSG ID CSG Membership Status)] RNA Direct Transfer [RNSAP Enhanced Rekcation Response] RNSAP Enhanced Relocation Response RNA Direct Transfer [RNSAP Enhanced RNSAP Enhanced Relocation Commit Relcation Commii RRC Connection Reconfiguration Request 10. RRC Connection Reconfiguration Complete 11. HNB temporarly accepts the UE based on the provided CSG Membership Status 12. RUA Direct Transfer [RANAP Enhanced Rekcation Complete Request 13. RANAP Enhanced (CSG ID, Celb Access Model Rekcation Complete Requestl (CSG ID Access Modee 14.CN performs Mv 16. RUA Direct Transfer 15. RANAP Enhanced [RANAP Enhanced Rekcation Complete Resp. Rekcation Complete Resp. (CSG Membership Status) (CSG Membership Status)] 17. RUA Direct Transfer [RANAP Enhanced RANAP Enhanced Relocation Complete Confim]lRelocation Complete Confim (for CS only) (for CS only) 19. RANAP Release Commang 20. RANAP Release Complete",
+            "time_seconds": 0.8824141025543213
+        },
+        {
+            "index": 13,
+            "image_name": "image_13.jpeg",
+            "caption": "Soft Handover HNB to RNC via HNB-GW.",
+            "ocr_text": "HNB HNB-GW RNC Decision to setup new Radio Link 2. RNA Connect [RNSAP Radio Link Setup Request] 3. RNSAP Radio Link Setup Request 5 . RNA Direct Transfer 4. RNSAP Radio Link Setup [RNSAP Radio Link Setup Response Response] 6. RNSAP Radio Link Restorel Indication 7 . RNA Direct Transfer [RNSAP Radio Link Restore Indication]",
+            "time_seconds": 0.24481415748596191
+        },
+        {
+            "index": 14,
+            "image_name": "image_14.jpeg",
+            "caption": "Soft Handover from RNC to Open or Hybrid Access HNB via HNB-GW.",
+            "ocr_text": "HNB HNB-GW RNC Decision to setup new Radio Link RNSAP Radio Link Setup 3_ RNA Connect [RNSAP Request Radio Link Setup Request ] RNA Direct Transfer [RNSAP Radio Link Setup RNSAP Radio Link Setup Response] Response RNA Direct Transfer [RNSAP Radio Link Setup RNSAP Radio Link Setup Restore Indication] Restore Indication",
+            "time_seconds": 0.26742124557495117
+        },
+        {
+            "index": 15,
+            "image_name": "image_15.jpeg",
+            "caption": "Soft Handover from RNC to Open or Hybrid Access HNB via HNB-GW.",
+            "ocr_text": "UE Source HNB HNB-GW Target RNC RRC: Connection Setup. HNB assigns U-RNTI = GW-RNC-ID + HNB S-RNTI- prefix locally generated bits to UE RRC: Cell/URA Update (U-RNTI) 3. RNC detects the source HNB- GW by the RNC-ID in the U- RNTI RNSAP: UPLINK SIGNALLING TRANSFER INDICATION 5. HNB-GW finds the source HNB Cell and sets up lurh if needed RNA CONNECT(RNSAP UL Signalling Transfer Indication) Context Transfer RRC: CeIl/URA Update Confirm",
+            "time_seconds": 0.3049623966217041
+        },
+        {
+            "index": 16,
+            "image_name": "image_16.jpeg",
+            "caption": "RNC to HNB CELL_FACH/CELL_PCH and URA_PCH mobility",
+            "ocr_text": "UE Source RNC HNB-GW Target HNB RRC Connection Setup RNC assigns URNTI RNC-ID locally generated bits RRC: CellURA Update (URNTI) Based on U-RNTI, HNB detects the source neighbour RNC 3a. If target cannot determine the source may optionally query HNB-GW ad establish| Iurh interface 3a. HNBAP: URNTI Query 3a. RNA: lurh Setup 3b. If target canot determine the source_ mav optionally terminate mobility and re- establish RRC connection RNSAP: UPLINK SIGNALLING TRANSFER INDICATION HNB-GW finds the proper source RNC based on the RNC ID included RNA Connect message 6.RNSAP: UPLINK SIGNALLING TRANSFER INDICATION Context Transfer RRC: CelVURA Update Confirm",
+            "time_seconds": 0.4486231803894043
+        },
+        {
+            "index": 17,
+            "image_name": "image_17.png",
+            "caption": "Iuh\u2013Interface Protocol Stack.",
+            "ocr_text": "Radio ControL lane User Plane Vetwork RANAP MHNBAP SABP PCAP Layer lu UP ProtocoL Layer- RUA PUA ransport Transport Network Transport | Network Vetwork User 'lane Transport User lane Network Layer ContmL Plane (void) CS: RTP RTCP MU: GIP-U SCTP UDR [P DIll Link Diti Link Physical Layer Note 1) RTCP optional Note 2) Ju UP terminated in CN and HNB only (i.e. not in the HNB GW)",
+            "time_seconds": 0.35743117332458496
+        },
+        {
+            "index": 18,
+            "image_name": "image_18.png",
+            "caption": "Establishment of signalling connection over Iupc and Iuh connections between HNB",
+            "ocr_text": "Source HNB HNB-GW SAS PUA:CONNECT (PCAP Context Id, PCAP PDU, SAS Indicator) 2. The HNB-GW: routes the PCAP-PDU; to Target SAS(lupc already configured) maintains mapping between the SCCP based signalling connection and the PUA based signalling connection 3. SCCP connection establishment as described in TS 25.450[xx] subclause 4.5.1.3. The SAS processes the received PCAP PDU and replies at application level with PCAP PDUz 4. PUA DIRECT TRANSFER (PCAP Context Id, PCAP FDU) HNB and SAS lupc connected for the specific signalling connection",
+            "time_seconds": 0.326596736907959
+        },
+        {
+            "index": 19,
+            "image_name": "image_19.png",
+            "caption": "Establishment of signalling connection over Iuh and Iupc connections between HNB",
+            "ocr_text": "Source HNB HNB-GW SAS PUA:CONNECT (PCAP Context Id, PCAP PDU, SAS Indicator) The HNB-GW routes the PCAP-PDU; to Target SAS(lupc already configured) maintains mapping between the SCCP based signalling connection and the PUA based signalling connection 3. SCCP connection establishment as described in TS 25.450[xx] subclause 4.5.1.3. The SAS refuses the connection due to e.g Limited resources_ APCAP PDUz may be included in the SCCP-CREF message. 4. HNB-GW maps the SCCP-CREF into a PUA DISCONNECT based on the mappinge between SCCP based signaling connection and the PUA- based signalling connection_ PUA:DISCONNECT (PCAP Context Id;, Cause , PCAP IPDU)",
+            "time_seconds": 0.3331592082977295
+        }
+    ]
+}

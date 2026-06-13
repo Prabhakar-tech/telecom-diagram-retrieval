@@ -1,0 +1,146 @@
+{
+  "milestone": "M6a",
+  "experiments": {
+    "OCR_only_BM25": {
+      "Q1": {
+        "recall@1": 0.174456,
+        "recall@2": 0.256506,
+        "recall@3": 0.305629,
+        "recall@5": 0.372278,
+        "recall@10": 0.452204,
+        "dup_recall@1": 0.195698,
+        "dup_recall@2": 0.259958,
+        "dup_recall@3": 0.31333,
+        "dup_recall@5": 0.375996,
+        "dup_recall@10": 0.452735,
+        "mrr@10": 0.258027,
+        "dup_mrr@10": 0.270274,
+        "num_queries": 3766
+      },
+      "Q2": {
+        "recall@1": 0.135157,
+        "recall@2": 0.207913,
+        "recall@3": 0.249867,
+        "recall@5": 0.307223,
+        "recall@10": 0.388476,
+        "dup_recall@1": 0.152416,
+        "dup_recall@2": 0.209506,
+        "dup_recall@3": 0.258895,
+        "dup_recall@5": 0.310143,
+        "dup_recall@10": 0.389538,
+        "mrr@10": 0.20965,
+        "dup_mrr@10": 0.219735,
+        "num_queries": 3766
+      },
+      "Q3": {
+        "recall@1": 0.116601,
+        "recall@2": 0.178995,
+        "recall@3": 0.216262,
+        "recall@5": 0.267081,
+        "recall@10": 0.342744,
+        "dup_recall@1": 0.131282,
+        "dup_recall@2": 0.17956,
+        "dup_recall@3": 0.222473,
+        "dup_recall@5": 0.271033,
+        "dup_recall@10": 0.343874,
+        "mrr@10": 0.181598,
+        "dup_mrr@10": 0.190069,
+        "num_queries": 3542
+      }
+    },
+    "Caption_plus_OCR_BM25": {
+      "Q1": {
+        "recall@1": 0.657727,
+        "recall@2": 0.85077,
+        "recall@3": 0.903611,
+        "recall@5": 0.947159,
+        "recall@10": 0.983006,
+        "dup_recall@1": 0.712161,
+        "dup_recall@2": 0.852629,
+        "dup_recall@3": 0.910515,
+        "dup_recall@5": 0.950611,
+        "dup_recall@10": 0.983006,
+        "mrr@10": 0.787009,
+        "dup_mrr@10": 0.81532,
+        "num_queries": 3766
+      },
+      "Q2": {
+        "recall@1": 0.568508,
+        "recall@2": 0.764206,
+        "recall@3": 0.825013,
+        "recall@5": 0.885024,
+        "recall@10": 0.936803,
+        "dup_recall@1": 0.613648,
+        "dup_recall@2": 0.766861,
+        "dup_recall@3": 0.834838,
+        "dup_recall@5": 0.890069,
+        "dup_recall@10": 0.937334,
+        "mrr@10": 0.707662,
+        "dup_mrr@10": 0.731923,
+        "num_queries": 3766
+      },
+      "Q3": {
+        "recall@1": 0.28402,
+        "recall@2": 0.403727,
+        "recall@3": 0.468662,
+        "recall@5": 0.545172,
+        "recall@10": 0.631282,
+        "dup_recall@1": 0.311124,
+        "dup_recall@2": 0.407962,
+        "dup_recall@3": 0.479955,
+        "dup_recall@5": 0.550536,
+        "dup_recall@10": 0.632411,
+        "mrr@10": 0.394927,
+        "dup_mrr@10": 0.41087,
+        "num_queries": 3542
+      }
+    },
+    "Caption_Context_plus_OCR_BM25": {
+      "Q1": {
+        "recall@1": 0.644716,
+        "recall@2": 0.836166,
+        "recall@3": 0.898035,
+        "recall@5": 0.945035,
+        "recall@10": 0.976899,
+        "dup_recall@1": 0.697823,
+        "dup_recall@2": 0.85077,
+        "dup_recall@3": 0.914498,
+        "dup_recall@5": 0.954859,
+        "dup_recall@10": 0.980351,
+        "mrr@10": 0.77644,
+        "dup_mrr@10": 0.808334,
+        "num_queries": 3766
+      },
+      "Q2": {
+        "recall@1": 0.52496,
+        "recall@2": 0.70393,
+        "recall@3": 0.778545,
+        "recall@5": 0.847053,
+        "recall@10": 0.898301,
+        "dup_recall@1": 0.566649,
+        "dup_recall@2": 0.721455,
+        "dup_recall@3": 0.799788,
+        "dup_recall@5": 0.860329,
+        "dup_recall@10": 0.909453,
+        "mrr@10": 0.662297,
+        "dup_mrr@10": 0.690945,
+        "num_queries": 3766
+      },
+      "Q3": {
+        "recall@1": 0.619142,
+        "recall@2": 0.811124,
+        "recall@3": 0.875212,
+        "recall@5": 0.925466,
+        "recall@10": 0.968662,
+        "dup_recall@1": 0.663749,
+        "dup_recall@2": 0.815359,
+        "dup_recall@3": 0.880011,
+        "dup_recall@5": 0.928571,
+        "dup_recall@10": 0.969226,
+        "mrr@10": 0.754107,
+        "dup_mrr@10": 0.777808,
+        "num_queries": 3542
+      }
+    }
+  }
+}

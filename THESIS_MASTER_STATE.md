@@ -18,7 +18,8 @@
 | M4 | BGE-large dense embedding index (L1 Caption, L2 Cap+Ctx) | ✅ Complete | 2026-06-13 |
 | M5 | CLIP global visual baseline | ✅ Complete | 2026-06-13 |
 | M5.5 | Text fusion and rank-1 reranking | ✅ Complete | 2026-06-13 |
-| M6 | ColPali OCR-free visual document retrieval | ⬜ **Next** | — |
+| M6a | EasyOCR extraction and BM25 text baselines | ✅ Complete | 2026-06-13 |
+| M6b | ColPali OCR-free visual document retrieval | ⬜ **Next** | — |
 | M7 | Qwen2-VL visual document retrieval | ⬜ Pending | — |
 | M8 | Cross-baseline evaluation & ablation tables | ⬜ Pending | — |
 | M9 | Hybrid retrieval experiments | ⬜ Pending | — |
@@ -47,7 +48,10 @@
 | Text fusion script | `scripts/08_text_fusion_rerank.py` | ✅ Ready |
 | M5.5 results | `reports/m55_text_fusion_rerank_results.json` | ✅ Ready |
 | M5.5 walkthrough | `reports/M55_text_fusion_rerank_walkthrough.md` | ✅ Ready |
-
+| M6a OCR script | `scripts/09_ocr_baselines.py` | ✅ Ready |
+| M6a OCR index | `indexes/m6_ocr_extracted_text.json` | ✅ Ready |
+| M6a OCR results | `reports/m6_ocr_results.json` | ✅ Ready |
+| M6a walkthrough | `reports/M6_ocr_visual_walkthrough.md` | ✅ Ready |
 ---
 
 ## Environment

@@ -39,7 +39,8 @@
 | CLIP | Global Visual | `openai/clip-vit-base-patch32` or `openai/clip-vit-large-patch14` | Encode (query_text, image) pairs |
 | Text Fusion (H1c) | Late Fusion | Reciprocal Rank Fusion (RRF) | Fuses top candidates from B1, B2, D1, D2. An RRF `k=10` constant proved superior for Rank-1 precision. |
 | Reranker (CE) | Cross-Encoder | `BAAI/bge-reranker-base` | Applied to the union of top-50 from base text retrievers. **Significantly improved Q3** (+6% R@1), but hurt Q1/Q2 caption matching. |
-| ColPali | OCR-free Visual Document | `vidore/colpali-v1.3` | Late-interaction over page patches |
+| EasyOCR (M6a) | Visual Text | `easyocr` + `rank_bm25` | Extracted text from diagrams. **Adds noise and dilutes exact caption matching**, lowering R@1 across all query types. |
+| ColPali (M6b) | OCR-free Visual Document | `vidore/colpali-v1.3` | Late-interaction over page patches |
 | Qwen2-VL | OCR-free Visual Document | `Qwen/Qwen2-VL-7B-Instruct` | Vision-language encoder |
 
 ---
@@ -97,9 +98,11 @@
 │   ├── 04_bm25_baselines.py        # M2: BM25 B1/B2 experiments
 │   ├── 05_dense_baselines.py       # M3: BGE-base D1/D2 experiments
 │   ├── 06_dense_large_baselines.py # M4: BGE-large L1/L2 experiments
-│   └── 07_clip_baseline.py         # M5: CLIP visual baseline
-├── indexes/                        # FAISS indexes (future)
-├── models/                         # Model checkpoints (future)
+│   ├── 07_clip_baseline.py         # M5: CLIP visual baseline
+│   ├── 08_text_fusion_rerank.py    # M5.5: Text fusion and reranking
+│   └── 09_ocr_baselines.py         # M6a: EasyOCR extraction and retrieval
+├── indexes/                        # FAISS indexes and extracted data
+│   └── m6_ocr_extracted_text.json  # M6a: Extracted OCR text
 ├── notebooks/                      # Exploration notebooks
 ├── cache/                          # Intermediate caches
 ├── logs/                           # Run logs (m2–m4 runs)
@@ -109,11 +112,14 @@
     ├── m4_dense_large_results.json # M4 BGE-large full metrics
     ├── m5_clip_results.json        # M5 CLIP full metrics
     ├── m55_text_fusion_rerank_results.json # M5.5 text fusion and rerank metrics
+    ├── m6_ocr_quality_report.json  # M6a OCR quality stats
+    ├── m6_ocr_results.json         # M6a OCR retrieval metrics
     ├── M2_walkthrough.md           # M2 analysis report
     ├── M3_walkthrough.md           # M3 analysis report
     ├── M4_walkthrough.md           # M4 analysis report
     ├── M5_walkthrough.md           # M5 analysis report
-    └── M55_text_fusion_rerank_walkthrough.md # M5.5 analysis report
+    ├── M55_text_fusion_rerank_walkthrough.md # M5.5 analysis report
+    └── M6_ocr_visual_walkthrough.md # M6a analysis report
 ```
 
 ---
