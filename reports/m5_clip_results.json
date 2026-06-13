@@ -1,0 +1,63 @@
+{
+  "milestone": "M5",
+  "description": "Global Visual Baseline (CLIP)",
+  "generated_at": "2026-06-13T20:06:01",
+  "model": "openai/clip-vit-base-patch32",
+  "embed_dim": 512,
+  "eval_time_sec": 5.174957582028583,
+  "storage_size_mb": 7.3555908203125,
+  "corpus": {
+    "total_images": 3766
+  },
+  "experiments": {
+    "CLIP_Visual": {
+      "results": {
+        "Q1": {
+          "recall@1": 0.046203,
+          "recall@2": 0.072756,
+          "recall@3": 0.088157,
+          "recall@5": 0.109665,
+          "recall@10": 0.142592,
+          "dup_recall@1": 0.0547,
+          "dup_recall@2": 0.074084,
+          "dup_recall@3": 0.08975,
+          "dup_recall@5": 0.111259,
+          "dup_recall@10": 0.142857,
+          "mrr@10": 0.073865,
+          "dup_mrr@10": 0.078682,
+          "num_queries": 3766
+        },
+        "Q2": {
+          "recall@1": 0.031067,
+          "recall@2": 0.051779,
+          "recall@3": 0.065056,
+          "recall@5": 0.084971,
+          "recall@10": 0.110196,
+          "dup_recall@1": 0.035316,
+          "dup_recall@2": 0.052841,
+          "dup_recall@3": 0.066914,
+          "dup_recall@5": 0.086564,
+          "dup_recall@10": 0.110993,
+          "mrr@10": 0.053721,
+          "dup_mrr@10": 0.056342,
+          "num_queries": 3766
+        },
+        "Q3": {
+          "recall@1": 0.031056,
+          "recall@2": 0.050536,
+          "recall@3": 0.064935,
+          "recall@5": 0.084133,
+          "recall@10": 0.117165,
+          "dup_recall@1": 0.037549,
+          "dup_recall@2": 0.05223,
+          "dup_recall@3": 0.068323,
+          "dup_recall@5": 0.085827,
+          "dup_recall@10": 0.117448,
+          "mrr@10": 0.054364,
+          "dup_mrr@10": 0.058347,
+          "num_queries": 3542
+        }
+      }
+    }
+  }
+}

@@ -16,8 +16,8 @@
 | M2 | BM25 lexical baseline (B1 Caption, B2 Cap+Ctx) | ✅ Complete | 2026-06-12 |
 | M3 | BGE-base dense embedding index (D1 Caption, D2 Cap+Ctx) | ✅ Complete | 2026-06-12 |
 | M4 | BGE-large dense embedding index (L1 Caption, L2 Cap+Ctx) | ✅ Complete | 2026-06-13 |
-| M5 | CLIP global visual baseline | ⬜ **Next** | — |
-| M6 | ColPali OCR-free visual document retrieval | ⬜ Pending | — |
+| M5 | CLIP global visual baseline | ✅ Complete | 2026-06-13 |
+| M6 | ColPali OCR-free visual document retrieval | ⬜ **Next** | — |
 | M7 | Qwen2-VL visual document retrieval | ⬜ Pending | — |
 | M8 | Cross-baseline evaluation & ablation tables | ⬜ Pending | — |
 | M9 | Hybrid retrieval experiments | ⬜ Pending | — |

@@ -94,7 +94,8 @@
 │   ├── 03_q2_paraphraser.py        # Q2 LLM paraphrasing
 │   ├── 04_bm25_baselines.py        # M2: BM25 B1/B2 experiments
 │   ├── 05_dense_baselines.py       # M3: BGE-base D1/D2 experiments
-│   └── 06_dense_large_baselines.py # M4: BGE-large L1/L2 experiments
+│   ├── 06_dense_large_baselines.py # M4: BGE-large L1/L2 experiments
+│   └── 07_clip_baseline.py         # M5: CLIP visual baseline
 ├── indexes/                        # FAISS indexes (future)
 ├── models/                         # Model checkpoints (future)
 ├── notebooks/                      # Exploration notebooks
@@ -104,9 +105,11 @@
     ├── m2_bm25_results.json        # M2 BM25 full metrics
     ├── m3_dense_results.json       # M3 BGE-base full metrics
     ├── m4_dense_large_results.json # M4 BGE-large full metrics
+    ├── m5_clip_results.json        # M5 CLIP full metrics
     ├── M2_walkthrough.md           # M2 analysis report
     ├── M3_walkthrough.md           # M3 analysis report
-    └── M4_walkthrough.md           # M4 analysis report
+    ├── M4_walkthrough.md           # M4 analysis report
+    └── M5_walkthrough.md           # M5 analysis report
 ```
 
 ---

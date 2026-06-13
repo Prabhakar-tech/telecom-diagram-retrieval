@@ -1,0 +1,5 @@
+{
+  "note": "Complementarity calculation skipped or stubbed because per-query prediction JSONs for M2/M3 are not found. Saved CLIP predictions for future hybrid fusion.",
+  "M3_dense_available": false,
+  "M2_bm25_available": false
+}

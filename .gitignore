@@ -1,2 +1,17 @@
 __pycache__/
 *.pyc
+
+# Generated caches and logs
+cache/
+models/
+logs/*.log
+__pycache__/
+*.pyc
+
+# Large/generated retrieval artifacts
+indexes/*embeddings*.npy
+indexes/*.faiss
+indexes/*.index
+
+# HuggingFace/model cache
+hf_cache/
