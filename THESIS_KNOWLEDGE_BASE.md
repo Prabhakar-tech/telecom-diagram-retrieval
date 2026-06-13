@@ -37,6 +37,8 @@
 | BGE-base (D1/D2) | Dense Semantic | `BAAI/bge-base-en-v1.5` | 768-d, FAISS `IndexFlatIP`; **designated dense baseline for M9 hybrid** — outperforms BGE-large on this corpus |
 | BGE-large (L1/L2) | Dense Semantic | `BAAI/bge-large-en-v1.5` | 1024-d; **underperforms BGE-base across all configs** (M4 result) — short-text saturation / domain drift; not recommended for further experiments |
 | CLIP | Global Visual | `openai/clip-vit-base-patch32` or `openai/clip-vit-large-patch14` | Encode (query_text, image) pairs |
+| Text Fusion (H1c) | Late Fusion | Reciprocal Rank Fusion (RRF) | Fuses top candidates from B1, B2, D1, D2. An RRF `k=10` constant proved superior for Rank-1 precision. |
+| Reranker (CE) | Cross-Encoder | `BAAI/bge-reranker-base` | Applied to the union of top-50 from base text retrievers. **Significantly improved Q3** (+6% R@1), but hurt Q1/Q2 caption matching. |
 | ColPali | OCR-free Visual Document | `vidore/colpali-v1.3` | Late-interaction over page patches |
 | Qwen2-VL | OCR-free Visual Document | `Qwen/Qwen2-VL-7B-Instruct` | Vision-language encoder |
 
@@ -106,10 +108,12 @@
     ├── m3_dense_results.json       # M3 BGE-base full metrics
     ├── m4_dense_large_results.json # M4 BGE-large full metrics
     ├── m5_clip_results.json        # M5 CLIP full metrics
+    ├── m55_text_fusion_rerank_results.json # M5.5 text fusion and rerank metrics
     ├── M2_walkthrough.md           # M2 analysis report
     ├── M3_walkthrough.md           # M3 analysis report
     ├── M4_walkthrough.md           # M4 analysis report
-    └── M5_walkthrough.md           # M5 analysis report
+    ├── M5_walkthrough.md           # M5 analysis report
+    └── M55_text_fusion_rerank_walkthrough.md # M5.5 analysis report
 ```
 
 ---

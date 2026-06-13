@@ -17,6 +17,7 @@
 | M3 | BGE-base dense embedding index (D1 Caption, D2 Cap+Ctx) | ✅ Complete | 2026-06-12 |
 | M4 | BGE-large dense embedding index (L1 Caption, L2 Cap+Ctx) | ✅ Complete | 2026-06-13 |
 | M5 | CLIP global visual baseline | ✅ Complete | 2026-06-13 |
+| M5.5 | Text fusion and rank-1 reranking | ✅ Complete | 2026-06-13 |
 | M6 | ColPali OCR-free visual document retrieval | ⬜ **Next** | — |
 | M7 | Qwen2-VL visual document retrieval | ⬜ Pending | — |
 | M8 | Cross-baseline evaluation & ablation tables | ⬜ Pending | — |
@@ -43,6 +44,9 @@
 | Dense large script | `scripts/06_dense_large_baselines.py` | ✅ Ready |
 | Dense large results | `reports/m4_dense_large_results.json` | ✅ Ready |
 | M4 walkthrough | `reports/M4_walkthrough.md` | ✅ Ready |
+| Text fusion script | `scripts/08_text_fusion_rerank.py` | ✅ Ready |
+| M5.5 results | `reports/m55_text_fusion_rerank_results.json` | ✅ Ready |
+| M5.5 walkthrough | `reports/M55_text_fusion_rerank_walkthrough.md` | ✅ Ready |
 
 ---
 
