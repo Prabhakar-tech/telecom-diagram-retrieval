@@ -40,7 +40,7 @@
 | Text Fusion (H1c) | Late Fusion | Reciprocal Rank Fusion (RRF) | Fuses top candidates from B1, B2, D1, D2. An RRF `k=10` constant proved superior for Rank-1 precision. |
 | Reranker (CE) | Cross-Encoder | `BAAI/bge-reranker-base` | Applied to the union of top-50 from base text retrievers. **Significantly improved Q3** (+6% R@1), but hurt Q1/Q2 caption matching. |
 | EasyOCR (M6a) | Visual Text | `easyocr` + `rank_bm25` | Extracted text from diagrams. **Adds noise and dilutes exact caption matching**, lowering R@1 across all query types. |
-| ColPali (M6b) | OCR-free Visual Document | `vidore/colpali-v1.3` | Late-interaction over page patches |
+| ColPali (M6b) | OCR-free Visual Document | `vidore/colpali-v1.2` | Failed to retrieve diagrams zero-shot. Extremely poor semantic matching for dense acronyms in technical figures. |
 | Qwen2-VL | OCR-free Visual Document | `Qwen/Qwen2-VL-7B-Instruct` | Vision-language encoder |
 
 ---

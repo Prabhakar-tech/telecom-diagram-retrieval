@@ -1,0 +1,42 @@
+{
+  "model_name": "vidore/colpali-v1.2",
+  "dtype": "torch.bfloat16",
+  "device": "cuda:0",
+  "load_time_s": 24.58,
+  "gpu_memory": {
+    "model_size_mb": 5653.27,
+    "peak_memory_mb": 31974.96
+  },
+  "timings": {
+    "images_encoded": 10,
+    "total_image_encode_s": 1.43,
+    "time_per_image_s": 0.143,
+    "estimated_full_run_h": 0.15,
+    "scoring_time_s": 0.0123
+  },
+  "index_size": {
+    "embedding_shape": [
+      10,
+      1031,
+      128
+    ],
+    "bytes_per_image": 263936.0,
+    "estimated_full_index_mb": 947.94
+  },
+  "feasibility": {
+    "is_safe": true,
+    "notes": "Memory footprint is highly manageable. A single batch retrieval matrix multiplication easily fits in VRAM."
+  },
+  "tiny_retrieval_test": {
+    "query_count": 5,
+    "image_count": 10,
+    "score_matrix_shape": [
+      5,
+      10
+    ],
+    "sample_scores": [
+      13.875,
+      13.75
+    ]
+  }
+}

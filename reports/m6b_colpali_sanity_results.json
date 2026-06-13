@@ -1,0 +1,47 @@
+{
+  "q1": {
+    "recall@1": 0.0,
+    "recall@2": 0.0,
+    "recall@3": 0.0,
+    "recall@5": 0.0,
+    "recall@10": 0.01,
+    "dup_recall@1": 0.0,
+    "dup_recall@2": 0.0,
+    "dup_recall@3": 0.0,
+    "dup_recall@5": 0.0,
+    "dup_recall@10": 0.01,
+    "mrr@10": 0.001429,
+    "dup_mrr@10": 0.001429,
+    "num_queries": 100
+  },
+  "q2": {
+    "recall@1": 0.0,
+    "recall@2": 0.0,
+    "recall@3": 0.01,
+    "recall@5": 0.01,
+    "recall@10": 0.01,
+    "dup_recall@1": 0.0,
+    "dup_recall@2": 0.0,
+    "dup_recall@3": 0.01,
+    "dup_recall@5": 0.01,
+    "dup_recall@10": 0.01,
+    "mrr@10": 0.003333,
+    "dup_mrr@10": 0.003333,
+    "num_queries": 100
+  },
+  "q3": {
+    "recall@1": 0.02,
+    "recall@2": 0.03,
+    "recall@3": 0.05,
+    "recall@5": 0.06,
+    "recall@10": 0.11,
+    "dup_recall@1": 0.02,
+    "dup_recall@2": 0.03,
+    "dup_recall@3": 0.05,
+    "dup_recall@5": 0.06,
+    "dup_recall@10": 0.11,
+    "mrr@10": 0.040385,
+    "dup_mrr@10": 0.040563,
+    "num_queries": 100
+  }
+}

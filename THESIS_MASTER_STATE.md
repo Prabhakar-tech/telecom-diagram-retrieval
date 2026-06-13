@@ -14,12 +14,17 @@
 | M1.2 | Q1 (3,766 captions) + Q3 (3,542 context queries) generation | ✅ Complete | 2026-06-12 |
 | M1.3 | Knowledge base creation + Q2 paraphrase generation (local LLM) | ✅ Complete | 2026-06-12 |
 | M2 | BM25 lexical baseline (B1 Caption, B2 Cap+Ctx) | ✅ Complete | 2026-06-12 |
-| M3 | BGE-base dense embedding index (D1 Caption, D2 Cap+Ctx) | ✅ Complete | 2026-06-12 |
+| M1.0 | Environment audit, directory setup, path verification | ✅ Complete | 2026-06-13 |
+| M1.1 | Data loader + MD5 duplicate mapping (281 groups, 589 dupes) | ✅ Complete | 2026-06-13 |
+| M1.2 | Q1 (3,766 captions) + Q3 (3,542 context queries) generation | ✅ Complete | 2026-06-13 |
+| M1.3 | Knowledge base creation + Q2 paraphrase generation (local LLM) | ✅ Complete | 2026-06-13 |
+| M2 | BM25 lexical baseline (B1 Caption, B2 Cap+Ctx) | ✅ Complete | 2026-06-13 |
+| M3 | BGE-base dense embedding index (D1 Caption, D2 Cap+Ctx) | ✅ Complete | 2026-06-13 |
 | M4 | BGE-large dense embedding index (L1 Caption, L2 Cap+Ctx) | ✅ Complete | 2026-06-13 |
 | M5 | CLIP global visual baseline | ✅ Complete | 2026-06-13 |
 | M5.5 | Text fusion and rank-1 reranking | ✅ Complete | 2026-06-13 |
 | M6a | EasyOCR extraction and BM25 text baselines | ✅ Complete | 2026-06-13 |
-| M6b | ColPali OCR-free visual document retrieval | ⬜ **Next** | — |
+| M6b | ColPali OCR-free visual document retrieval | ✅ Complete | 2026-06-13 |
 | M7 | Qwen2-VL visual document retrieval | ⬜ Pending | — |
 | M8 | Cross-baseline evaluation & ablation tables | ⬜ Pending | — |
 | M9 | Hybrid retrieval experiments | ⬜ Pending | — |

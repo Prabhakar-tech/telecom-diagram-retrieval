@@ -15,3 +15,9 @@ indexes/*.index
 
 # HuggingFace/model cache
 hf_cache/
+
+# ColPali Indexes
+indexes/colpali_index/*.pt
+indexes/colpali_index/*.bin
+indexes/colpali_index/*.safetensors
+run.pid

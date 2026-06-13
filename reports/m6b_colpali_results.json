@@ -1,0 +1,47 @@
+{
+  "q1": {
+    "recall@1": 0.002655,
+    "recall@2": 0.004249,
+    "recall@3": 0.005576,
+    "recall@5": 0.010356,
+    "recall@10": 0.018056,
+    "dup_recall@1": 0.002655,
+    "dup_recall@2": 0.004249,
+    "dup_recall@3": 0.005842,
+    "dup_recall@5": 0.010621,
+    "dup_recall@10": 0.018587,
+    "mrr@10": 0.005953,
+    "dup_mrr@10": 0.006106,
+    "num_queries": 3766
+  },
+  "q2": {
+    "recall@1": 0.001859,
+    "recall@2": 0.00239,
+    "recall@3": 0.00478,
+    "recall@5": 0.007169,
+    "recall@10": 0.011418,
+    "dup_recall@1": 0.001859,
+    "dup_recall@2": 0.00239,
+    "dup_recall@3": 0.00478,
+    "dup_recall@5": 0.007169,
+    "dup_recall@10": 0.011418,
+    "mrr@10": 0.00403,
+    "dup_mrr@10": 0.00403,
+    "num_queries": 3766
+  },
+  "q3": {
+    "recall@1": 0.002823,
+    "recall@2": 0.005647,
+    "recall@3": 0.008187,
+    "recall@5": 0.014963,
+    "recall@10": 0.028797,
+    "dup_recall@1": 0.003388,
+    "dup_recall@2": 0.006494,
+    "dup_recall@3": 0.009034,
+    "dup_recall@5": 0.016375,
+    "dup_recall@10": 0.029362,
+    "mrr@10": 0.008434,
+    "dup_mrr@10": 0.009133,
+    "num_queries": 3542
+  }
+}

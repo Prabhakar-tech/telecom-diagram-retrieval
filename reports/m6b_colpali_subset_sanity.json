@@ -1,0 +1,15 @@
+{
+  "recall@1": 0.02,
+  "recall@2": 0.03,
+  "recall@3": 0.05,
+  "recall@5": 0.11,
+  "recall@10": 0.19,
+  "dup_recall@1": 0.02,
+  "dup_recall@2": 0.03,
+  "dup_recall@3": 0.05,
+  "dup_recall@5": 0.11,
+  "dup_recall@10": 0.19,
+  "mrr@10": 0.055996,
+  "dup_mrr@10": 0.055996,
+  "num_queries": 100
+}
