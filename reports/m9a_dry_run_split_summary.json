@@ -1,0 +1,14 @@
+{
+  "train_row_count": 2628,
+  "val_row_count": 380,
+  "test_row_count": 758,
+  "train_duplicate_group_count": 2420,
+  "val_duplicate_group_count": 345,
+  "test_duplicate_group_count": 693,
+  "leakage_detected": false,
+  "rows_with_missing_images": 0,
+  "rows_with_missing_captions": 0,
+  "q1_test_query_count": 758,
+  "q2_test_query_count": 758,
+  "q3_test_query_count": 723
+}

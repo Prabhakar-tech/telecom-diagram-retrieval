@@ -25,6 +25,7 @@
 | M8 | Master Ablation + Statistical Validation | ✅ Complete | 2026-06-15 |
 | M9 | Qualitative Error Analysis + Retrieval Gallery | ⬜ Pending | — |
 | M10 | Final Evidence-Based Architecture + Defense Notes | ⬜ Pending | — |
+| M9A | Visual Domain Adaptation Pilot Planning | ✅ Complete | 2026-06-16 |
 | Optional | Qwen2-VL / ColQwen2 visual document retrieval | ⬜ Optional | — |
 | Optional | Source-aware / structure-aware retrieval | ⬜ Optional | — |
 
@@ -72,6 +73,14 @@
 | M7 results | `reports/m7_hybrid_lexical_dense_results.json` | ✅ Ready |
 | M7 win/loss matrix | `reports/m7_per_query_win_loss.csv` | ✅ Ready |
 | M7 walkthrough | `reports/M7_hybrid_lexical_dense_walkthrough.md` | ✅ Ready |
+| M9A planning document | `reports/M9A_visual_domain_adaptation_plan.md` | ✅ Ready |
+| M9A feasibility audit | `reports/m9a_visual_adaptation_feasibility_audit.json` | ✅ Ready |
+| M9A split strategy | `reports/m9a_duplicate_safe_split_strategy.md` | ✅ Ready |
+| M9A expected experiments | `reports/m9a_expected_experiments.csv` | ✅ Ready |
+| M9A image caption pairs | `reports/m9a_image_caption_pair_audit.csv` | ✅ Ready |
+| M9A split summary | `reports/m9a_dry_run_split_summary.json` | ✅ Ready |
+| M9A duplicate audit | `reports/m9a_duplicate_group_audit.csv` | ✅ Ready |
+| M9A planning script | `scripts/16_m9a_visual_adaptation_planning.py` | ✅ Ready |
 ---
 
 ## Environment

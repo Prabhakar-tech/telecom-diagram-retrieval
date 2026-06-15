@@ -43,6 +43,7 @@
 | ColPali (M6b) | OCR-free Visual Document | `vidore/colpali-v1.2` | Failed to retrieve diagrams zero-shot. Extremely poor semantic matching for dense acronyms in technical figures. |
 | Acronym Expansion (M6.5) | Query Rewriting | Domain Dictionary + Fusion | **Crucial constraint**: Pure expansion hurts. Low-weight fusion (`w=0.10`) bridges paraphrased (Q2) terminology without destroying BM25 sparsity. |
 | M7 Hybrid | Hybrid Fusion | RRF & Score Fusion | Fuses lexical (BM25) and semantic (BGE) models. Provides complementary strengths for exact acronym matching and semantic paraphrasing. M8 confirms that M7 gives statistically detectable but tiny/small/modest effect sizes depending on query type. |
+| M9A Pilot (Optional) | Domain Adaptation | `openai/clip-vit-base-patch32` | M9A is an optional visual domain-adaptation pilot. It uses duplicate-safe held-out splitting to test whether telecom-specific CLIP/ViT alignment can improve zero-shot visual retrieval. It remains separate from full-corpus M2–M8 ablation. |
 | Qwen2-VL (Optional) | OCR-free Visual Document | `Qwen/Qwen2-VL-7B-Instruct` | Optional future visual-document baseline |
 
 ---

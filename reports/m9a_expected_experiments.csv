@@ -1,0 +1,5 @@
+experiment_id,method_name,trainable_parameters,training_data,evaluation_split,expected_runtime,expected_risk,output_files,success_criterion,thesis_interpretation
+M9A_E0,zero-shot CLIP on duplicate-safe test split,0,None,Test Split,5 mins,Low,reports/m9a_e0_predictions.json,Baseline measurement,Zero-shot visual domain gap baseline on restricted test split
+M9A_E1,projection-only CLIP adaptation,Lightweight projection heads,Train Split (70%),Test Split,1-2 hours,Low,reports/m9a_e1_predictions.json,Test MRR > Zero-shot MRR,Domain gap can be reduced via lightweight alignment on telecom metadata
+M9A_E2,optional LoRA/adapters on last visual blocks,LoRA weights,Train Split (70%),Test Split,3-5 hours,Medium,reports/m9a_e2_predictions.json,Test MRR > E1 MRR,Deeper visual feature adaptation improves retrieval semantics further
+M9A_E3,optional fusion of adapted visual branch with text system,0 (Fusion weights),None,Test Split,5 mins,Low,reports/m9a_e3_predictions.json,Hybrid Test MRR > Best Text Baseline MRR on Test,Adapted visual branch provides complementary signal to lexical/dense text retrieval

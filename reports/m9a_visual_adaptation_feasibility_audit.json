@@ -1,0 +1,23 @@
+{
+  "source_csv_exists": true,
+  "number_of_rows": 3766,
+  "image_path_column_exists": true,
+  "caption_column_exists": true,
+  "duplicate_mapping_exists": true,
+  "torch_availability": true,
+  "gpu_availability": true,
+  "transformers_availability": true,
+  "peft_lora_installed": true,
+  "current_python_environment": "/DATA1/prabhakar/llava_env/bin/python",
+  "clip_model_availability": true,
+  "clip_model_can_be_loaded": true,
+  "full_fine_tuning_risky": true,
+  "projection_only_feasible": true,
+  "recommended_first_experiment": "Projection-only adaptation with contrastive loss on 70% train split.",
+  "number_of_usable_pairs": 3766,
+  "number_of_missing_captions": 0,
+  "number_of_resolved_image_paths": 3766,
+  "number_of_missing_image_files": 0,
+  "number_of_duplicate_groups": 3458,
+  "duplicate_safe_split_feasible": true
+}
