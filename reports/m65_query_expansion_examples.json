@@ -1,0 +1,449 @@
+[
+  {
+    "query_id": "test_0",
+    "original_query": "This procedure is used to hand over a UE from a source eNodeB to a target eNodeB using X2 when the MME is unchanged and decides that the Serving GW is also unchanged.",
+    "expanded_query": "This procedure is used to hand over a UE from a source eNodeB to a target eNodeB using X2 when the MME is unchanged and decides that the Serving GW is also unchanged. Serving Gateway EPC gateway user plane User Equipment mobile terminal device Mobility Management Entity EPC mobility management E-UTRAN NodeB",
+    "matched_acronyms": [
+      "Serving GW",
+      "UE",
+      "MME",
+      "eNodeB"
+    ],
+    "added_terms": [
+      "Serving Gateway",
+      "EPC gateway",
+      "user plane",
+      "User Equipment",
+      "mobile terminal",
+      "device",
+      "Mobility Management Entity",
+      "EPC",
+      "mobility management",
+      "E-UTRAN NodeB"
+    ],
+    "skipped_acronyms": [
+      "GW"
+    ]
+  },
+  {
+    "query_id": "test_1",
+    "original_query": "What diagram shows the PDN GW allocating an IP address?",
+    "expanded_query": "What diagram shows the PDN GW allocating an IP address? Packet Data Network Gateway PDN gateway EPC gateway Packet Data Network PDN connection packet data",
+    "matched_acronyms": [
+      "PDN GW",
+      "PDN"
+    ],
+    "added_terms": [
+      "Packet Data Network Gateway",
+      "PDN gateway",
+      "EPC gateway",
+      "Packet Data Network",
+      "PDN connection",
+      "packet data"
+    ],
+    "skipped_acronyms": [
+      "IP",
+      "GW"
+    ]
+  },
+  {
+    "query_id": "test_2",
+    "original_query": "UEs in the network connect to the core.",
+    "expanded_query": "UEs in the network connect to the core. User Equipment mobile terminal device",
+    "matched_acronyms": [
+      "UEs"
+    ],
+    "added_terms": [
+      "User Equipment",
+      "mobile terminal",
+      "device"
+    ],
+    "skipped_acronyms": []
+  },
+  {
+    "query_id": "q1_114",
+    "original_query": "Split Rendering with Time Warp in HMD",
+    "expanded_query": "Split Rendering with Time Warp in HMD",
+    "matched_acronyms": [],
+    "added_terms": [],
+    "skipped_acronyms": [
+      "HMD"
+    ]
+  },
+  {
+    "query_id": "q1_3403",
+    "original_query": "UE requested PDN connectivity",
+    "expanded_query": "UE requested PDN connectivity User Equipment mobile terminal device Packet Data Network PDN connection packet data",
+    "matched_acronyms": [
+      "UE",
+      "PDN"
+    ],
+    "added_terms": [
+      "User Equipment",
+      "mobile terminal",
+      "device",
+      "Packet Data Network",
+      "PDN connection",
+      "packet data"
+    ],
+    "skipped_acronyms": []
+  },
+  {
+    "query_id": "q1_770",
+    "original_query": "System capacity comparison (3TX/cell)",
+    "expanded_query": "System capacity comparison (3TX/cell)",
+    "matched_acronyms": [],
+    "added_terms": [],
+    "skipped_acronyms": [
+      "3TX"
+    ]
+  },
+  {
+    "query_id": "q1_3483",
+    "original_query": "\uf044TIB and \uf044RIB for H bands in combinations of two H bands and at least one L/VH",
+    "expanded_query": "\uf044TIB and \uf044RIB for H bands in combinations of two H bands and at least one L/VH",
+    "matched_acronyms": [],
+    "added_terms": [],
+    "skipped_acronyms": [
+      "TIB",
+      "RIB",
+      "VH"
+    ]
+  },
+  {
+    "query_id": "q1_1712",
+    "original_query": "MCVideo emergency group call",
+    "expanded_query": "MCVideo emergency group call Mission Critical Video mission critical service video service",
+    "matched_acronyms": [
+      "MCVideo"
+    ],
+    "added_terms": [
+      "Mission Critical Video",
+      "mission critical service",
+      "video service"
+    ],
+    "skipped_acronyms": []
+  },
+  {
+    "query_id": "q1_2875",
+    "original_query": "5G MBS Network Architecture",
+    "expanded_query": "5G MBS Network Architecture",
+    "matched_acronyms": [],
+    "added_terms": [],
+    "skipped_acronyms": [
+      "MBS"
+    ]
+  },
+  {
+    "query_id": "q1_774",
+    "original_query": "5G AR Device Functions",
+    "expanded_query": "5G AR Device Functions",
+    "matched_acronyms": [],
+    "added_terms": [],
+    "skipped_acronyms": [
+      "AR"
+    ]
+  },
+  {
+    "query_id": "q1_2571",
+    "original_query": "SCEF Initiated T6a/T6b Connection Release procedure",
+    "expanded_query": "SCEF Initiated T6a/T6b Connection Release procedure",
+    "matched_acronyms": [],
+    "added_terms": [],
+    "skipped_acronyms": [
+      "SCEF"
+    ]
+  },
+  {
+    "query_id": "q1_3540",
+    "original_query": "Inter-gNB-DU Conditional PSCell Change using MCG SRB without MN negotiation in",
+    "expanded_query": "Inter-gNB-DU Conditional PSCell Change using MCG SRB without MN negotiation in",
+    "matched_acronyms": [],
+    "added_terms": [],
+    "skipped_acronyms": [
+      "PSCell",
+      "Inter-gNB-DU",
+      "MCG",
+      "SRB",
+      "MN"
+    ]
+  },
+  {
+    "query_id": "q1_2532",
+    "original_query": "UE-to-Network Relay PDU Session: Dedicated vs. Shared",
+    "expanded_query": "UE-to-Network Relay PDU Session: Dedicated vs. Shared Protocol Data Unit PDU session data unit",
+    "matched_acronyms": [
+      "PDU"
+    ],
+    "added_terms": [
+      "Protocol Data Unit",
+      "PDU session",
+      "data unit"
+    ],
+    "skipped_acronyms": [
+      "UE-to-Network"
+    ]
+  },
+  {
+    "query_id": "q2_114",
+    "original_query": "What is the split rendering technique with time warp for in an HMD?",
+    "expanded_query": "What is the split rendering technique with time warp for in an HMD?",
+    "matched_acronyms": [],
+    "added_terms": [],
+    "skipped_acronyms": [
+      "HMD"
+    ]
+  },
+  {
+    "query_id": "q2_73",
+    "original_query": "What is an overview diagram of an Operating Room (O.R.) used for in 3GPP context?",
+    "expanded_query": "What is an overview diagram of an Operating Room (O.R.) used for in 3GPP context?",
+    "matched_acronyms": [],
+    "added_terms": [],
+    "skipped_acronyms": [
+      "3GPP"
+    ]
+  },
+  {
+    "query_id": "q2_3548",
+    "original_query": "What is the process for F1 startup and cell activation in 5G NR?",
+    "expanded_query": "What is the process for F1 startup and cell activation in 5G NR?",
+    "matched_acronyms": [],
+    "added_terms": [],
+    "skipped_acronyms": [
+      "NR"
+    ]
+  },
+  {
+    "query_id": "q2_3403",
+    "original_query": "What diagram shows the process of UE requesting PDN connectivity?",
+    "expanded_query": "What diagram shows the process of UE requesting PDN connectivity? User Equipment mobile terminal device Packet Data Network PDN connection packet data",
+    "matched_acronyms": [
+      "UE",
+      "PDN"
+    ],
+    "added_terms": [
+      "User Equipment",
+      "mobile terminal",
+      "device",
+      "Packet Data Network",
+      "PDN connection",
+      "packet data"
+    ],
+    "skipped_acronyms": []
+  },
+  {
+    "query_id": "q2_2656",
+    "original_query": "What diagram shows simultaneous transmission requests in a 3GPP network?",
+    "expanded_query": "What diagram shows simultaneous transmission requests in a 3GPP network?",
+    "matched_acronyms": [],
+    "added_terms": [],
+    "skipped_acronyms": [
+      "3GPP"
+    ]
+  },
+  {
+    "query_id": "q2_770",
+    "original_query": "What does the system capacity comparison diagram for 3TX/cell represent?",
+    "expanded_query": "What does the system capacity comparison diagram for 3TX/cell represent?",
+    "matched_acronyms": [],
+    "added_terms": [],
+    "skipped_acronyms": [
+      "3TX"
+    ]
+  },
+  {
+    "query_id": "q2_1752",
+    "original_query": "What is the process for requesting transmission permission in 3GPP standards?",
+    "expanded_query": "What is the process for requesting transmission permission in 3GPP standards?",
+    "matched_acronyms": [],
+    "added_terms": [],
+    "skipped_acronyms": [
+      "3GPP"
+    ]
+  },
+  {
+    "query_id": "q2_3483",
+    "original_query": "What is the difference in transmission interval budget (\u0394TIB) and routing interval budget (\u0394RIB) for H bands when using combinations of two H bands and at least one L/VH band?",
+    "expanded_query": "What is the difference in transmission interval budget (\u0394TIB) and routing interval budget (\u0394RIB) for H bands when using combinations of two H bands and at least one L/VH band?",
+    "matched_acronyms": [],
+    "added_terms": [],
+    "skipped_acronyms": [
+      "VH"
+    ]
+  },
+  {
+    "query_id": "q2_1712",
+    "original_query": "What is the technical diagram for MCVideo emergency group call in 3GPP standards?",
+    "expanded_query": "What is the technical diagram for MCVideo emergency group call in 3GPP standards? Mission Critical Video mission critical service video service",
+    "matched_acronyms": [
+      "MCVideo"
+    ],
+    "added_terms": [
+      "Mission Critical Video",
+      "mission critical service",
+      "video service"
+    ],
+    "skipped_acronyms": [
+      "3GPP"
+    ]
+  },
+  {
+    "query_id": "q2_2875",
+    "original_query": "What is the architecture of the 5G Multi-access Broadcast and Multicast Service (MBS) network?",
+    "expanded_query": "What is the architecture of the 5G Multi-access Broadcast and Multicast Service (MBS) network?",
+    "matched_acronyms": [],
+    "added_terms": [],
+    "skipped_acronyms": [
+      "MBS"
+    ]
+  },
+  {
+    "query_id": "q3_1072",
+    "original_query": "3GPP\u00a0TS\u00a023.222\u00a0[2],\u00a0clause\u00a06 specifies the functional entities and domains of the functional model, which is depicted in Figure\u00a04.2-1, in detail.",
+    "expanded_query": "3GPP\u00a0TS\u00a023.222\u00a0[2],\u00a0clause\u00a06 specifies the functional entities and domains of the functional model, which is depicted in Figure\u00a04.2-1, in detail.",
+    "matched_acronyms": [],
+    "added_terms": [],
+    "skipped_acronyms": [
+      "TS",
+      "3GPP"
+    ]
+  },
+  {
+    "query_id": "q3_1505",
+    "original_query": "The UE sends LPP message and the associated Routing identifier in the UL NAS Transport message (refer to 3GPP\u00a0TS\u00a024.501\u00a0[3] and 3GPP\u00a0TS\u00a023.273\u00a0[2] clause\u00a06.11.1).",
+    "expanded_query": "The UE sends LPP message and the associated Routing identifier in the UL NAS Transport message (refer to 3GPP\u00a0TS\u00a024.501\u00a0[3] and 3GPP\u00a0TS\u00a023.273\u00a0[2] clause\u00a06.11.1). User Equipment mobile terminal device Non Access Stratum registration mobility management",
+    "matched_acronyms": [
+      "UE",
+      "NAS"
+    ],
+    "added_terms": [
+      "User Equipment",
+      "mobile terminal",
+      "device",
+      "Non Access Stratum",
+      "registration",
+      "mobility management"
+    ],
+    "skipped_acronyms": [
+      "UL",
+      "3GPP",
+      "TS",
+      "LPP"
+    ]
+  },
+  {
+    "query_id": "q3_2646",
+    "original_query": "Figure\u00a07.7.1.3.5.1-1 illustrates the procedure for transmit media request cancellation from the video transmission queue initiated by the MCVideo user.",
+    "expanded_query": "Figure\u00a07.7.1.3.5.1-1 illustrates the procedure for transmit media request cancellation from the video transmission queue initiated by the MCVideo user. Mission Critical Video mission critical service video service",
+    "matched_acronyms": [
+      "MCVideo"
+    ],
+    "added_terms": [
+      "Mission Critical Video",
+      "mission critical service",
+      "video service"
+    ],
+    "skipped_acronyms": []
+  },
+  {
+    "query_id": "q3_1688",
+    "original_query": "This procedure is used by the AF to delete the MBS Session.",
+    "expanded_query": "This procedure is used by the AF to delete the MBS Session. Application Function policy authorization application server",
+    "matched_acronyms": [
+      "AF"
+    ],
+    "added_terms": [
+      "Application Function",
+      "policy authorization",
+      "application server"
+    ],
+    "skipped_acronyms": [
+      "MBS"
+    ]
+  },
+  {
+    "query_id": "q3_1590",
+    "original_query": "Figure 5.1.7.3.3-1: SCP supports GPSI-to-Subscription-Network resolution with NRF",
+    "expanded_query": "Figure 5.1.7.3.3-1: SCP supports GPSI-to-Subscription-Network resolution with NRF",
+    "matched_acronyms": [],
+    "added_terms": [],
+    "skipped_acronyms": [
+      "NRF",
+      "GPSI-to-Subscription-Network",
+      "SCP"
+    ]
+  },
+  {
+    "query_id": "q3_2731",
+    "original_query": "The following figure 4.2.3-1 shows the high level view of the non-roaming inter-PLMN architecture with service-based interfaces within the Control Plane.",
+    "expanded_query": "The following figure 4.2.3-1 shows the high level view of the non-roaming inter-PLMN architecture with service-based interfaces within the Control Plane.",
+    "matched_acronyms": [],
+    "added_terms": [],
+    "skipped_acronyms": [
+      "inter-PLMN"
+    ]
+  },
+  {
+    "query_id": "q3_3385",
+    "original_query": "This procedure is used to hand over a UE from a source eNodeB to a target eNodeB using X2 when the MME is unchanged and decides that the Serving GW is also unchanged.",
+    "expanded_query": "This procedure is used to hand over a UE from a source eNodeB to a target eNodeB using X2 when the MME is unchanged and decides that the Serving GW is also unchanged. Serving Gateway EPC gateway user plane User Equipment mobile terminal device Mobility Management Entity EPC mobility management E-UTRAN NodeB",
+    "matched_acronyms": [
+      "Serving GW",
+      "UE",
+      "MME",
+      "eNodeB"
+    ],
+    "added_terms": [
+      "Serving Gateway",
+      "EPC gateway",
+      "user plane",
+      "User Equipment",
+      "mobile terminal",
+      "device",
+      "Mobility Management Entity",
+      "EPC",
+      "mobility management",
+      "E-UTRAN NodeB"
+    ],
+    "skipped_acronyms": [
+      "GW"
+    ]
+  },
+  {
+    "query_id": "q3_2209",
+    "original_query": "A PLMN may have both terrestrial 3GPP access and satellite 3GPP access.",
+    "expanded_query": "A PLMN may have both terrestrial 3GPP access and satellite 3GPP access. Public Land Mobile Network mobile network operator network",
+    "matched_acronyms": [
+      "PLMN"
+    ],
+    "added_terms": [
+      "Public Land Mobile Network",
+      "mobile network",
+      "operator network"
+    ],
+    "skipped_acronyms": [
+      "3GPP"
+    ]
+  },
+  {
+    "query_id": "q3_3056",
+    "original_query": "NOTE: Flow\u00a07.11-1 is a high level user authentication and authorization flow.",
+    "expanded_query": "NOTE: Flow\u00a07.11-1 is a high level user authentication and authorization flow.",
+    "matched_acronyms": [],
+    "added_terms": [],
+    "skipped_acronyms": [
+      "NOTE"
+    ]
+  },
+  {
+    "query_id": "q3_2827",
+    "original_query": "The MBS Session release procedure is used to delete all the MBS session context for media delivery of an multicast service.",
+    "expanded_query": "The MBS Session release procedure is used to delete all the MBS session context for media delivery of an multicast service.",
+    "matched_acronyms": [],
+    "added_terms": [],
+    "skipped_acronyms": [
+      "MBS"
+    ]
+  }
+]

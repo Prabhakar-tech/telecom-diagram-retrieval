@@ -25,6 +25,7 @@
 | M5.5 | Text fusion and rank-1 reranking | ✅ Complete | 2026-06-13 |
 | M6a | EasyOCR extraction and BM25 text baselines | ✅ Complete | 2026-06-13 |
 | M6b | ColPali OCR-free visual document retrieval | ✅ Complete | 2026-06-13 |
+| M6.5 | Domain Acronym Expansion & Query Rewriting | ✅ Complete | 2026-06-14 |
 | M7 | Qwen2-VL visual document retrieval | ⬜ Pending | — |
 | M8 | Cross-baseline evaluation & ablation tables | ⬜ Pending | — |
 | M9 | Hybrid retrieval experiments | ⬜ Pending | — |
@@ -57,6 +58,12 @@
 | M6a OCR index | `indexes/m6_ocr_extracted_text.json` | ✅ Ready |
 | M6a OCR results | `reports/m6_ocr_results.json` | ✅ Ready |
 | M6a walkthrough | `reports/M6_ocr_visual_walkthrough.md` | ✅ Ready |
+| M6b ColPali index | `indexes/colpali_index/` | ✅ Ready |
+| M6b walkthrough | `reports/M6b_colpali_walkthrough.md` | ✅ Ready |
+| M6.5 Lexicon | `reports/m65_acronym_lexicon.json` | ✅ Ready |
+| M6.5 expansion script| `scripts/11_acronym_expansion.py` | ✅ Ready |
+| M6.5 results | `reports/m65_acronym_expansion_results.json` | ✅ Ready |
+| M6.5 walkthrough | `reports/M65_acronym_expansion_walkthrough.md` | ✅ Ready |
 ---
 
 ## Environment

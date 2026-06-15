@@ -1,0 +1,154 @@
+Extracting candidates...
+Extracted 3135 acronym candidates.
+Creating draft lexicon...
+Generating query expansion samples...
+
+--- TOP 100 ACRONYM CANDIDATES ---
+UE         | Cap:  317 | Ctx: 24542 | OCR:  2280 | Total: 27139
+MCPTT      | Cap:  156 | Ctx: 7225 | OCR:  1067 | Total: 8448
+TS         | Cap:    8 | Ctx: 5335 | OCR:   267 | Total: 5610
+MC         | Cap:  104 | Ctx: 4232 | OCR:   644 | Total: 4980
+ID         | Cap:   11 | Ctx: 4323 | OCR:   556 | Total: 4890
+AMF        | Cap:   22 | Ctx: 3913 | OCR:   566 | Total: 4501
+PDN        | Cap:   86 | Ctx: 3967 | OCR:   427 | Total: 4480
+MCData     | Cap:   20 | Ctx: 3931 | OCR:   466 | Total: 4417
+3GPP       | Cap:   65 | Ctx: 3803 | OCR:   462 | Total: 4330
+NOTE       | Cap:    0 | Ctx: 4318 | OCR:    11 | Total: 4329
+SN         | Cap:   43 | Ctx: 3600 | OCR:   134 | Total: 3777
+GW         | Cap:   25 | Ctx: 3237 | OCR:   395 | Total: 3657
+MCVideo    | Cap:   65 | Ctx: 3068 | OCR:   441 | Total: 3574
+MME        | Cap:   13 | Ctx: 3185 | OCR:   339 | Total: 3537
+PDU        | Cap:   83 | Ctx: 2865 | OCR:   526 | Total: 3474
+SMF        | Cap:   20 | Ctx: 2930 | OCR:   409 | Total: 3359
+IP         | Cap:   57 | Ctx: 2423 | OCR:   267 | Total: 2747
+AF         | Cap:   27 | Ctx: 2350 | OCR:   224 | Total: 2601
+QoS        | Cap:   44 | Ctx: 2274 | OCR:   249 | Total: 2567
+ProSe      | Cap:   48 | Ctx: 2247 | OCR:   154 | Total: 2449
+UAV        | Cap:   56 | Ctx: 1994 | OCR:   344 | Total: 2394
+MBS        | Cap:   60 | Ctx: 1938 | OCR:   161 | Total: 2159
+MN         | Cap:   15 | Ctx: 2061 | OCR:    37 | Total: 2113
+NF         | Cap:   32 | Ctx: 1747 | OCR:   184 | Total: 1963
+UDM        | Cap:   29 | Ctx: 1577 | OCR:   312 | Total: 1918
+PLMN       | Cap:   29 | Ctx: 1674 | OCR:   196 | Total: 1899
+AS         | Cap:    9 | Ctx: 1602 | OCR:   229 | Total: 1840
+MBMS       | Cap:   57 | Ctx: 1504 | OCR:   252 | Total: 1813
+NAS        | Cap:   38 | Ctx: 1360 | OCR:   354 | Total: 1752
+HSS        | Cap:   40 | Ctx: 1410 | OCR:   284 | Total: 1734
+SIP        | Cap:   15 | Ctx: 1509 | OCR:   162 | Total: 1686
+UEs        | Cap:   19 | Ctx: 1539 | OCR:    51 | Total: 1609
+RRC        | Cap:   20 | Ctx: 1213 | OCR:   360 | Total: 1593
+EPS        | Cap:   55 | Ctx: 1403 | OCR:   121 | Total: 1579
+SGSN       | Cap:    3 | Ctx: 1351 | OCR:   164 | Total: 1518
+UPF        | Cap:   13 | Ctx: 1130 | OCR:   363 | Total: 1506
+NWDAF      | Cap:   21 | Ctx: 1234 | OCR:   186 | Total: 1441
+PCF        | Cap:    8 | Ctx: 1202 | OCR:   211 | Total: 1421
+API        | Cap:   29 | Ctx: 1105 | OCR:   274 | Total: 1408
+NEF        | Cap:   12 | Ctx: 1184 | OCR:   204 | Total: 1400
+NG-RAN     | Cap:   21 | Ctx: 1156 | OCR:   165 | Total: 1342
+RAN        | Cap:   20 | Ctx: 1136 | OCR:   164 | Total: 1320
+DNS        | Cap:   19 | Ctx: 1084 | OCR:   196 | Total: 1299
+IWF        | Cap:   14 | Ctx:  906 | OCR:   367 | Total: 1287
+gNB        | Cap:    9 | Ctx: 1076 | OCR:   123 | Total: 1208
+HTTP       | Cap:   20 | Ctx: 1036 | OCR:   142 | Total: 1198
+V2X        | Cap:   25 | Ctx:  986 | OCR:   117 | Total: 1128
+PC5        | Cap:   34 | Ctx: 1028 | OCR:    48 | Total: 1110
+PCRF       | Cap:    3 | Ctx:  941 | OCR:    92 | Total: 1036
+NRM        | Cap:   40 | Ctx:  907 | OCR:    79 | Total: 1026
+USS        | Cap:   12 | Ctx:  924 | OCR:    82 | Total: 1018
+UL         | Cap:   19 | Ctx:  811 | OCR:   179 | Total: 1009
+IMS        | Cap:   68 | Ctx:  726 | OCR:   188 | Total: 982
+EAS        | Cap:   33 | Ctx:  856 | OCR:    81 | Total: 970
+CS         | Cap:   48 | Ctx:  780 | OCR:   130 | Total: 958
+TMGI       | Cap:    1 | Ctx:  812 | OCR:   137 | Total: 950
+AAA        | Cap:    9 | Ctx:  667 | OCR:   270 | Total: 946
+RLC        | Cap:    3 | Ctx:  770 | OCR:   165 | Total: 938
+DL         | Cap:   11 | Ctx:  794 | OCR:   131 | Total: 936
+5GC        | Cap:   37 | Ctx:  841 | OCR:    52 | Total: 930
+MSC        | Cap:   19 | Ctx:  798 | OCR:    92 | Total: 909
+MB-SMF     | Cap:    6 | Ctx:  800 | OCR:    74 | Total: 880
+NR         | Cap:    5 | Ctx:  704 | OCR:   146 | Total: 855
+UDP        | Cap:    1 | Ctx:  810 | OCR:    40 | Total: 851
+PDCP       | Cap:   20 | Ctx:  681 | OCR:   128 | Total: 829
+SCG        | Cap:    4 | Ctx:  799 | OCR:    19 | Total: 822
+MSGin5G    | Cap:   32 | Ctx:  774 | OCR:     7 | Total: 813
+UTM        | Cap:   14 | Ctx:  722 | OCR:    75 | Total: 811
+UAS        | Cap:   14 | Ctx:  720 | OCR:    75 | Total: 809
+E-UTRA     | Cap:   10 | Ctx:  742 | OCR:    46 | Total: 798
+eNodeB     | Cap:    3 | Ctx:  719 | OCR:    72 | Total: 794
+UE-to-Network | Cap:   38 | Ctx:  717 | OCR:    20 | Total: 775
+PCC        | Cap:   16 | Ctx:  724 | OCR:    34 | Total: 774
+INVITE     | Cap:    0 | Ctx:  595 | OCR:   157 | Total: 752
+IE         | Cap:    0 | Ctx:  732 | OCR:    19 | Total: 751
+SMS        | Cap:   36 | Ctx:  620 | OCR:    94 | Total: 750
+CAPIF      | Cap:   30 | Ctx:  629 | OCR:    80 | Total: 739
+PGW-C      | Cap:    3 | Ctx:  685 | OCR:    37 | Total: 725
+MnS        | Cap:   15 | Ctx:  572 | OCR:   129 | Total: 716
+EPC        | Cap:   37 | Ctx:  618 | OCR:    56 | Total: 711
+MAC        | Cap:   18 | Ctx:  555 | OCR:   133 | Total: 706
+PS         | Cap:   26 | Ctx:  593 | OCR:    85 | Total: 704
+MB         | Cap:    0 | Ctx:  474 | OCR:   217 | Total: 691
+AUSF       | Cap:    4 | Ctx:  602 | OCR:    72 | Total: 678
+E-UTRAN    | Cap:   69 | Ctx:  516 | OCR:    82 | Total: 667
+eNB        | Cap:    6 | Ctx:  537 | OCR:   108 | Total: 651
+DCCF       | Cap:   15 | Ctx:  595 | OCR:    36 | Total: 646
+NRF        | Cap:   10 | Ctx:  557 | OCR:    69 | Total: 636
+SCEF       | Cap:    5 | Ctx:  572 | OCR:    52 | Total: 629
+RAT        | Cap:   15 | Ctx:  567 | OCR:    46 | Total: 628
+S-CSCF     | Cap:    0 | Ctx:  586 | OCR:    40 | Total: 626
+non-3GPP   | Cap:   19 | Ctx:  591 | OCR:     7 | Total: 617
+P-CSCF     | Cap:   11 | Ctx:  543 | OCR:    49 | Total: 603
+WLAN       | Cap:   45 | Ctx:  477 | OCR:    80 | Total: 602
+LMR        | Cap:   40 | Ctx:  542 | OCR:    13 | Total: 595
+5GS        | Cap:   54 | Ctx:  516 | OCR:    21 | Total: 591
+UP         | Cap:   35 | Ctx:  470 | OCR:    76 | Total: 581
+UDR        | Cap:    6 | Ctx:  443 | OCR:   131 | Total: 580
+PDP        | Cap:   12 | Ctx:  455 | OCR:   112 | Total: 579
+HPLMN      | Cap:    3 | Ctx:  495 | OCR:    80 | Total: 578
+
+--- DRAFT LEXICON ---
+UE         -> ['User Equipment', 'mobile terminal', 'device'] (needs_review: False)
+MCPTT      -> [] (needs_review: True)
+TS         -> [] (needs_review: True)
+MC         -> [] (needs_review: True)
+ID         -> [] (needs_review: True)
+AMF        -> ['Access and Mobility Management Function'] (needs_review: False)
+PDN        -> [] (needs_review: True)
+MCData     -> [] (needs_review: True)
+3GPP       -> [] (needs_review: True)
+NOTE       -> [] (needs_review: True)
+SN         -> [] (needs_review: True)
+GW         -> [] (needs_review: True)
+MCVideo    -> [] (needs_review: True)
+MME        -> ['Mobility Management Entity'] (needs_review: False)
+PDU        -> [] (needs_review: True)
+SMF        -> ['Session Management Function'] (needs_review: False)
+IP         -> [] (needs_review: True)
+AF         -> [] (needs_review: True)
+QoS        -> [] (needs_review: True)
+ProSe      -> [] (needs_review: True)
+
+--- QUERY EXPANSION SAMPLES ---
+ORIGINAL: What is the process of HNB to HNB handover via the Iurh interface involving the UE?
+EXPANDED: What is the process of HNB to HNB handover via the Iurh interface involving the UE? User Equipment mobile terminal device
+
+ORIGINAL: What is the process for UE registration in 3GPP when dealing with non-CSI-RS Groups (CSG) UEs or non-CSG Home NodeBs (HNBs)?
+EXPANDED: What is the process for UE registration in 3GPP when dealing with non-CSI-RS Groups (CSG) UEs or non-CSG Home NodeBs (HNBs)? User Equipment mobile terminal device
+
+ORIGINAL: UE Registration for non CSG UEs or non CSG HNBs.
+EXPANDED: UE Registration for non CSG UEs or non CSG HNBs. User Equipment mobile terminal device
+
+ORIGINAL: HNB to HNB Handover via Iurh interface – UE involved.
+EXPANDED: HNB to HNB Handover via Iurh interface – UE involved. User Equipment mobile terminal device
+
+ORIGINAL: What is the process for UE registration in CSG UEs and CSG or Hybrid HNBs?
+EXPANDED: What is the process for UE registration in CSG UEs and CSG or Hybrid HNBs? User Equipment mobile terminal device
+
+ORIGINAL: UE Registration to open access HNBs.
+EXPANDED: UE Registration to open access HNBs. User Equipment mobile terminal device
+
+ORIGINAL: What is the process flow for UE registration to open access HNBs?
+EXPANDED: What is the process flow for UE registration to open access HNBs? User Equipment mobile terminal device
+
+ORIGINAL: UE Registration for CSG UEs and CSG or Hybrid HNBs.
+EXPANDED: UE Registration for CSG UEs and CSG or Hybrid HNBs. User Equipment mobile terminal device
+

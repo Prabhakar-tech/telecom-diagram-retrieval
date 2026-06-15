@@ -41,6 +41,7 @@
 | Reranker (CE) | Cross-Encoder | `BAAI/bge-reranker-base` | Applied to the union of top-50 from base text retrievers. **Significantly improved Q3** (+6% R@1), but hurt Q1/Q2 caption matching. |
 | EasyOCR (M6a) | Visual Text | `easyocr` + `rank_bm25` | Extracted text from diagrams. **Adds noise and dilutes exact caption matching**, lowering R@1 across all query types. |
 | ColPali (M6b) | OCR-free Visual Document | `vidore/colpali-v1.2` | Failed to retrieve diagrams zero-shot. Extremely poor semantic matching for dense acronyms in technical figures. |
+| Acronym Expansion (M6.5) | Query Rewriting | Domain Dictionary + Fusion | **Crucial constraint**: Pure expansion hurts. Low-weight fusion (`w=0.10`) bridges paraphrased (Q2) terminology without destroying BM25 sparsity. |
 | Qwen2-VL | OCR-free Visual Document | `Qwen/Qwen2-VL-7B-Instruct` | Vision-language encoder |
 
 ---
@@ -100,8 +101,11 @@
 │   ├── 06_dense_large_baselines.py # M4: BGE-large L1/L2 experiments
 │   ├── 07_clip_baseline.py         # M5: CLIP visual baseline
 │   ├── 08_text_fusion_rerank.py    # M5.5: Text fusion and reranking
-│   └── 09_ocr_baselines.py         # M6a: EasyOCR extraction and retrieval
+│   ├── 09_ocr_baselines.py         # M6a: EasyOCR extraction and retrieval
+│   ├── 10_colpali_baseline.py      # M6b: ColPali evaluation
+│   └── 11_acronym_expansion.py     # M6.5: Acronym expansion and rewriting
 ├── indexes/                        # FAISS indexes and extracted data
+│   ├── colpali_index/              # M6b: ColPali tensors (ignored in git)
 │   └── m6_ocr_extracted_text.json  # M6a: Extracted OCR text
 ├── notebooks/                      # Exploration notebooks
 ├── cache/                          # Intermediate caches
@@ -114,12 +118,16 @@
     ├── m55_text_fusion_rerank_results.json # M5.5 text fusion and rerank metrics
     ├── m6_ocr_quality_report.json  # M6a OCR quality stats
     ├── m6_ocr_results.json         # M6a OCR retrieval metrics
+    ├── m65_acronym_lexicon.json    # M6.5 acronym dictionary
+    ├── m65_acronym_expansion_results.json # M6.5 evaluation metrics
     ├── M2_walkthrough.md           # M2 analysis report
     ├── M3_walkthrough.md           # M3 analysis report
     ├── M4_walkthrough.md           # M4 analysis report
     ├── M5_walkthrough.md           # M5 analysis report
     ├── M55_text_fusion_rerank_walkthrough.md # M5.5 analysis report
-    └── M6_ocr_visual_walkthrough.md # M6a analysis report
+    ├── M6_ocr_visual_walkthrough.md # M6a analysis report
+    ├── M6b_colpali_walkthrough.md  # M6b analysis report
+    └── M65_acronym_expansion_walkthrough.md # M6.5 analysis report
 ```
 
 ---
