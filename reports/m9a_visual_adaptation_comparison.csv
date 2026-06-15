@@ -1,0 +1,4 @@
+experiment_id,method_name,query_set,candidate_pool,train_rows_used,test_candidate_rows_used,test_queries_used,recall@1,recall@5,recall@10,mrr@10,dup_recall@10,dup_mrr@10,absolute_delta_vs_zeroshot,effect_size_label,interpretation
+M9A_E0,Zero-shot CLIP ViT-B/32,Q1,Test Split,0,758,758,0.088391,0.186016,0.23219,0.131797,0.233509,0.137931,0,Baseline,Held-out visual baseline
+M9A_E0,Zero-shot CLIP ViT-B/32,Q2,Test Split,0,758,758,0.065963,0.150396,0.191293,0.103407,0.193931,0.108721,0,Baseline,Held-out visual baseline
+M9A_E0,Zero-shot CLIP ViT-B/32,Q3,Test Split,0,758,723,0.063624,0.159059,0.197787,0.103303,0.197787,0.109344,0,Baseline,Held-out visual baseline

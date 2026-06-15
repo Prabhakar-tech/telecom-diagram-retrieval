@@ -1,0 +1,13 @@
+{
+  "total_rows": 3766,
+  "train_val_test_sum": 3766,
+  "total_visual_content_groups": 3458,
+  "no_duplicate_group_in_multiple_splits": true,
+  "no_row_in_multiple_splits": true,
+  "all_rows_assigned_exactly_once": true,
+  "missing_images": 0,
+  "missing_captions": 0,
+  "q1_test_query_count": 758,
+  "q2_test_query_count": 758,
+  "q3_test_query_count": 723
+}

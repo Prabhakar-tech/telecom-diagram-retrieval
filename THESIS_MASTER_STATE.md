@@ -26,6 +26,7 @@
 | M9 | Qualitative Error Analysis + Retrieval Gallery | ⬜ Pending | — |
 | M10 | Final Evidence-Based Architecture + Defense Notes | ⬜ Pending | — |
 | M9A | Visual Domain Adaptation Pilot Planning | ✅ Complete | 2026-06-16 |
+| M9A_E0 | Zero-shot CLIP on duplicate-safe held-out test split | ✅ Complete | 2026-06-16 |
 | Optional | Qwen2-VL / ColQwen2 visual document retrieval | ⬜ Optional | — |
 | Optional | Source-aware / structure-aware retrieval | ⬜ Optional | — |
 
@@ -81,6 +82,13 @@
 | M9A split summary | `reports/m9a_dry_run_split_summary.json` | ✅ Ready |
 | M9A duplicate audit | `reports/m9a_duplicate_group_audit.csv` | ✅ Ready |
 | M9A planning script | `scripts/16_m9a_visual_adaptation_planning.py` | ✅ Ready |
+| M9A E0 split rows | `data/m9a_splits/train_rows.json`, `val_rows.json`, `test_rows.json` | ✅ Ready |
+| M9A E0 split audit | `reports/m9a_final_split_audit.json` | ✅ Ready |
+| M9A E0 results | `reports/m9a_e0_zeroshot_clip_test_results.json` | ✅ Ready |
+| M9A E0 predictions | `reports/m9a_e0_zeroshot_clip_test_predictions.json` | ✅ Ready |
+| M9A E0 comparison | `reports/m9a_visual_adaptation_comparison.csv` | ✅ Ready |
+| M9A E0 walkthrough | `reports/M9A_E0_zeroshot_clip_test_walkthrough.md` | ✅ Ready |
+| M9A E0 test script | `scripts/17_m9a_e0_zeroshot_clip_test.py` | ✅ Ready |
 ---
 
 ## Environment

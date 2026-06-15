@@ -1,0 +1,47 @@
+{
+  "Q1": {
+    "recall@1": 0.088391,
+    "recall@2": 0.133245,
+    "recall@3": 0.162269,
+    "recall@5": 0.186016,
+    "recall@10": 0.23219,
+    "dup_recall@1": 0.098945,
+    "dup_recall@2": 0.135884,
+    "dup_recall@3": 0.164908,
+    "dup_recall@5": 0.186016,
+    "dup_recall@10": 0.233509,
+    "mrr@10": 0.131797,
+    "dup_mrr@10": 0.137931,
+    "num_queries": 758
+  },
+  "Q2": {
+    "recall@1": 0.065963,
+    "recall@2": 0.10686,
+    "recall@3": 0.124011,
+    "recall@5": 0.150396,
+    "recall@10": 0.191293,
+    "dup_recall@1": 0.075198,
+    "dup_recall@2": 0.108179,
+    "dup_recall@3": 0.12533,
+    "dup_recall@5": 0.150396,
+    "dup_recall@10": 0.193931,
+    "mrr@10": 0.103407,
+    "dup_mrr@10": 0.108721,
+    "num_queries": 758
+  },
+  "Q3": {
+    "recall@1": 0.063624,
+    "recall@2": 0.102351,
+    "recall@3": 0.123098,
+    "recall@5": 0.159059,
+    "recall@10": 0.197787,
+    "dup_recall@1": 0.074689,
+    "dup_recall@2": 0.102351,
+    "dup_recall@3": 0.125864,
+    "dup_recall@5": 0.163209,
+    "dup_recall@10": 0.197787,
+    "mrr@10": 0.103303,
+    "dup_mrr@10": 0.109344,
+    "num_queries": 723
+  }
+}
