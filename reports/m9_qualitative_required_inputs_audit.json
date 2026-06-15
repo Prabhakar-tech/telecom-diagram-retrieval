@@ -1,0 +1,114 @@
+{
+  "reports/m8_best_system_per_query_metrics.csv": {
+    "exists": true,
+    "file_size_bytes": 1027811,
+    "used_for_case_selection": true,
+    "used_for_gallery_generation": false,
+    "limitation_if_any": ""
+  },
+  "reports/m8_best_by_query_type.csv": {
+    "exists": true,
+    "file_size_bytes": 427,
+    "used_for_case_selection": false,
+    "used_for_gallery_generation": false,
+    "limitation_if_any": ""
+  },
+  "reports/m8_master_ablation_table.csv": {
+    "exists": true,
+    "file_size_bytes": 30397,
+    "used_for_case_selection": false,
+    "used_for_gallery_generation": false,
+    "limitation_if_any": ""
+  },
+  "reports/m7_hybrid_lexical_dense_predictions_q1.json": {
+    "exists": true,
+    "file_size_bytes": 2171093,
+    "used_for_case_selection": true,
+    "used_for_gallery_generation": false,
+    "limitation_if_any": ""
+  },
+  "reports/m7_hybrid_lexical_dense_predictions_q2.json": {
+    "exists": true,
+    "file_size_bytes": 2172515,
+    "used_for_case_selection": true,
+    "used_for_gallery_generation": false,
+    "limitation_if_any": ""
+  },
+  "reports/m7_hybrid_lexical_dense_predictions_q3.json": {
+    "exists": true,
+    "file_size_bytes": 2045851,
+    "used_for_case_selection": true,
+    "used_for_gallery_generation": false,
+    "limitation_if_any": ""
+  },
+  "reports/m55_text_fusion_rerank_results.json": {
+    "exists": true,
+    "file_size_bytes": 18335,
+    "used_for_case_selection": false,
+    "used_for_gallery_generation": false,
+    "limitation_if_any": ""
+  },
+  "reports/m5_clip_predictions_q1.json": {
+    "exists": true,
+    "file_size_bytes": 2164291,
+    "used_for_case_selection": true,
+    "used_for_gallery_generation": false,
+    "limitation_if_any": ""
+  },
+  "reports/m6_predictions_caption_ocr_q1.json": {
+    "exists": true,
+    "file_size_bytes": 2170325,
+    "used_for_case_selection": true,
+    "used_for_gallery_generation": false,
+    "limitation_if_any": ""
+  },
+  "reports/m6b_colpali_predictions_q1.json": {
+    "exists": true,
+    "file_size_bytes": 6722669,
+    "used_for_case_selection": true,
+    "used_for_gallery_generation": false,
+    "limitation_if_any": ""
+  },
+  "queries/q1_captions.json": {
+    "exists": true,
+    "file_size_bytes": 539001,
+    "used_for_case_selection": true,
+    "used_for_gallery_generation": false,
+    "limitation_if_any": ""
+  },
+  "queries/q2_paraphrased.json": {
+    "exists": true,
+    "file_size_bytes": 646338,
+    "used_for_case_selection": true,
+    "used_for_gallery_generation": false,
+    "limitation_if_any": ""
+  },
+  "queries/q3_context.json": {
+    "exists": true,
+    "file_size_bytes": 794729,
+    "used_for_case_selection": true,
+    "used_for_gallery_generation": false,
+    "limitation_if_any": ""
+  },
+  "/DATA1/prabhakar/telecom/All Images Path.csv": {
+    "exists": true,
+    "file_size_bytes": 11829330,
+    "used_for_case_selection": true,
+    "used_for_gallery_generation": true,
+    "limitation_if_any": ""
+  },
+  "/DATA5/prabhakar/telecom/extracted_images/images/": {
+    "exists": true,
+    "file_size_bytes": 0,
+    "used_for_case_selection": false,
+    "used_for_gallery_generation": true,
+    "limitation_if_any": ""
+  },
+  "eval/duplicate_mapping.json": {
+    "exists": true,
+    "file_size_bytes": 210347,
+    "used_for_case_selection": true,
+    "used_for_gallery_generation": false,
+    "limitation_if_any": ""
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "reports/m5_clip_predictions_q1.json": {
+    "exists": true,
+    "num_queries": 3766,
+    "query_id_format": "list index",
+    "prediction_row_id_format": "list of int (e.g. 1016)",
+    "top_k_length": 100,
+    "ground_truth_found_in_first_query": true,
+    "why_rank_extraction_na": "Format is okay"
+  },
+  "reports/m5_clip_predictions_q2.json": {
+    "exists": true,
+    "num_queries": 3766,
+    "query_id_format": "list index",
+    "prediction_row_id_format": "list of int (e.g. 3531)",
+    "top_k_length": 100,
+    "ground_truth_found_in_first_query": false,
+    "why_rank_extraction_na": "Format is okay"
+  },
+  "reports/m5_clip_predictions_q3.json": {
+    "exists": true,
+    "num_queries": 3542,
+    "query_id_format": "list index",
+    "prediction_row_id_format": "list of int (e.g. 1016)",
+    "top_k_length": 100,
+    "ground_truth_found_in_first_query": false,
+    "why_rank_extraction_na": "Format is okay"
+  },
+  "reports/m6_predictions_capctx_ocr_q1.json": {
+    "exists": true,
+    "num_queries": 3766,
+    "query_id_format": "list index",
+    "prediction_row_id_format": "list of int (e.g. 0)",
+    "top_k_length": 100,
+    "ground_truth_found_in_first_query": true,
+    "why_rank_extraction_na": "Format is okay"
+  },
+  "reports/m6_predictions_caption_ocr_q1.json": {
+    "exists": true,
+    "num_queries": 3766,
+    "query_id_format": "list index",
+    "prediction_row_id_format": "list of int (e.g. 0)",
+    "top_k_length": 100,
+    "ground_truth_found_in_first_query": true,
+    "why_rank_extraction_na": "Format is okay"
+  },
+  "reports/m6_predictions_caption_ocr_q2.json": {
+    "exists": true,
+    "num_queries": 3766,
+    "query_id_format": "list index",
+    "prediction_row_id_format": "list of int (e.g. 0)",
+    "top_k_length": 100,
+    "ground_truth_found_in_first_query": true,
+    "why_rank_extraction_na": "Format is okay"
+  },
+  "reports/m6_predictions_caption_ocr_q3.json": {
+    "exists": true,
+    "num_queries": 3542,
+    "query_id_format": "list index",
+    "prediction_row_id_format": "list of int (e.g. 0)",
+    "top_k_length": 100,
+    "ground_truth_found_in_first_query": true,
+    "why_rank_extraction_na": "Format is okay"
+  },
+  "reports/m6b_colpali_predictions_q1.json": {
+    "exists": true,
+    "num_queries": 3766,
+    "query_id_format": "str (e.g. q1_0)",
+    "prediction_row_id_format": "list of str (e.g. image_1015)",
+    "top_k_length": 100,
+    "ground_truth_found_in_first_query": false,
+    "why_rank_extraction_na": "Format is okay"
+  },
+  "reports/m6b_colpali_predictions_q2.json": {
+    "exists": true,
+    "num_queries": 3766,
+    "query_id_format": "str (e.g. q2_0)",
+    "prediction_row_id_format": "list of str (e.g. image_554)",
+    "top_k_length": 100,
+    "ground_truth_found_in_first_query": false,
+    "why_rank_extraction_na": "Format is okay"
+  },
+  "reports/m6b_colpali_predictions_q3.json": {
+    "exists": true,
+    "num_queries": 3542,
+    "query_id_format": "str (e.g. q3_0)",
+    "prediction_row_id_format": "list of str (e.g. image_194)",
+    "top_k_length": 100,
+    "ground_truth_found_in_first_query": false,
+    "why_rank_extraction_na": "Format is okay"
+  }
+}
