@@ -1,0 +1,7 @@
+method_family,best_Q1_mrr@10,best_Q2_mrr@10,best_Q3_mrr@10
+hybrid text,0.892246,0.870096,0.808093
+OCR text,0.787009,0.707662,0.754107
+acronym query expansion,0.728919,0.619163,0.734357
+lexical text,0.890277,0.860859,0.763086
+dense text,0.887998,0.861269,0.742345
+global visual,0.073865,0.053721,0.054364

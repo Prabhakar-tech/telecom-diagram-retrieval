@@ -34,7 +34,7 @@
 | Baseline | Type | Model / Method | Notes |
 |----------|------|----------------|-------|
 | BM25 (B1/B2) | Lexical | `rank_bm25` over tokenised captions/context | Sparse baseline; B1=Caption only, B2=Caption+Context |
-| BGE-base (D1/D2) | Dense Semantic | `BAAI/bge-base-en-v1.5` | 768-d, FAISS `IndexFlatIP`; **designated dense baseline for M9 hybrid** — outperforms BGE-large on this corpus |
+| BGE-base (D1/D2) | Dense Semantic | `BAAI/bge-base-en-v1.5` | 768-d, FAISS `IndexFlatIP`; **designated dense baseline used in M7 hybrid retrieval** — outperforms BGE-large on this corpus |
 | BGE-large (L1/L2) | Dense Semantic | `BAAI/bge-large-en-v1.5` | 1024-d; **underperforms BGE-base across all configs** (M4 result) — short-text saturation / domain drift; not recommended for further experiments |
 | CLIP | Global Visual | `openai/clip-vit-base-patch32` or `openai/clip-vit-large-patch14` | Encode (query_text, image) pairs |
 | Text Fusion (H1c) | Late Fusion | Reciprocal Rank Fusion (RRF) | Fuses top candidates from B1, B2, D1, D2. An RRF `k=10` constant proved superior for Rank-1 precision. |
@@ -42,7 +42,7 @@
 | EasyOCR (M6a) | Visual Text | `easyocr` + `rank_bm25` | Extracted text from diagrams. **Adds noise and dilutes exact caption matching**, lowering R@1 across all query types. |
 | ColPali (M6b) | OCR-free Visual Document | `vidore/colpali-v1.2` | Failed to retrieve diagrams zero-shot. Extremely poor semantic matching for dense acronyms in technical figures. |
 | Acronym Expansion (M6.5) | Query Rewriting | Domain Dictionary + Fusion | **Crucial constraint**: Pure expansion hurts. Low-weight fusion (`w=0.10`) bridges paraphrased (Q2) terminology without destroying BM25 sparsity. |
-| M7 Hybrid | Hybrid Fusion | RRF & Score Fusion | Fuses lexical (BM25) and semantic (BGE) models. Provides complementary strengths for exact acronym matching and semantic paraphrasing. |
+| M7 Hybrid | Hybrid Fusion | RRF & Score Fusion | Fuses lexical (BM25) and semantic (BGE) models. Provides complementary strengths for exact acronym matching and semantic paraphrasing. M8 confirms that M7 gives statistically detectable but tiny/small/modest effect sizes depending on query type. |
 | Qwen2-VL (Optional) | OCR-free Visual Document | `Qwen/Qwen2-VL-7B-Instruct` | Optional future visual-document baseline |
 
 ---
@@ -105,7 +105,9 @@
 │   ├── 09_ocr_baselines.py         # M6a: EasyOCR extraction and retrieval
 |   ├── 10_colpali_baseline.py      # M6b: ColPali evaluation
 │   ├── 11_acronym_expansion.py     # M6.5: Acronym expansion and rewriting
-│   └── 12_hybrid_lexical_dense.py  # M7: Hybrid Lexical + Dense retrieval
+│   ├── 12_hybrid_lexical_dense.py  # M7: Hybrid Lexical + Dense retrieval
+│   ├── 13_m8_audit_and_ablation.py # M8: Audit and ablation analysis
+│   └── 14_m8_statistical_validation.py # M8: Statistical validation and effect size
 ├── indexes/                        # FAISS indexes and extracted data
 │   ├── colpali_index/              # M6b: ColPali tensors (ignored in git)
 │   └── m6_ocr_extracted_text.json  # M6a: Extracted OCR text
@@ -130,7 +132,16 @@
     ├── M6_ocr_visual_walkthrough.md # M6a analysis report
     ├── M6b_colpali_walkthrough.md  # M6b analysis report
     ├── M65_acronym_expansion_walkthrough.md # M6.5 analysis report
-    └── M7_hybrid_lexical_dense_walkthrough.md # M7 analysis report
+    ├── M7_hybrid_lexical_dense_walkthrough.md # M7 analysis report
+    ├── M8_master_ablation_walkthrough.md # M8 analysis report
+    ├── m8_master_ablation_table.csv # M8 aggregated ablation results
+    ├── m8_best_by_query_type.csv   # M8 best systems per query type
+    ├── m8_modality_comparison_table.csv # M8 modality comparison
+    ├── m8_fusion_lift_table.csv    # M8 hybrid fusion lift
+    ├── m8_effect_size_interpretation.csv # M8 effect sizes
+    ├── m8_paired_comparison_summary.csv # M8 statistical intervals
+    ├── m8_paired_system_selection_audit.csv # M8 paired system selection audit
+    └── m8_statistical_validation.json # M8 validation stats
 ```
 
 ---

@@ -116,7 +116,7 @@ This document outlines the logical progression of the multimodal telecom documen
 * **Inputs**: Q1/Q2/Q3, raw image arrays.
 * **Metrics**: MRR@10, Recall@10.
 * **Key result**: Extremely poor performance across all queries (MRR ~0.007).
-* **What it proved**: Global visual models trained on natural images (dogs, cars) are completely blind to technical telecom diagram semantics (boxes, lines, arrows, acronyms).
+* **What it proved**: Global visual models trained on natural images (dogs, cars) are not effective for telecom diagram semantics (boxes, lines, arrows, acronyms).
 * **What failed**: CLIP zero-shot retrieval is unusable as a primary channel for engineering diagrams.
 * **Why the next stage followed logically**: If visual global semantics fail, we must return to text but optimize how we combine the strong, complementary text baselines.
 * **Possible external question**: *Why test CLIP if it is known to struggle with diagrams?*
@@ -161,7 +161,7 @@ This document outlines the logical progression of the multimodal telecom documen
 * **Inputs**: Raw images, Q1/Q2/Q3 text.
 * **Metrics**: MRR@10.
 * **Key result**: Performance was near zero (MRR ~0.0100).
-* **What it proved**: ColPali completely failed to bridge the domain gap.
+* **What it proved**: ColPali performed very poorly as a zero-shot baseline and did not bridge the domain gap.
 * **What failed**: While ColPali is excellent at reading standard document layouts (PDFs, receipts), 3GPP network diagrams lack standard linear text flow. The vision encoder failed to interpret the spatial topology of the boxes and acronyms.
 * **Why the next stage followed logically**: Visual and OCR models consistently failed to beat the text metadata baselines. The remaining frontier was domain-specific query understanding.
 * **Possible external question**: *ColPali is state-of-the-art on Document VQA. Why did it fail here?*
@@ -215,3 +215,12 @@ This document outlines the logical progression of the multimodal telecom documen
 
 ---
 *(End of Stage-by-Stage Cards)*
+
+## 14. M8 Master Ablation + Statistical Validation
+* **Why this stage was needed**: A single aggregate table comparing all methods evaluated throughout M2-M7 is necessary to objectively prove which text-retrieval combinations are strongest.
+* **What tables were created**: We created `m8_master_ablation_table.csv`, `m8_best_by_query_type.csv`, `m8_fusion_lift_table.csv`, and `m8_modality_comparison_table.csv`, detailing performance grouped by method family and query type.
+* **How metrics validate claims**: By observing the relative metrics across all single models against the M7 hybrid, we quantify effect size. M7 hybrid gives small but consistent lift over already strong saturated text baselines.
+* **What statistical validation was possible**: Bootstrap 95% confidence intervals were established for the paired differences between M7 predictions and the single best M2/M3 baselines using local raw prediction caches. If the mean delta is positive, but confidence intervals overlap zero, the gain should be interpreted as a small trend rather than a statistically decisive improvement. If the CI excludes zero, it suggests the improvement is robust for this query set.
+* **Strongest architecture evidence**: The strongest evidence is the full ablation pattern: text metadata heavily dominates zero-shot visual retrieval, dense encoding handles paraphrasing but not acronym matching, and caption+context is critical for complex queries. M7 is not universally best across all query types. The best overall evidence suggests a text-first architecture where score fusion is strongest for caption-like queries, while reranking remains strongest for long/context queries.
+* **Possible external question**: *Why wasn't ColPali or CLIP used as a primary system?*
+* **Defense answer**: The master ablation definitively proves they performed very poorly as zero-shot baselines, establishing a substantial domain gap for our 3GPP diagrams. The final architecture must be evidence-derived and text-first.

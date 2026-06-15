@@ -1,0 +1,4 @@
+Q,best_mrr@10_sys,best_mrr@10_val,best_dup_mrr@10_sys,best_dup_mrr@10_val,best_r1_sys,best_r1_val,best_r10_sys,best_r10_val
+Q1,score_fusion_bm25_075_bge_025,0.892246,score_fusion_bm25_075_bge_025,0.925921,score_fusion_bm25_075_bge_025,0.800319,B1,1.0
+Q2,H1a,0.870096,H1a,0.902536,H1a,0.767658,H1c_k10,0.997876
+Q3,union_top50_rerank,0.808093,union_top50_rerank,0.834248,union_top50_rerank,0.693958,rrf_bm25_bge_k10,0.974591

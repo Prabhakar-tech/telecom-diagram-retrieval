@@ -1,0 +1,70 @@
+{
+  "paired_comparisons": {
+    "M7_vs_BM25_Q1": {
+      "win_count": 31,
+      "loss_count": 19,
+      "tie_count": 3716,
+      "mean_delta": 0.001969375110639051,
+      "bootstrap_ci": [
+        0.0003761727739422908,
+        0.0036737696937511064
+      ],
+      "interpretation": "positive_ci_excludes_zero"
+    },
+    "M7_vs_BGE_Q1": {
+      "win_count": 388,
+      "loss_count": 340,
+      "tie_count": 3038,
+      "mean_delta": 0.004248539564524697,
+      "bootstrap_ci": [
+        -0.0027582315454062656,
+        0.011357209240573549
+      ],
+      "interpretation": "ci_overlaps_zero"
+    },
+    "M7_vs_BM25_Q2": {
+      "win_count": 252,
+      "loss_count": 191,
+      "tie_count": 3323,
+      "mean_delta": 0.006804301646309081,
+      "bootstrap_ci": [
+        0.0014028952659130571,
+        0.011882860641158571
+      ],
+      "interpretation": "positive_ci_excludes_zero"
+    },
+    "M7_vs_BGE_Q2": {
+      "win_count": 514,
+      "loss_count": 462,
+      "tie_count": 2790,
+      "mean_delta": 0.006395147898068768,
+      "bootstrap_ci": [
+        -0.0016638822505458195,
+        0.014569769512513802
+      ],
+      "interpretation": "ci_overlaps_zero"
+    },
+    "M7_vs_BM25_Q3": {
+      "win_count": 455,
+      "loss_count": 351,
+      "tie_count": 2736,
+      "mean_delta": 0.016659160370340494,
+      "bootstrap_ci": [
+        0.008832482433025911,
+        0.02409842659066262
+      ],
+      "interpretation": "positive_ci_excludes_zero"
+    },
+    "M7_vs_BGE_Q3": {
+      "win_count": 619,
+      "loss_count": 295,
+      "tie_count": 2628,
+      "mean_delta": 0.03740062559938336,
+      "bootstrap_ci": [
+        0.029608499032023877,
+        0.045297322156794204
+      ],
+      "interpretation": "positive_ci_excludes_zero"
+    }
+  }
+}

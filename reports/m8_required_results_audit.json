@@ -1,0 +1,93 @@
+{
+  "master_results.csv": {
+    "exists": true,
+    "file_size": 8887,
+    "used_for_aggregate_metrics": true,
+    "used_for_per_query_statistics": false,
+    "reason_if_not_used": ""
+  },
+  "m2_bm25_results.json": {
+    "exists": true,
+    "file_size": 3316,
+    "used_for_aggregate_metrics": true,
+    "used_for_per_query_statistics": false,
+    "reason_if_not_used": ""
+  },
+  "m3_dense_results.json": {
+    "exists": true,
+    "file_size": 3549,
+    "used_for_aggregate_metrics": true,
+    "used_for_per_query_statistics": false,
+    "reason_if_not_used": ""
+  },
+  "m4_dense_large_results.json": {
+    "exists": true,
+    "file_size": 3549,
+    "used_for_aggregate_metrics": true,
+    "used_for_per_query_statistics": false,
+    "reason_if_not_used": ""
+  },
+  "m5_clip_results.json": {
+    "exists": true,
+    "file_size": 1759,
+    "used_for_aggregate_metrics": true,
+    "used_for_per_query_statistics": false,
+    "reason_if_not_used": ""
+  },
+  "m55_text_fusion_rerank_results.json": {
+    "exists": true,
+    "file_size": 18335,
+    "used_for_aggregate_metrics": true,
+    "used_for_per_query_statistics": false,
+    "reason_if_not_used": ""
+  },
+  "m6_ocr_results.json": {
+    "exists": true,
+    "file_size": 4044,
+    "used_for_aggregate_metrics": true,
+    "used_for_per_query_statistics": false,
+    "reason_if_not_used": ""
+  },
+  "m6b_colpali_results.json": {
+    "exists": true,
+    "file_size": 1115,
+    "used_for_aggregate_metrics": true,
+    "used_for_per_query_statistics": false,
+    "reason_if_not_used": ""
+  },
+  "m65_acronym_expansion_results.json": {
+    "exists": true,
+    "file_size": 7464,
+    "used_for_aggregate_metrics": true,
+    "used_for_per_query_statistics": false,
+    "reason_if_not_used": ""
+  },
+  "m7_hybrid_lexical_dense_results.json": {
+    "exists": true,
+    "file_size": 19680,
+    "used_for_aggregate_metrics": true,
+    "used_for_per_query_statistics": false,
+    "reason_if_not_used": ""
+  },
+  "m7_hybrid_lexical_dense_predictions_q1.json": {
+    "exists": true,
+    "file_size": 2171093,
+    "used_for_aggregate_metrics": false,
+    "used_for_per_query_statistics": true,
+    "reason_if_not_used": ""
+  },
+  "m7_hybrid_lexical_dense_predictions_q2.json": {
+    "exists": true,
+    "file_size": 2172515,
+    "used_for_aggregate_metrics": false,
+    "used_for_per_query_statistics": true,
+    "reason_if_not_used": ""
+  },
+  "m7_hybrid_lexical_dense_predictions_q3.json": {
+    "exists": true,
+    "file_size": 2045851,
+    "used_for_aggregate_metrics": false,
+    "used_for_per_query_statistics": true,
+    "reason_if_not_used": ""
+  }
+}

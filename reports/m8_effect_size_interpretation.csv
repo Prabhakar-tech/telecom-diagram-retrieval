@@ -1,0 +1,7 @@
+comparison,query_set,metric,baseline_score,candidate_score,absolute_delta,percentage_point_delta,relative_delta_percent,effect_size_label,interpretation
+M7 vs best BM25,Q1,mrr@10,0.890277,0.892246,0.0019689999999999985,0.19689999999999985,0.22116711989639162,tiny,Hybrid provides tiny gain
+M7 vs best BGE,Q1,mrr@10,0.887998,0.892246,0.0042480000000000295,0.42480000000000295,0.47837945580958846,tiny,Hybrid provides tiny gain
+M7 vs best BM25,Q2,mrr@10,0.860859,0.867664,0.00680499999999995,0.680499999999995,0.7904894994418308,small,Hybrid provides small gain
+M7 vs best BGE,Q2,mrr@10,0.861269,0.867664,0.0063950000000000395,0.639500000000004,0.7425090186689687,small,Hybrid provides small gain
+M7 vs best BM25,Q3,mrr@10,0.763086,0.780382,0.017295999999999978,1.7295999999999978,2.266585941820447,modest,Hybrid provides modest gain
+M7 vs best BGE,Q3,mrr@10,0.742345,0.780382,0.03803699999999999,3.8036999999999987,5.123897918083908,large,Hybrid provides large gain

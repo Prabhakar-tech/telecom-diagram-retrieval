@@ -1,7 +1,7 @@
 # Thesis Master State
 ## Multimodal Image Retrieval for Telecom Technical Diagrams
 
-> Last updated: 2026-06-13T00:29+05:30
+> Last updated: 2026-06-15T22:51+05:30
 
 ---
 
@@ -9,11 +9,6 @@
 
 | Milestone | Description | Status | Date |
 |-----------|-------------|--------|------|
-| M1.0 | Environment audit, directory setup, path verification | ✅ Complete | 2026-06-12 |
-| M1.1 | Data loader + MD5 duplicate mapping (281 groups, 589 dupes) | ✅ Complete | 2026-06-12 |
-| M1.2 | Q1 (3,766 captions) + Q3 (3,542 context queries) generation | ✅ Complete | 2026-06-12 |
-| M1.3 | Knowledge base creation + Q2 paraphrase generation (local LLM) | ✅ Complete | 2026-06-12 |
-| M2 | BM25 lexical baseline (B1 Caption, B2 Cap+Ctx) | ✅ Complete | 2026-06-12 |
 | M1.0 | Environment audit, directory setup, path verification | ✅ Complete | 2026-06-13 |
 | M1.1 | Data loader + MD5 duplicate mapping (281 groups, 589 dupes) | ✅ Complete | 2026-06-13 |
 | M1.2 | Q1 (3,766 captions) + Q3 (3,542 context queries) generation | ✅ Complete | 2026-06-13 |
@@ -27,7 +22,7 @@
 | M6b | ColPali OCR-free visual document retrieval | ✅ Complete | 2026-06-13 |
 | M6.5 | Domain Acronym Expansion & Query Rewriting | ✅ Complete | 2026-06-14 |
 | M7 | Hybrid Lexical + Dense Text Retrieval | ✅ Complete | 2026-06-15 |
-| M8 | Master Ablation + Statistical Validation | ⬜ Pending | — |
+| M8 | Master Ablation + Statistical Validation | ✅ Complete | 2026-06-15 |
 | M9 | Qualitative Error Analysis + Retrieval Gallery | ⬜ Pending | — |
 | M10 | Final Evidence-Based Architecture + Defense Notes | ⬜ Pending | — |
 | Optional | Qwen2-VL / ColQwen2 visual document retrieval | ⬜ Optional | — |
@@ -39,6 +34,13 @@
 
 | File | Path | Status |
 |------|------|--------|
+| M8 ablation table | `reports/m8_master_ablation_table.csv` | ✅ Ready |
+| M8 best-by-type | `reports/m8_best_by_query_type.csv` | ✅ Ready |
+| M8 mod comparison | `reports/m8_modality_comparison_table.csv` | ✅ Ready |
+| M8 paired comp | `reports/m8_paired_comparison_summary.csv` | ✅ Ready |
+| M8 stats JSON | `reports/m8_statistical_validation.json` | ✅ Ready |
+| M8 walkthrough | `reports/M8_master_ablation_walkthrough.md` | ✅ Ready |
+| M8 audit/stats scripts | `scripts/13_m8_audit_and_ablation.py`, `scripts/14_m8_statistical_validation.py` | ✅ Ready |
 | Duplicate mapping | `eval/duplicate_mapping.json` | ✅ Ready |
 | Q1 queries | `queries/q1_captions.json` (3,766) | ✅ Ready |
 | Q3 queries | `queries/q3_context.json` (3,542) | ✅ Ready |

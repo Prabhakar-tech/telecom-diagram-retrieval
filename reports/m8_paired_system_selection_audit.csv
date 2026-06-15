@@ -1,0 +1,4 @@
+query_set,comparison,selected_baseline_system,selected_baseline_metric,selected_baseline_score_from_aggregate,selected_candidate_system,selected_candidate_metric,selected_candidate_score_from_aggregate,mean_baseline_mrr_from_per_query,mean_candidate_mrr_from_per_query,consistency_check_passed,notes
+Q1,BM25,B1,MRR@10,0.8902770401841035,score_fusion_bm25_075_bge_025,MRR@10,0.8922464152947424,0.8902770401841035,0.8922464152947424,True,BM25 vs M7
+Q2,BM25,B1,MRR@10,0.860859380927092,score_fusion_bm25_075_bge_025,MRR@10,0.8676636825734011,0.860859380927092,0.8676636825734011,True,BM25 vs M7
+Q3,BM25,B2,MRR@10,0.7630861633190825,score_fusion_bm25_050_bge_050,MRR@10,0.7797453236894232,0.7630861633190825,0.7797453236894232,True,BM25 vs M7
