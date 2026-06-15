@@ -42,7 +42,8 @@
 | EasyOCR (M6a) | Visual Text | `easyocr` + `rank_bm25` | Extracted text from diagrams. **Adds noise and dilutes exact caption matching**, lowering R@1 across all query types. |
 | ColPali (M6b) | OCR-free Visual Document | `vidore/colpali-v1.2` | Failed to retrieve diagrams zero-shot. Extremely poor semantic matching for dense acronyms in technical figures. |
 | Acronym Expansion (M6.5) | Query Rewriting | Domain Dictionary + Fusion | **Crucial constraint**: Pure expansion hurts. Low-weight fusion (`w=0.10`) bridges paraphrased (Q2) terminology without destroying BM25 sparsity. |
-| Qwen2-VL | OCR-free Visual Document | `Qwen/Qwen2-VL-7B-Instruct` | Vision-language encoder |
+| M7 Hybrid | Hybrid Fusion | RRF & Score Fusion | Fuses lexical (BM25) and semantic (BGE) models. Provides complementary strengths for exact acronym matching and semantic paraphrasing. |
+| Qwen2-VL (Optional) | OCR-free Visual Document | `Qwen/Qwen2-VL-7B-Instruct` | Optional future visual-document baseline |
 
 ---
 
@@ -102,8 +103,9 @@
 │   ├── 07_clip_baseline.py         # M5: CLIP visual baseline
 │   ├── 08_text_fusion_rerank.py    # M5.5: Text fusion and reranking
 │   ├── 09_ocr_baselines.py         # M6a: EasyOCR extraction and retrieval
-│   ├── 10_colpali_baseline.py      # M6b: ColPali evaluation
-│   └── 11_acronym_expansion.py     # M6.5: Acronym expansion and rewriting
+|   ├── 10_colpali_baseline.py      # M6b: ColPali evaluation
+│   ├── 11_acronym_expansion.py     # M6.5: Acronym expansion and rewriting
+│   └── 12_hybrid_lexical_dense.py  # M7: Hybrid Lexical + Dense retrieval
 ├── indexes/                        # FAISS indexes and extracted data
 │   ├── colpali_index/              # M6b: ColPali tensors (ignored in git)
 │   └── m6_ocr_extracted_text.json  # M6a: Extracted OCR text
@@ -127,7 +129,8 @@
     ├── M55_text_fusion_rerank_walkthrough.md # M5.5 analysis report
     ├── M6_ocr_visual_walkthrough.md # M6a analysis report
     ├── M6b_colpali_walkthrough.md  # M6b analysis report
-    └── M65_acronym_expansion_walkthrough.md # M6.5 analysis report
+    ├── M65_acronym_expansion_walkthrough.md # M6.5 analysis report
+    └── M7_hybrid_lexical_dense_walkthrough.md # M7 analysis report
 ```
 
 ---

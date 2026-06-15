@@ -26,11 +26,12 @@
 | M6a | EasyOCR extraction and BM25 text baselines | ✅ Complete | 2026-06-13 |
 | M6b | ColPali OCR-free visual document retrieval | ✅ Complete | 2026-06-13 |
 | M6.5 | Domain Acronym Expansion & Query Rewriting | ✅ Complete | 2026-06-14 |
-| M7 | Qwen2-VL visual document retrieval | ⬜ Pending | — |
-| M8 | Cross-baseline evaluation & ablation tables | ⬜ Pending | — |
-| M9 | Hybrid retrieval experiments | ⬜ Pending | — |
-| M10 | Error analysis & qualitative examples | ⬜ Pending | — |
-| M11 | Final thesis figures & report generation | ⬜ Pending | — |
+| M7 | Hybrid Lexical + Dense Text Retrieval | ✅ Complete | 2026-06-15 |
+| M8 | Master Ablation + Statistical Validation | ⬜ Pending | — |
+| M9 | Qualitative Error Analysis + Retrieval Gallery | ⬜ Pending | — |
+| M10 | Final Evidence-Based Architecture + Defense Notes | ⬜ Pending | — |
+| Optional | Qwen2-VL / ColQwen2 visual document retrieval | ⬜ Optional | — |
+| Optional | Source-aware / structure-aware retrieval | ⬜ Optional | — |
 
 ---
 
@@ -64,6 +65,11 @@
 | M6.5 expansion script| `scripts/11_acronym_expansion.py` | ✅ Ready |
 | M6.5 results | `reports/m65_acronym_expansion_results.json` | ✅ Ready |
 | M6.5 walkthrough | `reports/M65_acronym_expansion_walkthrough.md` | ✅ Ready |
+| M7 hybrid script | `scripts/12_hybrid_lexical_dense.py` | ✅ Ready |
+| M7 plan | `reports/M7_hybrid_lexical_dense_plan.md` | ✅ Ready |
+| M7 results | `reports/m7_hybrid_lexical_dense_results.json` | ✅ Ready |
+| M7 win/loss matrix | `reports/m7_per_query_win_loss.csv` | ✅ Ready |
+| M7 walkthrough | `reports/M7_hybrid_lexical_dense_walkthrough.md` | ✅ Ready |
 ---
 
 ## Environment

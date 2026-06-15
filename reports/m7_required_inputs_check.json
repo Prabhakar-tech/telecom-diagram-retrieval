@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "missing_files": [],
+  "checked_files": [
+    "reports/m2_bm25_results.json",
+    "reports/m3_dense_results.json",
+    "reports/m5_clip_results.json",
+    "reports/m55_text_fusion_rerank_results.json",
+    "reports/m65_acronym_expansion_results.json",
+    "queries/q1_captions.json",
+    "queries/q2_paraphrased.json",
+    "queries/q3_context.json",
+    "eval/duplicate_mapping.json",
+    "eval/metrics.py",
+    "reports/m55_predictions_b1_q1.json",
+    "reports/m55_predictions_d1_q1.json",
+    "reports/m5_clip_predictions_q1.json",
+    "reports/m65_acronym_expansion_predictions_q1.json"
+  ]
+}
