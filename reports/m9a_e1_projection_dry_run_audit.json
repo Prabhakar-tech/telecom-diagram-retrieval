@@ -1,0 +1,15 @@
+{
+  "train_rows_count": 2628,
+  "val_rows_count": 380,
+  "test_rows_count": 758,
+  "all_image_paths_resolved": true,
+  "all_captions_available": true,
+  "clip_model_loaded": true,
+  "trainable_parameter_count": 1050625,
+  "frozen_parameter_count": 151277313,
+  "adapter_architecture": "Residual Linear Projection (dim=512)",
+  "one_batch_forward_pass_success": true,
+  "loss_finite": true,
+  "no_leakage": true,
+  "checkpoint_directory_ignored": true
+}

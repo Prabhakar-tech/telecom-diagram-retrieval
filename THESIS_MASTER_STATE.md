@@ -27,6 +27,7 @@
 | M10 | Final Evidence-Based Architecture + Defense Notes | ⬜ Pending | — |
 | M9A | Visual Domain Adaptation Pilot Planning | ✅ Complete | 2026-06-16 |
 | M9A_E0 | Zero-shot CLIP on duplicate-safe held-out test split | ✅ Complete | 2026-06-16 |
+| M9A_E1 | Projection-only CLIP visual domain adaptation | ✅ Complete | 2026-06-16 |
 | Optional | Qwen2-VL / ColQwen2 visual document retrieval | ⬜ Optional | — |
 | Optional | Source-aware / structure-aware retrieval | ⬜ Optional | — |
 
@@ -89,6 +90,13 @@
 | M9A E0 comparison | `reports/m9a_visual_adaptation_comparison.csv` | ✅ Ready |
 | M9A E0 walkthrough | `reports/M9A_E0_zeroshot_clip_test_walkthrough.md` | ✅ Ready |
 | M9A E0 test script | `scripts/17_m9a_e0_zeroshot_clip_test.py` | ✅ Ready |
+| M9A E1 projection audit | `reports/m9a_e1_projection_dry_run_audit.json` | ✅ Ready |
+| M9A E1 training log | `reports/m9a_e1_projection_training_log.csv` | ✅ Ready |
+| M9A E1 test results | `reports/m9a_e1_projection_test_results.json` | ✅ Ready |
+| M9A E1 test predictions | `reports/m9a_e1_projection_test_predictions.json` | ✅ Ready |
+| M9A E1 walkthrough | `reports/M9A_E1_projection_adaptation_walkthrough.md` | ✅ Ready |
+| M9A visual comp table | `reports/m9a_visual_adaptation_comparison.csv` | ✅ Ready |
+| M9A E1 script | `scripts/18_m9a_e1_projection_adaptation.py` | ✅ Ready |
 ---
 
 ## Environment

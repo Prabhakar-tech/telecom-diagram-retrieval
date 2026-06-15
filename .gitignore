@@ -22,3 +22,4 @@ indexes/colpali_index/*.bin
 indexes/colpali_index/*.safetensors
 run.pid
 reports/m7_base_predictions_cache.json
+checkpoints/

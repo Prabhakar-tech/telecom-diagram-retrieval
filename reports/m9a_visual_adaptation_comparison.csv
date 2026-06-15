@@ -1,4 +1,10 @@
 experiment_id,method_name,query_set,candidate_pool,train_rows_used,test_candidate_rows_used,test_queries_used,recall@1,recall@5,recall@10,mrr@10,dup_recall@10,dup_mrr@10,absolute_delta_vs_zeroshot,effect_size_label,interpretation
-M9A_E0,Zero-shot CLIP ViT-B/32,Q1,Test Split,0,758,758,0.088391,0.186016,0.23219,0.131797,0.233509,0.137931,0,Baseline,Held-out visual baseline
-M9A_E0,Zero-shot CLIP ViT-B/32,Q2,Test Split,0,758,758,0.065963,0.150396,0.191293,0.103407,0.193931,0.108721,0,Baseline,Held-out visual baseline
-M9A_E0,Zero-shot CLIP ViT-B/32,Q3,Test Split,0,758,723,0.063624,0.159059,0.197787,0.103303,0.197787,0.109344,0,Baseline,Held-out visual baseline
+M9A_E0,Zero-shot CLIP ViT-B/32,Q1,Test Split,0,758,758,0.088391,0.186016,0.23219,0.131797,0.233509,0.137931,0.0,Baseline,Held-out visual baseline
+M9A_E0,Zero-shot CLIP ViT-B/32,Q2,Test Split,0,758,758,0.065963,0.150396,0.191293,0.103407,0.193931,0.108721,0.0,Baseline,Held-out visual baseline
+M9A_E0,Zero-shot CLIP ViT-B/32,Q3,Test Split,0,758,723,0.063624,0.159059,0.197787,0.103303,0.197787,0.109344,0.0,Baseline,Held-out visual baseline
+M9A_E1,Projection-adapted CLIP ViT-B/32,Q1,Test Split,2628,758,758,0.2005277044854881,0.4406332453825857,0.5343007915567283,0.3037222012815681,0.5343007915567283,0.3037222012815681,0.1719252012815681,large,Projection adaptation shows higher retrieval metrics than the zero-shot baseline
+M9A_E1,Projection-adapted CLIP ViT-B/32,Q2,Test Split,2628,758,758,0.1213720316622691,0.3245382585751979,0.4142480211081794,0.2041111739330736,0.4142480211081794,0.2041111739330736,0.1007041739330736,large,Projection adaptation shows higher retrieval metrics than the zero-shot baseline
+M9A_E1,Projection-adapted CLIP ViT-B/32,Q3,Test Split,2628,758,723,0.0622406639004149,0.2503457814661134,0.3443983402489626,0.1418779775626249,0.3443983402489626,0.1418779775626249,0.0385749775626249,small,Projection adaptation shows higher retrieval metrics than the zero-shot baseline
+M9A_E1,Projection-adapted CLIP ViT-B/32,Q1,Test Split,2628,758,758,0.200528,0.440633,0.534301,0.303722,0.534301,0.303722,0.171925,large,Projection adaptation shows higher retrieval metrics than the zero-shot baseline
+M9A_E1,Projection-adapted CLIP ViT-B/32,Q2,Test Split,2628,758,758,0.121372,0.324538,0.414248,0.204111,0.414248,0.204111,0.10070399999999999,large,Projection adaptation shows higher retrieval metrics than the zero-shot baseline
+M9A_E1,Projection-adapted CLIP ViT-B/32,Q3,Test Split,2628,758,723,0.062241,0.250346,0.344398,0.141878,0.344398,0.141878,0.038575,small,Projection adaptation shows higher retrieval metrics than the zero-shot baseline
