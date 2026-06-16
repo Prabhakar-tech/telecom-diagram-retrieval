@@ -1,0 +1,41 @@
+{
+  "unsafe_terms_checked": [
+    "proves",
+    "proof",
+    "state of the art",
+    "production-ready",
+    "guaranteed",
+    "perfect",
+    "beats text",
+    "completely fails",
+    "completely failed",
+    "final best model for all cases"
+  ],
+  "unsafe_terms_found": [],
+  "overclaims_removed_or_reworded": [
+    "proves",
+    "proof",
+    "state of the art",
+    "production-ready",
+    "guaranteed",
+    "perfect",
+    "beats text",
+    "completely fails",
+    "completely failed",
+    "final best model for all cases"
+  ],
+  "evidence_backed_claims": [
+    "BM25 is very strong because telecom figure captions contain exact acronyms, protocol names, and procedural keywords.",
+    "Dense retrieval helps when wording changes or query text is semantic/paraphrased.",
+    "M7 hybrid is useful because lexical and dense signals complement each other, but gains over the strongest BM25 baseline are practically small/modest depending on query set.",
+    "Zero-shot visual models show a domain gap on telecom technical diagrams.",
+    "OCR is useful diagnostically but noisy as a primary retrieval signal.",
+    "M9A E1 shows higher held-out visual retrieval metrics than zero-shot CLIP on a duplicate-safe test split."
+  ],
+  "remaining_limitations": [
+    "Reliance on clean text metadata for the primary text-first architecture.",
+    "Dense saturation observed with BGE-large.",
+    "OCR noise degrading pure visual text matching."
+  ],
+  "recommendation": "READY_FOR_USER_REVIEW"
+}

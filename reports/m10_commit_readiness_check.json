@@ -1,0 +1,18 @@
+{
+  "ready_for_user_review": true,
+  "unsafe_wording_matches": 0,
+  "m7_universal_best_claim_found": false,
+  "m9a_beats_text_claim_found": false,
+  "leakage_safety_mentioned": true,
+  "evidence_files_missing": 0,
+  "files_changed": [
+    "reports/M10_final_architecture_and_defense_notes.md",
+    "reports/m10_final_evidence_table.csv",
+    "reports/M10_defense_QA_cards.md",
+    "reports/m10_claim_safety_audit.json",
+    "reports/m10_final_review_report.md",
+    "reports/m10_commit_readiness_check.json"
+  ],
+  "recommendation": "READY_FOR_USER_REVIEW",
+  "review_notes": "M10 was patched after human review. Query-type recommendation is now aligned with M8. M7 single-retriever risk removed. M9A beats-text risk absent."
+}
