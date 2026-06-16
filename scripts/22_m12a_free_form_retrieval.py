@@ -7,6 +7,8 @@ import pandas as pd
 from PIL import Image, ImageDraw, ImageFont, ImageOps
 import textwrap
 import re
+import math
+import shutil
 
 PROJECT_ROOT = Path("/DATA5/prabhakar/telecom_retrieval")
 IMAGES_DIR = Path("/DATA5/prabhakar/telecom/extracted_images/images/")
@@ -19,6 +21,12 @@ def parse_args():
     parser.add_argument("--output-dir", type=str, required=True)
     parser.add_argument("--method", type=str, choices=["bm25", "tfidf", "hybrid"], default="bm25")
     parser.add_argument("--save-index", action="store_true")
+    parser.add_argument("--copy-images", type=str, default="true")
+    parser.add_argument("--detailed-sheet", type=str, default="true")
+    parser.add_argument("--html-report", type=str, default="true")
+    parser.add_argument("--sheet-cols", type=int, default=2)
+    parser.add_argument("--tile-width", type=int, default=1000)
+    parser.add_argument("--tile-height", type=int, default=700)
     return parser.parse_args()
 
 def tokenize(text):
@@ -99,6 +107,126 @@ def create_contact_sheet(query_text, method, df, top_indices, top_scores, top_k,
         paste_image(x_offset, y_offset, idx, score, f"Rank {i+1}")
 
     sheet.save(out_path)
+
+def create_detailed_contact_sheet(query_text, method, df, top_indices, top_scores, args, out_path):
+    img_width, img_height = args.tile_width, args.tile_height
+    margin = 40
+    header_height = 200
+
+    num_items = len(top_indices)
+    num_cols = min(num_items, args.sheet_cols)
+    if num_cols == 0: return
+    num_rows = math.ceil(num_items / num_cols)
+
+    text_height = 200
+    row_height = img_height + text_height + margin
+
+    sheet_width = num_cols * (img_width + margin) + margin
+    sheet_height = header_height + num_rows * row_height
+
+    sheet = Image.new("RGB", (sheet_width, sheet_height), "white")
+    draw = ImageDraw.Draw(sheet)
+
+    try:
+        font = ImageFont.truetype("LiberationSans-Regular.ttf", 24)
+        font_bold = ImageFont.truetype("LiberationSans-Bold.ttf", 28)
+        font_title = ImageFont.truetype("LiberationSans-Bold.ttf", 40)
+    except:
+        font = ImageFont.load_default()
+        font_bold = ImageFont.load_default()
+        font_title = ImageFont.load_default()
+
+    draw.text((margin, margin), f"Query: {textwrap.shorten(query_text, width=100)}", font=font_title, fill="black")
+    draw.text((margin, margin+60), f"Method: {method.upper()} (Free-Form Retrieval - Detailed)", font=font_bold, fill="black")
+
+    def paste_image(x, y, row_idx, score, rank):
+        if row_idx < 0 or row_idx >= len(df):
+            draw.text((x, y), "No Image", fill="red", font=font)
+            return
+
+        img_name = Path(df.iloc[row_idx]["Image Path"]).name
+        img_path = IMAGES_DIR / img_name
+
+        try:
+            im = Image.open(img_path).convert("RGB")
+            im = ImageOps.contain(im, (img_width, img_height))
+
+            paste_x = x + (img_width - im.width) // 2
+            sheet.paste(im, (paste_x, y))
+            draw.rectangle([paste_x-2, y-2, paste_x+im.width+2, y+im.height+2], outline="gray", width=4)
+
+            caption = df.iloc[row_idx]["Image Caption"]
+            short_cap = textwrap.shorten(str(caption), width=150)
+
+            text_y = y + img_height + 20
+            draw.text((x, text_y), f"Rank {rank}", font=font_bold, fill="black")
+            draw.text((x, text_y + 35), f"Image ID: {img_name} | Score: {score:.2f}", font=font, fill="black")
+
+            lines = textwrap.wrap(short_cap, width=70)
+            cap_y = text_y + 70
+            for line in lines:
+                draw.text((x, cap_y), line, font=font, fill="dimgray")
+                cap_y += 30
+
+        except Exception as e:
+            draw.text((x, y), f"Error: {e}", fill="red", font=font)
+
+    for i, (idx, score) in enumerate(zip(top_indices, top_scores)):
+        col = i % num_cols
+        row = i // num_cols
+        x_offset = margin + col * (img_width + margin)
+        y_offset = header_height + row * row_height
+        paste_image(x_offset, y_offset, idx, score, i+1)
+
+    sheet.save(out_path)
+
+def create_html_report(query_text, method, dense_available, results, out_path):
+    html = f"""<html>
+<head>
+<style>
+body {{ font-family: Arial, sans-serif; margin: 40px; background-color: #f9f9f9; }}
+.container {{ max-width: 1200px; margin: 0 auto; background: white; padding: 20px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }}
+.result {{ border-bottom: 1px solid #eee; padding: 20px 0; display: flex; gap: 20px; }}
+.result img {{ max-width: 600px; max-height: 400px; border: 1px solid #ccc; }}
+.details {{ flex: 1; }}
+h1 {{ color: #333; }}
+h3 {{ margin-top: 0; }}
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>M12A Free-Form Retrieval Results</h1>
+    <p><strong>Query:</strong> {query_text}</p>
+    <p><strong>Method:</strong> {method.upper()}</p>
+    <p><strong>Dense Fallback Available:</strong> {dense_available}</p>
+    <hr>
+"""
+    for res in results:
+        rank = res["rank"]
+        img_id = res["image_id"]
+        score = res["score"]
+        caption = res["caption_snippet"]
+        rank_str = f"{rank:02d}"
+
+        img_src = f"retrieved_images/rank_{rank_str}_{img_id}"
+
+        html += f"""    <div class="result">
+        <div>
+            <a href="{img_src}" target="_blank">
+                <img src="{img_src}" alt="{img_id}">
+            </a>
+        </div>
+        <div class="details">
+            <h3>Rank {rank}</h3>
+            <p><strong>Image ID:</strong> {img_id}</p>
+            <p><strong>Score:</strong> {score:.4f}</p>
+            <p><strong>Caption:</strong> {caption}</p>
+        </div>
+    </div>
+"""
+    html += "</div></body></html>"
+    with open(out_path, "w", encoding="utf-8") as f:
+        f.write(html)
 
 def main():
     args = parse_args()
@@ -181,6 +309,24 @@ def main():
 
     cs_path = out_dir / "latest_contact_sheet.png"
     create_contact_sheet(args.query, args.method, df, top_k_indices, top_k_scores, args.top_k, cs_path)
+
+    if args.detailed_sheet.lower() == "true":
+        ds_path = out_dir / "latest_contact_sheet_detailed.png"
+        create_detailed_contact_sheet(args.query, args.method, df, top_k_indices, top_k_scores, args, ds_path)
+
+    if args.copy_images.lower() == "true":
+        img_dir = out_dir / "retrieved_images"
+        img_dir.mkdir(parents=True, exist_ok=True)
+        for res in results:
+            rank_str = f"{res['rank']:02d}"
+            src = IMAGES_DIR / res['image_id']
+            dst = img_dir / f"rank_{rank_str}_{res['image_id']}"
+            if src.exists():
+                shutil.copy2(src, dst)
+
+    if args.html_report.lower() == "true":
+        html_path = out_dir / "latest_results.html"
+        create_html_report(args.query, args.method, dense_available, results, html_path)
 
     print(f"Retrieved {len(results)} results using {args.method}.")
     print(f"Results saved to {out_dir}")
