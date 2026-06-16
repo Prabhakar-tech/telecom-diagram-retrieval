@@ -1,0 +1,46 @@
+{
+  "total_gallery_cases": 19,
+  "category_counts": {
+    "A. Easy Success": 3,
+    "B. M7 Helps": 3,
+    "C. BM25 Beats Dense": 2,
+    "D. Dense Beats BM25": 2,
+    "F. Visual Failure": 2,
+    "G. OCR Failure": 2,
+    "H. Final Failure": 3,
+    "I. M9A Visual Adaptation Success": 2
+  },
+  "m9a_visual_adaptation_case_count": 2,
+  "m9a_cases_all_from_test_split": true,
+  "m9a_cases_in_train_split": [],
+  "m9a_cases_in_val_split": [],
+  "m9a_cases_missing_e0_predictions": [],
+  "m9a_cases_missing_e1_predictions": [],
+  "m9a_cases_rank_evidence": [
+    {
+      "case_id": "q1_17",
+      "query_set": "Q1",
+      "query_id": "q1_17",
+      "ground_truth_row": 17,
+      "split": "TEST",
+      "systems_shown": "E0, E1",
+      "e0_rank": -1,
+      "e1_rank": 3,
+      "e1_better_than_e0": true
+    },
+    {
+      "case_id": "q1_27",
+      "query_set": "Q1",
+      "query_id": "q1_27",
+      "ground_truth_row": 27,
+      "split": "TEST",
+      "systems_shown": "E0, E1",
+      "e0_rank": -1,
+      "e1_rank": 1,
+      "e1_better_than_e0": true
+    }
+  ],
+  "non_m9a_cases_require_train_test_split": false,
+  "explanation": "M9 is a representative qualitative evidence gallery, not exhaustive per-image evaluation over all 3,766 images. Train/validation/test leakage matters specifically for M9A visual-adaptation cases because E1 is a trained model. Non-M9A cases are selected from already-computed retrieval baselines and are not used for further model tuning.",
+  "recommendation": "READY"
+}
