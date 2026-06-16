@@ -28,7 +28,7 @@
 **A:** The final contribution is a comprehensive, multi-modal evaluation of retrieval methods on a novel corpus of telecom engineering diagrams. It establishes a strong text-first architecture baseline, quantifies the specific failure modes of zero-shot visual models on technical figures, and provides evidence that lightweight domain adaptation can partially bridge this visual domain gap.
 
 ### Q: What are the limitations?
-**A:** 
+**A:**
 - The text-first architecture heavily relies on the availability of clean metadata.
 - Generic dense models (like BGE-large) can experience domain drift on highly technical text.
 - OCR extraction, while diagnostically useful, often introduces noise that dilutes primary retrieval accuracy compared to clean captions.
