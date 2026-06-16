@@ -1,0 +1,11 @@
+{
+  "ready_for_user_review": true,
+  "states_actual_model_built": true,
+  "avoids_sota_claim": true,
+  "avoids_m9a_beats_text_claim": true,
+  "includes_query_type_architecture": true,
+  "includes_leakage_boundary": true,
+  "includes_examiner_attack_answers": true,
+  "unsafe_terms_found": 0,
+  "recommendation": "READY_FOR_USER_REVIEW"
+}

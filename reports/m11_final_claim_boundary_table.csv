@@ -1,0 +1,9 @@
+claim,status,evidence,safe wording,unsafe wording_to_avoid
+We built a retrieval system,SUPPORTED,M2-M8 comprehensive metrics,"We built an evaluated telecom technical diagram retrieval system.",Unsupported deployment claim.
+We trained a visual adaptation component,SUPPORTED,M9A projection adaptation,"We trained a lightweight projection-only CLIP adaptation component.",Unsupported foundation-model claim.
+Global leaderboard-style superiority claim,REJECTED,No global leaderboard benchmark comparison,"We established a strong evaluated empirical baseline.",Global leaderboard-style superiority claim / close-to-peak.
+M9A replaces text retrieval,REJECTED,Text systems remain stronger in the evaluated final architecture,"M9A E1 shows higher held-out visual retrieval metrics than zero-shot CLIP on duplicate-safe test split.",Unsupported visual-over-text claim.
+M7 is a single winner for every query type,REJECTED,M8 master ablation,"The final architecture is text-first and query-type aware. M7 is the selected configuration for Q1.",Unsupported single-retriever claim.
+M9 gallery is exhaustive,REJECTED,M9 sampling method,"M9 provides representative qualitative evidence.","Unsupported exhaustive-gallery claim."
+M9A test examples are leakage-safe,SUPPORTED,m9_gallery_leakage_safety_audit.json,"The selected M9A qualitative examples are leakage-safe according to the split audit.",Overbroad leakage guarantee.
+Text-first architecture is supported,SUPPORTED,M8 ablation and M5 visual gaps,"The final architecture is text-first and query-type aware.",Unsupported single shared-model claim.
