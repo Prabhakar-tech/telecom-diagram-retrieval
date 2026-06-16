@@ -1,0 +1,50 @@
+{
+  "planned_cases": 19,
+  "generated_contact_sheets": 19,
+  "missing_image_count": 0,
+  "missing_prediction_count": 0,
+  "systems_available": [
+    "BM25",
+    "BGE",
+    "M7",
+    "CLIP",
+    "ColPali",
+    "OCR",
+    "E0",
+    "E1"
+  ],
+  "gallery_categories_generated": [
+    "A. Easy Success",
+    "B. M7 Helps",
+    "C. BM25 Beats Dense",
+    "D. Dense Beats BM25",
+    "F. Visual Failure",
+    "G. OCR Failure",
+    "H. Final Failure",
+    "I. M9A Visual Adaptation Success"
+  ],
+  "skipped_cases": [],
+  "total_output_image_size_mb": 10.45,
+  "generated_contact_sheet_paths": [
+    "reports/m9_gallery_images/q3_983_D.png",
+    "reports/m9_gallery_images/q1_17_I.png",
+    "reports/m9_gallery_images/q2_2905_G.png",
+    "reports/m9_gallery_images/q3_631_C.png",
+    "reports/m9_gallery_images/q1_310_A.png",
+    "reports/m9_gallery_images/q3_3198_B.png",
+    "reports/m9_gallery_images/q2_2885_G.png",
+    "reports/m9_gallery_images/q3_1239_H.png",
+    "reports/m9_gallery_images/q3_1600_D.png",
+    "reports/m9_gallery_images/q2_3534_B.png",
+    "reports/m9_gallery_images/q3_2829_A.png",
+    "reports/m9_gallery_images/q3_2676_A.png",
+    "reports/m9_gallery_images/q3_2132_C.png",
+    "reports/m9_gallery_images/q2_618_F.png",
+    "reports/m9_gallery_images/q2_2622_B.png",
+    "reports/m9_gallery_images/q1_2270_F.png",
+    "reports/m9_gallery_images/q2_75_H.png",
+    "reports/m9_gallery_images/q1_27_I.png",
+    "reports/m9_gallery_images/q2_2800_H.png"
+  ],
+  "contains_m9a_visual_adaptation_cases": true
+}

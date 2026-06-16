@@ -3,6 +3,15 @@
 
 > Last updated: 2026-06-15T22:51+05:30
 
+| M9 qualitative gallery | `reports/M9_qualitative_gallery.md` | ✅ Ready |
+| M9 error walkthrough | `reports/M9_qualitative_error_analysis_walkthrough.md` | ✅ Ready |
+| M9 gallery generation audit | `reports/m9_gallery_generation_audit.json` | ✅ Ready |
+| M9 final gallery cases | `reports/m9_gallery_cases_final.csv` | ✅ Ready |
+| M9 failure taxonomy | `reports/m9_failure_taxonomy_filled.csv` | ✅ Ready |
+| M9 gallery images | `reports/m9_gallery_images/` | ✅ Ready |
+| M9 final review report | `reports/m9_final_review_report.md` | ✅ Ready |
+| M9 commit readiness check | `reports/m9_commit_readiness_check.json` | ✅ Ready |
+| M9 gallery script | `scripts/19_m9_generate_qualitative_gallery.py` | ✅ Ready |
 ---
 
 ## Milestone Tracker
@@ -23,7 +32,7 @@
 | M6.5 | Domain Acronym Expansion & Query Rewriting | ✅ Complete | 2026-06-14 |
 | M7 | Hybrid Lexical + Dense Text Retrieval | ✅ Complete | 2026-06-15 |
 | M8 | Master Ablation + Statistical Validation | ✅ Complete | 2026-06-15 |
-| M9 | Qualitative Error Analysis + Retrieval Gallery | ⬜ Pending | — |
+| M9 | Qualitative Error Analysis + Retrieval Gallery | ✅ Complete | 2026-06-16 |
 | M10 | Final Evidence-Based Architecture + Defense Notes | ⬜ Pending | — |
 | M9A | Visual Domain Adaptation Pilot Planning | ✅ Complete | 2026-06-16 |
 | M9A_E0 | Zero-shot CLIP on duplicate-safe held-out test split | ✅ Complete | 2026-06-16 |
@@ -97,6 +106,15 @@
 | M9A E1 walkthrough | `reports/M9A_E1_projection_adaptation_walkthrough.md` | ✅ Ready |
 | M9A visual comp table | `reports/m9a_visual_adaptation_comparison.csv` | ✅ Ready |
 | M9A E1 script | `scripts/18_m9a_e1_projection_adaptation.py` | ✅ Ready |
+| M9 qualitative gallery | `reports/M9_qualitative_gallery.md` | ✅ Ready |
+| M9 error walkthrough | `reports/M9_qualitative_error_analysis_walkthrough.md` | ✅ Ready |
+| M9 gallery generation audit | `reports/m9_gallery_generation_audit.json` | ✅ Ready |
+| M9 final gallery cases | `reports/m9_gallery_cases_final.csv` | ✅ Ready |
+| M9 failure taxonomy | `reports/m9_failure_taxonomy_filled.csv` | ✅ Ready |
+| M9 gallery images | `reports/m9_gallery_images/` | ✅ Ready |
+| M9 final review report | `reports/m9_final_review_report.md` | ✅ Ready |
+| M9 commit readiness check | `reports/m9_commit_readiness_check.json` | ✅ Ready |
+| M9 gallery script | `scripts/19_m9_generate_qualitative_gallery.py` | ✅ Ready |
 ---
 
 ## Environment

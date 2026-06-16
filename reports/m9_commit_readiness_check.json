@@ -1,0 +1,21 @@
+{
+  "ready_for_user_review": true,
+  "planned_cases": 19,
+  "generated_contact_sheets": 19,
+  "gallery_png_count": 19,
+  "gallery_folder_size_mb": 10.45,
+  "missing_image_count": 0,
+  "missing_prediction_count": 0,
+  "contains_m9a_visual_adaptation_cases": true,
+  "absolute_paths_remaining": 0,
+  "unsafe_wording_matches": 0,
+  "helper_files_removed": true,
+  "files_changed": [
+    "reports/m9_gallery_cases_final.csv",
+    "reports/M9_qualitative_gallery.md",
+    "reports/M9_qualitative_error_analysis_walkthrough.md",
+    "reports/m9_gallery_generation_audit.json",
+    "reports/m9_retrieval_gallery_plan.csv"
+  ],
+  "recommendation": "READY_FOR_USER_REVIEW"
+}

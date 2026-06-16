@@ -155,3 +155,8 @@
 |-----|------|------|-------------|
 | Paths CSV | `/DATA1/prabhakar/telecom/All Images Path.csv` | 3,766 | Context, Source, Subclause, Image Path, Image Caption |
 | Metadata CSV | `/DATA1/prabhakar/telecom/thesis_diagram_analysis_final.xlsx - Diagram Analysis.csv` | 3,766 | Image Name, Matched Category, Agent 2–4 analysis, QA scores |
+
+
+## 8. Qualitative Error Analysis
+
+“M9 converts the quantitative retrieval results into qualitative evidence through rank-grounded representative cases, contact-sheet galleries, and a filled failure taxonomy. It includes examples across text retrieval, hybrid retrieval, OCR behavior, zero-shot visual retrieval, final failures, and M9A visual adaptation.”
