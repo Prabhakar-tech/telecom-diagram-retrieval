@@ -31,7 +31,7 @@ We trained a lightweight projection-only CLIP adaptation component (M9A). Using 
 - Zero-shot visual models (CLIP, ColPali) struggle heavily compared to text baselines.
 
 ## Claim Boundary
-- **We do not claim** top leaderboard position performance, a single shared retriever, or that visual retrieval replaces text metadata matching. 
+- **We do not claim** top leaderboard position performance, a single shared retriever, or that visual retrieval replaces text metadata matching.
 - **We do claim** the creation of a rigorous benchmark, empirical quantification of the visual domain gap, and a text-first query-type-aware architecture supported by an evaluated auxiliary visual adaptation branch.
 
 ## Final Contribution

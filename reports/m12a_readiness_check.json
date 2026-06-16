@@ -1,0 +1,14 @@
+{
+  "ready_for_user_review": true,
+  "true_free_form_query_supported": true,
+  "prepared_query_mode_removed_from_main_claim": true,
+  "full_corpus_rows_indexed": 3766,
+  "retrieval_method": "bm25",
+  "dense_available": false,
+  "demo_query_runs": true,
+  "smoke_validation_runs": true,
+  "contact_sheets_created": true,
+  "missing_image_count": 0,
+  "unsafe_claims_found": 0,
+  "recommendation": "READY_FOR_USER_REVIEW"
+}

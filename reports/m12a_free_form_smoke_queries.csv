@@ -1,0 +1,26 @@
+query_id,query_text,query_category,expected_signal,notes
+q_ff_1,handover failure call flow,call_flow,bm25,Realistic user query
+q_ff_2,RRC connection establishment,protocol,bm25,Realistic user query
+q_ff_3,NAS authentication,security,bm25,Realistic user query
+q_ff_4,5G architecture,architecture,bm25,Realistic user query
+q_ff_5,bearer activation,call_flow,bm25,Realistic user query
+q_ff_6,UE context release,call_flow,bm25,Realistic user query
+q_ff_7,gNB CU DU split,architecture,bm25,Realistic user query
+q_ff_8,AMF SMF UPF session,architecture,bm25,Realistic user query
+q_ff_9,paging idle mode,mobility,bm25,Realistic user query
+q_ff_10,random access msg1 msg4,call_flow,bm25,Realistic user query
+q_ff_11,LTE protocol stack,protocol,bm25,Realistic user query
+q_ff_12,Xn handover,mobility,bm25,Realistic user query
+q_ff_13,PDU session establishment,call_flow,bm25,Realistic user query
+q_ff_14,radio link failure recovery,failure,bm25,Realistic user query
+q_ff_15,EPC attach procedure,call_flow,bm25,Realistic user query
+q_ff_16,S1 release procedure,call_flow,bm25,Realistic user query
+q_ff_17,tracking area update,mobility,bm25,Realistic user query
+q_ff_18,O-RAN functional split,architecture,bm25,Realistic user query
+q_ff_19,network triggered service request,call_flow,bm25,Realistic user query
+q_ff_20,SGW PGW interaction,architecture,bm25,Realistic user query
+q_ff_21,dedicated bearer setup,call_flow,bm25,Realistic user query
+q_ff_22,handover reject,failure,bm25,Realistic user query
+q_ff_23,RRC state machine,protocol,bm25,Realistic user query
+q_ff_24,NAS key agreement,security,bm25,Realistic user query
+q_ff_25,user plane protocol stack,protocol,bm25,Realistic user query

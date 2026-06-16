@@ -1,0 +1,251 @@
+query_id,query_text,method,rank,image_id,score,caption_snippet
+q_ff_1,handover failure call flow,hybrid,1,image_3394.jpeg,12.233045468180865,UTRAN Iu mode to E-UTRAN Inter RAT HO reject
+q_ff_1,handover failure call flow,hybrid,2,image_3400.jpeg,11.927487489868703,GERAN A/Gb mode to E-UTRAN inter RAT HO reject
+q_ff_1,handover failure call flow,hybrid,3,image_2109.jpeg,11.898434779422754,LTE VoIP-to-1x CS voice service continuity
+q_ff_1,handover failure call flow,hybrid,4,image_3388.jpeg,11.63754055693034,"S1-based handover, Reject"
+q_ff_1,handover failure call flow,hybrid,5,image_3391.jpeg,11.437516065510009,E-UTRAN to UTRAN Iu mode Inter RAT HO reject
+q_ff_1,handover failure call flow,hybrid,6,image_3397.jpeg,10.956161116549612,E-UTRAN to GERAN A/Gb Inter RAT HO reject
+q_ff_1,handover failure call flow,hybrid,7,image_2286.png,10.903386882950278,EAS for Stateful Applications
+q_ff_1,handover failure call flow,hybrid,8,image_2116.jpeg,10.802268682501445,5G-SRVCC from NG-RAN to 3GPP UTRAN call flow
+q_ff_1,handover failure call flow,hybrid,9,image_1965.jpeg,10.325177111630895,E-UTRAN to HRPD handover
+q_ff_1,handover failure call flow,hybrid,10,image_1377.jpeg,9.697966458807873,Mobility to HeNB's CSG and hybrid cells.
+q_ff_2,RRC connection establishment,hybrid,1,image_3599.jpeg,13.469838907732399,Procedure for Remote UE connection establishment
+q_ff_2,RRC connection establishment,hybrid,2,image_1391.jpeg,12.419795602680743,Retrieve UE Context procedure (highlighted in blue) for cases of UE context
+q_ff_2,RRC connection establishment,hybrid,3,image_4.jpeg,12.056625076174592,UE Registration to open access HNBs.
+q_ff_2,RRC connection establishment,hybrid,4,image_3440.jpeg,11.673715883235827,Re-establishment procedure
+q_ff_2,RRC connection establishment,hybrid,5,image_3560.jpeg,11.643752307579199,RRC Connection Reestablishment and network sharing with multiple cell-ID
+q_ff_2,RRC connection establishment,hybrid,6,image_2.png,11.270017087670988,UE Registration for non CSG UEs or non CSG HNBs.
+q_ff_2,RRC connection establishment,hybrid,7,image_3.jpeg,11.266508915391121,UE Registration for CSG UEs and CSG or Hybrid HNBs.
+q_ff_2,RRC connection establishment,hybrid,8,image_2739.png,10.893546958058764,Connection Establishment for 5G ProSe Layer-2 UE-to-Network Relay
+q_ff_2,RRC connection establishment,hybrid,9,image_3600.png,9.863222295269448,basic connection setup procedure of L3 UE-to-Network Relay based on Figure 6.6.2-1
+q_ff_2,RRC connection establishment,hybrid,10,image_583.jpeg,9.83608371029626,Support of Activity Notification in EN-DC with suspended RRC connection - SCG
+q_ff_3,NAS authentication,hybrid,1,image_457.jpeg,10.208875184449628,AMF re-allocation with NAS message and 5G NAS security context re-route via RAN
+q_ff_3,NAS authentication,hybrid,2,image_1998.png,10.173278925512964,5G-RG Registration via W-5GAN
+q_ff_3,NAS authentication,hybrid,3,image_431.jpeg,10.006554121367216,Authentication for untrusted non-3GPP access
+q_ff_3,NAS authentication,hybrid,4,image_1136.jpeg,9.915461228670493,Network slice specific authentication and Authorization procedure (RADIUS)
+q_ff_3,NAS authentication,hybrid,5,image_1137.jpeg,9.9112460483023,Network slice specific authentication and Authorization procedure (Diameter)
+q_ff_3,NAS authentication,hybrid,6,image_135.png,9.819642222873311,Anti-authentication relay attack procedure
+q_ff_3,NAS authentication,hybrid,7,image_446.png,9.788651785697706,AMF re-allocation with NAS message and 5G NAS security context re-route via RAN
+q_ff_3,NAS authentication,hybrid,8,image_450.jpeg,9.524678719266065,AMF Serving Capability based Security handling during primary authentication
+q_ff_3,NAS authentication,hybrid,9,image_453.jpeg,9.516195542340093,Security context handling during registration mobility update
+q_ff_3,NAS authentication,hybrid,10,image_452.jpeg,9.514728736103821,AMF Serving Capability based Security Context handling during primary
+q_ff_4,5G architecture,hybrid,1,image_2030.jpeg,9.728945406778415,Non- roaming architecture for 5G Core Network for 5G-RG with Wireline 5G Access
+q_ff_4,5G architecture,hybrid,2,image_2031.jpeg,9.708300843861524,Non- roaming architecture for 5G Core Network for FN-RG with Wireline 5G Access
+q_ff_4,5G architecture,hybrid,3,image_716.png,9.470317317658907,5G Media Streaming General Architecture
+q_ff_4,5G architecture,hybrid,4,image_715.png,9.454912921331303,5G Media Streaming within the 5G System
+q_ff_4,5G architecture,hybrid,5,image_2733.jpeg,9.404446432560711,Reference architecture for 5G ProSe Layer-3 UE-to-Network Relay
+q_ff_4,5G architecture,hybrid,6,image_2026.jpeg,9.403785976178995,Home-routed Roaming architecture for 5G Core Network with untrusted non-3GPP
+q_ff_4,5G architecture,hybrid,7,image_2027.jpeg,9.403785976178995,Home-routed Roaming architecture for 5G Core Network with untrusted non-3GPP
+q_ff_4,5G architecture,hybrid,8,image_2028.jpeg,9.403785976178995,Home-routed Roaming architecture for 5G Core Network with untrusted non-3GPP
+q_ff_4,5G architecture,hybrid,9,image_2029.jpeg,9.403785976178995,Home-routed Roaming architecture for 5G Core Network with trusted non-3GPP
+q_ff_4,5G architecture,hybrid,10,image_2734.jpeg,9.397876968359231,Roaming architecture model for 5G ProSe Layer-3 UE-to-Network Relay with N3IWF
+q_ff_5,bearer activation,hybrid,1,image_2499.jpeg,10.14483395445458,Secondary PDP context Activation or PDP Context Modification Procedure for EPS-
+q_ff_5,bearer activation,hybrid,2,image_3377.jpeg,9.776870635676477,Dedicated Bearer Activation Procedure
+q_ff_5,bearer activation,hybrid,3,image_1981.jpeg,9.737767848641093,Dedicated S2a Bearer Activation Procedure with GTP on S2a
+q_ff_5,bearer activation,hybrid,4,image_3179.png,9.71163114123641,Interaction between CP and UP function during modification of bearer
+q_ff_5,bearer activation,hybrid,5,image_1944.jpeg,9.67646149992677,Dedicated S2b Bearer Activation Procedure with GTP on S2b
+q_ff_5,bearer activation,hybrid,6,image_2918.png,9.521914618462272,Use of pre-established MBMS bearers
+q_ff_5,bearer activation,hybrid,7,image_3197.png,9.112479189596588,"Interaction between CP and UP function with PDN connection modification, Group"
+q_ff_5,bearer activation,hybrid,8,image_3196.png,9.112479189596588,"Interaction between CP and UP function with PDN connection modification, Group"
+q_ff_5,bearer activation,hybrid,9,image_3195.png,9.112479189596588,"Interaction between CP and UP function with PDN connection modification, Group"
+q_ff_5,bearer activation,hybrid,10,image_2930.jpeg,9.095138544162497,MBMS bearer event notification
+q_ff_6,UE context release,hybrid,1,image_3553.png,11.77563941120215,Bearer context release over F1-U – gNB-CU-CP initiated
+q_ff_6,UE context release,hybrid,2,image_3554.png,11.752364809184137,Bearer context release over F1-U – gNB-CU-UP initiated
+q_ff_6,UE context release,hybrid,3,image_3372.jpeg,11.523345040728188,S1 Release Procedure
+q_ff_6,UE context release,hybrid,4,image_3438.jpeg,11.455744668748824,"Resume request responded with Release with Redirect, with UE Context relocation"
+q_ff_6,UE context release,hybrid,5,image_1374.jpeg,11.345343883868125,Inter-MeNB handover without SeNB change
+q_ff_6,UE context release,hybrid,6,image_1369.jpeg,11.335768073093027,SeNB Release procedure – MeNB initiated
+q_ff_6,UE context release,hybrid,7,image_1370.jpeg,11.335768073093027,SeNB Release procedure – MeNB initiated
+q_ff_6,UE context release,hybrid,8,image_2119.jpeg,11.330603880780856,local Release triggered via NAS
+q_ff_6,UE context release,hybrid,9,image_2125.jpeg,11.210911803022652,RRC leaving procedure in EPS
+q_ff_6,UE context release,hybrid,10,image_576.jpeg,11.189992592840051,Inter-MN handover with/without MN initiated SN change
+q_ff_7,gNB CU DU split,hybrid,1,image_1238.jpeg,28.465998070711656,NRM fragment to support RIM
+q_ff_7,gNB CU DU split,hybrid,2,image_1239.jpeg,28.465998070711656,NRM fragment for CES Management
+q_ff_7,gNB CU DU split,hybrid,3,image_1236.jpeg,28.465998070711656,NRM for all deployment scenarios
+q_ff_7,gNB CU DU split,hybrid,4,image_1237.jpeg,28.41650579228365,NRM for <<IOC>>NRSectorCarrier and <<IOC>>BWP for all deployment scenarios
+q_ff_7,gNB CU DU split,hybrid,5,image_3537.jpeg,26.99518070810543,Inter-gNB-DU Mobility for intra-NR
+q_ff_7,gNB CU DU split,hybrid,6,image_3548.png,26.975205367744174,F1 startup and cell activation
+q_ff_7,gNB CU DU split,hybrid,7,image_3539.jpeg,26.91733292444411,Inter-gNB-DU Mobility using MCG SRB in EN-DC
+q_ff_7,gNB CU DU split,hybrid,8,image_3538.jpeg,26.643041922331136,Inter-gNB-DU Conditional Handover or Conditional PSCell Change for intra-NR
+q_ff_7,gNB CU DU split,hybrid,9,image_3536.jpeg,26.613398139962797,UE Initial Access procedure
+q_ff_7,gNB CU DU split,hybrid,10,image_3540.jpeg,26.61251401031328,Inter-gNB-DU Conditional PSCell Change using MCG SRB without MN negotiation in
+q_ff_8,AMF SMF UPF session,hybrid,1,image_2856.jpeg,15.803429399947102,MBS N2 based HO towards a RAN
+q_ff_8,AMF SMF UPF session,hybrid,2,image_2814.png,15.7762978956072,PDU session modification for multicast leave
+q_ff_8,AMF SMF UPF session,hybrid,3,image_2806.png,15.683500591823549,Session Leave
+q_ff_8,AMF SMF UPF session,hybrid,4,image_1694.jpeg,15.670899375821229,UE initiated Multicast MBS Session leave
+q_ff_8,AMF SMF UPF session,hybrid,5,image_2855.jpeg,15.6279301145263,MBS Xn based HO towards a RAN
+q_ff_8,AMF SMF UPF session,hybrid,6,image_1698.png,15.576174482627657,MBS session activation procedure
+q_ff_8,AMF SMF UPF session,hybrid,7,image_2840.jpeg,15.530678959199578,MBS session joining via PDU Session Establishment procedure
+q_ff_8,AMF SMF UPF session,hybrid,8,image_2810.jpeg,15.524664482985596,PDU Session modification for multicast
+q_ff_8,AMF SMF UPF session,hybrid,9,image_2817.jpeg,15.398367481382763,User Multicast Service Create procedure
+q_ff_8,AMF SMF UPF session,hybrid,10,image_2878.jpeg,15.292646840094616,Multicast to unicast mode switching based on N2 handover within dual RANs
+q_ff_9,paging idle mode,hybrid,1,image_2565.png,17.499417383214286,Notification - Availability Notification after DDN Failure
+q_ff_9,paging idle mode,hybrid,2,image_2088.png,17.063965185785438,Mobile Terminating Call in idle mode
+q_ff_9,paging idle mode,hybrid,3,image_3371.jpeg,15.452443819639505,Network triggered Service Request procedure
+q_ff_9,paging idle mode,hybrid,4,image_2128.jpeg,15.089523584685146,Paging filtering based paging delivery in CM-IDLE state
+q_ff_9,paging idle mode,hybrid,5,image_2123.jpeg,14.634323928150875,NAS leaving procedure in EPS
+q_ff_9,paging idle mode,hybrid,6,image_2094.jpeg,14.59575650313731,Mobile terminating SMS in idle mode
+q_ff_9,paging idle mode,hybrid,7,image_1470.jpeg,14.430936837739495,Overall Idle Mode process
+q_ff_9,paging idle mode,hybrid,8,image_2118.jpeg,13.96515206364685,Network Triggered Service Request (based on TS 23.502 [6] Figure 4.2.3.3-1)
+q_ff_9,paging idle mode,hybrid,9,image_3407.png,13.798573977443905,MME/SGSN or HSS Initiated Dedicated Core Network Reselection
+q_ff_9,paging idle mode,hybrid,10,image_1409.jpeg,13.719891716611716,Mobility procedures between E-UTRA/5GC and CDMA2000
+q_ff_10,random access msg1 msg4,hybrid,1,image_148.jpeg,11.325385704739269,Unicast message protection procedure
+q_ff_10,random access msg1 msg4,hybrid,2,image_266.png,8.723631576878168,LTKUP key agreement process diagram
+q_ff_10,random access msg1 msg4,hybrid,3,image_580.jpeg,8.36449859832064,eNB to Master Node change
+q_ff_10,random access msg1 msg4,hybrid,4,image_3633.png,8.36095436795534,Channel coefficient generation procedure
+q_ff_10,random access msg1 msg4,hybrid,5,image_3662.png,8.13207535064653,A sequence diagram of RA-based UL timing adjustment at TCI state switch.
+q_ff_10,random access msg1 msg4,hybrid,6,image_581.jpeg,7.96732226419679,ng-eNB/gNB to MN change procedure
+q_ff_10,random access msg1 msg4,hybrid,7,image_3445.jpeg,7.9481261836562815,AMF selection
+q_ff_10,random access msg1 msg4,hybrid,8,image_1346.png,7.20961358276935,"MAC structure overview, UE side"
+q_ff_10,random access msg1 msg4,hybrid,9,image_1345.png,7.20961358276935,"MAC structure overview, UE side"
+q_ff_10,random access msg1 msg4,hybrid,10,image_1347.png,7.201362205546138,"MAC structure overview for sidelink, UE side"
+q_ff_11,LTE protocol stack,hybrid,1,image_1106.jpeg,16.158678558182885,MB2-U Protocol stack with DTLS Security
+q_ff_11,LTE protocol stack,hybrid,2,image_1105.jpeg,16.158678558182885,MB2-U Protocol stack with DTLS Security
+q_ff_11,LTE protocol stack,hybrid,3,image_381.png,15.38108018631868,Control-plane protocol stack
+q_ff_11,LTE protocol stack,hybrid,4,image_3535.png,15.151300470893736,User plane protocol stack for L2 UE-to-Network Relay
+q_ff_11,LTE protocol stack,hybrid,5,image_3534.png,15.151300470893736,User plane protocol stack for L2 UE-to-Network Relay
+q_ff_11,LTE protocol stack,hybrid,6,image_3598.jpeg,14.91703141921194,Control plane protocol stack for L2 UE-to-Network Relay
+q_ff_11,LTE protocol stack,hybrid,7,image_3597.jpeg,14.91703141921194,Control plane protocol stack for L2 UE-to-Network Relay
+q_ff_11,LTE protocol stack,hybrid,8,image_3596.jpeg,14.91703141921194,Control plane protocol stack for L2 UE-to-Network Relay
+q_ff_11,LTE protocol stack,hybrid,9,image_3595.jpeg,14.91703141921194,User plane protocol stack for L2 UE-to-Network Relay
+q_ff_11,LTE protocol stack,hybrid,10,image_17.png,14.78985710964142,Iuh–Interface Protocol Stack.
+q_ff_12,Xn handover,hybrid,1,image_3448.jpeg,13.777502814027983,Xn based mobility across different Registration Areas
+q_ff_12,Xn handover,hybrid,2,image_2863.png,13.622323483336132,Xn based shared to individual switch
+q_ff_12,Xn handover,hybrid,3,image_2865.png,13.419497927217702,Xn based individual to shared switch
+q_ff_12,Xn handover,hybrid,4,image_1696.jpeg,13.354793323321125,Xn based handover with MBS Session
+q_ff_12,Xn handover,hybrid,5,image_3705.jpeg,13.237851106519251,"PDU Session charging message flows for Xn based handover, execution phase,"
+q_ff_12,Xn handover,hybrid,6,image_3704.jpeg,12.953662486011565,"PDU Session charging message flows for Inter NG-RAN node N2 based handover,"
+q_ff_12,Xn handover,hybrid,7,image_590.jpeg,12.915571555861668,Conditional Handover with Secondary Node procedure
+q_ff_12,Xn handover,hybrid,8,image_3703.jpeg,12.899758666268973,PDU Session charging message flows for UE Triggered Service Request
+q_ff_12,Xn handover,hybrid,9,image_581.jpeg,12.766532086371088,ng-eNB/gNB to MN change procedure
+q_ff_12,Xn handover,hybrid,10,image_2877.jpeg,12.656340375717706,Multicast to unicast mode switching based on Xn handover within dual RANs
+q_ff_13,PDU session establishment,hybrid,1,image_2840.jpeg,9.993709025092494,MBS session joining via PDU Session Establishment procedure
+q_ff_13,PDU session establishment,hybrid,2,image_2220.jpeg,9.985122860421125,PDU session establishment procedure
+q_ff_13,PDU session establishment,hybrid,3,image_473.jpeg,9.974672731412074,Authorization during the EDN relocation
+q_ff_13,PDU session establishment,hybrid,4,image_2010.jpeg,9.96025321537985,FN-RG related PDU Session Establishment via W-5GAN
+q_ff_13,PDU session establishment,hybrid,5,image_472.jpeg,9.852446703444791,Authorization during the EDN relocation
+q_ff_13,PDU session establishment,hybrid,6,image_2007.jpeg,9.841207352272015,5G-RG PDU Session establishment via W-5GAN
+q_ff_13,PDU session establishment,hybrid,7,image_2600.png,9.741460568019605,PDU Session establishment for C2 communication (separate PDU Sessions for
+q_ff_13,PDU session establishment,hybrid,8,image_1623.png,9.560243110587066,Authentication/authorization and C2 communication establishment for UAV/UAVC
+q_ff_13,PDU session establishment,hybrid,9,image_325.png,9.480588719561208,Procedure for UAV authentication and authorization with USS/UTM PDU Session
+q_ff_13,PDU session establishment,hybrid,10,image_434.png,9.425948100049528,Initial EAP Authentication with an external AAA server
+q_ff_14,radio link failure recovery,hybrid,1,image_3440.jpeg,17.144351090449703,Re-establishment procedure
+q_ff_14,radio link failure recovery,hybrid,2,image_500.jpeg,14.387980097257188,A simplified illustration of backhaul-RLF recovery
+q_ff_14,radio link failure recovery,hybrid,3,image_2367.png,13.529241318214755,Procedure for Untrusted WLAN access becomes usable for GTP S2b
+q_ff_14,radio link failure recovery,hybrid,4,image_2364.png,13.408325730356635,Procedure for 3GPP access becomes usable for GTP S5/S8
+q_ff_14,radio link failure recovery,hybrid,5,image_70.jpeg,13.076323766348333,PLMN-B aware of hPLMN failure
+q_ff_14,radio link failure recovery,hybrid,6,image_69.jpeg,13.076323766348333,PLMN-B aware of hPLMN failure
+q_ff_14,radio link failure recovery,hybrid,7,image_561.jpeg,11.45725163789737,SN Modification procedure - MN initiated
+q_ff_14,radio link failure recovery,hybrid,8,image_562.jpeg,11.452014526293095,SN Modification procedure - SN initiated with MN involvement
+q_ff_14,radio link failure recovery,hybrid,9,image_563.jpeg,11.448525787528462,Transfer of an NR RRC message to/from the UE
+q_ff_14,radio link failure recovery,hybrid,10,image_3372.jpeg,11.198924374992313,S1 Release Procedure
+q_ff_15,EPC attach procedure,hybrid,1,image_1352.jpeg,17.397917864187228,RN attach procedure
+q_ff_15,EPC attach procedure,hybrid,2,image_1353.jpeg,17.397917864187228,RN attach procedure
+q_ff_15,EPC attach procedure,hybrid,3,image_1611.jpeg,16.861337146315833,Procedure for registering to UTM for UAS operations and issuance of CAA-Level
+q_ff_15,EPC attach procedure,hybrid,4,image_1354.png,14.990132687699715,RN startup procedure
+q_ff_15,EPC attach procedure,hybrid,5,image_1835.jpeg,13.06276866029541,Procedure Initial Provisioning and Connecting to Edge Enabler Server
+q_ff_15,EPC attach procedure,hybrid,6,image_2012.jpeg,13.026188600206037,Handover from W-5GAN/5GC to EPS
+q_ff_15,EPC attach procedure,hybrid,7,image_1624.png,12.77624335877114,Authentication/authorization and C2 communication establishment for UAV/UAVC
+q_ff_15,EPC attach procedure,hybrid,8,image_1974.jpeg,12.70223955099601,"Initial attachment in WLAN on GTP S2a for roaming, LBO and non-roaming scenarios"
+q_ff_15,EPC attach procedure,hybrid,9,image_1935.jpeg,12.686690997957017,Initial attachment for emergency services over GTP based S2b
+q_ff_15,EPC attach procedure,hybrid,10,image_1885.jpeg,11.376605651621716,IPv4 Address Allocation using DHCP with DHCP Server Collocated with the MAG
+q_ff_16,S1 release procedure,hybrid,1,image_3372.jpeg,16.23419587406943,S1 Release Procedure
+q_ff_16,S1 release procedure,hybrid,2,image_1385.jpeg,15.151037428432698,E-RAB Release procedure
+q_ff_16,S1 release procedure,hybrid,3,image_1386.jpeg,15.151037428432698,E-RAB Release procedure
+q_ff_16,S1 release procedure,hybrid,4,image_2087.jpeg,14.52977285589651,"CSFB MO or MT call, rejected by MME"
+q_ff_16,S1 release procedure,hybrid,5,image_1383.jpeg,14.182694914854071,E-RAB Setup procedure
+q_ff_16,S1 release procedure,hybrid,6,image_1384.jpeg,13.13545819599343,E-RAB Modification procedure
+q_ff_16,S1 release procedure,hybrid,7,image_3380.jpeg,13.085238499024097,PDN GW Initiated Bearer Deactivation
+q_ff_16,S1 release procedure,hybrid,8,image_1355.jpeg,12.911759210153702,E-UTRAN - SIPTO@LN with collocated L-GW - Logical Architecture
+q_ff_16,S1 release procedure,hybrid,9,image_1391.jpeg,12.813203443612156,Retrieve UE Context procedure (highlighted in blue) for cases of UE context
+q_ff_16,S1 release procedure,hybrid,10,image_3376.jpeg,12.265121656637778,HSS-Initiated Detach Procedure
+q_ff_17,tracking area update,hybrid,1,image_1339.jpeg,15.550159964480125,Moving Cells and Small tracking areas leading to massive TAU signalling
+q_ff_17,tracking area update,hybrid,2,image_1338.jpeg,15.550159964480125,Moving Cells and Small tracking areas leading to massive TAU signalling
+q_ff_17,tracking area update,hybrid,3,image_1341.jpeg,15.49264522933424,An example of updating TAC and PLMN ID in real-time for LEO with moving beams
+q_ff_17,tracking area update,hybrid,4,image_1340.jpeg,15.49264522933424,An example of updating TAC and PLMN ID in real-time for LEO with moving beams
+q_ff_17,tracking area update,hybrid,5,image_3367.jpeg,12.457128097299883,E-UTRAN Tracking Area Update without S-GW change
+q_ff_17,tracking area update,hybrid,6,image_2214.jpeg,12.328900572313346,"Satellite beams for Geostationary and Non-Geostationary satellites, cells and tracking"
+q_ff_17,tracking area update,hybrid,7,image_2215.jpeg,12.328900572313346,"Satellite beams for Geostationary and Non-Geostationary satellites, cells and tracking"
+q_ff_17,tracking area update,hybrid,8,image_3176.png,12.090552670492226,Interaction between CP and UP function during procedures with SGW change
+q_ff_17,tracking area update,hybrid,9,image_2222.png,11.889666136033796,Registration and Paging procedures using sequenced Registration Areas
+q_ff_17,tracking area update,hybrid,10,image_2208.jpeg,11.315924644833283,Delivery of Ciphering Keys to UEs for Broadcast Assistance Data
+q_ff_18,O-RAN functional split,hybrid,1,image_1544.jpeg,14.484527635795184,"End-to-end flow of O&M-based solution for KI#6, connected mode"
+q_ff_18,O-RAN functional split,hybrid,2,image_1543.jpeg,14.484527635795184,"End-to-end flow of O&M-based solution for KI#6, connected mode"
+q_ff_18,O-RAN functional split,hybrid,3,image_3420.jpeg,13.396285131871668,Overall Architecture
+q_ff_18,O-RAN functional split,hybrid,4,image_3421.png,12.508587412824937,Functional Split between NG-RAN and 5GC
+q_ff_18,O-RAN functional split,hybrid,5,image_777.jpeg,11.547171571411766,Functional structure for Type 3a: 5G Split Rendering WireLess Tethered AR UE
+q_ff_18,O-RAN functional split,hybrid,6,image_778.jpeg,11.361447379358435,Functional structure for Type 3b: 5G Relay WireLess Tethered AR UE
+q_ff_18,O-RAN functional split,hybrid,7,image_3490.png,11.34875322954706,Model for Test Mode Control and UE Test Loop Mode A on UE side when standalone
+q_ff_18,O-RAN functional split,hybrid,8,image_3491.png,11.340381386611686,Model for Test Mode Control and UE Test Loop Mode A on UE side when NE-DC with
+q_ff_18,O-RAN functional split,hybrid,9,image_3488.png,11.340381386611686,Model for Test Mode Control and UE Test Loop Mode A on UE side when EN-DC or
+q_ff_18,O-RAN functional split,hybrid,10,image_3489.png,11.340381386611686,Model for Test Mode Control and UE Test Loop Mode A on UE side when EN-DC or
+q_ff_19,network triggered service request,hybrid,1,image_2186.jpeg,9.215275338920152,Cancellation of a Deferred 5GC-MT-LR for periodic or triggered location events by an
+q_ff_19,network triggered service request,hybrid,2,image_2185.jpeg,9.159122974245404,UE Cancellation of a Deferred 5GC-MT-LR for periodic or triggered location events
+q_ff_19,network triggered service request,hybrid,3,image_2160.jpeg,9.108360585385201,Deferred EPC-MT-LR procedure for Periodic and Triggered Location
+q_ff_19,network triggered service request,hybrid,4,image_132.jpeg,9.013222555146001,"UE Triggered Service Request procedure (AUSF get AUTS, RANDMS from UE)"
+q_ff_19,network triggered service request,hybrid,5,image_2000.jpeg,8.844913955921824,5G-RG Triggered Service Request procedure via W-5GAN
+q_ff_19,network triggered service request,hybrid,6,image_2184.jpeg,8.844654105489365,"Deferred 5GC-MT-LR for periodic, triggered and UE available location events"
+q_ff_19,network triggered service request,hybrid,7,image_2118.jpeg,8.672414974172337,Network Triggered Service Request (based on TS 23.502 [6] Figure 4.2.3.3-1)
+q_ff_19,network triggered service request,hybrid,8,image_2162.jpeg,8.663077201136716,UE cancellation of a Deferred MT-LR for Periodic and Triggered Location
+q_ff_19,network triggered service request,hybrid,9,image_131.png,8.637397147229576,SQNMS shared to SN in Registration Request (5GS)
+q_ff_19,network triggered service request,hybrid,10,image_2161.jpeg,8.413244111872025,LCS Client cancellation of a Deferred MT-LR for Periodic and Triggered Location
+q_ff_20,SGW PGW interaction,hybrid,1,image_3176.png,21.516390411295365,Interaction between CP and UP function during procedures with SGW change
+q_ff_20,SGW PGW interaction,hybrid,2,image_3191.png,21.247561802316174,Interaction between CP and UP function with PDN connection deactivation Group
+q_ff_20,SGW PGW interaction,hybrid,3,image_3192.jpeg,21.247561802316174,Interaction between CP and UP function with PDN connection deactivation Group
+q_ff_20,SGW PGW interaction,hybrid,4,image_3201.png,20.954445898879893,Interaction between CP and UP function with PDN connection establishment
+q_ff_20,SGW PGW interaction,hybrid,5,image_3177.png,20.691443780439307,Interaction between CP and UP function during procedures with SGW change
+q_ff_20,SGW PGW interaction,hybrid,6,image_3178.png,20.635568475363954,Interaction between CP and UP function during release of PDN connection
+q_ff_20,SGW PGW interaction,hybrid,7,image_3179.png,20.46690450723846,Interaction between CP and UP function during modification of bearer
+q_ff_20,SGW PGW interaction,hybrid,8,image_3197.png,20.288773787260567,"Interaction between CP and UP function with PDN connection modification, Group"
+q_ff_20,SGW PGW interaction,hybrid,9,image_3196.png,20.288773787260567,"Interaction between CP and UP function with PDN connection modification, Group"
+q_ff_20,SGW PGW interaction,hybrid,10,image_3195.png,20.288773787260567,"Interaction between CP and UP function with PDN connection modification, Group"
+q_ff_21,dedicated bearer setup,hybrid,1,image_1383.jpeg,11.887974202135624,E-RAB Setup procedure
+q_ff_21,dedicated bearer setup,hybrid,2,image_3377.jpeg,11.852577762029231,Dedicated Bearer Activation Procedure
+q_ff_21,dedicated bearer setup,hybrid,3,image_3381.jpeg,10.942465882057324,MME initiated Dedicated Bearer Deactivation
+q_ff_21,dedicated bearer setup,hybrid,4,image_2115.png,10.811308438317758,SRVCC to E-UTRAN/UTRAN (HSPA) from GERAN without DTM / PS HO and SRVCC
+q_ff_21,dedicated bearer setup,hybrid,5,image_1944.jpeg,10.229656702295312,Dedicated S2b Bearer Activation Procedure with GTP on S2b
+q_ff_21,dedicated bearer setup,hybrid,6,image_1981.jpeg,10.075273155626071,Dedicated S2a Bearer Activation Procedure with GTP on S2a
+q_ff_21,dedicated bearer setup,hybrid,7,image_3179.png,10.047098176045527,Interaction between CP and UP function during modification of bearer
+q_ff_21,dedicated bearer setup,hybrid,8,image_1973.jpeg,9.920126067901933,Two Unicast S2a bearers mapped to separate WLCP bearers (GTP based S2a)
+q_ff_21,dedicated bearer setup,hybrid,9,image_2494.png,9.601632581228028,MME-initiated Dedicated Bearer Deactivation
+q_ff_21,dedicated bearer setup,hybrid,10,image_2493.png,9.601632581228028,MME-initiated Dedicated Bearer Deactivation
+q_ff_22,handover reject,hybrid,1,image_3397.jpeg,11.145243885765897,E-UTRAN to GERAN A/Gb Inter RAT HO reject
+q_ff_22,handover reject,hybrid,2,image_3400.jpeg,11.140311353241724,GERAN A/Gb mode to E-UTRAN inter RAT HO reject
+q_ff_22,handover reject,hybrid,3,image_3394.jpeg,10.963509127439515,UTRAN Iu mode to E-UTRAN Inter RAT HO reject
+q_ff_22,handover reject,hybrid,4,image_2096.png,10.812429465052432,MT-LR procedure while UE is in IMS VoIP session
+q_ff_22,handover reject,hybrid,5,image_2097.jpeg,10.65818908466023,NW-Initiated CS Service procedure while UE is in IMS VoIP session
+q_ff_22,handover reject,hybrid,6,image_3388.jpeg,10.451924393249715,"S1-based handover, Reject"
+q_ff_22,handover reject,hybrid,7,image_3391.jpeg,10.166008520710282,E-UTRAN to UTRAN Iu mode Inter RAT HO reject
+q_ff_22,handover reject,hybrid,8,image_2089.png,8.891254122427917,"CS Page in E-UTRAN, Call in GERAN/UTRAN"
+q_ff_22,handover reject,hybrid,9,image_2095.jpeg,8.475126088532226,MO-LR Request in E-UTRAN while UE is in IMS VoIP session
+q_ff_22,handover reject,hybrid,10,image_1900.jpeg,8.109866558554618,UE requested PDN connectivity with PMIP-based S5 or S8
+q_ff_23,RRC state machine,hybrid,1,image_1496.jpeg,14.54613971188845,State transitions of Pre-established Session state machine
+q_ff_23,RRC state machine,hybrid,2,image_1558.jpeg,14.49851181117336,Basic call control state machine
+q_ff_23,RRC state machine,hybrid,3,image_1551.jpeg,14.49851181117336,Basic call control state machine
+q_ff_23,RRC state machine,hybrid,4,image_1548.jpeg,14.477023158012237,Emergency alert state machine
+q_ff_23,RRC state machine,hybrid,5,image_1562.jpeg,14.477023158012237,Emergency alert state machine
+q_ff_23,RRC state machine,hybrid,6,image_1556.jpeg,14.426538270511955,Emergency alert state machine
+q_ff_23,RRC state machine,hybrid,7,image_1559.jpeg,14.21894091545175,Call type control state machine
+q_ff_23,RRC state machine,hybrid,8,image_1552.jpeg,14.21894091545175,Call type control state machine
+q_ff_23,RRC state machine,hybrid,9,image_1555.jpeg,14.2100762452676,Call type control state machine
+q_ff_23,RRC state machine,hybrid,10,image_1537.jpeg,13.91876144689007,Transmission control server state transition diagram for basic transmission control
+q_ff_24,NAS key agreement,hybrid,1,image_305.jpeg,12.9023503677739,BEST Key Hierarchy for 5GS networks
+q_ff_24,NAS key agreement,hybrid,2,image_303.jpeg,12.8940403247773,BEST Key Hierarchy for EPS networks and legacy UEs
+q_ff_24,NAS key agreement,hybrid,3,image_304.jpeg,12.8940403247773,BEST Key Hierarchy for EPS networks and legacy UEs
+q_ff_24,NAS key agreement,hybrid,4,image_318.jpeg,12.403828067565328,Network access authentication with credentials owned by an entity separate from the
+q_ff_24,NAS key agreement,hybrid,5,image_302.jpeg,12.377840465632723,Generic BEST key agreement process for 5GS networks
+q_ff_24,NAS key agreement,hybrid,6,image_266.png,11.716631149870516,LTKUP key agreement process diagram
+q_ff_24,NAS key agreement,hybrid,7,image_310.jpeg,11.190227653601779,Initial access with key derivation
+q_ff_24,NAS key agreement,hybrid,8,image_454.jpeg,10.840138627158355,AMF re-allocation with NAS message and 5G NAS security context re-route via RAN
+q_ff_24,NAS key agreement,hybrid,9,image_455.jpeg,10.760877017389811,AMF re-allocation with 5G NAS security context re-route via RAN based on
+q_ff_24,NAS key agreement,hybrid,10,image_313.png,10.689859656528231,Using EAP-TLS Authentication Procedures over 5G Networks for initial one-way
+q_ff_25,user plane protocol stack,hybrid,1,image_1105.jpeg,20.43192685385291,MB2-U Protocol stack with DTLS Security
+q_ff_25,user plane protocol stack,hybrid,2,image_1106.jpeg,20.43192685385291,MB2-U Protocol stack with DTLS Security
+q_ff_25,user plane protocol stack,hybrid,3,image_381.png,20.15608963856929,Control-plane protocol stack
+q_ff_25,user plane protocol stack,hybrid,4,image_3534.png,19.96617205207267,User plane protocol stack for L2 UE-to-Network Relay
+q_ff_25,user plane protocol stack,hybrid,5,image_3535.png,19.96617205207267,User plane protocol stack for L2 UE-to-Network Relay
+q_ff_25,user plane protocol stack,hybrid,6,image_3595.jpeg,19.56797644435943,User plane protocol stack for L2 UE-to-Network Relay
+q_ff_25,user plane protocol stack,hybrid,7,image_3596.jpeg,19.481013569610322,Control plane protocol stack for L2 UE-to-Network Relay
+q_ff_25,user plane protocol stack,hybrid,8,image_3598.jpeg,19.481013569610322,Control plane protocol stack for L2 UE-to-Network Relay
+q_ff_25,user plane protocol stack,hybrid,9,image_3597.jpeg,19.481013569610322,Control plane protocol stack for L2 UE-to-Network Relay
+q_ff_25,user plane protocol stack,hybrid,10,image_1351.jpeg,19.238122271566425,Radio control plane protocol stack for supporting RNs

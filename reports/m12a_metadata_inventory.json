@@ -1,0 +1,20 @@
+{
+  "csv_path": "/DATA1/prabhakar/telecom/All Images Path.csv",
+  "row_count": 3766,
+  "columns": [
+    "Context",
+    "Source",
+    "Subclause",
+    "Image Path",
+    "Image Caption"
+  ],
+  "caption_column_detected": true,
+  "image_path_column_detected": true,
+  "context_columns_detected": true,
+  "embedding_files_found": [
+    "indexes/colpali_index/image_embeddings.pt",
+    "indexes/clip_vit_b32_image_embeddings.npy"
+  ],
+  "index_files_found": [],
+  "recommendation": "Use Image Caption and Context to build a searchable text document. Use TF-IDF as a robust lightweight BM25 substitute if rank_bm25 is missing, and compute BGE dynamically or skip if dense models aren't available locally."
+}

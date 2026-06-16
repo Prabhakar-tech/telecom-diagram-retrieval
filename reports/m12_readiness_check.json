@@ -1,0 +1,17 @@
+{
+  "ready_for_user_review": true,
+  "interactive_demo_script_created": true,
+  "demo_query_runs": true,
+  "demo_contact_sheet_created": true,
+  "fifty_query_set_created": true,
+  "fifty_query_results_created": true,
+  "contact_sheets_created": true,
+  "llm_candidate_review_protocol_created": true,
+  "llm_review_packet_created": true,
+  "manual_review_template_created": true,
+  "free_form_query_supported": false,
+  "prepared_query_mode_supported": true,
+  "missing_image_count": 0,
+  "unsafe_claims_found": 0,
+  "recommendation": "READY_FOR_USER_REVIEW"
+}

@@ -23,7 +23,7 @@ Based on the master ablation, the selected configuration per query type is:
 - **Q3 selected configuration**: M5.5 union_top50_rerank
 
 ## What is the actual trained model?
-The only newly trained component in this thesis is the **M9A projection-only CLIP adaptation**. 
+The only newly trained component in this thesis is the **M9A projection-only CLIP adaptation**.
 Rather than training a massive foundation model from scratch, we applied lightweight projection adapters on top of a frozen CLIP backbone. These adapters were trained using a duplicate-safe train/val/test split to reduce train/test contamination risk. Held-out test evaluation indicates that the adapted model (E1) shows higher held-out visual retrieval metrics than zero-shot CLIP (E0), providing an empirical demonstration for telecom visual domain adaptation. However, it does not replace the text-first architecture.
 
 ## What is not claimed

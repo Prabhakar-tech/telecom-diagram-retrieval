@@ -4,7 +4,7 @@
 We built an evaluated telecom technical diagram retrieval system. While the core architecture leverages existing lexical and dense text retrievers as baselines, we systematically evaluated them on a novel, duplicate-aware telecom benchmark. Additionally, we trained a lightweight projection-only CLIP adaptation component (M9A) that shows higher held-out visual retrieval metrics than the zero-shot baseline.
 
 ### 2. "Is this just copy-paste of open-source models?"
-No. Applying open-source models to highly specialized domains like 3GPP telecom specifications requires rigorous handling of data. We constructed a novel benchmark with query stratification (Q1/Q2/Q3), implemented strict duplicate-aware splitting logic, performed systematic ablations (M8), and engineered a query-type-aware text-first architecture. 
+No. Applying open-source models to highly specialized domains like 3GPP telecom specifications requires rigorous handling of data. We constructed a novel benchmark with query stratification (Q1/Q2/Q3), implemented strict duplicate-aware splitting logic, performed systematic ablations (M8), and engineered a query-type-aware text-first architecture.
 
 ### 3. "What exactly is your contribution?"
 Our contribution is a comprehensive, duplicate-aware evaluation of multimodal retrieval systems on abstract telecom diagrams. We established a strong text-first architecture, quantified the specific failure modes of zero-shot visual models on technical figures, and provided empirical evidence that lightweight domain adaptation can partially bridge this visual domain gap.

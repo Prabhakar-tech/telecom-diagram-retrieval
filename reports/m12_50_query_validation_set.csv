@@ -1,0 +1,51 @@
+query_id,query_text,intended_query_type,expected_relevance_signal,source,notes
+q1_1,handover failure call flow between UE and eNodeB,q1,Lexical match on handover failure,demo_set,LTE/5G handover
+q1_2,RRC connection establishment procedure ladder diagram,q1,Lexical match on RRC connection,demo_set,RRC connection
+q1_3,NAS authentication and key agreement,q1,Lexical match on NAS authentication,demo_set,NAS attach/authentication
+q1_4,5G system architecture block diagram,q1,Lexical match on 5G system architecture,demo_set,architecture/block diagrams
+q1_5,dedicated bearer activation call flow,q1,Lexical match on bearer activation,demo_set,bearer setup
+q1_6,mobility management entity state machine,q1,Lexical match on mobility management,demo_set,mobility management
+q1_7,UE context release request message flow,q1,Lexical match on context release,demo_set,call flow
+q1_8,gNB CU DU split architecture,q1,Lexical match on CU DU split,demo_set,architecture/block diagrams
+q1_9,AMF SMF UPF session management,q1,Lexical match on AMF SMF UPF,demo_set,architecture/block diagrams
+q1_10,paging procedure in idle mode,q1,Lexical match on paging procedure,demo_set,call flow
+q1_11,radio link failure recovery,q1,Lexical match on radio link failure,demo_set,failure/retry procedures
+q1_12,LTE protocol stack user plane,q1,Lexical match on protocol stack,demo_set,protocol stack
+q1_13,S1 release procedure ladder diagram,q1,Lexical match on S1 release,demo_set,call flow
+q1_14,random access procedure msg1 to msg4,q1,Lexical match on random access,demo_set,call flow
+q1_15,Xn handover between NG-RAN nodes,q1,Lexical match on Xn handover,demo_set,LTE/5G handover
+q2_1,how does a UE recover when the radio link fails,q2,Dense match on failure recovery,demo_set,failure/retry procedures
+q2_2,what happens when handover from eNB to gNB fails,q2,Dense match on handover failure,demo_set,LTE/5G handover
+q2_3,show me the message sequence for setting up an RRC connection,q2,Dense match on RRC connection setup,demo_set,RRC connection
+q2_4,how is mutual authentication done between network and UE,q2,Dense match on NAS auth,demo_set,NAS attach/authentication
+q2_5,what are the components of the 5G core control plane,q2,Dense match on 5G architecture,demo_set,architecture/block diagrams
+q2_6,explain the steps to activate a dedicated bearer,q2,Dense match on bearer activation,demo_set,bearer setup
+q2_7,what are the different MME states and transitions,q2,Dense match on MME states,demo_set,mobility management
+q2_8,how does the eNB ask the MME to release UE context,q2,Dense match on context release,demo_set,call flow
+q2_9,what is the split between central and distributed units in gNB,q2,Dense match on CU DU,demo_set,architecture/block diagrams
+q2_10,how do AMF and SMF interact with UPF for PDU sessions,q2,Dense match on AMF SMF UPF,demo_set,architecture/block diagrams
+q2_11,how does the network wake up a UE in idle mode,q2,Dense match on paging,demo_set,call flow
+q2_12,what layers make up the LTE user plane stack,q2,Dense match on protocol stack,demo_set,protocol stack
+q2_13,how is the S1 connection torn down,q2,Dense match on S1 release,demo_set,call flow
+q2_14,what are the four messages in the RACH process,q2,Dense match on RACH,demo_set,call flow
+q2_15,how does a UE hand over between two 5G base stations,q2,Dense match on Xn handover,demo_set,LTE/5G handover
+q2_16,what happens if the target cell rejects the handover,q2,Dense match on handover reject,demo_set,failure/retry procedures
+q2_17,show the interaction between UE and EPC during attach,q2,Dense match on LTE attach,demo_set,NAS attach/authentication
+q2_18,how is QOS managed during dedicated bearer setup,q2,Dense match on QoS bearer,demo_set,bearer setup
+q2_19,what is the functional split in O-RAN architecture,q2,Dense match on O-RAN,demo_set,architecture/block diagrams
+q2_20,how are tracking area updates handled in 5G,q2,Dense match on TAU,demo_set,mobility management
+q3_1,"When the UE experiences deteriorating signal conditions from the serving eNodeB, it sends a measurement report indicating that a neighbor cell is stronger. The serving eNodeB makes a handover decision and attempts to prepare the target eNodeB. However, if the target eNodeB cannot admit the UE due to lack of resources, it sends a Handover Preparation Failure message back to the source eNodeB.",q3,Dense match on context,demo_set,failure/retry procedures
+q3_2,"During the initial access, the UE needs to transition from RRC_IDLE to RRC_CONNECTED. It starts by sending an RRC Connection Request. The network responds with an RRC Connection Setup message, establishing the SRB1. Finally, the UE confirms the successful establishment by sending the RRC Connection Setup Complete message.",q3,Dense match on context,demo_set,RRC connection
+q3_3,"The 5G system architecture consists of several key network functions. The AMF handles connection and mobility management, while the SMF is responsible for session management. The UPF routes and forwards user plane data. These functions interact via service-based interfaces to provide end-to-end connectivity for the UE.",q3,Dense match on context,demo_set,architecture/block diagrams
+q3_4,"To establish a dedicated bearer for a specific QoS flow, the network initiates the process. The MME sends a Bearer Setup Request to the eNodeB, which in turn sends an RRC Connection Reconfiguration message to the UE. The UE applies the new configuration and responds with an RRC Connection Reconfiguration Complete message.",q3,Dense match on context,demo_set,bearer setup
+q3_5,"In 5G NR, the gNB can be split into a Central Unit (CU) and one or more Distributed Units (DUs). The CU handles higher layer protocols like RRC and PDCP, while the DU handles lower layers like RLC, MAC, and PHY. They communicate over the F1 interface, allowing for flexible deployment scenarios.",q3,Dense match on context,demo_set,architecture/block diagrams
+q3_6,"When the network needs to reach a UE in CM-IDLE state, the AMF initiates a paging procedure. It sends a Paging message to all gNBs within the UE's tracking area. The gNBs broadcast the Paging message over the radio interface. Upon receiving the page, the UE initiates the RRC connection establishment procedure to transition to CM-CONNECTED state.",q3,Dense match on context,demo_set,call flow
+q3_7,"If the UE detects a radio link failure, it starts a timer and attempts to re-establish the connection. It selects a suitable cell and sends an RRC Reestablishment Request. If the network has the UE context, it responds with an RRC Reestablishment message. Otherwise, the re-establishment fails, and the UE goes to RRC_IDLE.",q3,Dense match on context,demo_set,failure/retry procedures
+q3_8,"The LTE user plane protocol stack consists of several layers between the UE and the eNodeB. The Packet Data Convergence Protocol (PDCP) handles IP header compression and ciphering. The Radio Link Control (RLC) handles segmentation and reassembly. The Medium Access Control (MAC) handles multiplexing and HARQ. The Physical layer (PHY) handles modulation and coding.",q3,Dense match on context,demo_set,protocol stack
+q3_9,"To execute an Xn handover in 5G, the source NG-RAN node sends a Handover Request to the target NG-RAN node over the Xn interface. The target node performs admission control and responds with a Handover Request Acknowledge, including the RRC configuration for the UE. The source node then sends the Handover Command to the UE.",q3,Dense match on context,demo_set,LTE/5G handover
+q3_10,"The random access procedure in LTE consists of four steps. First, the UE transmits a preamble (Msg1). The eNodeB responds with a Random Access Response (Msg2) containing an uplink grant. The UE transmits its RRC Connection Request (Msg3) using the grant. Finally, the eNodeB sends a Contention Resolution message (Msg4).",q3,Dense match on context,demo_set,call flow
+q3_11,"During the NAS authentication and key agreement procedure, the MME sends an Authentication Request to the UE containing a random challenge (RAND) and an authentication token (AUTN). The UE verifies the AUTN to authenticate the network. It then computes a response (RES) and sends it back in an Authentication Response message.",q3,Dense match on context,demo_set,NAS attach/authentication
+q3_12,"When the eNodeB detects that a UE has been inactive for a certain period, it can initiate the S1 release procedure to free up resources. It sends a UE Context Release Request to the MME. The MME asks the SGW to release the access bearers. Then, the MME sends a UE Context Release Command to the eNodeB, which releases the RRC connection and responds with a Complete message.",q3,Dense match on context,demo_set,call flow
+q3_13,"The mobility management entity (MME) manages the UE's state. When a UE is powered on, it is in the EMM-DEREGISTERED state. After a successful attach procedure, it transitions to EMM-REGISTERED. Within the registered state, the UE can be either in ECM-IDLE (no NAS signaling connection) or ECM-CONNECTED (active NAS signaling connection).",q3,Dense match on context,demo_set,mobility management
+q3_14,"When a UE moves out of 5G coverage into an LTE coverage area, an inter-system handover from 5GS to EPS may be triggered. The source AMF communicates with the target MME over the N26 interface to transfer the UE context and prepare the target eNodeB. If the N26 interface is not supported, the UE must perform a registration procedure in the new system.",q3,Dense match on context,demo_set,LTE/5G handover
+q3_15,"During a network-triggered service request, the network has downlink data for a UE in IDLE mode. The UPF notifies the SMF, which informs the AMF. The AMF pages the UE. The UE responds with a Service Request message. The network then establishes the necessary user plane resources and delivers the downlink data.",q3,Dense match on context,demo_set,call flow

@@ -1,0 +1,1652 @@
+{
+  "q_ff_1": {
+    "query_text": "handover failure call flow",
+    "method": "hybrid",
+    "results": [
+      {
+        "rank": 1,
+        "image_id": "image_3394.jpeg",
+        "score": 12.233045468180865,
+        "caption_snippet": "UTRAN Iu mode to E-UTRAN Inter RAT HO reject"
+      },
+      {
+        "rank": 2,
+        "image_id": "image_3400.jpeg",
+        "score": 11.927487489868703,
+        "caption_snippet": "GERAN A/Gb mode to E-UTRAN inter RAT HO reject"
+      },
+      {
+        "rank": 3,
+        "image_id": "image_2109.jpeg",
+        "score": 11.898434779422754,
+        "caption_snippet": "LTE VoIP-to-1x CS voice service continuity"
+      },
+      {
+        "rank": 4,
+        "image_id": "image_3388.jpeg",
+        "score": 11.63754055693034,
+        "caption_snippet": "S1-based handover, Reject"
+      },
+      {
+        "rank": 5,
+        "image_id": "image_3391.jpeg",
+        "score": 11.437516065510009,
+        "caption_snippet": "E-UTRAN to UTRAN Iu mode Inter RAT HO reject"
+      },
+      {
+        "rank": 6,
+        "image_id": "image_3397.jpeg",
+        "score": 10.956161116549612,
+        "caption_snippet": "E-UTRAN to GERAN A/Gb Inter RAT HO reject"
+      },
+      {
+        "rank": 7,
+        "image_id": "image_2286.png",
+        "score": 10.903386882950278,
+        "caption_snippet": "EAS for Stateful Applications"
+      },
+      {
+        "rank": 8,
+        "image_id": "image_2116.jpeg",
+        "score": 10.802268682501445,
+        "caption_snippet": "5G-SRVCC from NG-RAN to 3GPP UTRAN call flow"
+      },
+      {
+        "rank": 9,
+        "image_id": "image_1965.jpeg",
+        "score": 10.325177111630895,
+        "caption_snippet": "E-UTRAN to HRPD handover"
+      },
+      {
+        "rank": 10,
+        "image_id": "image_1377.jpeg",
+        "score": 9.697966458807873,
+        "caption_snippet": "Mobility to HeNB's CSG and hybrid cells."
+      }
+    ]
+  },
+  "q_ff_2": {
+    "query_text": "RRC connection establishment",
+    "method": "hybrid",
+    "results": [
+      {
+        "rank": 1,
+        "image_id": "image_3599.jpeg",
+        "score": 13.469838907732399,
+        "caption_snippet": "Procedure for Remote UE connection establishment"
+      },
+      {
+        "rank": 2,
+        "image_id": "image_1391.jpeg",
+        "score": 12.419795602680743,
+        "caption_snippet": "Retrieve UE Context procedure (highlighted in blue) for cases of UE context"
+      },
+      {
+        "rank": 3,
+        "image_id": "image_4.jpeg",
+        "score": 12.056625076174592,
+        "caption_snippet": "UE Registration to open access HNBs."
+      },
+      {
+        "rank": 4,
+        "image_id": "image_3440.jpeg",
+        "score": 11.673715883235827,
+        "caption_snippet": "Re-establishment procedure"
+      },
+      {
+        "rank": 5,
+        "image_id": "image_3560.jpeg",
+        "score": 11.643752307579199,
+        "caption_snippet": "RRC Connection Reestablishment and network sharing with multiple cell-ID"
+      },
+      {
+        "rank": 6,
+        "image_id": "image_2.png",
+        "score": 11.270017087670988,
+        "caption_snippet": "UE Registration for non CSG UEs or non CSG HNBs."
+      },
+      {
+        "rank": 7,
+        "image_id": "image_3.jpeg",
+        "score": 11.266508915391121,
+        "caption_snippet": "UE Registration for CSG UEs and CSG or Hybrid HNBs."
+      },
+      {
+        "rank": 8,
+        "image_id": "image_2739.png",
+        "score": 10.893546958058764,
+        "caption_snippet": "Connection Establishment for 5G ProSe Layer-2 UE-to-Network Relay"
+      },
+      {
+        "rank": 9,
+        "image_id": "image_3600.png",
+        "score": 9.863222295269448,
+        "caption_snippet": "basic connection setup procedure of L3 UE-to-Network Relay based on Figure 6.6.2-1"
+      },
+      {
+        "rank": 10,
+        "image_id": "image_583.jpeg",
+        "score": 9.83608371029626,
+        "caption_snippet": "Support of Activity Notification in EN-DC with suspended RRC connection - SCG"
+      }
+    ]
+  },
+  "q_ff_3": {
+    "query_text": "NAS authentication",
+    "method": "hybrid",
+    "results": [
+      {
+        "rank": 1,
+        "image_id": "image_457.jpeg",
+        "score": 10.208875184449628,
+        "caption_snippet": "AMF re-allocation with NAS message and 5G NAS security context re-route via RAN"
+      },
+      {
+        "rank": 2,
+        "image_id": "image_1998.png",
+        "score": 10.173278925512964,
+        "caption_snippet": "5G-RG Registration via W-5GAN"
+      },
+      {
+        "rank": 3,
+        "image_id": "image_431.jpeg",
+        "score": 10.006554121367216,
+        "caption_snippet": "Authentication for untrusted non-3GPP access"
+      },
+      {
+        "rank": 4,
+        "image_id": "image_1136.jpeg",
+        "score": 9.915461228670493,
+        "caption_snippet": "Network slice specific authentication and Authorization procedure (RADIUS)"
+      },
+      {
+        "rank": 5,
+        "image_id": "image_1137.jpeg",
+        "score": 9.9112460483023,
+        "caption_snippet": "Network slice specific authentication and Authorization procedure (Diameter)"
+      },
+      {
+        "rank": 6,
+        "image_id": "image_135.png",
+        "score": 9.819642222873311,
+        "caption_snippet": "Anti-authentication relay attack procedure"
+      },
+      {
+        "rank": 7,
+        "image_id": "image_446.png",
+        "score": 9.788651785697706,
+        "caption_snippet": "AMF re-allocation with NAS message and 5G NAS security context re-route via RAN"
+      },
+      {
+        "rank": 8,
+        "image_id": "image_450.jpeg",
+        "score": 9.524678719266065,
+        "caption_snippet": "AMF Serving Capability based Security handling during primary authentication"
+      },
+      {
+        "rank": 9,
+        "image_id": "image_453.jpeg",
+        "score": 9.516195542340093,
+        "caption_snippet": "Security context handling during registration mobility update"
+      },
+      {
+        "rank": 10,
+        "image_id": "image_452.jpeg",
+        "score": 9.514728736103821,
+        "caption_snippet": "AMF Serving Capability based Security Context handling during primary"
+      }
+    ]
+  },
+  "q_ff_4": {
+    "query_text": "5G architecture",
+    "method": "hybrid",
+    "results": [
+      {
+        "rank": 1,
+        "image_id": "image_2030.jpeg",
+        "score": 9.728945406778415,
+        "caption_snippet": "Non- roaming architecture for 5G Core Network for 5G-RG with Wireline 5G Access"
+      },
+      {
+        "rank": 2,
+        "image_id": "image_2031.jpeg",
+        "score": 9.708300843861524,
+        "caption_snippet": "Non- roaming architecture for 5G Core Network for FN-RG with Wireline 5G Access"
+      },
+      {
+        "rank": 3,
+        "image_id": "image_716.png",
+        "score": 9.470317317658907,
+        "caption_snippet": "5G Media Streaming General Architecture"
+      },
+      {
+        "rank": 4,
+        "image_id": "image_715.png",
+        "score": 9.454912921331303,
+        "caption_snippet": "5G Media Streaming within the 5G System"
+      },
+      {
+        "rank": 5,
+        "image_id": "image_2733.jpeg",
+        "score": 9.404446432560711,
+        "caption_snippet": "Reference architecture for 5G ProSe Layer-3 UE-to-Network Relay"
+      },
+      {
+        "rank": 6,
+        "image_id": "image_2026.jpeg",
+        "score": 9.403785976178995,
+        "caption_snippet": "Home-routed Roaming architecture for 5G Core Network with untrusted non-3GPP"
+      },
+      {
+        "rank": 7,
+        "image_id": "image_2027.jpeg",
+        "score": 9.403785976178995,
+        "caption_snippet": "Home-routed Roaming architecture for 5G Core Network with untrusted non-3GPP"
+      },
+      {
+        "rank": 8,
+        "image_id": "image_2028.jpeg",
+        "score": 9.403785976178995,
+        "caption_snippet": "Home-routed Roaming architecture for 5G Core Network with untrusted non-3GPP"
+      },
+      {
+        "rank": 9,
+        "image_id": "image_2029.jpeg",
+        "score": 9.403785976178995,
+        "caption_snippet": "Home-routed Roaming architecture for 5G Core Network with trusted non-3GPP"
+      },
+      {
+        "rank": 10,
+        "image_id": "image_2734.jpeg",
+        "score": 9.397876968359231,
+        "caption_snippet": "Roaming architecture model for 5G ProSe Layer-3 UE-to-Network Relay with N3IWF"
+      }
+    ]
+  },
+  "q_ff_5": {
+    "query_text": "bearer activation",
+    "method": "hybrid",
+    "results": [
+      {
+        "rank": 1,
+        "image_id": "image_2499.jpeg",
+        "score": 10.14483395445458,
+        "caption_snippet": "Secondary PDP context Activation or PDP Context Modification Procedure for EPS-"
+      },
+      {
+        "rank": 2,
+        "image_id": "image_3377.jpeg",
+        "score": 9.776870635676477,
+        "caption_snippet": "Dedicated Bearer Activation Procedure"
+      },
+      {
+        "rank": 3,
+        "image_id": "image_1981.jpeg",
+        "score": 9.737767848641093,
+        "caption_snippet": "Dedicated S2a Bearer Activation Procedure with GTP on S2a"
+      },
+      {
+        "rank": 4,
+        "image_id": "image_3179.png",
+        "score": 9.71163114123641,
+        "caption_snippet": "Interaction between CP and UP function during modification of bearer"
+      },
+      {
+        "rank": 5,
+        "image_id": "image_1944.jpeg",
+        "score": 9.67646149992677,
+        "caption_snippet": "Dedicated S2b Bearer Activation Procedure with GTP on S2b"
+      },
+      {
+        "rank": 6,
+        "image_id": "image_2918.png",
+        "score": 9.521914618462272,
+        "caption_snippet": "Use of pre-established MBMS bearers"
+      },
+      {
+        "rank": 7,
+        "image_id": "image_3197.png",
+        "score": 9.112479189596588,
+        "caption_snippet": "Interaction between CP and UP function with PDN connection modification, Group"
+      },
+      {
+        "rank": 8,
+        "image_id": "image_3196.png",
+        "score": 9.112479189596588,
+        "caption_snippet": "Interaction between CP and UP function with PDN connection modification, Group"
+      },
+      {
+        "rank": 9,
+        "image_id": "image_3195.png",
+        "score": 9.112479189596588,
+        "caption_snippet": "Interaction between CP and UP function with PDN connection modification, Group"
+      },
+      {
+        "rank": 10,
+        "image_id": "image_2930.jpeg",
+        "score": 9.095138544162497,
+        "caption_snippet": "MBMS bearer event notification"
+      }
+    ]
+  },
+  "q_ff_6": {
+    "query_text": "UE context release",
+    "method": "hybrid",
+    "results": [
+      {
+        "rank": 1,
+        "image_id": "image_3553.png",
+        "score": 11.77563941120215,
+        "caption_snippet": "Bearer context release over F1-U \u2013 gNB-CU-CP initiated"
+      },
+      {
+        "rank": 2,
+        "image_id": "image_3554.png",
+        "score": 11.752364809184137,
+        "caption_snippet": "Bearer context release over F1-U \u2013 gNB-CU-UP initiated"
+      },
+      {
+        "rank": 3,
+        "image_id": "image_3372.jpeg",
+        "score": 11.523345040728188,
+        "caption_snippet": "S1 Release Procedure"
+      },
+      {
+        "rank": 4,
+        "image_id": "image_3438.jpeg",
+        "score": 11.455744668748824,
+        "caption_snippet": "Resume request responded with Release with Redirect, with UE Context relocation"
+      },
+      {
+        "rank": 5,
+        "image_id": "image_1374.jpeg",
+        "score": 11.345343883868125,
+        "caption_snippet": "Inter-MeNB handover without SeNB change"
+      },
+      {
+        "rank": 6,
+        "image_id": "image_1369.jpeg",
+        "score": 11.335768073093027,
+        "caption_snippet": "SeNB Release procedure \u2013 MeNB initiated"
+      },
+      {
+        "rank": 7,
+        "image_id": "image_1370.jpeg",
+        "score": 11.335768073093027,
+        "caption_snippet": "SeNB Release procedure \u2013 MeNB initiated"
+      },
+      {
+        "rank": 8,
+        "image_id": "image_2119.jpeg",
+        "score": 11.330603880780856,
+        "caption_snippet": "local Release triggered via NAS"
+      },
+      {
+        "rank": 9,
+        "image_id": "image_2125.jpeg",
+        "score": 11.210911803022652,
+        "caption_snippet": "RRC leaving procedure in EPS"
+      },
+      {
+        "rank": 10,
+        "image_id": "image_576.jpeg",
+        "score": 11.189992592840051,
+        "caption_snippet": "Inter-MN handover with/without MN initiated SN change"
+      }
+    ]
+  },
+  "q_ff_7": {
+    "query_text": "gNB CU DU split",
+    "method": "hybrid",
+    "results": [
+      {
+        "rank": 1,
+        "image_id": "image_1238.jpeg",
+        "score": 28.465998070711656,
+        "caption_snippet": "NRM fragment to support RIM"
+      },
+      {
+        "rank": 2,
+        "image_id": "image_1239.jpeg",
+        "score": 28.465998070711656,
+        "caption_snippet": "NRM fragment for CES Management"
+      },
+      {
+        "rank": 3,
+        "image_id": "image_1236.jpeg",
+        "score": 28.465998070711656,
+        "caption_snippet": "NRM for all deployment scenarios"
+      },
+      {
+        "rank": 4,
+        "image_id": "image_1237.jpeg",
+        "score": 28.41650579228365,
+        "caption_snippet": "NRM for <<IOC>>NRSectorCarrier and <<IOC>>BWP for all deployment scenarios"
+      },
+      {
+        "rank": 5,
+        "image_id": "image_3537.jpeg",
+        "score": 26.99518070810543,
+        "caption_snippet": "Inter-gNB-DU Mobility for intra-NR"
+      },
+      {
+        "rank": 6,
+        "image_id": "image_3548.png",
+        "score": 26.975205367744174,
+        "caption_snippet": "F1 startup and cell activation"
+      },
+      {
+        "rank": 7,
+        "image_id": "image_3539.jpeg",
+        "score": 26.91733292444411,
+        "caption_snippet": "Inter-gNB-DU Mobility using MCG SRB in EN-DC"
+      },
+      {
+        "rank": 8,
+        "image_id": "image_3538.jpeg",
+        "score": 26.643041922331136,
+        "caption_snippet": "Inter-gNB-DU Conditional Handover or Conditional PSCell Change for intra-NR"
+      },
+      {
+        "rank": 9,
+        "image_id": "image_3536.jpeg",
+        "score": 26.613398139962797,
+        "caption_snippet": "UE Initial Access procedure"
+      },
+      {
+        "rank": 10,
+        "image_id": "image_3540.jpeg",
+        "score": 26.61251401031328,
+        "caption_snippet": "Inter-gNB-DU Conditional PSCell Change using MCG SRB without MN negotiation in"
+      }
+    ]
+  },
+  "q_ff_8": {
+    "query_text": "AMF SMF UPF session",
+    "method": "hybrid",
+    "results": [
+      {
+        "rank": 1,
+        "image_id": "image_2856.jpeg",
+        "score": 15.803429399947102,
+        "caption_snippet": "MBS N2 based HO towards a RAN"
+      },
+      {
+        "rank": 2,
+        "image_id": "image_2814.png",
+        "score": 15.7762978956072,
+        "caption_snippet": "PDU session modification for multicast leave"
+      },
+      {
+        "rank": 3,
+        "image_id": "image_2806.png",
+        "score": 15.683500591823549,
+        "caption_snippet": "Session Leave"
+      },
+      {
+        "rank": 4,
+        "image_id": "image_1694.jpeg",
+        "score": 15.670899375821229,
+        "caption_snippet": "UE initiated Multicast MBS Session leave"
+      },
+      {
+        "rank": 5,
+        "image_id": "image_2855.jpeg",
+        "score": 15.6279301145263,
+        "caption_snippet": "MBS Xn based HO towards a RAN"
+      },
+      {
+        "rank": 6,
+        "image_id": "image_1698.png",
+        "score": 15.576174482627657,
+        "caption_snippet": "MBS session activation procedure"
+      },
+      {
+        "rank": 7,
+        "image_id": "image_2840.jpeg",
+        "score": 15.530678959199578,
+        "caption_snippet": "MBS session joining via PDU Session Establishment procedure"
+      },
+      {
+        "rank": 8,
+        "image_id": "image_2810.jpeg",
+        "score": 15.524664482985596,
+        "caption_snippet": "PDU Session modification for multicast"
+      },
+      {
+        "rank": 9,
+        "image_id": "image_2817.jpeg",
+        "score": 15.398367481382763,
+        "caption_snippet": "User Multicast Service Create procedure"
+      },
+      {
+        "rank": 10,
+        "image_id": "image_2878.jpeg",
+        "score": 15.292646840094616,
+        "caption_snippet": "Multicast to unicast mode switching based on N2 handover within dual RANs"
+      }
+    ]
+  },
+  "q_ff_9": {
+    "query_text": "paging idle mode",
+    "method": "hybrid",
+    "results": [
+      {
+        "rank": 1,
+        "image_id": "image_2565.png",
+        "score": 17.499417383214286,
+        "caption_snippet": "Notification - Availability Notification after DDN Failure"
+      },
+      {
+        "rank": 2,
+        "image_id": "image_2088.png",
+        "score": 17.063965185785438,
+        "caption_snippet": "Mobile Terminating Call in idle mode"
+      },
+      {
+        "rank": 3,
+        "image_id": "image_3371.jpeg",
+        "score": 15.452443819639505,
+        "caption_snippet": "Network triggered Service Request procedure"
+      },
+      {
+        "rank": 4,
+        "image_id": "image_2128.jpeg",
+        "score": 15.089523584685146,
+        "caption_snippet": "Paging filtering based paging delivery in CM-IDLE state"
+      },
+      {
+        "rank": 5,
+        "image_id": "image_2123.jpeg",
+        "score": 14.634323928150875,
+        "caption_snippet": "NAS leaving procedure in EPS"
+      },
+      {
+        "rank": 6,
+        "image_id": "image_2094.jpeg",
+        "score": 14.59575650313731,
+        "caption_snippet": "Mobile terminating SMS in idle mode"
+      },
+      {
+        "rank": 7,
+        "image_id": "image_1470.jpeg",
+        "score": 14.430936837739495,
+        "caption_snippet": "Overall Idle Mode process"
+      },
+      {
+        "rank": 8,
+        "image_id": "image_2118.jpeg",
+        "score": 13.96515206364685,
+        "caption_snippet": "Network Triggered Service Request (based on TS 23.502 [6] Figure 4.2.3.3-1)"
+      },
+      {
+        "rank": 9,
+        "image_id": "image_3407.png",
+        "score": 13.798573977443905,
+        "caption_snippet": "MME/SGSN or HSS Initiated Dedicated Core Network Reselection"
+      },
+      {
+        "rank": 10,
+        "image_id": "image_1409.jpeg",
+        "score": 13.719891716611716,
+        "caption_snippet": "Mobility procedures between E-UTRA/5GC and CDMA2000"
+      }
+    ]
+  },
+  "q_ff_10": {
+    "query_text": "random access msg1 msg4",
+    "method": "hybrid",
+    "results": [
+      {
+        "rank": 1,
+        "image_id": "image_148.jpeg",
+        "score": 11.325385704739269,
+        "caption_snippet": "Unicast message protection procedure"
+      },
+      {
+        "rank": 2,
+        "image_id": "image_266.png",
+        "score": 8.723631576878168,
+        "caption_snippet": "LTKUP key agreement process diagram"
+      },
+      {
+        "rank": 3,
+        "image_id": "image_580.jpeg",
+        "score": 8.36449859832064,
+        "caption_snippet": "eNB to Master Node change"
+      },
+      {
+        "rank": 4,
+        "image_id": "image_3633.png",
+        "score": 8.36095436795534,
+        "caption_snippet": "Channel coefficient generation procedure"
+      },
+      {
+        "rank": 5,
+        "image_id": "image_3662.png",
+        "score": 8.13207535064653,
+        "caption_snippet": "A sequence diagram of RA-based UL timing adjustment at TCI state switch."
+      },
+      {
+        "rank": 6,
+        "image_id": "image_581.jpeg",
+        "score": 7.96732226419679,
+        "caption_snippet": "ng-eNB/gNB to MN change procedure"
+      },
+      {
+        "rank": 7,
+        "image_id": "image_3445.jpeg",
+        "score": 7.9481261836562815,
+        "caption_snippet": "AMF selection"
+      },
+      {
+        "rank": 8,
+        "image_id": "image_1346.png",
+        "score": 7.20961358276935,
+        "caption_snippet": "MAC structure overview, UE side"
+      },
+      {
+        "rank": 9,
+        "image_id": "image_1345.png",
+        "score": 7.20961358276935,
+        "caption_snippet": "MAC structure overview, UE side"
+      },
+      {
+        "rank": 10,
+        "image_id": "image_1347.png",
+        "score": 7.201362205546138,
+        "caption_snippet": "MAC structure overview for sidelink, UE side"
+      }
+    ]
+  },
+  "q_ff_11": {
+    "query_text": "LTE protocol stack",
+    "method": "hybrid",
+    "results": [
+      {
+        "rank": 1,
+        "image_id": "image_1106.jpeg",
+        "score": 16.158678558182885,
+        "caption_snippet": "MB2-U Protocol stack with DTLS Security"
+      },
+      {
+        "rank": 2,
+        "image_id": "image_1105.jpeg",
+        "score": 16.158678558182885,
+        "caption_snippet": "MB2-U Protocol stack with DTLS Security"
+      },
+      {
+        "rank": 3,
+        "image_id": "image_381.png",
+        "score": 15.38108018631868,
+        "caption_snippet": "Control-plane protocol stack"
+      },
+      {
+        "rank": 4,
+        "image_id": "image_3535.png",
+        "score": 15.151300470893736,
+        "caption_snippet": "User plane protocol stack for L2 UE-to-Network Relay"
+      },
+      {
+        "rank": 5,
+        "image_id": "image_3534.png",
+        "score": 15.151300470893736,
+        "caption_snippet": "User plane protocol stack for L2 UE-to-Network Relay"
+      },
+      {
+        "rank": 6,
+        "image_id": "image_3598.jpeg",
+        "score": 14.91703141921194,
+        "caption_snippet": "Control plane protocol stack for L2 UE-to-Network Relay"
+      },
+      {
+        "rank": 7,
+        "image_id": "image_3597.jpeg",
+        "score": 14.91703141921194,
+        "caption_snippet": "Control plane protocol stack for L2 UE-to-Network Relay"
+      },
+      {
+        "rank": 8,
+        "image_id": "image_3596.jpeg",
+        "score": 14.91703141921194,
+        "caption_snippet": "Control plane protocol stack for L2 UE-to-Network Relay"
+      },
+      {
+        "rank": 9,
+        "image_id": "image_3595.jpeg",
+        "score": 14.91703141921194,
+        "caption_snippet": "User plane protocol stack for L2 UE-to-Network Relay"
+      },
+      {
+        "rank": 10,
+        "image_id": "image_17.png",
+        "score": 14.78985710964142,
+        "caption_snippet": "Iuh\u2013Interface Protocol Stack."
+      }
+    ]
+  },
+  "q_ff_12": {
+    "query_text": "Xn handover",
+    "method": "hybrid",
+    "results": [
+      {
+        "rank": 1,
+        "image_id": "image_3448.jpeg",
+        "score": 13.777502814027983,
+        "caption_snippet": "Xn based mobility across different Registration Areas"
+      },
+      {
+        "rank": 2,
+        "image_id": "image_2863.png",
+        "score": 13.622323483336132,
+        "caption_snippet": "Xn based shared to individual switch"
+      },
+      {
+        "rank": 3,
+        "image_id": "image_2865.png",
+        "score": 13.419497927217702,
+        "caption_snippet": "Xn based individual to shared switch"
+      },
+      {
+        "rank": 4,
+        "image_id": "image_1696.jpeg",
+        "score": 13.354793323321125,
+        "caption_snippet": "Xn based handover with MBS Session"
+      },
+      {
+        "rank": 5,
+        "image_id": "image_3705.jpeg",
+        "score": 13.237851106519251,
+        "caption_snippet": "PDU Session charging message flows for Xn based handover, execution phase,"
+      },
+      {
+        "rank": 6,
+        "image_id": "image_3704.jpeg",
+        "score": 12.953662486011565,
+        "caption_snippet": "PDU Session charging message flows for Inter NG-RAN node N2 based handover,"
+      },
+      {
+        "rank": 7,
+        "image_id": "image_590.jpeg",
+        "score": 12.915571555861668,
+        "caption_snippet": "Conditional Handover with Secondary Node procedure"
+      },
+      {
+        "rank": 8,
+        "image_id": "image_3703.jpeg",
+        "score": 12.899758666268973,
+        "caption_snippet": "PDU Session charging message flows for UE Triggered Service Request"
+      },
+      {
+        "rank": 9,
+        "image_id": "image_581.jpeg",
+        "score": 12.766532086371088,
+        "caption_snippet": "ng-eNB/gNB to MN change procedure"
+      },
+      {
+        "rank": 10,
+        "image_id": "image_2877.jpeg",
+        "score": 12.656340375717706,
+        "caption_snippet": "Multicast to unicast mode switching based on Xn handover within dual RANs"
+      }
+    ]
+  },
+  "q_ff_13": {
+    "query_text": "PDU session establishment",
+    "method": "hybrid",
+    "results": [
+      {
+        "rank": 1,
+        "image_id": "image_2840.jpeg",
+        "score": 9.993709025092494,
+        "caption_snippet": "MBS session joining via PDU Session Establishment procedure"
+      },
+      {
+        "rank": 2,
+        "image_id": "image_2220.jpeg",
+        "score": 9.985122860421125,
+        "caption_snippet": "PDU session establishment procedure"
+      },
+      {
+        "rank": 3,
+        "image_id": "image_473.jpeg",
+        "score": 9.974672731412074,
+        "caption_snippet": "Authorization during the EDN relocation"
+      },
+      {
+        "rank": 4,
+        "image_id": "image_2010.jpeg",
+        "score": 9.96025321537985,
+        "caption_snippet": "FN-RG related PDU Session Establishment via W-5GAN"
+      },
+      {
+        "rank": 5,
+        "image_id": "image_472.jpeg",
+        "score": 9.852446703444791,
+        "caption_snippet": "Authorization during the EDN relocation"
+      },
+      {
+        "rank": 6,
+        "image_id": "image_2007.jpeg",
+        "score": 9.841207352272015,
+        "caption_snippet": "5G-RG PDU Session establishment via W-5GAN"
+      },
+      {
+        "rank": 7,
+        "image_id": "image_2600.png",
+        "score": 9.741460568019605,
+        "caption_snippet": "PDU Session establishment for C2 communication (separate PDU Sessions for"
+      },
+      {
+        "rank": 8,
+        "image_id": "image_1623.png",
+        "score": 9.560243110587066,
+        "caption_snippet": "Authentication/authorization and C2 communication establishment for UAV/UAVC"
+      },
+      {
+        "rank": 9,
+        "image_id": "image_325.png",
+        "score": 9.480588719561208,
+        "caption_snippet": "Procedure for UAV authentication and authorization with USS/UTM PDU Session"
+      },
+      {
+        "rank": 10,
+        "image_id": "image_434.png",
+        "score": 9.425948100049528,
+        "caption_snippet": "Initial EAP Authentication with an external AAA server"
+      }
+    ]
+  },
+  "q_ff_14": {
+    "query_text": "radio link failure recovery",
+    "method": "hybrid",
+    "results": [
+      {
+        "rank": 1,
+        "image_id": "image_3440.jpeg",
+        "score": 17.144351090449703,
+        "caption_snippet": "Re-establishment procedure"
+      },
+      {
+        "rank": 2,
+        "image_id": "image_500.jpeg",
+        "score": 14.387980097257188,
+        "caption_snippet": "A simplified illustration of backhaul-RLF recovery"
+      },
+      {
+        "rank": 3,
+        "image_id": "image_2367.png",
+        "score": 13.529241318214755,
+        "caption_snippet": "Procedure for Untrusted WLAN access becomes usable for GTP S2b"
+      },
+      {
+        "rank": 4,
+        "image_id": "image_2364.png",
+        "score": 13.408325730356635,
+        "caption_snippet": "Procedure for 3GPP access becomes usable for GTP S5/S8"
+      },
+      {
+        "rank": 5,
+        "image_id": "image_70.jpeg",
+        "score": 13.076323766348333,
+        "caption_snippet": "PLMN-B aware of hPLMN failure"
+      },
+      {
+        "rank": 6,
+        "image_id": "image_69.jpeg",
+        "score": 13.076323766348333,
+        "caption_snippet": "PLMN-B aware of hPLMN failure"
+      },
+      {
+        "rank": 7,
+        "image_id": "image_561.jpeg",
+        "score": 11.45725163789737,
+        "caption_snippet": "SN Modification procedure - MN initiated"
+      },
+      {
+        "rank": 8,
+        "image_id": "image_562.jpeg",
+        "score": 11.452014526293095,
+        "caption_snippet": "SN Modification procedure - SN initiated with MN involvement"
+      },
+      {
+        "rank": 9,
+        "image_id": "image_563.jpeg",
+        "score": 11.448525787528462,
+        "caption_snippet": "Transfer of an NR RRC message to/from the UE"
+      },
+      {
+        "rank": 10,
+        "image_id": "image_3372.jpeg",
+        "score": 11.198924374992313,
+        "caption_snippet": "S1 Release Procedure"
+      }
+    ]
+  },
+  "q_ff_15": {
+    "query_text": "EPC attach procedure",
+    "method": "hybrid",
+    "results": [
+      {
+        "rank": 1,
+        "image_id": "image_1352.jpeg",
+        "score": 17.397917864187228,
+        "caption_snippet": "RN attach procedure"
+      },
+      {
+        "rank": 2,
+        "image_id": "image_1353.jpeg",
+        "score": 17.397917864187228,
+        "caption_snippet": "RN attach procedure"
+      },
+      {
+        "rank": 3,
+        "image_id": "image_1611.jpeg",
+        "score": 16.861337146315833,
+        "caption_snippet": "Procedure for registering to UTM for UAS operations and issuance of CAA-Level"
+      },
+      {
+        "rank": 4,
+        "image_id": "image_1354.png",
+        "score": 14.990132687699715,
+        "caption_snippet": "RN startup procedure"
+      },
+      {
+        "rank": 5,
+        "image_id": "image_1835.jpeg",
+        "score": 13.06276866029541,
+        "caption_snippet": "Procedure Initial Provisioning and Connecting to Edge Enabler Server"
+      },
+      {
+        "rank": 6,
+        "image_id": "image_2012.jpeg",
+        "score": 13.026188600206037,
+        "caption_snippet": "Handover from W-5GAN/5GC to EPS"
+      },
+      {
+        "rank": 7,
+        "image_id": "image_1624.png",
+        "score": 12.77624335877114,
+        "caption_snippet": "Authentication/authorization and C2 communication establishment for UAV/UAVC"
+      },
+      {
+        "rank": 8,
+        "image_id": "image_1974.jpeg",
+        "score": 12.70223955099601,
+        "caption_snippet": "Initial attachment in WLAN on GTP S2a for roaming, LBO and non-roaming scenarios"
+      },
+      {
+        "rank": 9,
+        "image_id": "image_1935.jpeg",
+        "score": 12.686690997957017,
+        "caption_snippet": "Initial attachment for emergency services over GTP based S2b"
+      },
+      {
+        "rank": 10,
+        "image_id": "image_1885.jpeg",
+        "score": 11.376605651621716,
+        "caption_snippet": "IPv4 Address Allocation using DHCP with DHCP Server Collocated with the MAG"
+      }
+    ]
+  },
+  "q_ff_16": {
+    "query_text": "S1 release procedure",
+    "method": "hybrid",
+    "results": [
+      {
+        "rank": 1,
+        "image_id": "image_3372.jpeg",
+        "score": 16.23419587406943,
+        "caption_snippet": "S1 Release Procedure"
+      },
+      {
+        "rank": 2,
+        "image_id": "image_1385.jpeg",
+        "score": 15.151037428432698,
+        "caption_snippet": "E-RAB Release procedure"
+      },
+      {
+        "rank": 3,
+        "image_id": "image_1386.jpeg",
+        "score": 15.151037428432698,
+        "caption_snippet": "E-RAB Release procedure"
+      },
+      {
+        "rank": 4,
+        "image_id": "image_2087.jpeg",
+        "score": 14.52977285589651,
+        "caption_snippet": "CSFB MO or MT call, rejected by MME"
+      },
+      {
+        "rank": 5,
+        "image_id": "image_1383.jpeg",
+        "score": 14.182694914854071,
+        "caption_snippet": "E-RAB Setup procedure"
+      },
+      {
+        "rank": 6,
+        "image_id": "image_1384.jpeg",
+        "score": 13.13545819599343,
+        "caption_snippet": "E-RAB Modification procedure"
+      },
+      {
+        "rank": 7,
+        "image_id": "image_3380.jpeg",
+        "score": 13.085238499024097,
+        "caption_snippet": "PDN GW Initiated Bearer Deactivation"
+      },
+      {
+        "rank": 8,
+        "image_id": "image_1355.jpeg",
+        "score": 12.911759210153702,
+        "caption_snippet": "E-UTRAN - SIPTO@LN with collocated L-GW - Logical Architecture"
+      },
+      {
+        "rank": 9,
+        "image_id": "image_1391.jpeg",
+        "score": 12.813203443612156,
+        "caption_snippet": "Retrieve UE Context procedure (highlighted in blue) for cases of UE context"
+      },
+      {
+        "rank": 10,
+        "image_id": "image_3376.jpeg",
+        "score": 12.265121656637778,
+        "caption_snippet": "HSS-Initiated Detach Procedure"
+      }
+    ]
+  },
+  "q_ff_17": {
+    "query_text": "tracking area update",
+    "method": "hybrid",
+    "results": [
+      {
+        "rank": 1,
+        "image_id": "image_1339.jpeg",
+        "score": 15.550159964480125,
+        "caption_snippet": "Moving Cells and Small tracking areas leading to massive TAU signalling"
+      },
+      {
+        "rank": 2,
+        "image_id": "image_1338.jpeg",
+        "score": 15.550159964480125,
+        "caption_snippet": "Moving Cells and Small tracking areas leading to massive TAU signalling"
+      },
+      {
+        "rank": 3,
+        "image_id": "image_1341.jpeg",
+        "score": 15.49264522933424,
+        "caption_snippet": "An example of updating TAC and PLMN ID in real-time for LEO with moving beams"
+      },
+      {
+        "rank": 4,
+        "image_id": "image_1340.jpeg",
+        "score": 15.49264522933424,
+        "caption_snippet": "An example of updating TAC and PLMN ID in real-time for LEO with moving beams"
+      },
+      {
+        "rank": 5,
+        "image_id": "image_3367.jpeg",
+        "score": 12.457128097299883,
+        "caption_snippet": "E-UTRAN Tracking Area Update without S-GW change"
+      },
+      {
+        "rank": 6,
+        "image_id": "image_2214.jpeg",
+        "score": 12.328900572313346,
+        "caption_snippet": "Satellite beams for Geostationary and Non-Geostationary satellites, cells and tracking"
+      },
+      {
+        "rank": 7,
+        "image_id": "image_2215.jpeg",
+        "score": 12.328900572313346,
+        "caption_snippet": "Satellite beams for Geostationary and Non-Geostationary satellites, cells and tracking"
+      },
+      {
+        "rank": 8,
+        "image_id": "image_3176.png",
+        "score": 12.090552670492226,
+        "caption_snippet": "Interaction between CP and UP function during procedures with SGW change"
+      },
+      {
+        "rank": 9,
+        "image_id": "image_2222.png",
+        "score": 11.889666136033796,
+        "caption_snippet": "Registration and Paging procedures using sequenced Registration Areas"
+      },
+      {
+        "rank": 10,
+        "image_id": "image_2208.jpeg",
+        "score": 11.315924644833283,
+        "caption_snippet": "Delivery of Ciphering Keys to UEs for Broadcast Assistance Data"
+      }
+    ]
+  },
+  "q_ff_18": {
+    "query_text": "O-RAN functional split",
+    "method": "hybrid",
+    "results": [
+      {
+        "rank": 1,
+        "image_id": "image_1544.jpeg",
+        "score": 14.484527635795184,
+        "caption_snippet": "End-to-end flow of O&M-based solution for KI#6, connected mode"
+      },
+      {
+        "rank": 2,
+        "image_id": "image_1543.jpeg",
+        "score": 14.484527635795184,
+        "caption_snippet": "End-to-end flow of O&M-based solution for KI#6, connected mode"
+      },
+      {
+        "rank": 3,
+        "image_id": "image_3420.jpeg",
+        "score": 13.396285131871668,
+        "caption_snippet": "Overall Architecture"
+      },
+      {
+        "rank": 4,
+        "image_id": "image_3421.png",
+        "score": 12.508587412824937,
+        "caption_snippet": "Functional Split between NG-RAN and 5GC"
+      },
+      {
+        "rank": 5,
+        "image_id": "image_777.jpeg",
+        "score": 11.547171571411766,
+        "caption_snippet": "Functional structure for Type 3a: 5G Split Rendering WireLess Tethered AR UE"
+      },
+      {
+        "rank": 6,
+        "image_id": "image_778.jpeg",
+        "score": 11.361447379358435,
+        "caption_snippet": "Functional structure for Type 3b: 5G Relay WireLess Tethered AR UE"
+      },
+      {
+        "rank": 7,
+        "image_id": "image_3490.png",
+        "score": 11.34875322954706,
+        "caption_snippet": "Model for Test Mode Control and UE Test Loop Mode A on UE side when standalone"
+      },
+      {
+        "rank": 8,
+        "image_id": "image_3491.png",
+        "score": 11.340381386611686,
+        "caption_snippet": "Model for Test Mode Control and UE Test Loop Mode A on UE side when NE-DC with"
+      },
+      {
+        "rank": 9,
+        "image_id": "image_3488.png",
+        "score": 11.340381386611686,
+        "caption_snippet": "Model for Test Mode Control and UE Test Loop Mode A on UE side when EN-DC or"
+      },
+      {
+        "rank": 10,
+        "image_id": "image_3489.png",
+        "score": 11.340381386611686,
+        "caption_snippet": "Model for Test Mode Control and UE Test Loop Mode A on UE side when EN-DC or"
+      }
+    ]
+  },
+  "q_ff_19": {
+    "query_text": "network triggered service request",
+    "method": "hybrid",
+    "results": [
+      {
+        "rank": 1,
+        "image_id": "image_2186.jpeg",
+        "score": 9.215275338920152,
+        "caption_snippet": "Cancellation of a Deferred 5GC-MT-LR for periodic or triggered location events by an"
+      },
+      {
+        "rank": 2,
+        "image_id": "image_2185.jpeg",
+        "score": 9.159122974245404,
+        "caption_snippet": "UE Cancellation of a Deferred 5GC-MT-LR for periodic or triggered location events"
+      },
+      {
+        "rank": 3,
+        "image_id": "image_2160.jpeg",
+        "score": 9.108360585385201,
+        "caption_snippet": "Deferred EPC-MT-LR procedure for Periodic and Triggered Location"
+      },
+      {
+        "rank": 4,
+        "image_id": "image_132.jpeg",
+        "score": 9.013222555146001,
+        "caption_snippet": "UE Triggered Service Request procedure (AUSF get AUTS, RANDMS from UE)"
+      },
+      {
+        "rank": 5,
+        "image_id": "image_2000.jpeg",
+        "score": 8.844913955921824,
+        "caption_snippet": "5G-RG Triggered Service Request procedure via W-5GAN"
+      },
+      {
+        "rank": 6,
+        "image_id": "image_2184.jpeg",
+        "score": 8.844654105489365,
+        "caption_snippet": "Deferred 5GC-MT-LR for periodic, triggered and UE available location events"
+      },
+      {
+        "rank": 7,
+        "image_id": "image_2118.jpeg",
+        "score": 8.672414974172337,
+        "caption_snippet": "Network Triggered Service Request (based on TS 23.502 [6] Figure 4.2.3.3-1)"
+      },
+      {
+        "rank": 8,
+        "image_id": "image_2162.jpeg",
+        "score": 8.663077201136716,
+        "caption_snippet": "UE cancellation of a Deferred MT-LR for Periodic and Triggered Location"
+      },
+      {
+        "rank": 9,
+        "image_id": "image_131.png",
+        "score": 8.637397147229576,
+        "caption_snippet": "SQNMS shared to SN in Registration Request (5GS)"
+      },
+      {
+        "rank": 10,
+        "image_id": "image_2161.jpeg",
+        "score": 8.413244111872025,
+        "caption_snippet": "LCS Client cancellation of a Deferred MT-LR for Periodic and Triggered Location"
+      }
+    ]
+  },
+  "q_ff_20": {
+    "query_text": "SGW PGW interaction",
+    "method": "hybrid",
+    "results": [
+      {
+        "rank": 1,
+        "image_id": "image_3176.png",
+        "score": 21.516390411295365,
+        "caption_snippet": "Interaction between CP and UP function during procedures with SGW change"
+      },
+      {
+        "rank": 2,
+        "image_id": "image_3191.png",
+        "score": 21.247561802316174,
+        "caption_snippet": "Interaction between CP and UP function with PDN connection deactivation Group"
+      },
+      {
+        "rank": 3,
+        "image_id": "image_3192.jpeg",
+        "score": 21.247561802316174,
+        "caption_snippet": "Interaction between CP and UP function with PDN connection deactivation Group"
+      },
+      {
+        "rank": 4,
+        "image_id": "image_3201.png",
+        "score": 20.954445898879893,
+        "caption_snippet": "Interaction between CP and UP function with PDN connection establishment"
+      },
+      {
+        "rank": 5,
+        "image_id": "image_3177.png",
+        "score": 20.691443780439307,
+        "caption_snippet": "Interaction between CP and UP function during procedures with SGW change"
+      },
+      {
+        "rank": 6,
+        "image_id": "image_3178.png",
+        "score": 20.635568475363954,
+        "caption_snippet": "Interaction between CP and UP function during release of PDN connection"
+      },
+      {
+        "rank": 7,
+        "image_id": "image_3179.png",
+        "score": 20.46690450723846,
+        "caption_snippet": "Interaction between CP and UP function during modification of bearer"
+      },
+      {
+        "rank": 8,
+        "image_id": "image_3197.png",
+        "score": 20.288773787260567,
+        "caption_snippet": "Interaction between CP and UP function with PDN connection modification, Group"
+      },
+      {
+        "rank": 9,
+        "image_id": "image_3196.png",
+        "score": 20.288773787260567,
+        "caption_snippet": "Interaction between CP and UP function with PDN connection modification, Group"
+      },
+      {
+        "rank": 10,
+        "image_id": "image_3195.png",
+        "score": 20.288773787260567,
+        "caption_snippet": "Interaction between CP and UP function with PDN connection modification, Group"
+      }
+    ]
+  },
+  "q_ff_21": {
+    "query_text": "dedicated bearer setup",
+    "method": "hybrid",
+    "results": [
+      {
+        "rank": 1,
+        "image_id": "image_1383.jpeg",
+        "score": 11.887974202135624,
+        "caption_snippet": "E-RAB Setup procedure"
+      },
+      {
+        "rank": 2,
+        "image_id": "image_3377.jpeg",
+        "score": 11.852577762029231,
+        "caption_snippet": "Dedicated Bearer Activation Procedure"
+      },
+      {
+        "rank": 3,
+        "image_id": "image_3381.jpeg",
+        "score": 10.942465882057324,
+        "caption_snippet": "MME initiated Dedicated Bearer Deactivation"
+      },
+      {
+        "rank": 4,
+        "image_id": "image_2115.png",
+        "score": 10.811308438317758,
+        "caption_snippet": "SRVCC to E-UTRAN/UTRAN (HSPA) from GERAN without DTM / PS HO and SRVCC"
+      },
+      {
+        "rank": 5,
+        "image_id": "image_1944.jpeg",
+        "score": 10.229656702295312,
+        "caption_snippet": "Dedicated S2b Bearer Activation Procedure with GTP on S2b"
+      },
+      {
+        "rank": 6,
+        "image_id": "image_1981.jpeg",
+        "score": 10.075273155626071,
+        "caption_snippet": "Dedicated S2a Bearer Activation Procedure with GTP on S2a"
+      },
+      {
+        "rank": 7,
+        "image_id": "image_3179.png",
+        "score": 10.047098176045527,
+        "caption_snippet": "Interaction between CP and UP function during modification of bearer"
+      },
+      {
+        "rank": 8,
+        "image_id": "image_1973.jpeg",
+        "score": 9.920126067901933,
+        "caption_snippet": "Two Unicast S2a bearers mapped to separate WLCP bearers (GTP based S2a)"
+      },
+      {
+        "rank": 9,
+        "image_id": "image_2494.png",
+        "score": 9.601632581228028,
+        "caption_snippet": "MME-initiated Dedicated Bearer Deactivation"
+      },
+      {
+        "rank": 10,
+        "image_id": "image_2493.png",
+        "score": 9.601632581228028,
+        "caption_snippet": "MME-initiated Dedicated Bearer Deactivation"
+      }
+    ]
+  },
+  "q_ff_22": {
+    "query_text": "handover reject",
+    "method": "hybrid",
+    "results": [
+      {
+        "rank": 1,
+        "image_id": "image_3397.jpeg",
+        "score": 11.145243885765897,
+        "caption_snippet": "E-UTRAN to GERAN A/Gb Inter RAT HO reject"
+      },
+      {
+        "rank": 2,
+        "image_id": "image_3400.jpeg",
+        "score": 11.140311353241724,
+        "caption_snippet": "GERAN A/Gb mode to E-UTRAN inter RAT HO reject"
+      },
+      {
+        "rank": 3,
+        "image_id": "image_3394.jpeg",
+        "score": 10.963509127439515,
+        "caption_snippet": "UTRAN Iu mode to E-UTRAN Inter RAT HO reject"
+      },
+      {
+        "rank": 4,
+        "image_id": "image_2096.png",
+        "score": 10.812429465052432,
+        "caption_snippet": "MT-LR procedure while UE is in IMS VoIP session"
+      },
+      {
+        "rank": 5,
+        "image_id": "image_2097.jpeg",
+        "score": 10.65818908466023,
+        "caption_snippet": "NW-Initiated CS Service procedure while UE is in IMS VoIP session"
+      },
+      {
+        "rank": 6,
+        "image_id": "image_3388.jpeg",
+        "score": 10.451924393249715,
+        "caption_snippet": "S1-based handover, Reject"
+      },
+      {
+        "rank": 7,
+        "image_id": "image_3391.jpeg",
+        "score": 10.166008520710282,
+        "caption_snippet": "E-UTRAN to UTRAN Iu mode Inter RAT HO reject"
+      },
+      {
+        "rank": 8,
+        "image_id": "image_2089.png",
+        "score": 8.891254122427917,
+        "caption_snippet": "CS Page in E-UTRAN, Call in GERAN/UTRAN"
+      },
+      {
+        "rank": 9,
+        "image_id": "image_2095.jpeg",
+        "score": 8.475126088532226,
+        "caption_snippet": "MO-LR Request in E-UTRAN while UE is in IMS VoIP session"
+      },
+      {
+        "rank": 10,
+        "image_id": "image_1900.jpeg",
+        "score": 8.109866558554618,
+        "caption_snippet": "UE requested PDN connectivity with PMIP-based S5 or S8"
+      }
+    ]
+  },
+  "q_ff_23": {
+    "query_text": "RRC state machine",
+    "method": "hybrid",
+    "results": [
+      {
+        "rank": 1,
+        "image_id": "image_1496.jpeg",
+        "score": 14.54613971188845,
+        "caption_snippet": "State transitions of Pre-established Session state machine"
+      },
+      {
+        "rank": 2,
+        "image_id": "image_1558.jpeg",
+        "score": 14.49851181117336,
+        "caption_snippet": "Basic call control state machine"
+      },
+      {
+        "rank": 3,
+        "image_id": "image_1551.jpeg",
+        "score": 14.49851181117336,
+        "caption_snippet": "Basic call control state machine"
+      },
+      {
+        "rank": 4,
+        "image_id": "image_1548.jpeg",
+        "score": 14.477023158012237,
+        "caption_snippet": "Emergency alert state machine"
+      },
+      {
+        "rank": 5,
+        "image_id": "image_1562.jpeg",
+        "score": 14.477023158012237,
+        "caption_snippet": "Emergency alert state machine"
+      },
+      {
+        "rank": 6,
+        "image_id": "image_1556.jpeg",
+        "score": 14.426538270511955,
+        "caption_snippet": "Emergency alert state machine"
+      },
+      {
+        "rank": 7,
+        "image_id": "image_1559.jpeg",
+        "score": 14.21894091545175,
+        "caption_snippet": "Call type control state machine"
+      },
+      {
+        "rank": 8,
+        "image_id": "image_1552.jpeg",
+        "score": 14.21894091545175,
+        "caption_snippet": "Call type control state machine"
+      },
+      {
+        "rank": 9,
+        "image_id": "image_1555.jpeg",
+        "score": 14.2100762452676,
+        "caption_snippet": "Call type control state machine"
+      },
+      {
+        "rank": 10,
+        "image_id": "image_1537.jpeg",
+        "score": 13.91876144689007,
+        "caption_snippet": "Transmission control server state transition diagram for basic transmission control"
+      }
+    ]
+  },
+  "q_ff_24": {
+    "query_text": "NAS key agreement",
+    "method": "hybrid",
+    "results": [
+      {
+        "rank": 1,
+        "image_id": "image_305.jpeg",
+        "score": 12.9023503677739,
+        "caption_snippet": "BEST Key Hierarchy for 5GS networks"
+      },
+      {
+        "rank": 2,
+        "image_id": "image_303.jpeg",
+        "score": 12.8940403247773,
+        "caption_snippet": "BEST Key Hierarchy for EPS networks and legacy UEs"
+      },
+      {
+        "rank": 3,
+        "image_id": "image_304.jpeg",
+        "score": 12.8940403247773,
+        "caption_snippet": "BEST Key Hierarchy for EPS networks and legacy UEs"
+      },
+      {
+        "rank": 4,
+        "image_id": "image_318.jpeg",
+        "score": 12.403828067565328,
+        "caption_snippet": "Network access authentication with credentials owned by an entity separate from the"
+      },
+      {
+        "rank": 5,
+        "image_id": "image_302.jpeg",
+        "score": 12.377840465632723,
+        "caption_snippet": "Generic BEST key agreement process for 5GS networks"
+      },
+      {
+        "rank": 6,
+        "image_id": "image_266.png",
+        "score": 11.716631149870516,
+        "caption_snippet": "LTKUP key agreement process diagram"
+      },
+      {
+        "rank": 7,
+        "image_id": "image_310.jpeg",
+        "score": 11.190227653601779,
+        "caption_snippet": "Initial access with key derivation"
+      },
+      {
+        "rank": 8,
+        "image_id": "image_454.jpeg",
+        "score": 10.840138627158355,
+        "caption_snippet": "AMF re-allocation with NAS message and 5G NAS security context re-route via RAN"
+      },
+      {
+        "rank": 9,
+        "image_id": "image_455.jpeg",
+        "score": 10.760877017389811,
+        "caption_snippet": "AMF re-allocation with 5G NAS security context re-route via RAN based on"
+      },
+      {
+        "rank": 10,
+        "image_id": "image_313.png",
+        "score": 10.689859656528231,
+        "caption_snippet": "Using EAP-TLS Authentication Procedures over 5G Networks for initial one-way"
+      }
+    ]
+  },
+  "q_ff_25": {
+    "query_text": "user plane protocol stack",
+    "method": "hybrid",
+    "results": [
+      {
+        "rank": 1,
+        "image_id": "image_1105.jpeg",
+        "score": 20.43192685385291,
+        "caption_snippet": "MB2-U Protocol stack with DTLS Security"
+      },
+      {
+        "rank": 2,
+        "image_id": "image_1106.jpeg",
+        "score": 20.43192685385291,
+        "caption_snippet": "MB2-U Protocol stack with DTLS Security"
+      },
+      {
+        "rank": 3,
+        "image_id": "image_381.png",
+        "score": 20.15608963856929,
+        "caption_snippet": "Control-plane protocol stack"
+      },
+      {
+        "rank": 4,
+        "image_id": "image_3534.png",
+        "score": 19.96617205207267,
+        "caption_snippet": "User plane protocol stack for L2 UE-to-Network Relay"
+      },
+      {
+        "rank": 5,
+        "image_id": "image_3535.png",
+        "score": 19.96617205207267,
+        "caption_snippet": "User plane protocol stack for L2 UE-to-Network Relay"
+      },
+      {
+        "rank": 6,
+        "image_id": "image_3595.jpeg",
+        "score": 19.56797644435943,
+        "caption_snippet": "User plane protocol stack for L2 UE-to-Network Relay"
+      },
+      {
+        "rank": 7,
+        "image_id": "image_3596.jpeg",
+        "score": 19.481013569610322,
+        "caption_snippet": "Control plane protocol stack for L2 UE-to-Network Relay"
+      },
+      {
+        "rank": 8,
+        "image_id": "image_3598.jpeg",
+        "score": 19.481013569610322,
+        "caption_snippet": "Control plane protocol stack for L2 UE-to-Network Relay"
+      },
+      {
+        "rank": 9,
+        "image_id": "image_3597.jpeg",
+        "score": 19.481013569610322,
+        "caption_snippet": "Control plane protocol stack for L2 UE-to-Network Relay"
+      },
+      {
+        "rank": 10,
+        "image_id": "image_1351.jpeg",
+        "score": 19.238122271566425,
+        "caption_snippet": "Radio control plane protocol stack for supporting RNs"
+      }
+    ]
+  }
+}
