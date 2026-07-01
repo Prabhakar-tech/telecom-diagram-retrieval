@@ -23,3 +23,4 @@ indexes/colpali_index/*.safetensors
 run.pid
 reports/m7_base_predictions_cache.json
 checkpoints/
+reports/m12a_manual_playground/
